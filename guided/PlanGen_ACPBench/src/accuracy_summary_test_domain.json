@@ -1,0 +1,147 @@
+{
+  "domains": [
+    {
+      "domain": "alfworld",
+      "num_examples": 15,
+      "final_answer_ratio": 0.06666666666666667,
+      "plan_ratio": 0.06666666666666667,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 6,
+      "final_answer_accuracy_against_ground_truth": 0.4
+    },
+    {
+      "domain": "blocksworld",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "depot",
+      "num_examples": 15,
+      "final_answer_ratio": 0.7333333333333333,
+      "plan_ratio": 0.7333333333333333,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 14,
+      "final_answer_accuracy_against_ground_truth": 0.9333333333333333
+    },
+    {
+      "domain": "ferry",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "floortile",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "frogs_jumping",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "goldminer",
+      "num_examples": 15,
+      "final_answer_ratio": 0.4666666666666667,
+      "plan_ratio": 0.4666666666666667,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 12,
+      "final_answer_accuracy_against_ground_truth": 0.8
+    },
+    {
+      "domain": "grid",
+      "num_examples": 15,
+      "final_answer_ratio": 0.7333333333333333,
+      "plan_ratio": 0.7333333333333333,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 14,
+      "final_answer_accuracy_against_ground_truth": 0.9333333333333333
+    },
+    {
+      "domain": "grippers",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "hanoi",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "logistics",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "rovers",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "satellite",
+      "num_examples": 15,
+      "final_answer_ratio": 0.5333333333333333,
+      "plan_ratio": 0.5333333333333333,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 13,
+      "final_answer_accuracy_against_ground_truth": 0.8666666666666667
+    },
+    {
+      "domain": "swap",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "visitall",
+      "num_examples": 15,
+      "final_answer_ratio": 0.6666666666666666,
+      "plan_ratio": 0.6666666666666666,
+      "num_with_ground_truth": 15,
+      "num_correct_final_answer": 15,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    }
+  ],
+  "total_examples": 225,
+  "total_solved_by_final_answer": 138,
+  "total_with_plan": 138,
+  "total_with_ground_truth": 225,
+  "total_correct_final_answer": 209,
+  "overall_final_answer_ratio": 0.6133333333333333,
+  "overall_plan_ratio": 0.6133333333333333,
+  "overall_ground_truth_accuracy": 0.9288888888888889
+}

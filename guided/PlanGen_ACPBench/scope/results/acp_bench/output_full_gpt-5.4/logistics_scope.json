@@ -1,0 +1,585 @@
+[
+  {
+    "example_id": "logistics_logistics-c3-s3-p15-a1_p27_158_n",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 15 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p1, p3, and a0 are at l2-0, p8 and t1 are at l1-0, t0 is at l0-2, p9 and p0 are at l0-0, t2 is at l2-2, p13, p2, p10, p14, p11, and p12 are in t0, p7, p5, p4, and p6 are in a0.",
+    "question": "Is it possible to transition to a state where the following holds: \np9 is at l1-2 and a0 is at l0-0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p9",
+          "location": "l1-2"
+        },
+        {
+          "entity": "a0",
+          "location": "l0-0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK p9 l0-0 l1-2 c1",
+      "FLY-AIRPLANE a0 l0-1 l0-0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.5986907482147217,
+    "correct": false,
+    "prompt_tokens": 683,
+    "completion_tokens": 84,
+    "cost": 0.0029675,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p20-a1_p30_23_n",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 20 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p16, p6, and p7 are at l1-2, p3, a0, and t1 are at l1-0, p11, p9, t0, and p18 are at l0-0, p1 and t2 are at l2-1, p10 is at l0-1, p15 is at l1-1, p17, p8, p19, p5, and p4 are in a0, p13, p2, p0, p14, and p12 are in t0.",
+    "question": "Is it possible to transition to a state where the following holds: \nt1 is at l1-0 and t0 is at l2-1?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "t1",
+          "location": "l1-0"
+        },
+        {
+          "entity": "t0",
+          "location": "l2-1"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK t1 l0-0 l1-0 c1",
+      "DRIVE-TRUCK t0 l0-0 l2-1 c2"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.3851220607757568,
+    "correct": false,
+    "prompt_tokens": 706,
+    "completion_tokens": 84,
+    "cost": 0.003025,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(drive-truck t1 l0-0 l1-0 c1)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(drive-truck t1 l0-0 l1-0 c1)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p15-a1_p27_88_n",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 15 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p8 is at l1-0, p4, p14, p9, t0, and p0 are at l0-0, p2, p12, p11, t1, and p1 are at l1-2, p3, p5, t2, a0, and p7 are at l2-0, p6 is at l2-1, p13 and p10 are in t2.",
+    "question": "Is it possible to transition to a state where the following holds: \na0 is at l1-1?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "a0",
+          "location": "l1-1"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "FLY-AIRPLANE a0 l0-0 l1-1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.3347110748291016,
+    "correct": false,
+    "prompt_tokens": 670,
+    "completion_tokens": 62,
+    "cost": 0.002605,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p5-a1_p18_162_n",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 5 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, t2 is at l2-1, p1, a0, and t1 are at l1-0, p3 and p0 are at l1-2, t0 and p4 are at l0-0, p2 is in t1.",
+    "question": "Is it possible to transition to a state where the following holds: \np2 is at l2-0 and a0 is at l2-0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p2",
+          "location": "l2-0"
+        },
+        {
+          "entity": "a0",
+          "location": "l2-0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK p2 l0-0 l2-0 c2",
+      "FLY-AIRPLANE a0 l0-0 l2-0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.4753808975219727,
+    "correct": false,
+    "prompt_tokens": 641,
+    "completion_tokens": 84,
+    "cost": 0.0028625,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p20-a1_p30_101_n",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 20 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p16, p6, t1, and p7 are at l1-2, p3 is at l1-0, p4, p9, and a0 are at l0-0, p19, p1, p0, and t2 are at l2-1, p5 and p8 are at l2-2, t0, p17, p10, and p18 are at l0-1, p15 is at l1-1, p14, p12, p2, p13, and p11 are in a0.",
+    "question": "Is it possible to transition to a state where the following holds: \np19 is at l2-1 and a0 is at l0-2?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p19",
+          "location": "l2-1"
+        },
+        {
+          "entity": "a0",
+          "location": "l0-2"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK p19 l0-0 l2-1 c2",
+      "FLY-AIRPLANE a0 l0-0 l0-2"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.6381289958953857,
+    "correct": false,
+    "prompt_tokens": 708,
+    "completion_tokens": 84,
+    "cost": 0.00303,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p5-a1_p18_19_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 5 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, t2 is at l2-1, t0 is at l0-2, t1, p4, and a0 are at l1-0, p1, p0, and p3 are in a0, p2 is in t0.",
+    "question": "Is it possible to transition to a state where the following holds: \nt0 is at l0-0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "t0",
+          "location": "l0-0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK t0 l0-2 l0-0 c0",
+      "FLY-AIRPLANE a0 l1-0 l1-0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.0213561058044434,
+    "correct": true,
+    "prompt_tokens": 631,
+    "completion_tokens": 62,
+    "cost": 0.0025075,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "logistics_logistics-c2-s3-p4-a1_p06_159_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 2 trucks and 1 airplane, as well as 4 packages. There are 6 locations across 2 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l1-2, l1-1, and l1-0 are in c1. \nCurrently, t0 and a0 are at l0-0, t1 is at l1-1, p3, p1, and p0 are in t0, p2 is in a0.",
+    "question": "Is it possible to transition to a state where the following holds: \np3 is at l0-1 and t0 is at l0-1?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p3",
+          "location": "l0-1"
+        },
+        {
+          "entity": "t0",
+          "location": "l0-1"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "FLY-AIRPLANE p3 l0-0 l0-1",
+      "DRIVE-TRUCK t0 l0-0 l0-1 c0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.2686152458190918,
+    "correct": true,
+    "prompt_tokens": 607,
+    "completion_tokens": 84,
+    "cost": 0.0027775,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p15-a1_p27_161_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 15 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p8, t1, p7, and p5 are at l1-0, p4, p14, p9, t0, p0, and a0 are at l0-0, p3 is at l2-0, p6 and t2 are at l2-1, p12, p2, p13, p10, p1, and p11 are in a0.",
+    "question": "Is it possible to transition to a state where the following holds: \nt0 is at l0-1?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "t0",
+          "location": "l0-1"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK t0 l0-0 l0-1 c0",
+      "FLY-AIRPLANE a0 l1-0 l1-0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 17.060709953308105,
+    "correct": true,
+    "prompt_tokens": 664,
+    "completion_tokens": 62,
+    "cost": 0.00259,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 2 '(fly-airplane a0 l1-0 l1-0)' failed: unsatisfied precondition",
+      "actions_applied": 1,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 2 '(fly-airplane a0 l1-0 l1-0)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p20-a1_p30_183_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 20 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p12, p11, p14, p13, p2, p19, and p9 are at l0-0, p16, p6, and p7 are at l1-2, p3, a0, and t1 are at l1-0, p1 and t2 are at l2-1, t0, p10, and p18 are at l0-1, p15 is at l1-1, p17, p8, p0, p5, and p4 are in a0.",
+    "question": "Is it possible to transition to a state where the following holds: \np4 is at l1-0 and t2 is at l2-2?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p4",
+          "location": "l1-0"
+        },
+        {
+          "entity": "t2",
+          "location": "l2-2"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "FLY-AIRPLANE p4 l0-0 l1-0",
+      "DRIVE-TRUCK t2 l0-0 l2-2 c2"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.2497096061706543,
+    "correct": true,
+    "prompt_tokens": 702,
+    "completion_tokens": 84,
+    "cost": 0.003015,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p15-a1_p26_63_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 15 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p11, p13, t0, and p0 are at l0-0, a0, t1, and p9 are at l1-0, p3, p12, and p7 are at l2-0, p8 and p6 are at l0-1, t2 is at l2-2, p2, p10, p1, p5, and p4 are in a0, p14 is in t1.",
+    "question": "Is it possible to transition to a state where the following holds: \np4 is at l1-0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p4",
+          "location": "l1-0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK p4 l0-0 l1-0 c1",
+      "FLY-AIRPLANE a0 l1-0 l1-0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4817962646484375,
+    "correct": true,
+    "prompt_tokens": 675,
+    "completion_tokens": 62,
+    "cost": 0.0026175,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p5-a1_p18_62_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 5 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, t2 is at l2-1, t0 is at l0-1, p1, a0, t1, and p4 are at l1-0, p0 is in t1, p3 is in a0, p2 is in t0.",
+    "question": "Is it possible to transition to a state where the following holds: \np4 is in a0 and t0 is at l0-0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p4",
+          "location": "a0"
+        },
+        {
+          "entity": "t0",
+          "location": "l0-0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "FLY-AIRPLANE p4 l0-0 a0",
+      "DRIVE-TRUCK t0 a0 l0-0 c0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4960389137268066,
+    "correct": true,
+    "prompt_tokens": 641,
+    "completion_tokens": 82,
+    "cost": 0.0028325,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p20-a1_p29_123_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 20 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p11, p13, and p17 are at l0-0, a0, p10, p14, p1, p5, and p9 are at l1-0, p3, p18, p12, and p7 are at l2-0, p8 and p6 are at l0-1, t0 is at l0-2, t1 is at l1-2, t2 is at l2-1, p4 and p2 are in t1, p0 is in t0, p19, p16, and p15 are in t2.",
+    "question": "Is it possible to transition to a state where the following holds: \np5 is in a0 and p9 is in a0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p5",
+          "location": "a0"
+        },
+        {
+          "entity": "p9",
+          "location": "a0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK p5 l0-0 a0 c0",
+      "FLY-AIRPLANE p9 l0-0 a0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.608107089996338,
+    "correct": true,
+    "prompt_tokens": 711,
+    "completion_tokens": 80,
+    "cost": 0.0029775,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p20-a1_p28_10_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 20 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p5 and t2 are at l2-1, p10, p19, p0, t1, and p9 are at l1-0, p7, p16, p17, p15, p6, and a0 are at l0-0, t0 and p12 are at l0-1, p1 is at l1-1, p14 is at l2-0, p8 and p13 are in a0, p18, p2, and p11 are in t0, p3 and p4 are in t2.",
+    "question": "Is it possible to transition to a state where the following holds: \np10 is in t1 and t2 is at l2-2?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "p10",
+          "location": "t1"
+        },
+        {
+          "entity": "t2",
+          "location": "l2-2"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "FLY-AIRPLANE p10 l0-0 t1",
+      "DRIVE-TRUCK t2 l0-0 l2-2 c2"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.3338241577148438,
+    "correct": true,
+    "prompt_tokens": 706,
+    "completion_tokens": 82,
+    "cost": 0.002995,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c3-s3-p5-a1_p18_90_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 5 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l1-2, l1-1, and l1-0 are in c1. \nCurrently, p3 and p1 are at l2-0, t2 is at l2-1, t0 and a0 are at l0-0, t1 is at l1-1, p4 is at l1-0, p0 is in a0, p2 is in t0.",
+    "question": "Is it possible to transition to a state where the following holds: \nt0 is at l0-1 and p0 is at l0-0?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "t0",
+          "location": "l0-1"
+        },
+        {
+          "entity": "p0",
+          "location": "l0-0"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "DRIVE-TRUCK t0 l0-0 l0-1 c0",
+      "FLY-AIRPLANE p0 l0-1 l0-0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4994051456451416,
+    "correct": true,
+    "prompt_tokens": 650,
+    "completion_tokens": 84,
+    "cost": 0.002885,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "logistics_logistics-c5-s3-p4-a1_p10_184_p",
+    "context": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 5 trucks and 1 airplane, as well as 4 packages. There are 15 locations across 5 cities. \nThe locations are in cities as follows: l0-0, l0-1, and l0-2 are in c0; l2-1, l2-2, and l2-0 are in c2; l3-0, l3-2, and l3-1 are in c3; l4-0, l4-2, and l4-1 are in c4; l1-0, l1-2, and l1-1 are in c1. \nCurrently, t4 is at l4-0, t0 is at l0-2, t2 is at l2-0, a0 and p0 are at l3-0, t3 is at l3-2, p2 is at l2-2, t1 is at l1-2, p3 and p1 are in t3.",
+    "question": "Is it possible to transition to a state where the following holds: \na0 is at l2-0 and t2 is at l2-1?",
+    "predicted_initial_state": {
+      "target_state": [
+        {
+          "entity": "a0",
+          "location": "l2-0"
+        },
+        {
+          "entity": "t2",
+          "location": "l2-1"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "FLY-AIRPLANE a0 l0-0 l2-0",
+      "DRIVE-TRUCK t2 l0-0 l2-1 c2"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.2231910228729248,
+    "correct": true,
+    "prompt_tokens": 701,
+    "completion_tokens": 84,
+    "cost": 0.0030125,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(fly-airplane a0 l0-0 l2-0)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(fly-airplane a0 l0-0 l2-0)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  }
+]

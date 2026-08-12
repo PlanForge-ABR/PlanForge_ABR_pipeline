@@ -1,0 +1,129 @@
+{
+  "domains": [
+    {
+      "domain": "alfworld",
+      "num_examples": 10,
+      "final_answer_ratio": 0.1,
+      "plan_ratio": 0.1,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 8,
+      "final_answer_accuracy_against_ground_truth": 0.8
+    },
+    {
+      "domain": "blocksworld",
+      "num_examples": 10,
+      "final_answer_ratio": 0.5,
+      "plan_ratio": 0.5,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "depot",
+      "num_examples": 10,
+      "final_answer_ratio": 0.5,
+      "plan_ratio": 0.4,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 8,
+      "final_answer_accuracy_against_ground_truth": 0.8
+    },
+    {
+      "domain": "ferry",
+      "num_examples": 10,
+      "final_answer_ratio": 0.8,
+      "plan_ratio": 0.8,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "floortile",
+      "num_examples": 10,
+      "final_answer_ratio": 0.5,
+      "plan_ratio": 0.5,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "goldminer",
+      "num_examples": 10,
+      "final_answer_ratio": 0.5,
+      "plan_ratio": 0.5,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 7,
+      "final_answer_accuracy_against_ground_truth": 0.7
+    },
+    {
+      "domain": "grid",
+      "num_examples": 10,
+      "final_answer_ratio": 0.9,
+      "plan_ratio": 0.9,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 9,
+      "final_answer_accuracy_against_ground_truth": 0.9
+    },
+    {
+      "domain": "grippers",
+      "num_examples": 10,
+      "final_answer_ratio": 0.3,
+      "plan_ratio": 0.3,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "logistics",
+      "num_examples": 10,
+      "final_answer_ratio": 0.1,
+      "plan_ratio": 0.1,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 8,
+      "final_answer_accuracy_against_ground_truth": 0.8
+    },
+    {
+      "domain": "rovers",
+      "num_examples": 10,
+      "final_answer_ratio": 0.3,
+      "plan_ratio": 0.3,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "satellite",
+      "num_examples": 10,
+      "final_answer_ratio": 0.5,
+      "plan_ratio": 0.5,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "swap",
+      "num_examples": 10,
+      "final_answer_ratio": 0.4,
+      "plan_ratio": 0.4,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    },
+    {
+      "domain": "visitall",
+      "num_examples": 10,
+      "final_answer_ratio": 0.3,
+      "plan_ratio": 0.3,
+      "num_with_ground_truth": 10,
+      "num_correct_final_answer": 10,
+      "final_answer_accuracy_against_ground_truth": 1.0
+    }
+  ],
+  "total_examples": 130,
+  "total_solved_by_final_answer": 57,
+  "total_with_plan": 56,
+  "total_with_ground_truth": 130,
+  "total_correct_final_answer": 120,
+  "overall_final_answer_ratio": 0.43846153846153846,
+  "overall_plan_ratio": 0.4307692307692308,
+  "overall_ground_truth_accuracy": 0.9230769230769231
+}

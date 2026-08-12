@@ -1,0 +1,148 @@
+{
+  "domain": "frogs_jumping",
+  "num_examples": 15,
+  "num_solved_by_final_answer": 10,
+  "num_with_plan": 10,
+  "final_answer_ratio": 0.6666666666666666,
+  "plan_ratio": 0.6666666666666666,
+  "num_with_ground_truth": 15,
+  "num_correct_final_answer": 15,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "frogs_jumping_frogs-9v9_p03_9_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-57v57_p19_9_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-9v9_p03_114_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-60v60_p20_91_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-33v33_p11_146_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-9v9_p03_98_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-21v21_p07_55_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-9v9_p03_28_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-21v21_p07_47_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-9v9_p03_95_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-33v33_p11_16_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-63v63_p21_58_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-69v69_p23_65_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-57v57_p19_5_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-48v48_p16_29_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

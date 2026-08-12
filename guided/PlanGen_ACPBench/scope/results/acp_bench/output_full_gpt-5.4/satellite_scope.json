@@ -1,0 +1,523 @@
+[
+  {
+    "example_id": "satellite_prob-3-3-3-5-2_p06_15_n",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 3 satellite(s), numbered consecutively. There are 7 possible target object(s): groundstation4, planet5, star2, groundstation1, phenomenon6, star0, groundstation3. There are 3 image mode(s): thermograph2, infrared1, spectrograph0. There are 5 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1, instrument2. Satellite satellite1 has following instruments onboard: instrument3. Satellite satellite2 has following instruments onboard: instrument4. Instrument instrument0 supports image of mode infrared1 and its calibration target is star0. Instrument instrument1 supports image of mode spectrograph0 and its calibration target is star2. Instrument instrument4 supports image of mode infrared1 and its calibration target is star2. Instrument instrument3 supports image of mode infrared1 and its calibration target is groundstation3. Instrument instrument2 supports image of mode infrared1 and its calibration target is groundstation3.  \nCurrently, Satellite satellite2 is pointing to star0. Satellite satellite0 is pointing to groundstation4. Satellite satellite1 is pointing to groundstation1. Power is available on the following satellite(s): satellite0. Following instruments are powered on: instrument4, instrument3. Following instruments are calibrated: instrument4. A spectrograph0 mode image of target phenomenon6 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite1 is pointing to groundstation4 and Satellite satellite1 is pointing to planet5?",
+    "predicted_initial_state": {
+      "satellite_pointing_goals": [
+        {
+          "satellite": "satellite1",
+          "target": "groundstation4"
+        },
+        {
+          "satellite": "satellite1",
+          "target": "planet5"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'dict'\n",
+    "time_taken": 6.973131895065308,
+    "correct": true,
+    "prompt_tokens": 1357,
+    "completion_tokens": 89,
+    "cost": 0.0047275,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "satellite_prob-7-3-3-5-2_p10_147_n",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 7 satellite(s), numbered consecutively. There are 7 possible target object(s): groundstation4, star6, groundstation0, groundstation2, star3, phenomenon5, star1. There are 3 image mode(s): image2, image0, image1. There are 18 instrument(s), numbered consecutively.  \nSatellite satellite6 has following instruments onboard: instrument16, instrument17, instrument15. Satellite satellite0 has following instruments onboard: instrument1, instrument0, instrument2. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument11. Satellite satellite1 has following instruments onboard: instrument4, instrument5, instrument3. Satellite satellite5 has following instruments onboard: instrument13, instrument14, instrument12. Satellite satellite3 has following instruments onboard: instrument8, instrument7. Satellite satellite2 has following instruments onboard: instrument6. Instrument instrument8 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument11 supports image of mode image2 and its calibration target is star3. Instrument instrument6 supports image of mode image1 and its calibration target is groundstation2. Instrument instrument10 supports image of mode image2 and its calibration target is groundstation4. Instrument instrument13 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument9 supports image of mode image1 and its calibration target is star3. Instrument instrument5 supports image of mode image0 and its calibration target is star3. Instrument instrument4 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument2 supports image of mode image0 and its calibration target is star1. Instrument instrument15 supports image of mode image0 and its calibration target is groundstation2. Instrument instrument14 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument12 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument7 supports image of mode image0 and its calibration target is star3. Instrument instrument16 supports image of mode image0 and its calibration target is groundstation2. Instrument instrument3 supports image of mode image0 and its calibration target is star3. Instrument instrument1 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument0 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument17 supports image of mode image1 and its calibration target is groundstation0.  \nCurrently, Satellite satellite5 is pointing to groundstation0. Satellite satellite1 is pointing to phenomenon5. Satellite satellite3 is pointing to star6. Satellite satellite6 is pointing to star6. Satellite satellite2 is pointing to phenomenon5. Satellite satellite4 is pointing to star1. Satellite satellite0 is pointing to groundstation2. Power is available on the following satellite(s): satellite4, satellite3, satellite1, satellite0, satellite5. Following instruments are powered on: instrument16, instrument6. Following instruments are calibrated: instrument6. A image1 mode image of target star6 is available. A image0 mode image of target phenomenon5 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite1 is pointing to groundstation0 and Satellite satellite1 is pointing to star6?",
+    "predicted_initial_state": {
+      "satellite_pointing_goal": [
+        {
+          "satellite": "satellite1",
+          "target": "groundstation0"
+        },
+        {
+          "satellite": "satellite1",
+          "target": "star6"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'dict'\n",
+    "time_taken": 1.6337482929229736,
+    "correct": true,
+    "prompt_tokens": 1712,
+    "completion_tokens": 88,
+    "cost": 0.0056,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-12-9_p27_76_n",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 21 possible target object(s): groundstation4, groundstation1, planet15, phenomenon18, planet19, star8, groundstation10, star17, planet14, star12, groundstation5, star0, groundstation3, star13, groundstation7, groundstation6, planet16, star2, phenomenon20, groundstation9, groundstation11. There are 3 image mode(s): thermograph2, infrared1, spectrograph0. There are 11 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0. Satellite satellite2 has following instruments onboard: instrument5, instrument6, instrument4. Satellite satellite3 has following instruments onboard: instrument7, instrument8. Satellite satellite1 has following instruments onboard: instrument3, instrument2, instrument1. Satellite satellite4 has following instruments onboard: instrument9. Satellite satellite5 has following instruments onboard: instrument10. Instrument instrument5 supports image of mode infrared1 and its calibration target is star0. Instrument instrument3 supports image of mode spectrograph0 and its calibration target is star0. Instrument instrument2 supports image of mode spectrograph0 and its calibration target is groundstation4. Instrument instrument6 supports image of mode spectrograph0 and its calibration target is groundstation7. Instrument instrument10 supports image of mode spectrograph0 and its calibration target is groundstation11. Instrument instrument0 supports image of mode thermograph2 and its calibration target is groundstation11. Instrument instrument8 supports image of mode infrared1 and its calibration target is groundstation11. Instrument instrument1 supports image of mode spectrograph0 and its calibration target is groundstation5. Instrument instrument9 supports image of mode spectrograph0 and its calibration target is groundstation1. Instrument instrument7 supports image of mode thermograph2 and its calibration target is star0. Instrument instrument4 supports image of mode infrared1 and its calibration target is groundstation3.  \nCurrently, Satellite satellite1 is pointing to star12. Satellite satellite2 is pointing to star12. Satellite satellite3 is pointing to planet15. Satellite satellite0 is pointing to star12. Satellite satellite4 is pointing to groundstation3. Satellite satellite5 is pointing to planet19. Power is available on the following satellite(s): satellite3, satellite0, satellite2, satellite5, satellite4. Following instruments are powered on: instrument1. Following instruments are calibrated: instrument1. A spectrograph0 mode image of target star12 is available. A thermograph2 mode image of target star17 is available. A thermograph2 mode image of target planet14 is available. A infrared1 mode image of target phenomenon18 is available. A thermograph2 mode image of target phenomenon20 is available. A infrared1 mode image of target planet15 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite5 is pointing to groundstation7 and Satellite satellite5 is pointing to phenomenon20?",
+    "predicted_initial_state": {
+      "satellite_pointing_goal": [
+        [
+          "satellite5",
+          "groundstation7"
+        ],
+        [
+          "satellite5",
+          "phenomenon20"
+        ]
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'list'\n",
+    "time_taken": 1.7804710865020752,
+    "correct": true,
+    "prompt_tokens": 1665,
+    "completion_tokens": 76,
+    "cost": 0.0053025,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "satellite_prob-7-3-3-5-2_p10_146_n",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 7 satellite(s), numbered consecutively. There are 7 possible target object(s): groundstation4, star6, groundstation0, groundstation2, star3, phenomenon5, star1. There are 3 image mode(s): image2, image0, image1. There are 18 instrument(s), numbered consecutively.  \nSatellite satellite6 has following instruments onboard: instrument16, instrument17, instrument15. Satellite satellite0 has following instruments onboard: instrument1, instrument0, instrument2. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument11. Satellite satellite1 has following instruments onboard: instrument4, instrument5, instrument3. Satellite satellite5 has following instruments onboard: instrument13, instrument14, instrument12. Satellite satellite3 has following instruments onboard: instrument8, instrument7. Satellite satellite2 has following instruments onboard: instrument6. Instrument instrument8 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument11 supports image of mode image2 and its calibration target is star3. Instrument instrument6 supports image of mode image1 and its calibration target is groundstation2. Instrument instrument10 supports image of mode image2 and its calibration target is groundstation4. Instrument instrument13 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument9 supports image of mode image1 and its calibration target is star3. Instrument instrument5 supports image of mode image0 and its calibration target is star3. Instrument instrument4 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument2 supports image of mode image0 and its calibration target is star1. Instrument instrument15 supports image of mode image0 and its calibration target is groundstation2. Instrument instrument14 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument12 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument7 supports image of mode image0 and its calibration target is star3. Instrument instrument16 supports image of mode image0 and its calibration target is groundstation2. Instrument instrument3 supports image of mode image0 and its calibration target is star3. Instrument instrument1 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument0 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument17 supports image of mode image1 and its calibration target is groundstation0.  \nCurrently, Satellite satellite5 is pointing to groundstation0. Satellite satellite1 is pointing to phenomenon5. Satellite satellite6 is pointing to star6. Satellite satellite2 is pointing to star6. Satellite satellite4 is pointing to star1. Satellite satellite3 is pointing to groundstation0. Satellite satellite0 is pointing to star6. Power is available on the following satellite(s): satellite4, satellite0, satellite6, satellite3, satellite1, satellite5. Following instruments are powered on: instrument6. Following instruments are calibrated: instrument6. A image1 mode image of target star6 is available. A image0 mode image of target phenomenon5 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite0 is pointing to groundstation0 and Satellite satellite0 is pointing to groundstation2?",
+    "predicted_initial_state": {
+      "satellite_pointing_goal": [
+        [
+          "satellite0",
+          "groundstation0"
+        ],
+        [
+          "satellite0",
+          "groundstation2"
+        ]
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'list'\n",
+    "time_taken": 1.1069488525390625,
+    "correct": true,
+    "prompt_tokens": 1713,
+    "completion_tokens": 75,
+    "cost": 0.0054075,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-15-12_p28_7_n",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 27 possible target object(s): groundstation4, star11, star14, groundstation0, planet20, phenomenon21, phenomenon18, phenomenon15, phenomenon24, star8, star10, star26, star17, star16, phenomenon23, phenomenon22, planet25, phenomenon19, star1, star12, groundstation5, star13, groundstation7, groundstation6, star3, groundstation2, groundstation9. There are 3 image mode(s): image2, image0, image1. There are 13 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1. Satellite satellite3 has following instruments onboard: instrument7, instrument6. Satellite satellite2 has following instruments onboard: instrument5, instrument4. Satellite satellite1 has following instruments onboard: instrument3, instrument2. Satellite satellite4 has following instruments onboard: instrument9, instrument8. Satellite satellite5 has following instruments onboard: instrument12, instrument11, instrument10. Instrument instrument8 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument9 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument12 supports image of mode image0 and its calibration target is star8. Instrument instrument1 supports image of mode image2 and its calibration target is groundstation5. Instrument instrument10 supports image of mode image1 and its calibration target is groundstation9. Instrument instrument7 supports image of mode image0 and its calibration target is star14. Instrument instrument5 supports image of mode image0 and its calibration target is star13. Instrument instrument0 supports image of mode image1 and its calibration target is groundstation4. Instrument instrument4 supports image of mode image2 and its calibration target is star10. Instrument instrument2 supports image of mode image0 and its calibration target is star14. Instrument instrument11 supports image of mode image0 and its calibration target is star13. Instrument instrument3 supports image of mode image0 and its calibration target is star8. Instrument instrument6 supports image of mode image1 and its calibration target is star3.  \nCurrently, Satellite satellite2 is pointing to groundstation9. Satellite satellite5 is pointing to phenomenon21. Satellite satellite1 is pointing to star3. Satellite satellite0 is pointing to phenomenon21. Satellite satellite4 is pointing to groundstation0. Satellite satellite3 is pointing to phenomenon23. Power is available on the following satellite(s): satellite1, satellite0, satellite2, satellite5, satellite4. Following instruments are powered on: instrument7. Following instruments are calibrated: instrument7. A image0 mode image of target star16 is available. A image1 mode image of target phenomenon22 is available. A image2 mode image of target phenomenon24 is available. A image1 mode image of target star17 is available. A image2 mode image of target planet25 is available. A image2 mode image of target phenomenon15 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite1 is pointing to groundstation6 and Satellite satellite1 is pointing to phenomenon24?",
+    "predicted_initial_state": {
+      "satellite_pointing_goal": [
+        [
+          "satellite1",
+          "groundstation6"
+        ],
+        [
+          "satellite1",
+          "phenomenon24"
+        ]
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'list'\n",
+    "time_taken": 4.590826988220215,
+    "correct": true,
+    "prompt_tokens": 1697,
+    "completion_tokens": 76,
+    "cost": 0.0053825,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "satellite_prob-10-3-3-5-2_p14_25_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 10 satellite(s), numbered consecutively. There are 7 possible target object(s): planet5, star2, groundstation0, planet6, groundstation1, star4, groundstation3. There are 3 image mode(s): infrared2, thermograph0, image1. There are 16 instrument(s), numbered consecutively.  \nSatellite satellite9 has following instruments onboard: instrument15. Satellite satellite0 has following instruments onboard: instrument0. Satellite satellite8 has following instruments onboard: instrument14, instrument13. Satellite satellite3 has following instruments onboard: instrument5, instrument4. Satellite satellite1 has following instruments onboard: instrument2, instrument1. Satellite satellite6 has following instruments onboard: instrument9, instrument11, instrument10. Satellite satellite7 has following instruments onboard: instrument12. Satellite satellite5 has following instruments onboard: instrument8. Satellite satellite4 has following instruments onboard: instrument6, instrument7. Satellite satellite2 has following instruments onboard: instrument3. Instrument instrument8 supports image of mode thermograph0 and its calibration target is star2. Instrument instrument0 supports image of mode image1 and its calibration target is star4. Instrument instrument6 supports image of mode thermograph0 and its calibration target is groundstation0. Instrument instrument12 supports image of mode infrared2 and its calibration target is groundstation3. Instrument instrument10 supports image of mode thermograph0 and its calibration target is groundstation1. Instrument instrument1 supports image of mode thermograph0 and its calibration target is groundstation3. Instrument instrument11 supports image of mode infrared2 and its calibration target is groundstation3. Instrument instrument9 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument7 supports image of mode infrared2 and its calibration target is star2. Instrument instrument4 supports image of mode infrared2 and its calibration target is groundstation1. Instrument instrument2 supports image of mode infrared2 and its calibration target is star2. Instrument instrument15 supports image of mode image1 and its calibration target is groundstation3. Instrument instrument13 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument14 supports image of mode image1 and its calibration target is star2. Instrument instrument5 supports image of mode infrared2 and its calibration target is groundstation1. Instrument instrument3 supports image of mode image1 and its calibration target is groundstation0.  \nCurrently, Satellite satellite8 is pointing to star2. Satellite satellite3 is pointing to planet5. Satellite satellite7 is pointing to star2. Satellite satellite9 is pointing to star4. Satellite satellite4 is pointing to planet6. Satellite satellite2 is pointing to planet6. Satellite satellite0 is pointing to groundstation1. Satellite satellite6 is pointing to groundstation1. Satellite satellite5 is pointing to groundstation1. Satellite satellite1 is pointing to groundstation0. Power is available on the following satellite(s): satellite7, satellite1, satellite0, satellite2, satellite6, satellite5, satellite4, satellite8, satellite9. Following instruments are powered on: instrument4. Following instruments are calibrated: instrument4. A infrared2 mode image of target planet6 is available. A thermograph0 mode image of target planet5 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nFollowing instruments are powered on: instrument0?",
+    "predicted_initial_state": {
+      "powered_on_instruments_goal": [
+        "instrument0"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "take_image satellite3 planet5 instrument4 thermograph0",
+      "switch_on instrument0 satellite0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.343045949935913,
+    "correct": true,
+    "prompt_tokens": 1729,
+    "completion_tokens": 48,
+    "cost": 0.0050425,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-7-4_p18_133_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 11 possible target object(s): groundstation4, groundstation6, star10, star2, groundstation1, star9, groundstation5, planet8, star0, planet7, groundstation3. There are 3 image mode(s): thermograph2, infrared1, spectrograph0. There are 11 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1. Satellite satellite2 has following instruments onboard: instrument5, instrument4, instrument3. Satellite satellite1 has following instruments onboard: instrument2. Satellite satellite5 has following instruments onboard: instrument9, instrument10. Satellite satellite3 has following instruments onboard: instrument6. Satellite satellite4 has following instruments onboard: instrument8, instrument7. Instrument instrument7 supports image of mode spectrograph0 and its calibration target is groundstation3. Instrument instrument3 supports image of mode spectrograph0 and its calibration target is groundstation3. Instrument instrument4 supports image of mode infrared1 and its calibration target is groundstation5. Instrument instrument6 supports image of mode spectrograph0 and its calibration target is star0. Instrument instrument10 supports image of mode thermograph2 and its calibration target is groundstation4. Instrument instrument0 supports image of mode spectrograph0 and its calibration target is star0. Instrument instrument1 supports image of mode spectrograph0 and its calibration target is groundstation5. Instrument instrument9 supports image of mode spectrograph0 and its calibration target is groundstation1. Instrument instrument8 supports image of mode spectrograph0 and its calibration target is groundstation3. Instrument instrument2 supports image of mode infrared1 and its calibration target is star2. Instrument instrument5 supports image of mode infrared1 and its calibration target is star2.  \nCurrently, Satellite satellite3 is pointing to star9. Satellite satellite1 is pointing to planet7. Satellite satellite4 is pointing to star10. Satellite satellite5 is pointing to star2. Satellite satellite2 is pointing to star0. Satellite satellite0 is pointing to star10. Power is available on the following satellite(s): satellite4, satellite2, satellite3, satellite0, satellite5. Following instruments are powered on: instrument2. Following instruments are calibrated: instrument2. A thermograph2 mode image of target planet7 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite3 is pointing to groundstation6?",
+    "predicted_initial_state": {
+      "pointing_goal": [
+        {
+          "satellite": "satellite3",
+          "target": "groundstation6"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "take_image satellite3 planet5 instrument4 thermograph0",
+      "switch_on instrument0 satellite0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.5984723567962646,
+    "correct": true,
+    "prompt_tokens": 1557,
+    "completion_tokens": 64,
+    "cost": 0.0048525,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Error: Error in type-checking!",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Error: Error in type-checking!",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-12-9_p26_89_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 21 possible target object(s): star14, groundstation0, groundstation1, star9, planet20, phenomenon18, phenomenon15, groundstation8, phenomenon13, phenomenon12, groundstation10, star17, star16, groundstation5, star4, groundstation3, star19, groundstation7, groundstation6, star2, groundstation11. There are 3 image mode(s): infrared2, thermograph0, image1. There are 14 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1, instrument2. Satellite satellite5 has following instruments onboard: instrument13, instrument12, instrument11. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument8. Satellite satellite1 has following instruments onboard: instrument3. Satellite satellite2 has following instruments onboard: instrument5, instrument6, instrument4. Satellite satellite3 has following instruments onboard: instrument7. Instrument instrument0 supports image of mode infrared2 and its calibration target is groundstation0. Instrument instrument12 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument10 supports image of mode thermograph0 and its calibration target is star2. Instrument instrument1 supports image of mode infrared2 and its calibration target is star2. Instrument instrument11 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument8 supports image of mode infrared2 and its calibration target is groundstation5. Instrument instrument9 supports image of mode infrared2 and its calibration target is star4. Instrument instrument7 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument5 supports image of mode image1 and its calibration target is groundstation1. Instrument instrument13 supports image of mode thermograph0 and its calibration target is groundstation3. Instrument instrument4 supports image of mode infrared2 and its calibration target is star4. Instrument instrument2 supports image of mode thermograph0 and its calibration target is groundstation7. Instrument instrument3 supports image of mode infrared2 and its calibration target is star2. Instrument instrument6 supports image of mode thermograph0 and its calibration target is groundstation11.  \nCurrently, Satellite satellite0 is pointing to phenomenon13. Satellite satellite5 is pointing to star4. Satellite satellite3 is pointing to planet20. Satellite satellite2 is pointing to phenomenon18. Satellite satellite4 is pointing to groundstation0. Satellite satellite1 is pointing to planet20. Power is available on the following satellite(s): satellite3, satellite0, satellite2, satellite5, satellite4. Following instruments are powered on: instrument3. Following instruments are calibrated: instrument3. A image1 mode image of target phenomenon13 is available. A infrared2 mode image of target star19 is available. A infrared2 mode image of target planet20 is available. A thermograph0 mode image of target star16 is available. A infrared2 mode image of target phenomenon12 is available. A image1 mode image of target phenomenon15 is available. A thermograph0 mode image of target star14 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nFollowing instruments are powered on: instrument1 and Satellite satellite3 is pointing to star14?",
+    "predicted_initial_state": {
+      "powered_on_instruments_goal": [
+        "instrument1"
+      ]
+    },
+    "predicted_goal_state": {
+      "satellite_pointing": [
+        {
+          "satellite": "satellite3",
+          "target": "star14"
+        }
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.8853988647460938,
+    "correct": false,
+    "prompt_tokens": 1722,
+    "completion_tokens": 82,
+    "cost": 0.005535,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-12-9_p26_189_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 21 possible target object(s): star14, groundstation0, groundstation1, star9, planet20, phenomenon18, phenomenon15, groundstation8, phenomenon13, phenomenon12, groundstation10, star17, star16, groundstation5, star4, groundstation3, star19, groundstation7, groundstation6, star2, groundstation11. There are 3 image mode(s): infrared2, thermograph0, image1. There are 14 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1, instrument2. Satellite satellite5 has following instruments onboard: instrument13, instrument12, instrument11. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument8. Satellite satellite1 has following instruments onboard: instrument3. Satellite satellite2 has following instruments onboard: instrument5, instrument6, instrument4. Satellite satellite3 has following instruments onboard: instrument7. Instrument instrument0 supports image of mode infrared2 and its calibration target is groundstation0. Instrument instrument12 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument10 supports image of mode thermograph0 and its calibration target is star2. Instrument instrument1 supports image of mode infrared2 and its calibration target is star2. Instrument instrument11 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument8 supports image of mode infrared2 and its calibration target is groundstation5. Instrument instrument9 supports image of mode infrared2 and its calibration target is star4. Instrument instrument7 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument5 supports image of mode image1 and its calibration target is groundstation1. Instrument instrument13 supports image of mode thermograph0 and its calibration target is groundstation3. Instrument instrument4 supports image of mode infrared2 and its calibration target is star4. Instrument instrument2 supports image of mode thermograph0 and its calibration target is groundstation7. Instrument instrument3 supports image of mode infrared2 and its calibration target is star2. Instrument instrument6 supports image of mode thermograph0 and its calibration target is groundstation11.  \nCurrently, Satellite satellite0 is pointing to phenomenon13. Satellite satellite5 is pointing to star4. Satellite satellite1 is pointing to star16. Satellite satellite4 is pointing to groundstation0. Satellite satellite3 is pointing to planet20. Satellite satellite2 is pointing to phenomenon18. Power is available on the following satellite(s): satellite4, satellite3, satellite2, satellite0, satellite5. Following instruments are powered on: instrument3. Following instruments are calibrated: instrument3. A infrared2 mode image of target star19 is available. A thermograph0 mode image of target star16 is available. A thermograph0 mode image of target star14 is available. A infrared2 mode image of target phenomenon12 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite3 is pointing to star17 and Following instruments are powered on: instrument12?",
+    "predicted_initial_state": {
+      "powered_on_instruments_goal": [
+        "instrument12"
+      ]
+    },
+    "predicted_goal_state": {
+      "satellite_pointing_goal": [
+        {
+          "satellite": "satellite3",
+          "target": "star17"
+        }
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.6119298934936523,
+    "correct": false,
+    "prompt_tokens": 1686,
+    "completion_tokens": 83,
+    "cost": 0.00546,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-10-3-3-5-2_p14_162_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 10 satellite(s), numbered consecutively. There are 7 possible target object(s): planet5, star2, groundstation0, planet6, groundstation1, star4, groundstation3. There are 3 image mode(s): infrared2, thermograph0, image1. There are 16 instrument(s), numbered consecutively.  \nSatellite satellite9 has following instruments onboard: instrument15. Satellite satellite0 has following instruments onboard: instrument0. Satellite satellite8 has following instruments onboard: instrument14, instrument13. Satellite satellite3 has following instruments onboard: instrument5, instrument4. Satellite satellite1 has following instruments onboard: instrument2, instrument1. Satellite satellite6 has following instruments onboard: instrument9, instrument11, instrument10. Satellite satellite7 has following instruments onboard: instrument12. Satellite satellite5 has following instruments onboard: instrument8. Satellite satellite4 has following instruments onboard: instrument6, instrument7. Satellite satellite2 has following instruments onboard: instrument3. Instrument instrument8 supports image of mode thermograph0 and its calibration target is star2. Instrument instrument0 supports image of mode image1 and its calibration target is star4. Instrument instrument6 supports image of mode thermograph0 and its calibration target is groundstation0. Instrument instrument12 supports image of mode infrared2 and its calibration target is groundstation3. Instrument instrument10 supports image of mode thermograph0 and its calibration target is groundstation1. Instrument instrument1 supports image of mode thermograph0 and its calibration target is groundstation3. Instrument instrument11 supports image of mode infrared2 and its calibration target is groundstation3. Instrument instrument9 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument7 supports image of mode infrared2 and its calibration target is star2. Instrument instrument4 supports image of mode infrared2 and its calibration target is groundstation1. Instrument instrument2 supports image of mode infrared2 and its calibration target is star2. Instrument instrument15 supports image of mode image1 and its calibration target is groundstation3. Instrument instrument13 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument14 supports image of mode image1 and its calibration target is star2. Instrument instrument5 supports image of mode infrared2 and its calibration target is groundstation1. Instrument instrument3 supports image of mode image1 and its calibration target is groundstation0.  \nCurrently, Satellite satellite4 is pointing to star2. Satellite satellite8 is pointing to planet6. Satellite satellite3 is pointing to star2. Satellite satellite7 is pointing to star2. Satellite satellite9 is pointing to star4. Satellite satellite0 is pointing to groundstation1. Satellite satellite5 is pointing to groundstation3. Satellite satellite2 is pointing to star2. Satellite satellite6 is pointing to groundstation1. Satellite satellite1 is pointing to groundstation0. Power is available on the following satellite(s): satellite7, satellite1, satellite0, satellite2, satellite6, satellite5, satellite4, satellite8, satellite9. Following instruments are powered on: instrument5. Following instruments are calibrated: instrument5. A infrared2 mode image of target planet6 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nPower is available on the following satellite(s): satellite3 and Satellite satellite8 is pointing to star4?",
+    "predicted_initial_state": {
+      "power_available_satellites_goal": [
+        "satellite3"
+      ],
+      "satellite_pointing_goal": [
+        {
+          "satellite": "satellite8",
+          "target": "star4"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'dict'\n",
+    "time_taken": 1.5033140182495117,
+    "correct": false,
+    "prompt_tokens": 1728,
+    "completion_tokens": 83,
+    "cost": 0.005565,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-12-9_p26_130_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 21 possible target object(s): star14, groundstation0, groundstation1, star9, planet20, phenomenon18, phenomenon15, groundstation8, phenomenon13, phenomenon12, groundstation10, star17, star16, groundstation5, star4, groundstation3, star19, groundstation7, groundstation6, star2, groundstation11. There are 3 image mode(s): infrared2, thermograph0, image1. There are 14 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1, instrument2. Satellite satellite5 has following instruments onboard: instrument13, instrument12, instrument11. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument8. Satellite satellite1 has following instruments onboard: instrument3. Satellite satellite2 has following instruments onboard: instrument5, instrument6, instrument4. Satellite satellite3 has following instruments onboard: instrument7. Instrument instrument0 supports image of mode infrared2 and its calibration target is groundstation0. Instrument instrument12 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument10 supports image of mode thermograph0 and its calibration target is star2. Instrument instrument1 supports image of mode infrared2 and its calibration target is star2. Instrument instrument11 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument8 supports image of mode infrared2 and its calibration target is groundstation5. Instrument instrument9 supports image of mode infrared2 and its calibration target is star4. Instrument instrument7 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument5 supports image of mode image1 and its calibration target is groundstation1. Instrument instrument13 supports image of mode thermograph0 and its calibration target is groundstation3. Instrument instrument4 supports image of mode infrared2 and its calibration target is star4. Instrument instrument2 supports image of mode thermograph0 and its calibration target is groundstation7. Instrument instrument3 supports image of mode infrared2 and its calibration target is star2. Instrument instrument6 supports image of mode thermograph0 and its calibration target is groundstation11.  \nCurrently, Satellite satellite4 is pointing to groundstation5. Satellite satellite0 is pointing to star2. Satellite satellite3 is pointing to planet20. Satellite satellite2 is pointing to star9. Satellite satellite1 is pointing to star14. Satellite satellite5 is pointing to groundstation8. Power is available on the following satellite(s): satellite4, satellite2, satellite3, satellite0, satellite5. Following instruments are powered on: instrument3. Following instruments are calibrated: instrument3. A infrared2 mode image of target star19 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite1 is pointing to groundstation7 and Following instruments are powered on: instrument8?",
+    "predicted_initial_state": {
+      "powered_on_instruments_goal": [
+        "instrument8"
+      ]
+    },
+    "predicted_goal_state": {
+      "satellite_pointing_goal": [
+        {
+          "satellite": "satellite1",
+          "target": "groundstation7"
+        }
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.7182741165161133,
+    "correct": false,
+    "prompt_tokens": 1650,
+    "completion_tokens": 84,
+    "cost": 0.005385,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-15-12_p29_70_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 27 possible target object(s): groundstation0, groundstation1, star9, planet15, phenomenon18, groundstation8, groundstation14, groundstation12, phenomenon26, groundstation10, star16, star23, star20, phenomenon22, phenomenon19, star24, groundstation5, star4, groundstation3, star13, groundstation7, groundstation6, star2, star25, planet17, groundstation11, planet21. There are 3 image mode(s): infrared2, thermograph0, image1. There are 10 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0. Satellite satellite2 has following instruments onboard: instrument4, instrument3. Satellite satellite1 has following instruments onboard: instrument2, instrument1. Satellite satellite5 has following instruments onboard: instrument9. Satellite satellite3 has following instruments onboard: instrument5. Satellite satellite4 has following instruments onboard: instrument8, instrument6, instrument7. Instrument instrument8 supports image of mode infrared2 and its calibration target is groundstation10. Instrument instrument0 supports image of mode infrared2 and its calibration target is groundstation5. Instrument instrument1 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument9 supports image of mode infrared2 and its calibration target is groundstation10. Instrument instrument7 supports image of mode infrared2 and its calibration target is groundstation3. Instrument instrument4 supports image of mode infrared2 and its calibration target is groundstation3. Instrument instrument2 supports image of mode infrared2 and its calibration target is star4. Instrument instrument5 supports image of mode infrared2 and its calibration target is groundstation12. Instrument instrument3 supports image of mode infrared2 and its calibration target is groundstation0. Instrument instrument6 supports image of mode image1 and its calibration target is groundstation1.  \nCurrently, Satellite satellite1 is pointing to phenomenon22. Satellite satellite3 is pointing to groundstation5. Satellite satellite5 is pointing to groundstation11. Satellite satellite2 is pointing to phenomenon26. Satellite satellite4 is pointing to star23. Satellite satellite0 is pointing to star24. Power is available on the following satellite(s): satellite2, satellite3, satellite0, satellite5, satellite1. Following instruments are powered on: instrument8. Following instruments are calibrated: instrument8. A infrared2 mode image of target star20 is available. A image1 mode image of target star23 is available. A infrared2 mode image of target phenomenon19 is available. A infrared2 mode image of target planet17 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite2 is pointing to groundstation10?",
+    "predicted_initial_state": {
+      "pointing_goal": [
+        [
+          "satellite2",
+          "groundstation10"
+        ]
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "take_image satellite3 planet5 instrument4 thermograph0",
+      "switch_on instrument0 satellite0"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.6708118915557861,
+    "correct": true,
+    "prompt_tokens": 1613,
+    "completion_tokens": 57,
+    "cost": 0.0048875,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Error: Error in type-checking!",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Error: Error in type-checking!",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-7-3-3-5-2_p10_114_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 7 satellite(s), numbered consecutively. There are 7 possible target object(s): groundstation4, star6, groundstation0, groundstation2, star3, phenomenon5, star1. There are 3 image mode(s): image2, image0, image1. There are 18 instrument(s), numbered consecutively.  \nSatellite satellite6 has following instruments onboard: instrument16, instrument17, instrument15. Satellite satellite0 has following instruments onboard: instrument1, instrument0, instrument2. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument11. Satellite satellite1 has following instruments onboard: instrument4, instrument5, instrument3. Satellite satellite5 has following instruments onboard: instrument13, instrument14, instrument12. Satellite satellite3 has following instruments onboard: instrument8, instrument7. Satellite satellite2 has following instruments onboard: instrument6. Instrument instrument8 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument11 supports image of mode image2 and its calibration target is star3. Instrument instrument6 supports image of mode image1 and its calibration target is groundstation2. Instrument instrument10 supports image of mode image2 and its calibration target is groundstation4. Instrument instrument13 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument9 supports image of mode image1 and its calibration target is star3. Instrument instrument5 supports image of mode image0 and its calibration target is star3. Instrument instrument4 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument2 supports image of mode image0 and its calibration target is star1. Instrument instrument15 supports image of mode image0 and its calibration target is groundstation2. Instrument instrument14 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument12 supports image of mode image0 and its calibration target is groundstation0. Instrument instrument7 supports image of mode image0 and its calibration target is star3. Instrument instrument16 supports image of mode image0 and its calibration target is groundstation2. Instrument instrument3 supports image of mode image0 and its calibration target is star3. Instrument instrument1 supports image of mode image0 and its calibration target is groundstation4. Instrument instrument0 supports image of mode image2 and its calibration target is groundstation0. Instrument instrument17 supports image of mode image1 and its calibration target is groundstation0.  \nCurrently, Satellite satellite3 is pointing to star3. Satellite satellite6 is pointing to groundstation0. Satellite satellite1 is pointing to phenomenon5. Satellite satellite2 is pointing to groundstation2. Satellite satellite4 is pointing to star1. Satellite satellite0 is pointing to groundstation2. Satellite satellite5 is pointing to star6. Power is available on the following satellite(s): satellite4, satellite3, satellite2, satellite6, satellite0, satellite1, satellite5. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite4 is pointing to star3 and Following instruments are powered on: instrument14?",
+    "predicted_initial_state": {
+      "satellite_pointing_goal": [
+        "satellite4",
+        "star3"
+      ],
+      "powered_on_instruments_goal": [
+        "instrument14"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.492743968963623,
+    "correct": false,
+    "prompt_tokens": 1674,
+    "completion_tokens": 70,
+    "cost": 0.005235,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-15-12_p30_27_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 27 possible target object(s): groundstation4, groundstation1, planet20, phenomenon18, groundstation14, phenomenon24, star8, planet26, groundstation10, star17, star16, star23, phenomenon22, planet25, star12, star15, groundstation5, star0, groundstation3, star13, groundstation7, star19, groundstation6, star2, groundstation9, groundstation11, planet21. There are 3 image mode(s): thermograph2, infrared1, spectrograph0. There are 11 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0. Satellite satellite2 has following instruments onboard: instrument5, instrument4, instrument3. Satellite satellite1 has following instruments onboard: instrument2, instrument1. Satellite satellite5 has following instruments onboard: instrument9, instrument8, instrument10. Satellite satellite3 has following instruments onboard: instrument6. Satellite satellite4 has following instruments onboard: instrument7. Instrument instrument7 supports image of mode infrared1 and its calibration target is groundstation9. Instrument instrument5 supports image of mode infrared1 and its calibration target is groundstation14. Instrument instrument3 supports image of mode spectrograph0 and its calibration target is star2. Instrument instrument6 supports image of mode spectrograph0 and its calibration target is groundstation9. Instrument instrument10 supports image of mode spectrograph0 and its calibration target is groundstation3. Instrument instrument0 supports image of mode infrared1 and its calibration target is groundstation10. Instrument instrument8 supports image of mode infrared1 and its calibration target is groundstation6. Instrument instrument1 supports image of mode spectrograph0 and its calibration target is star13. Instrument instrument9 supports image of mode infrared1 and its calibration target is groundstation3. Instrument instrument2 supports image of mode thermograph2 and its calibration target is star2. Instrument instrument4 supports image of mode infrared1 and its calibration target is groundstation9.  \nCurrently, Satellite satellite0 is pointing to star12. Satellite satellite1 is pointing to planet21. Satellite satellite2 is pointing to star15. Satellite satellite5 is pointing to planet20. Satellite satellite3 is pointing to star16. Satellite satellite4 is pointing to planet25. Power is available on the following satellite(s): satellite4, satellite2, satellite1, satellite0, satellite5. Following instruments are powered on: instrument6. Following instruments are calibrated: instrument6. A infrared1 mode image of target phenomenon22 is available. A spectrograph0 mode image of target planet20 is available. A infrared1 mode image of target star16 is available. A infrared1 mode image of target phenomenon24 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite4 is pointing to phenomenon24 and Satellite satellite5 is pointing to star15?",
+    "predicted_initial_state": {
+      "satellite_pointing_goal": [
+        {
+          "satellite": "satellite4",
+          "target": "phenomenon24"
+        },
+        {
+          "satellite": "satellite5",
+          "target": "star15"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'dict'\n",
+    "time_taken": 1.9318931102752686,
+    "correct": false,
+    "prompt_tokens": 1650,
+    "completion_tokens": 89,
+    "cost": 0.00546,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "satellite_prob-6-3-3-12-9_p26_14_p",
+    "context": "This domain consists of satellite(s) equipped with various instruments that can be switched on when the power is available. Each instrument has a calibration target object and supports taking images of objects in particular modes. When the instrument power is switched on, it is not calibrated. To calibrate an instrument, the satellite should point to the calibration target object and the instrument should be powered on.  To take an image of an object, the satellite must point to that object and the instrument must be calibrated. \nThere are 6 satellite(s), numbered consecutively. There are 21 possible target object(s): star14, groundstation0, groundstation1, star9, planet20, phenomenon18, phenomenon15, groundstation8, phenomenon13, phenomenon12, groundstation10, star17, star16, groundstation5, star4, groundstation3, star19, groundstation7, groundstation6, star2, groundstation11. There are 3 image mode(s): infrared2, thermograph0, image1. There are 14 instrument(s), numbered consecutively.  \nSatellite satellite0 has following instruments onboard: instrument0, instrument1, instrument2. Satellite satellite5 has following instruments onboard: instrument13, instrument12, instrument11. Satellite satellite4 has following instruments onboard: instrument10, instrument9, instrument8. Satellite satellite1 has following instruments onboard: instrument3. Satellite satellite2 has following instruments onboard: instrument5, instrument6, instrument4. Satellite satellite3 has following instruments onboard: instrument7. Instrument instrument0 supports image of mode infrared2 and its calibration target is groundstation0. Instrument instrument12 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument10 supports image of mode thermograph0 and its calibration target is star2. Instrument instrument1 supports image of mode infrared2 and its calibration target is star2. Instrument instrument11 supports image of mode thermograph0 and its calibration target is star4. Instrument instrument8 supports image of mode infrared2 and its calibration target is groundstation5. Instrument instrument9 supports image of mode infrared2 and its calibration target is star4. Instrument instrument7 supports image of mode infrared2 and its calibration target is groundstation11. Instrument instrument5 supports image of mode image1 and its calibration target is groundstation1. Instrument instrument13 supports image of mode thermograph0 and its calibration target is groundstation3. Instrument instrument4 supports image of mode infrared2 and its calibration target is star4. Instrument instrument2 supports image of mode thermograph0 and its calibration target is groundstation7. Instrument instrument3 supports image of mode infrared2 and its calibration target is star2. Instrument instrument6 supports image of mode thermograph0 and its calibration target is groundstation11.  \nCurrently, Satellite satellite5 is pointing to star4. Satellite satellite4 is pointing to phenomenon12. Satellite satellite3 is pointing to planet20. Satellite satellite1 is pointing to groundstation10. Satellite satellite2 is pointing to phenomenon13. Satellite satellite0 is pointing to groundstation7. Power is available on the following satellite(s): satellite3, satellite0, satellite2, satellite5, satellite4. Following instruments are powered on: instrument3. Following instruments are calibrated: instrument3. A image1 mode image of target phenomenon18 is available. A image1 mode image of target phenomenon13 is available. A infrared2 mode image of target star19 is available. A thermograph0 mode image of target star16 is available. A infrared2 mode image of target phenomenon12 is available. A image1 mode image of target phenomenon15 is available. A thermograph0 mode image of target star14 is available. ",
+    "question": "Is it possible to transition to a state where the following holds: \nSatellite satellite5 is pointing to planet20 and Satellite satellite1 is pointing to groundstation3?",
+    "predicted_initial_state": {
+      "satellite_pointing_goals": [
+        {
+          "satellite": "satellite5",
+          "target": "planet20"
+        },
+        {
+          "satellite": "satellite1",
+          "target": "groundstation3"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 27, in combinations_func\n  File \"<string>\", line 18, in collect_objects\nTypeError: unhashable type: 'dict'\n",
+    "time_taken": 2.9025957584381104,
+    "correct": false,
+    "prompt_tokens": 1724,
+    "completion_tokens": 89,
+    "cost": 0.005645,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

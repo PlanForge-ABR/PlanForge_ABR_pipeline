@@ -1,0 +1,514 @@
+[
+  {
+    "example_id": "grippers_gripper-1-25-50_p30_156_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 25 rooms, and 50 balls, numbered consecutively. \nCurrently, the robot robot1 is at room13, left gripper is carrying the ball ball27, and right gripper is carrying the ball ball48. Additionally, ball2, ball4, and ball25 are at room4, ball38, ball20, ball45, and ball5 are at room7, ball15 is at room9, ball35 is at room6, ball1, ball34, and ball30 are at room8, ball29, ball33, and ball24 are at room19, ball14 and ball40 are at room10, ball28, ball13, and ball39 are at room16, ball31 and ball43 are at room11, ball3 and ball37 are at room23, ball42 and ball41 are at room14, ball7 is at room18, ball12, ball21, ball49, ball50, and ball23 are at room1, ball26, ball44, ball22, and ball46 are at room24, ball9, ball10, and ball19 are at room3, ball32 and ball17 are at room2, ball8 is at room22, ball11 and ball36 are at room5, ball47 and ball16 are at room13, ball6 and ball18 are at room15.",
+    "question": "Is it possible to transition to a state where the following holds: \nBall ball32 is at room6 location and Ball ball32 is at room22 location?",
+    "predicted_initial_state": {
+      "balls": [
+        "ball32"
+      ],
+      "target_rooms": [
+        "room6",
+        "room22"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.358201026916504,
+    "correct": true,
+    "prompt_tokens": 692,
+    "completion_tokens": 62,
+    "cost": 0.00266,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grippers_gripper-1-2-4_p02_90_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is free, and right gripper is carrying the ball ball3. Additionally, ball1 and ball2 are at room2, ball4 is at room1.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room2 location and Robot robot1 is in room room1?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room2",
+        "room1"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "move robot1 room2 room2",
+      "move robot1 room2 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.4621479511260986,
+    "correct": false,
+    "prompt_tokens": 473,
+    "completion_tokens": 62,
+    "cost": 0.0021125,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p27_143_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room15, left gripper is carrying the ball ball4, and right gripper is carrying the ball ball18. Additionally, ball12 and ball15 are at room5, ball9, ball24, ball6, and ball3 are at room1, ball5 is at room4, ball14 is at room10, ball8, ball23, and ball11 are at room9, ball21 is at room7, ball7 and ball22 are at room6, ball16 and ball10 are at room2, ball1 is at room12, ball20 and ball2 are at room11, ball25 is at room15, ball13 is at room8, ball17 and ball19 are at room3.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball10 in the right gripper and Robot robot1 is carrying the ball ball6 in the right gripper?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "balls": [
+        "ball10",
+        "ball6"
+      ],
+      "grippers": [
+        "right",
+        "right"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.068145990371704,
+    "correct": true,
+    "prompt_tokens": 595,
+    "completion_tokens": 77,
+    "cost": 0.0026425,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grippers_gripper-1-3-7_p14_111_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 7 balls, numbered consecutively. \nCurrently, the robot robot1 is at room3, left gripper is free, and right gripper is carrying the ball ball1. Additionally, ball7, ball2, ball3, and ball4 are at room1, ball5 is at room3, ball6 is at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room2 and Robot robot1 is in room room1?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room2",
+        "room1"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "move robot1 room2 room2",
+      "move robot1 room2 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.2416207790374756,
+    "correct": false,
+    "prompt_tokens": 487,
+    "completion_tokens": 62,
+    "cost": 0.0021475,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_134_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room4, right gripper is free, and left gripper is carrying the ball ball1. Additionally, ball2 and ball4 are at room2, ball3 is at room4.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball1 in the left gripper and Ball ball1 is in room room10?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "balls": [
+        "ball1"
+      ],
+      "grippers": [
+        "left"
+      ],
+      "target_rooms": [
+        "room10"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.320591926574707,
+    "correct": true,
+    "prompt_tokens": 479,
+    "completion_tokens": 81,
+    "cost": 0.0024125,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grippers_gripper-1-3-15_p18_120_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 15 balls, numbered consecutively. \nCurrently, the robot robot1 is at room2, left gripper is carrying the ball ball15, and right gripper is carrying the ball ball6. Additionally, ball7, ball5, ball8, and ball3 are at room3, ball12 and ball13 are at room2, ball9, ball10, ball2, ball11, ball4, ball1, and ball14 are at room1.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room1?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room1"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "move robot1 room2 room2",
+      "move robot1 room2 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.3798999786376953,
+    "correct": true,
+    "prompt_tokens": 504,
+    "completion_tokens": 57,
+    "cost": 0.002115,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_115_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room8, left gripper is free, and right gripper is carrying the ball ball3. Additionally, ball1 is at room8, ball2 and ball4 are at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room3?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room3"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.2890069484710693,
+    "correct": false,
+    "prompt_tokens": 464,
+    "completion_tokens": 57,
+    "cost": 0.002015,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p27_180_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room11, right gripper is free, and left gripper is carrying the ball ball4. Additionally, ball12 and ball15 are at room5, ball5 is at room4, ball14 is at room10, ball17 is at room13, ball22 and ball3 are at room1, ball8, ball23, and ball11 are at room9, ball21 is at room7, ball16, ball9, and ball10 are at room2, ball7 and ball1 are at room12, ball24 and ball13 are at room8, ball20, ball2, and ball6 are at room11, ball25 is at room15, ball18 is at room6, ball19 is at room3.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball12 in the right gripper and Robot robot1 is at room5 location?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room5"
+      ]
+    },
+    "predicted_goal_state": {
+      "right_gripper_ball": "ball12"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.1874418258666992,
+    "correct": false,
+    "prompt_tokens": 593,
+    "completion_tokens": 70,
+    "cost": 0.0025325,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-3-15_p18_9_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 15 balls, numbered consecutively. \nCurrently, the robot robot1 is at room3, right gripper is free, and left gripper is carrying the ball ball11. Additionally, ball7, ball9, ball14, and ball10 are at room3, ball6, ball15, ball2, ball4, ball8, and ball5 are at room1, ball1, ball12, ball13, and ball3 are at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room1 location and Robot robot1 is carrying the ball ball10 in the right gripper?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room1"
+      ]
+    },
+    "predicted_goal_state": {
+      "right_gripper_carrying": [
+        "ball10"
+      ]
+    },
+    "plan": [
+      "move robot1 room2 room2",
+      "move robot1 room2 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.7469699382781982,
+    "correct": true,
+    "prompt_tokens": 519,
+    "completion_tokens": 76,
+    "cost": 0.0024375,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_126_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is free, and right gripper is carrying the ball ball4. Additionally, ball1 and ball3 are at room8, ball2 is at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room7 location?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room7"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4561190605163574,
+    "correct": false,
+    "prompt_tokens": 464,
+    "completion_tokens": 57,
+    "cost": 0.002015,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p27_35_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room6, left gripper is carrying the ball ball7, and right gripper is carrying the ball ball6. Additionally, ball12 and ball15 are at room5, ball5 is at room4, ball14 is at room10, ball22 and ball3 are at room1, ball8, ball23, and ball11 are at room9, ball21 is at room7, ball16, ball9, and ball10 are at room2, ball1 and ball24 are at room12, ball20 and ball2 are at room11, ball25, ball4, and ball18 are at room15, ball13 is at room8, ball17 and ball19 are at room3.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room9 location?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room9"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.0505800247192383,
+    "correct": false,
+    "prompt_tokens": 571,
+    "completion_tokens": 57,
+    "cost": 0.0022825,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p28_31_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room10, right gripper is free, and left gripper is carrying the ball ball21. Additionally, ball2, ball19, ball9, ball10, and ball17 are at room2, ball16 and ball24 are at room8, ball11 and ball4 are at room3, ball22 is at room15, ball25 and ball5 are at room12, ball13 and ball3 are at room10, ball8 is at room7, ball20 is at room4, ball14, ball15, and ball23 are at room1, ball7 is at room11, ball12 is at room14, ball6 and ball18 are at room9, ball1 is at room5.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room14 location?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room14"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4491546154022217,
+    "correct": false,
+    "prompt_tokens": 573,
+    "completion_tokens": 57,
+    "cost": 0.0022875,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-3-15_p18_189_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 15 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is carrying the ball ball9, and right gripper is carrying the ball ball14. Additionally, ball7, ball11, and ball10 are at room3, ball6, ball15, ball2, ball4, ball8, and ball5 are at room1, ball12, ball1, ball13, and ball3 are at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe right gripper of robot robot1 is free and Robot robot1 is at room2 location?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room2"
+      ]
+    },
+    "predicted_goal_state": {
+      "right_gripper_free": true
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.7124018669128418,
+    "correct": false,
+    "prompt_tokens": 516,
+    "completion_tokens": 68,
+    "cost": 0.00231,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_183_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room6, right gripper is free, and left gripper is carrying the ball ball1. Additionally, ball2 and ball4 are at room2, ball3 is at room8.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room1 location?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room1"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "move robot1 room2 room2",
+      "move robot1 room2 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.0927140712738037,
+    "correct": true,
+    "prompt_tokens": 464,
+    "completion_tokens": 57,
+    "cost": 0.002015,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(move robot1 room2 room2)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p28_24_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room12, left gripper is carrying the ball ball5, and right gripper is carrying the ball ball25. Additionally, ball23 is at room6, ball2, ball19, ball9, and ball17 are at room2, ball16 and ball24 are at room8, ball11 and ball22 are at room3, ball8 is at room7, ball20 and ball10 are at room4, ball14 and ball15 are at room1, ball7 is at room11, ball3 is at room10, ball12, ball21, and ball13 are at room14, ball6 and ball18 are at room9, ball1 is at room5, ball4 is at room12.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room3?",
+    "predicted_initial_state": {
+      "robots": [
+        "robot1"
+      ],
+      "target_rooms": [
+        "room3"
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.373462200164795,
+    "correct": false,
+    "prompt_tokens": 574,
+    "completion_tokens": 57,
+    "cost": 0.00229,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

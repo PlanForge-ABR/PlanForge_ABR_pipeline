@@ -1,0 +1,190 @@
+[
+  {
+    "example_id": "calendar_scheduling_example_0",
+    "prompt_0shot": "You are an expert at scheduling meetings. You are given a few constraints on the existing schedule of each participant, the meeting duration, and possibly some preferences on the meeting time. Note there exists a solution that works with existing schedule of every participant. Here are a few example tasks and solutions:\n\nTASK: You need to schedule a meeting for Michelle, Steven and Jerry for one hour between the work hours of 9:00 to 17:00 on Monday. \n\nHere are the existing schedules for everyone during the day: \nMichelle has meetings on Monday during 11:00 to 12:00; \nSteven has blocked their calendar on Monday during 9:00 to 9:30, 11:30 to 12:00, 13:30 to 14:00, 15:30 to 16:00; \nJerry has blocked their calendar on Monday during 9:00 to 9:30, 10:00 to 11:00, 11:30 to 12:30, 13:00 to 14:30, 15:30 to 16:00, 16:30 to 17:00; \n\nFind a time that works for everyone's schedule and constraints. \nSOLUTION: ",
+    "predicted_initial_state": {
+      "participants": [
+        "Michelle",
+        "Steven",
+        "Jerry"
+      ],
+      "meeting_duration_minutes": 60,
+      "day": "Monday"
+    },
+    "predicted_goal_state": {
+      "work_hours": {
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "existing_schedules": {
+        "Michelle": [
+          {
+            "start": "11:00",
+            "end": "12:00"
+          }
+        ],
+        "Steven": [
+          {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "start": "11:30",
+            "end": "12:00"
+          },
+          {
+            "start": "13:30",
+            "end": "14:00"
+          },
+          {
+            "start": "15:30",
+            "end": "16:00"
+          }
+        ],
+        "Jerry": [
+          {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "start": "10:00",
+            "end": "11:00"
+          },
+          {
+            "start": "11:30",
+            "end": "12:30"
+          },
+          {
+            "start": "13:00",
+            "end": "14:30"
+          },
+          {
+            "start": "15:30",
+            "end": "16:00"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00"
+          }
+        ]
+      },
+      "preferences": {}
+    },
+    "plan": [
+      {
+        "day": "Monday",
+        "start": "14:30",
+        "end": "15:30"
+      }
+    ],
+    "final_answer": "Here is the proposed time: Monday, 14:30 - 15:30 ",
+    "ground_truth_answer": "Here is the proposed time: Monday, 14:30 - 15:30 ",
+    "failure_reason": null,
+    "time_taken": 3.808746814727783,
+    "correct": true,
+    "valid": true,
+    "validation_reason": null,
+    "prompt_tokens": 982,
+    "completion_tokens": 372,
+    "cost": 0.008035,
+    "api_calls": 2
+  },
+  {
+    "example_id": "calendar_scheduling_example_1",
+    "prompt_0shot": "You are an expert at scheduling meetings. You are given a few constraints on the existing schedule of each participant, the meeting duration, and possibly some preferences on the meeting time. Note there exists a solution that works with existing schedule of every participant. Here are a few example tasks and solutions:\n\nTASK: You need to schedule a meeting for Raymond, Billy and Donald for half an hour between the work hours of 9:00 to 17:00 on Monday. \n\nHere are the existing schedules for everyone during the day: \nRaymond has blocked their calendar on Monday during 9:00 to 9:30, 11:30 to 12:00, 13:00 to 13:30, 15:00 to 15:30; \nBilly has meetings on Monday during 10:00 to 10:30, 12:00 to 13:00, 16:30 to 17:00; \nDonald has meetings on Monday during 9:00 to 9:30, 10:00 to 11:00, 12:00 to 13:00, 14:00 to 14:30, 16:00 to 17:00; \n\nBilly would like to avoid more meetings on Monday after 15:00. Find a time that works for everyone's schedule and constraints. \nSOLUTION: ",
+    "predicted_initial_state": {
+      "participants": [
+        "Raymond",
+        "Billy",
+        "Donald"
+      ],
+      "meeting_duration_minutes": 30,
+      "day": "Monday"
+    },
+    "predicted_goal_state": {
+      "work_hours": {
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "existing_schedules": {
+        "Raymond": [
+          {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "start": "11:30",
+            "end": "12:00"
+          },
+          {
+            "start": "13:00",
+            "end": "13:30"
+          },
+          {
+            "start": "15:00",
+            "end": "15:30"
+          }
+        ],
+        "Billy": [
+          {
+            "start": "10:00",
+            "end": "10:30"
+          },
+          {
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00"
+          }
+        ],
+        "Donald": [
+          {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "start": "10:00",
+            "end": "11:00"
+          },
+          {
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "start": "14:00",
+            "end": "14:30"
+          },
+          {
+            "start": "16:00",
+            "end": "17:00"
+          }
+        ]
+      },
+      "preferences": {
+        "Billy": {
+          "avoid_after": "15:00"
+        }
+      }
+    },
+    "plan": [
+      {
+        "day": "Monday",
+        "start": "09:30",
+        "end": "10:00"
+      }
+    ],
+    "final_answer": "Here is the proposed time: Monday, 09:30 - 10:00 ",
+    "ground_truth_answer": "Here is the proposed time: Monday, 14:30 - 15:00 ",
+    "failure_reason": null,
+    "time_taken": 3.831697940826416,
+    "correct": false,
+    "valid": true,
+    "validation_reason": "The proposed meeting is Monday 09:30-10:00, which is within work hours 09:00-17:00 and has the required duration of 30 minutes. Raymond is busy 09:00-09:30, 11:30-12:00, 13:00-13:30, 15:00-15:30, so 09:30-10:00 is free. Billy is busy 10:00-10:30, 12:00-13:00, 16:30-17:00, so 09:30-10:00 is free. Donald is busy 09:00-09:30, 10:00-11:00, 12:00-13:00, 14:00-14:30, 16:00-17:00, so 09:30-10:00 is free. Billy prefers to avoid meetings after 15:00, and this meeting is before 15:00. Therefore, the plan satisfies all constraints with no conflicts.",
+    "prompt_tokens": 1007,
+    "completion_tokens": 415,
+    "cost": 0.0087425,
+    "api_calls": 2
+  }
+]

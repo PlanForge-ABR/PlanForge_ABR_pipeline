@@ -1,0 +1,89 @@
+\subsection{Architect-Specified Strategies for NaturalPlan}
+
+\paragraph{Trip Planning.}
+The Architect models trip planning as a constrained path-finding problem over
+cities.  A city is treated as a node, a direct flight is treated as a directed
+edge, and a complete trip is an ordered path that visits every required city.
+The important timing idea is that each city visit has an inclusive day
+interval, and the flight day is shared between two consecutive cities.  For
+example, if a visit to city \(A\) ends on day \(d\), then the next city starts
+on the same day \(d\).  Fixed events are handled as interval constraints: if
+the prompt says that the traveler must be in a city between two dates, then
+that whole event window must lie inside that city's visit interval.
+
+The implemented code follows this design by first parsing cities, stay
+durations, total trip length, flight edges, and fixed event windows.  It then
+checks whether the total duration is arithmetically consistent with the total
+number of trip days.  After that, it runs a deterministic depth-first search
+over possible flight paths.  During search, it rejects a partial path if the
+current city interval violates an event constraint, exceeds the total trip
+length, or makes some remaining city impossible to schedule later.  For small
+cases, the code also has a permutation fallback over city orders.
+
+This strategy is not a hallucination.  It is a standard graph-search and
+constraint-satisfaction formulation, similar to searching for a Hamiltonian
+path with temporal constraints.  The strategy is reliable for the NaturalPlan
+trip instances supported by the parser because the final route is checked for
+city coverage, valid flights, correct durations, correct total length, and
+event-window satisfaction.
+
+\paragraph{Meeting Planning.}
+The Architect models meeting planning as a time-window routing problem.  The
+state of the planner consists of the current location, the current clock time,
+and the set of friends already met.  Each friend has a location, an
+availability window, and a minimum required meeting duration.  A valid next
+step must account for travel time from the current location, possible waiting
+until the friend becomes available, and enough remaining time to complete the
+meeting before the friend's window closes.
+
+The implemented code parses the start location and time, each friend's
+location, availability window, required duration, and the travel-time matrix.
+It then uses memoized dynamic search over states.  For each state, the solver
+tries every friend who has not yet been met.  It computes arrival time,
+meeting start time, and meeting end time.  If the meeting cannot finish inside
+the availability window, that option is discarded.  Otherwise, the solver
+recursively continues from the friend's location and the new time.  The chosen
+schedule maximizes the number of friends met, with deterministic tie-breaking
+for earlier completion, less waiting, and stable input order.
+
+This is an existing algorithmic idea, not a hallucinated one.  It is a dynamic
+programming search over subsets, closely related to exact approaches for
+small routing, scheduling, and orienteering problems with time windows.  The
+strategy is reliable for validity because the code verifies travel times,
+arrival times, time-window constraints, meeting durations, and that no friend
+is repeated.  Exact textual match may still differ when multiple optimal
+meeting orders are valid.
+
+\paragraph{Calendar Scheduling.}
+The Architect models calendar scheduling as selecting one feasible meeting
+slot from a finite calendar grid.  The problem is represented using the
+participants, allowed days, work-hour bounds, meeting duration, busy intervals,
+and optional preference constraints such as blocked days or lower/upper time
+bounds.  A candidate slot is valid only if it fits within work hours, has the
+required duration, and does not overlap with any participant's busy intervals
+or parsed preferences.
+
+The implemented code follows this representation directly.  It parses the
+task header to obtain participants, duration, work hours, and candidate days.
+It then parses each participant's busy intervals and merges overlapping
+intervals.  Preference statements are converted into blocked days,
+not-before constraints, or not-after constraints.  The solver scans candidate
+start times on a 30-minute grid in chronological order.  For each candidate
+slot, it checks all participant constraints.  The first slot that passes these
+checks is returned as the meeting time.
+
+This is also not a hallucinated strategy.  It is a standard interval
+scheduling and constraint-enumeration method.  Since the candidate time grid
+is finite, the algorithm can simply test possible slots until it finds a
+valid one.  The strategy is reliable for the NaturalPlan calendar format
+because the returned slot is verified against duration, work hours, busy
+intervals, blocked days, and parsed time preferences.
+
+\paragraph{Overall assessment.}
+The Architect's choices are algorithmically grounded across all three
+domains.  Trip planning uses constrained graph search, meeting planning uses
+dynamic search over time-window routing states, and calendar scheduling uses
+interval-based slot enumeration.  These are recognizable planning and
+scheduling methods, not invented or hallucinated algorithms.  The main
+limitation is that reliability depends on the prompt being parsed into the
+intended structured constraints.

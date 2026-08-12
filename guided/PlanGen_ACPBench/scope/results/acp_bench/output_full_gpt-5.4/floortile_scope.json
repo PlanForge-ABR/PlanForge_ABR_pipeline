@@ -1,0 +1,3026 @@
+[
+  {
+    "example_id": "floortile_floortile-2-3-2_p02_151_n",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 9 tiles and 2 robots. \nThe tiles locations are: tile_6 is to the right of tile_5, tile_2 is to the right of tile_1, tile_9 is to the right of tile_8, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, and tile_8 is to the right of tile_7. Further, tile_5 is down from tile_8, tile_4 is down from tile_7, tile_1 is down from tile_4, tile_6 is down from tile_9, tile_2 is down from tile_5, and tile_3 is down from tile_6 \nCurrently, robot robot2 is at tile_5 and holding color white and robot robot1 is at tile_2 and holding color black; tile_3, tile_7, tile_6, tile_1, and tile_4 are clear; tile_9 is painted black and tile_8 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nTile tile_6 is painted in black color and tile_6 is clear?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 9,
+      "robot_positions": {
+        "robot1": "tile_2",
+        "robot2": "tile_5"
+      },
+      "robot_colors": {
+        "robot1": "black",
+        "robot2": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_3",
+        "tile_4",
+        "tile_6",
+        "tile_7"
+      ],
+      "painted_tiles": {
+        "tile_8": "white",
+        "tile_9": "black"
+      },
+      "goal": {
+        "tile_6_color": "black",
+        "tile_6_clear": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_5",
+          "tile_6"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_8",
+          "tile_5"
+        ],
+        [
+          "tile_7",
+          "tile_4"
+        ],
+        [
+          "tile_4",
+          "tile_1"
+        ],
+        [
+          "tile_9",
+          "tile_6"
+        ],
+        [
+          "tile_5",
+          "tile_2"
+        ],
+        [
+          "tile_6",
+          "tile_3"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot1 tile_2 tile_1",
+      "up robot2 tile_5 tile_8"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.8677220344543457,
+    "correct": false,
+    "prompt_tokens": 2004,
+    "completion_tokens": 514,
+    "api_calls": 1,
+    "cost": 0.01272,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 2 '(up robot2 tile_5 tile_8)' failed: unsatisfied precondition",
+      "actions_applied": 1,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 2 '(up robot2 tile_5 tile_8)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-2-3-2_p02_50_n",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 9 tiles and 2 robots. \nThe tiles locations are: tile_6 is to the right of tile_5, tile_2 is to the right of tile_1, tile_9 is to the right of tile_8, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, and tile_8 is to the right of tile_7. Further, tile_5 is down from tile_8, tile_4 is down from tile_7, tile_1 is down from tile_4, tile_6 is down from tile_9, tile_2 is down from tile_5, and tile_3 is down from tile_6 \nCurrently, robot robot2 is at tile_1 and holding color black and robot robot1 is at tile_3 and holding color white; tile_2, tile_5, and tile_4 are clear; tile_6 is painted white, tile_9 is painted black, tile_8 is painted white, and tile_7 is painted black.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at tile_4 location and Robot robot2 is at tile_4 location?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 9,
+      "robot_positions": {
+        "robot1": "tile_3",
+        "robot2": "tile_1"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black"
+      },
+      "clear_tiles": [
+        "tile_2",
+        "tile_4",
+        "tile_5"
+      ],
+      "painted_tiles": {
+        "tile_6": "white",
+        "tile_7": "black",
+        "tile_8": "white",
+        "tile_9": "black"
+      },
+      "goal": {
+        "robot1_at": "tile_4",
+        "robot2_at": "tile_4"
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_5",
+          "tile_6"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_8",
+          "tile_5"
+        ],
+        [
+          "tile_7",
+          "tile_4"
+        ],
+        [
+          "tile_4",
+          "tile_1"
+        ],
+        [
+          "tile_9",
+          "tile_6"
+        ],
+        [
+          "tile_5",
+          "tile_2"
+        ],
+        [
+          "tile_6",
+          "tile_3"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot1 tile_3 tile_2",
+      "up robot2 tile_1 tile_4"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.9439280033111572,
+    "correct": false,
+    "prompt_tokens": 2015,
+    "completion_tokens": 523,
+    "api_calls": 1,
+    "cost": 0.0128825,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-3_p18_47_n",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 3 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot3 is at tile_10 and holding color white, robot robot2 is at tile_1 and holding color black, and robot robot1 is at tile_4 and holding color white; tile_3, tile_15, tile_7, tile_2, tile_5, tile_6, and tile_12 are clear; tile_14 is painted white, tile_8 is painted white, tile_11 is painted black, tile_13 is painted black, tile_17 is painted black, tile_18 is painted white, tile_19 is painted black, tile_9 is painted black, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is holding white paint and Robot robot2 is holding black paint?",
+    "predicted_initial_state": {
+      "robots": 3,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_4",
+        "robot2": "tile_1",
+        "robot3": "tile_10"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black",
+        "robot3": "white"
+      },
+      "clear_tiles": [
+        "tile_2",
+        "tile_3",
+        "tile_5",
+        "tile_6",
+        "tile_7",
+        "tile_12",
+        "tile_15"
+      ],
+      "painted_tiles": {
+        "tile_8": "white",
+        "tile_9": "black",
+        "tile_11": "black",
+        "tile_13": "black",
+        "tile_14": "white",
+        "tile_16": "white",
+        "tile_17": "black",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot2_holding": [
+          "white",
+          "black"
+        ]
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "down robot3 tile_10 tile_5",
+      "left robot1 tile_4 tile_3",
+      "up robot2 tile_1 tile_6"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 4.617289066314697,
+    "correct": false,
+    "prompt_tokens": 2293,
+    "completion_tokens": 919,
+    "api_calls": 1,
+    "cost": 0.0195175,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 3,
+      "total_actions": 3
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-2_p10_101_n",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 2 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot1 is at tile_3 and holding color white and robot robot2 is at tile_5 and holding color white; tile_13, tile_17, tile_4, tile_7, tile_2, tile_9, tile_6, tile_8, tile_1, tile_12, and tile_11 are clear; tile_14 is painted white, tile_10 is painted white, tile_15 is painted black, tile_18 is painted white, tile_19 is painted black, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nTile tile_20 is painted in black color and Tile tile_20 is painted in white color?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_3",
+        "robot2": "tile_5"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_2",
+        "tile_4",
+        "tile_6",
+        "tile_7",
+        "tile_8",
+        "tile_9",
+        "tile_11",
+        "tile_12",
+        "tile_13",
+        "tile_17"
+      ],
+      "painted_tiles": {
+        "tile_10": "white",
+        "tile_14": "white",
+        "tile_15": "black",
+        "tile_16": "white",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "tile_20_painted_black": true,
+        "tile_20_painted_white": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot1 tile_3 tile_2",
+      "up robot2 tile_5 tile_10"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 4.6237709522247314,
+    "correct": false,
+    "prompt_tokens": 2278,
+    "completion_tokens": 902,
+    "api_calls": 1,
+    "cost": 0.019225,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 2 '(up robot2 tile_5 tile_10)' failed: unsatisfied precondition",
+      "actions_applied": 1,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 2 '(up robot2 tile_5 tile_10)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-2_p10_57_n",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 2 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot2 is at tile_19 and holding color white and robot robot1 is at tile_18 and holding color white; tile_3, tile_13, tile_15, tile_17, tile_4, tile_7, tile_14, tile_2, tile_5, tile_9, tile_20, tile_6, tile_10, tile_8, tile_1, tile_12, and tile_11 are clear; tile_16 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is at tile_14 location and Robot robot2 is at tile_8 location?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_18",
+        "robot2": "tile_19"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_2",
+        "tile_3",
+        "tile_4",
+        "tile_5",
+        "tile_6",
+        "tile_7",
+        "tile_8",
+        "tile_9",
+        "tile_10",
+        "tile_11",
+        "tile_12",
+        "tile_13",
+        "tile_14",
+        "tile_15",
+        "tile_17",
+        "tile_20"
+      ],
+      "painted_tiles": {
+        "tile_16": "white"
+      },
+      "goal": {
+        "robot2_at": [
+          "tile_14",
+          "tile_8"
+        ]
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 612, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 111, in combinations_func\n  File \"<string>\", line 82, in score_plan\n  File \"<string>\", line 71, in manhattan\n  File \"<string>\", line 16, in tile_num\nValueError: invalid literal for int() with base 10: \"14', 'tile\"\n",
+    "time_taken": 4.7472569942474365,
+    "correct": true,
+    "prompt_tokens": 2259,
+    "completion_tokens": 883,
+    "api_calls": 1,
+    "cost": 0.0188925,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "floortile_floortile-3-5-2_p10_90_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 2 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot1 is at tile_4 and holding color white and robot robot2 is at tile_2 and holding color white; tile_3, tile_13, tile_17, tile_7, tile_5, tile_9, tile_8, tile_1, and tile_12 are clear; tile_14 is painted white, tile_11 is painted black, tile_10 is painted white, tile_15 is painted black, tile_18 is painted white, tile_19 is painted black, tile_6 is painted white, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is at tile_1 location and tile_4 is clear?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_4",
+        "robot2": "tile_2"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_3",
+        "tile_5",
+        "tile_7",
+        "tile_8",
+        "tile_9",
+        "tile_12",
+        "tile_13",
+        "tile_17"
+      ],
+      "painted_tiles": {
+        "tile_6": "white",
+        "tile_10": "white",
+        "tile_11": "black",
+        "tile_14": "white",
+        "tile_15": "black",
+        "tile_16": "white",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot2_at": "tile_1",
+        "tile_4_clear": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot2 tile_2 tile_1",
+      "up robot1 tile_4 tile_9"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.571852922439575,
+    "correct": true,
+    "prompt_tokens": 2280,
+    "completion_tokens": 906,
+    "api_calls": 1,
+    "cost": 0.01929,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "floortile_floortile-2-3-2_p02_159_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 9 tiles and 2 robots. \nThe tiles locations are: tile_6 is to the right of tile_5, tile_2 is to the right of tile_1, tile_9 is to the right of tile_8, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, and tile_8 is to the right of tile_7. Further, tile_5 is down from tile_8, tile_4 is down from tile_7, tile_1 is down from tile_4, tile_6 is down from tile_9, tile_2 is down from tile_5, and tile_3 is down from tile_6 \nCurrently, robot robot1 is at tile_1 and holding color white and robot robot2 is at tile_6 and holding color black; tile_3, tile_2, tile_5, and tile_9 are clear; tile_4 is painted white, tile_8 is painted white, and tile_7 is painted black.",
+    "question": "Is it possible to transition to a state where the following holds: \ntile_1 is clear and Robot robot1 is at tile_2 location?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 9,
+      "robot_positions": {
+        "robot1": "tile_1",
+        "robot2": "tile_6"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black"
+      },
+      "clear_tiles": [
+        "tile_2",
+        "tile_3",
+        "tile_5",
+        "tile_9"
+      ],
+      "painted_tiles": {
+        "tile_4": "white",
+        "tile_7": "black",
+        "tile_8": "white"
+      },
+      "goal": {
+        "robot1_at": "tile_2",
+        "tile_1_clear": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_5",
+          "tile_6"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_8",
+          "tile_5"
+        ],
+        [
+          "tile_7",
+          "tile_4"
+        ],
+        [
+          "tile_4",
+          "tile_1"
+        ],
+        [
+          "tile_9",
+          "tile_6"
+        ],
+        [
+          "tile_5",
+          "tile_2"
+        ],
+        [
+          "tile_6",
+          "tile_3"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot2 tile_6 tile_5",
+      "up robot1 tile_1 tile_4"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.054919958114624,
+    "correct": true,
+    "prompt_tokens": 2008,
+    "completion_tokens": 518,
+    "api_calls": 1,
+    "cost": 0.01279,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 2 '(up robot1 tile_1 tile_4)' failed: unsatisfied precondition",
+      "actions_applied": 1,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 2 '(up robot1 tile_1 tile_4)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-5_p29_185_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 5 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot4 is at tile_2 and holding color black, robot robot1 is at tile_3 and holding color white, robot robot3 is at tile_7 and holding color white, robot robot2 is at tile_1 and holding color white, and robot robot5 is at tile_4 and holding color black; tile_5 and tile_8 are clear; tile_14 is painted white, tile_11 is painted black, tile_13 is painted black, tile_10 is painted white, tile_17 is painted black, tile_15 is painted black, tile_18 is painted white, tile_19 is painted black, tile_6 is painted white, tile_9 is painted black, tile_12 is painted white, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot5 is holding white paint?",
+    "predicted_initial_state": {
+      "robots": 5,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_3",
+        "robot2": "tile_1",
+        "robot3": "tile_7",
+        "robot4": "tile_2",
+        "robot5": "tile_4"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "white",
+        "robot3": "white",
+        "robot4": "black",
+        "robot5": "black"
+      },
+      "clear_tiles": [
+        "tile_5",
+        "tile_8"
+      ],
+      "painted_tiles": {
+        "tile_6": "white",
+        "tile_9": "black",
+        "tile_10": "white",
+        "tile_11": "black",
+        "tile_12": "white",
+        "tile_13": "black",
+        "tile_14": "white",
+        "tile_15": "black",
+        "tile_16": "white",
+        "tile_17": "black",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot5_holding": "white"
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot3 tile_7 tile_6",
+      "right robot5 tile_4 tile_5",
+      "right robot1 tile_3 tile_4",
+      "up robot4 tile_2 tile_7"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 5.815629959106445,
+    "correct": true,
+    "prompt_tokens": 2311,
+    "completion_tokens": 944,
+    "api_calls": 1,
+    "cost": 0.0199375,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(left robot3 tile_7 tile_6)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 4
+    },
+    "plan_failure_reason": "Action 1 '(left robot3 tile_7 tile_6)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-5_p26_141_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 5 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot4 is at tile_2 and holding color black, robot robot5 is at tile_7 and holding color white, robot robot2 is at tile_9 and holding color black, robot robot3 is at tile_3 and holding color white, and robot robot1 is at tile_5 and holding color white; tile_13, tile_15, tile_4, tile_14, tile_6, tile_10, tile_8, tile_1, tile_12, and tile_11 are clear; tile_17 is painted black, tile_18 is painted white, tile_19 is painted black, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is at tile_10 location and tile_9 is clear?",
+    "predicted_initial_state": {
+      "robots": 5,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_5",
+        "robot2": "tile_9",
+        "robot3": "tile_3",
+        "robot4": "tile_2",
+        "robot5": "tile_7"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black",
+        "robot3": "white",
+        "robot4": "black",
+        "robot5": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_4",
+        "tile_6",
+        "tile_8",
+        "tile_10",
+        "tile_11",
+        "tile_12",
+        "tile_13",
+        "tile_14",
+        "tile_15"
+      ],
+      "painted_tiles": {
+        "tile_16": "white",
+        "tile_17": "black",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot2_at": "tile_10",
+        "tile_9_clear": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot1 tile_5 tile_4",
+      "left robot4 tile_2 tile_1",
+      "right robot2 tile_9 tile_10",
+      "up robot3 tile_3 tile_8"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.993139982223511,
+    "correct": true,
+    "prompt_tokens": 2296,
+    "completion_tokens": 930,
+    "api_calls": 1,
+    "cost": 0.01969,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 4,
+      "total_actions": 4
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "floortile_floortile-3-6-2_p14_135_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 24 tiles and 2 robots. \nThe tiles locations are: tile_17 is to the right of tile_16, tile_12 is to the right of tile_11, tile_18 is to the right of tile_17, tile_14 is to the right of tile_13, tile_15 is to the right of tile_14, tile_24 is to the right of tile_23, tile_23 is to the right of tile_22, tile_20 is to the right of tile_19, tile_11 is to the right of tile_10, tile_2 is to the right of tile_1, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_10 is to the right of tile_9, tile_21 is to the right of tile_20, tile_22 is to the right of tile_21, tile_6 is to the right of tile_5, tile_9 is to the right of tile_8, tile_16 is to the right of tile_15, tile_4 is to the right of tile_3, and tile_8 is to the right of tile_7. Further, tile_1 is down from tile_7, tile_9 is down from tile_15, tile_16 is down from tile_22, tile_4 is down from tile_10, tile_2 is down from tile_8, tile_14 is down from tile_20, tile_17 is down from tile_23, tile_13 is down from tile_19, tile_18 is down from tile_24, tile_12 is down from tile_18, tile_6 is down from tile_12, tile_3 is down from tile_9, tile_7 is down from tile_13, tile_15 is down from tile_21, tile_8 is down from tile_14, tile_10 is down from tile_16, tile_5 is down from tile_11, and tile_11 is down from tile_17 \nCurrently, robot robot1 is at tile_15 and holding color white and robot robot2 is at tile_5 and holding color black; tile_3, tile_17, tile_4, tile_23, tile_22, tile_2, tile_9, tile_16, tile_6, tile_10, tile_1, and tile_11 are clear; tile_14 is painted white, tile_24 is painted black, tile_19 is painted white, tile_8 is painted black, tile_13 is painted black, tile_7 is painted white, tile_21 is painted white, tile_18 is painted white, tile_12 is painted black, and tile_20 is painted black.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is at tile_10 location and tile_5 is clear?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 24,
+      "robot_positions": {
+        "robot1": "tile_15",
+        "robot2": "tile_5"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_2",
+        "tile_3",
+        "tile_4",
+        "tile_6",
+        "tile_9",
+        "tile_10",
+        "tile_11",
+        "tile_16",
+        "tile_17",
+        "tile_22",
+        "tile_23"
+      ],
+      "painted_tiles": {
+        "tile_7": "white",
+        "tile_8": "black",
+        "tile_12": "black",
+        "tile_13": "black",
+        "tile_14": "white",
+        "tile_18": "white",
+        "tile_19": "white",
+        "tile_20": "black",
+        "tile_21": "white",
+        "tile_24": "black"
+      },
+      "goal": {
+        "robot2_at": "tile_10",
+        "tile_5_clear": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_23",
+          "tile_24"
+        ],
+        [
+          "tile_22",
+          "tile_23"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ],
+        [
+          "tile_10",
+          "tile_11"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_20",
+          "tile_21"
+        ],
+        [
+          "tile_21",
+          "tile_22"
+        ],
+        [
+          "tile_5",
+          "tile_6"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_15",
+          "tile_16"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_7",
+          "tile_1"
+        ],
+        [
+          "tile_15",
+          "tile_9"
+        ],
+        [
+          "tile_22",
+          "tile_16"
+        ],
+        [
+          "tile_10",
+          "tile_4"
+        ],
+        [
+          "tile_8",
+          "tile_2"
+        ],
+        [
+          "tile_20",
+          "tile_14"
+        ],
+        [
+          "tile_23",
+          "tile_17"
+        ],
+        [
+          "tile_19",
+          "tile_13"
+        ],
+        [
+          "tile_24",
+          "tile_18"
+        ],
+        [
+          "tile_18",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_6"
+        ],
+        [
+          "tile_9",
+          "tile_3"
+        ],
+        [
+          "tile_13",
+          "tile_7"
+        ],
+        [
+          "tile_21",
+          "tile_15"
+        ],
+        [
+          "tile_14",
+          "tile_8"
+        ],
+        [
+          "tile_16",
+          "tile_10"
+        ],
+        [
+          "tile_11",
+          "tile_5"
+        ],
+        [
+          "tile_17",
+          "tile_11"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot1 tile_15 tile_14",
+      "up robot2 tile_5 tile_11"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 5.137372732162476,
+    "correct": true,
+    "prompt_tokens": 2377,
+    "completion_tokens": 1045,
+    "api_calls": 1,
+    "cost": 0.0216175,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(left robot1 tile_15 tile_14)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Action 1 '(left robot1 tile_15 tile_14)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-6-2_p14_138_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 24 tiles and 2 robots. \nThe tiles locations are: tile_17 is to the right of tile_16, tile_12 is to the right of tile_11, tile_18 is to the right of tile_17, tile_14 is to the right of tile_13, tile_15 is to the right of tile_14, tile_24 is to the right of tile_23, tile_23 is to the right of tile_22, tile_20 is to the right of tile_19, tile_11 is to the right of tile_10, tile_2 is to the right of tile_1, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_10 is to the right of tile_9, tile_21 is to the right of tile_20, tile_22 is to the right of tile_21, tile_6 is to the right of tile_5, tile_9 is to the right of tile_8, tile_16 is to the right of tile_15, tile_4 is to the right of tile_3, and tile_8 is to the right of tile_7. Further, tile_1 is down from tile_7, tile_9 is down from tile_15, tile_16 is down from tile_22, tile_4 is down from tile_10, tile_2 is down from tile_8, tile_14 is down from tile_20, tile_17 is down from tile_23, tile_13 is down from tile_19, tile_18 is down from tile_24, tile_12 is down from tile_18, tile_6 is down from tile_12, tile_3 is down from tile_9, tile_7 is down from tile_13, tile_15 is down from tile_21, tile_8 is down from tile_14, tile_10 is down from tile_16, tile_5 is down from tile_11, and tile_11 is down from tile_17 \nCurrently, robot robot1 is at tile_3 and holding color white and robot robot2 is at tile_12 and holding color white; tile_15, tile_4, tile_21, tile_2, tile_5, tile_9, tile_6, tile_10, tile_1, and tile_18 are clear; tile_14 is painted white, tile_24 is painted black, tile_11 is painted white, tile_19 is painted white, tile_8 is painted black, tile_13 is painted black, tile_17 is painted black, tile_7 is painted white, tile_20 is painted black, tile_22 is painted black, tile_16 is painted white, and tile_23 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is at tile_6 location and Robot robot1 is holding black paint?",
+    "predicted_initial_state": {
+      "robots": 2,
+      "tiles": 24,
+      "robot_positions": {
+        "robot1": "tile_3",
+        "robot2": "tile_12"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_2",
+        "tile_4",
+        "tile_5",
+        "tile_6",
+        "tile_9",
+        "tile_10",
+        "tile_15",
+        "tile_18",
+        "tile_21"
+      ],
+      "painted_tiles": {
+        "tile_7": "white",
+        "tile_8": "black",
+        "tile_11": "white",
+        "tile_13": "black",
+        "tile_14": "white",
+        "tile_16": "white",
+        "tile_17": "black",
+        "tile_19": "white",
+        "tile_20": "black",
+        "tile_22": "black",
+        "tile_23": "white",
+        "tile_24": "black"
+      },
+      "goal": {
+        "robot2_at": "tile_6",
+        "robot1_holding": "black"
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_23",
+          "tile_24"
+        ],
+        [
+          "tile_22",
+          "tile_23"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ],
+        [
+          "tile_10",
+          "tile_11"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_20",
+          "tile_21"
+        ],
+        [
+          "tile_21",
+          "tile_22"
+        ],
+        [
+          "tile_5",
+          "tile_6"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_15",
+          "tile_16"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_7",
+          "tile_1"
+        ],
+        [
+          "tile_15",
+          "tile_9"
+        ],
+        [
+          "tile_22",
+          "tile_16"
+        ],
+        [
+          "tile_10",
+          "tile_4"
+        ],
+        [
+          "tile_8",
+          "tile_2"
+        ],
+        [
+          "tile_20",
+          "tile_14"
+        ],
+        [
+          "tile_23",
+          "tile_17"
+        ],
+        [
+          "tile_19",
+          "tile_13"
+        ],
+        [
+          "tile_24",
+          "tile_18"
+        ],
+        [
+          "tile_18",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_6"
+        ],
+        [
+          "tile_9",
+          "tile_3"
+        ],
+        [
+          "tile_13",
+          "tile_7"
+        ],
+        [
+          "tile_21",
+          "tile_15"
+        ],
+        [
+          "tile_14",
+          "tile_8"
+        ],
+        [
+          "tile_16",
+          "tile_10"
+        ],
+        [
+          "tile_11",
+          "tile_5"
+        ],
+        [
+          "tile_17",
+          "tile_11"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot1 tile_3 tile_2",
+      "up robot2 tile_12 tile_18"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 5.121762990951538,
+    "correct": true,
+    "prompt_tokens": 2385,
+    "completion_tokens": 1052,
+    "api_calls": 1,
+    "cost": 0.0217425,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-5_p28_42_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 5 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot2 is at tile_8 and holding color black, robot robot1 is at tile_13 and holding color black, robot robot3 is at tile_5 and holding color white, robot robot4 is at tile_11 and holding color black, and robot robot5 is at tile_9 and holding color white; tile_3, tile_15, tile_17, tile_4, tile_7, tile_2, tile_16, tile_6, tile_10, tile_1, and tile_12 are clear; tile_14 is painted white, tile_18 is painted white, tile_19 is painted black, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is at tile_7 location and Robot robot3 is at tile_10 location?",
+    "predicted_initial_state": {
+      "robots": 5,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_13",
+        "robot2": "tile_8",
+        "robot3": "tile_5",
+        "robot4": "tile_11",
+        "robot5": "tile_9"
+      },
+      "robot_colors": {
+        "robot1": "black",
+        "robot2": "black",
+        "robot3": "white",
+        "robot4": "black",
+        "robot5": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_2",
+        "tile_3",
+        "tile_4",
+        "tile_6",
+        "tile_7",
+        "tile_10",
+        "tile_12",
+        "tile_15",
+        "tile_16",
+        "tile_17"
+      ],
+      "painted_tiles": {
+        "tile_14": "white",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot2_at": "tile_7",
+        "robot3_at": "tile_10"
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "down robot4 tile_11 tile_6",
+      "down robot5 tile_9 tile_4",
+      "left robot2 tile_8 tile_7",
+      "up robot3 tile_5 tile_10"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.91052508354187,
+    "correct": true,
+    "prompt_tokens": 2297,
+    "completion_tokens": 929,
+    "api_calls": 1,
+    "cost": 0.0196775,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 4,
+      "total_actions": 4
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "floortile_floortile-3-5-3_p18_124_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 3 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot2 is at tile_8 and holding color black, robot robot1 is at tile_13 and holding color white, and robot robot3 is at tile_10 and holding color white; tile_3, tile_15, tile_17, tile_4, tile_7, tile_14, tile_2, tile_5, tile_9, tile_6, tile_1, tile_12, tile_18, tile_19, and tile_11 are clear; tile_16 is painted white and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nTile tile_5 is painted in white color?",
+    "predicted_initial_state": {
+      "robots": 3,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_13",
+        "robot2": "tile_8",
+        "robot3": "tile_10"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black",
+        "robot3": "white"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_2",
+        "tile_3",
+        "tile_4",
+        "tile_5",
+        "tile_6",
+        "tile_7",
+        "tile_9",
+        "tile_11",
+        "tile_12",
+        "tile_14",
+        "tile_15",
+        "tile_17",
+        "tile_18",
+        "tile_19"
+      ],
+      "painted_tiles": {
+        "tile_16": "white",
+        "tile_20": "white"
+      },
+      "goal": {
+        "tile_5": "white"
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "down robot2 tile_8 tile_3",
+      "left robot1 tile_13 tile_12",
+      "up robot3 tile_10 tile_15"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.541852951049805,
+    "correct": true,
+    "prompt_tokens": 2262,
+    "completion_tokens": 886,
+    "api_calls": 1,
+    "cost": 0.018945,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 3,
+      "total_actions": 3
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-5_p28_36_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 5 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot4 is at tile_2 and holding color black, robot robot1 is at tile_1 and holding color white, robot robot3 is at tile_3 and holding color white, robot robot5 is at tile_15 and holding color black, and robot robot2 is at tile_7 and holding color black; tile_4, tile_5, tile_9, tile_6, tile_10, and tile_11 are clear; tile_14 is painted white, tile_8 is painted white, tile_13 is painted black, tile_17 is painted black, tile_18 is painted white, tile_19 is painted black, tile_12 is painted white, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at tile_6 location and tile_1 is clear?",
+    "predicted_initial_state": {
+      "robots": 5,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_1",
+        "robot2": "tile_7",
+        "robot3": "tile_3",
+        "robot4": "tile_2",
+        "robot5": "tile_15"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black",
+        "robot3": "white",
+        "robot4": "black",
+        "robot5": "black"
+      },
+      "clear_tiles": [
+        "tile_4",
+        "tile_5",
+        "tile_6",
+        "tile_9",
+        "tile_10",
+        "tile_11"
+      ],
+      "painted_tiles": {
+        "tile_8": "white",
+        "tile_12": "white",
+        "tile_13": "black",
+        "tile_14": "white",
+        "tile_16": "white",
+        "tile_17": "black",
+        "tile_18": "white",
+        "tile_19": "black",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot1_at": "tile_6",
+        "tile_1_clear": true
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "left robot5 tile_15 tile_14",
+      "right robot2 tile_7 tile_8",
+      "right robot3 tile_3 tile_4",
+      "up robot1 tile_1 tile_6"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 6.122870922088623,
+    "correct": true,
+    "prompt_tokens": 2308,
+    "completion_tokens": 942,
+    "api_calls": 1,
+    "cost": 0.0199,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(left robot5 tile_15 tile_14)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 4
+    },
+    "plan_failure_reason": "Action 1 '(left robot5 tile_15 tile_14)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "floortile_floortile-3-5-5_p26_187_p",
+    "context": "A set of robots use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. Robots need to paint a grid with black and white, where the cell color is alternated always. \nThere are 20 tiles and 5 robots. \nThe tiles locations are: tile_14 is to the right of tile_13, tile_2 is to the right of tile_1, tile_19 is to the right of tile_18, tile_17 is to the right of tile_16, tile_9 is to the right of tile_8, tile_12 is to the right of tile_11, tile_15 is to the right of tile_14, tile_5 is to the right of tile_4, tile_3 is to the right of tile_2, tile_18 is to the right of tile_17, tile_4 is to the right of tile_3, tile_10 is to the right of tile_9, tile_13 is to the right of tile_12, tile_8 is to the right of tile_7, tile_7 is to the right of tile_6, and tile_20 is to the right of tile_19. Further, tile_4 is down from tile_9, tile_8 is down from tile_13, tile_10 is down from tile_15, tile_14 is down from tile_19, tile_13 is down from tile_18, tile_11 is down from tile_16, tile_12 is down from tile_17, tile_7 is down from tile_12, tile_1 is down from tile_6, tile_9 is down from tile_14, tile_2 is down from tile_7, tile_3 is down from tile_8, tile_5 is down from tile_10, tile_15 is down from tile_20, and tile_6 is down from tile_11 \nCurrently, robot robot4 is at tile_2 and holding color black, robot robot1 is at tile_3 and holding color white, robot robot5 is at tile_14 and holding color black, robot robot3 is at tile_8 and holding color white, and robot robot2 is at tile_4 and holding color black; tile_13, tile_5, tile_9, tile_1, and tile_19 are clear; tile_11 is painted black, tile_10 is painted white, tile_7 is painted black, tile_17 is painted black, tile_15 is painted black, tile_18 is painted white, tile_6 is painted white, tile_12 is painted white, tile_16 is painted white, and tile_20 is painted white.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot2 is holding white paint and Robot robot5 is holding white paint?",
+    "predicted_initial_state": {
+      "robots": 5,
+      "tiles": 20,
+      "robot_positions": {
+        "robot1": "tile_3",
+        "robot2": "tile_4",
+        "robot3": "tile_8",
+        "robot4": "tile_2",
+        "robot5": "tile_14"
+      },
+      "robot_colors": {
+        "robot1": "white",
+        "robot2": "black",
+        "robot3": "white",
+        "robot4": "black",
+        "robot5": "black"
+      },
+      "clear_tiles": [
+        "tile_1",
+        "tile_5",
+        "tile_9",
+        "tile_13",
+        "tile_19"
+      ],
+      "painted_tiles": {
+        "tile_6": "white",
+        "tile_7": "black",
+        "tile_10": "white",
+        "tile_11": "black",
+        "tile_12": "white",
+        "tile_15": "black",
+        "tile_16": "white",
+        "tile_17": "black",
+        "tile_18": "white",
+        "tile_20": "white"
+      },
+      "goal": {
+        "robot2_holding": "white",
+        "robot5_holding": "white"
+      }
+    },
+    "predicted_goal_state": {
+      "movement_directions": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "paintable_relative_positions": [
+        "front (up)",
+        "behind (down)"
+      ],
+      "one_color_at_a_time": true,
+      "can_change_to_any_available_color": true,
+      "cannot_stand_on_painted_tile": true,
+      "required_paint_colors": [
+        "black",
+        "white"
+      ],
+      "grid_coloring_rule": "cell color is alternated always",
+      "adjacency_right": [
+        [
+          "tile_13",
+          "tile_14"
+        ],
+        [
+          "tile_1",
+          "tile_2"
+        ],
+        [
+          "tile_18",
+          "tile_19"
+        ],
+        [
+          "tile_16",
+          "tile_17"
+        ],
+        [
+          "tile_8",
+          "tile_9"
+        ],
+        [
+          "tile_11",
+          "tile_12"
+        ],
+        [
+          "tile_14",
+          "tile_15"
+        ],
+        [
+          "tile_4",
+          "tile_5"
+        ],
+        [
+          "tile_2",
+          "tile_3"
+        ],
+        [
+          "tile_17",
+          "tile_18"
+        ],
+        [
+          "tile_3",
+          "tile_4"
+        ],
+        [
+          "tile_9",
+          "tile_10"
+        ],
+        [
+          "tile_12",
+          "tile_13"
+        ],
+        [
+          "tile_7",
+          "tile_8"
+        ],
+        [
+          "tile_6",
+          "tile_7"
+        ],
+        [
+          "tile_19",
+          "tile_20"
+        ]
+      ],
+      "adjacency_down": [
+        [
+          "tile_9",
+          "tile_4"
+        ],
+        [
+          "tile_13",
+          "tile_8"
+        ],
+        [
+          "tile_15",
+          "tile_10"
+        ],
+        [
+          "tile_19",
+          "tile_14"
+        ],
+        [
+          "tile_18",
+          "tile_13"
+        ],
+        [
+          "tile_16",
+          "tile_11"
+        ],
+        [
+          "tile_17",
+          "tile_12"
+        ],
+        [
+          "tile_12",
+          "tile_7"
+        ],
+        [
+          "tile_6",
+          "tile_1"
+        ],
+        [
+          "tile_14",
+          "tile_9"
+        ],
+        [
+          "tile_7",
+          "tile_2"
+        ],
+        [
+          "tile_8",
+          "tile_3"
+        ],
+        [
+          "tile_10",
+          "tile_5"
+        ],
+        [
+          "tile_20",
+          "tile_15"
+        ],
+        [
+          "tile_11",
+          "tile_6"
+        ]
+      ]
+    },
+    "plan": [
+      "down robot5 tile_14 tile_9",
+      "left robot3 tile_8 tile_7",
+      "left robot4 tile_2 tile_1",
+      "up robot1 tile_3 tile_8"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.69059681892395,
+    "correct": true,
+    "prompt_tokens": 2311,
+    "completion_tokens": 945,
+    "api_calls": 1,
+    "cost": 0.0199525,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 2 '(left robot3 tile_8 tile_7)' failed: unsatisfied precondition",
+      "actions_applied": 1,
+      "total_actions": 4
+    },
+    "plan_failure_reason": "Action 2 '(left robot3 tile_8 tile_7)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  }
+]

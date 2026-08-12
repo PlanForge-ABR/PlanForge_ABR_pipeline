@@ -1,0 +1,193 @@
+{
+  "domain": "depot",
+  "num_examples": 20,
+  "num_solved_by_final_answer": 12,
+  "num_with_plan": 0,
+  "final_answer_ratio": 0.6,
+  "plan_ratio": 0.0,
+  "num_with_ground_truth": 20,
+  "num_correct_final_answer": 19,
+  "final_answer_accuracy_against_ground_truth": 0.95,
+  "per_example": [
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_119_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-10-2-2-12-12-2_p14_94_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_2_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_169_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-7-2-2-9-9-2_p10_143_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-3-2-2-5-5-2_p06_5_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p30_8_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p30_134_n",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "depot_depot-10-2-2-12-12-2_p14_89_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p27_87_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_192_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p30_108_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_55_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p27_125_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_47_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_102_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_119_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p30_45_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_113_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_91_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "domain": "floortile",
+  "num_examples": 20,
+  "num_solved_by_final_answer": 11,
+  "num_with_plan": 0,
+  "final_answer_ratio": 0.55,
+  "plan_ratio": 0.0,
+  "num_with_ground_truth": 20,
+  "num_correct_final_answer": 20,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "floortile_floortile-3-5-3_p17_187_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-4-2_p08_8_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-3_p17_81_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-4_p23_83_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-4_p24_64_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-4_p25_76_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-3_p16_96_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-3_p16_48_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-6-2_p15_69_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-6-2_p13_103_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-6-2_p15_21_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-4-2_p09_87_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-4_p22_180_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-4_p24_198_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-3_p17_74_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-2-3-2_p01_72_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-2_p12_0_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-2_p11_188_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-5-4_p25_23_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "floortile_floortile-3-4-2_p09_55_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

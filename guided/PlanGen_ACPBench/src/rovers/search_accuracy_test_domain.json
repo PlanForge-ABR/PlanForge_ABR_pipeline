@@ -1,0 +1,148 @@
+{
+  "domain": "rovers",
+  "num_examples": 15,
+  "num_solved_by_final_answer": 10,
+  "num_with_plan": 10,
+  "final_answer_ratio": 0.6666666666666666,
+  "plan_ratio": 0.6666666666666666,
+  "num_with_ground_truth": 15,
+  "num_correct_final_answer": 15,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "rovers_prob-2-15-2-2-15-2021_p29_123_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-15-2-2-15-2020_p28_198_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-3-2-3-2021_p02_32_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-3-2-3-2021_p02_133_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-7-2-7-2021_p14_49_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-15-2-2-15-2021_p29_37_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-3-2-3-2021_p02_4_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-15-2-2-15-2021_p29_12_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-15-2-15-2021_p26_179_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-15-2-15-2022_p27_43_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-7-2-7-2021_p14_171_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-15-2-15-2022_p27_109_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 3,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-15-2-2-15-2021_p29_160_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-3-3-2-3-2021_p02_121_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "rovers_prob-2-15-2-2-15-2020_p28_161_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

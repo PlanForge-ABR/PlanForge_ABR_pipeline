@@ -1,0 +1,5336 @@
+{
+  "blocksworld-4ops": [
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_108_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_108_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p23_89_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_31"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_21",
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_22",
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_23",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_24",
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_25",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_27",
+            "block_23"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_28",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_29",
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_32"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_30",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_31",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_32",
+            "block_46"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_35",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_36",
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_37",
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_39",
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_40",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_42",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_44",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_45",
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_46",
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_47",
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_48",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_49",
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_50",
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_12"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p23_89_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_12"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_12"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_16_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_8"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_16_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_8"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_8"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_2_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_6"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_2_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_6"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_6"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_40_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_8"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_40_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_8"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_8"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_187_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_23"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_22",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_23",
+            "block_31"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_25",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_26",
+            "block_46"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_27",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_28",
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_29",
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_30",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_31",
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_32",
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_35",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_38",
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_42",
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_43",
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_44",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_45",
+            "block_32"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_46",
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_47",
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_48",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_50",
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_37"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_187_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_37"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_37"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_199_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_13"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_199_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_13"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_13"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_92_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_31"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_32"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_46"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_23",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_24",
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_26",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_27",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_28",
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_31",
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_32",
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_33",
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_35",
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_36",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_37",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_38",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_39",
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_41",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_42",
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_43",
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_44",
+            "block_23"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_45",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_46",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_48",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_49",
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_50",
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_47"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_46"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_92_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_46"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_46"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p25_26_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_31"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_21",
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_22",
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_23",
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_24",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_26",
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_29",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_30",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_31",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_32",
+            "block_46"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_33",
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_34",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_35",
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_36",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_37",
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_38",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_39",
+            "block_23"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_41",
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_44",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_45",
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_46",
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_47",
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_49",
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_50",
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_32"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_50"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p25_26_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_50"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_50"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_112_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_112_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p15_17_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_4"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p15_17_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_4"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_142_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_3"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_142_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_3"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_156_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_23"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_21",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_22",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_23",
+            "block_31"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_25",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_26",
+            "block_46"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_27",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_28",
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_29",
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_30",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_31",
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_32",
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_35",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_36",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_38",
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_42",
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_43",
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_44",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_45",
+            "block_32"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_46",
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_47",
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_48",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_49",
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_50",
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_34",
+            "block_27"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_156_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_34",
+            "block_27"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_34",
+            "block_27"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p08_33_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p08_33_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_154_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_154_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_130_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_130_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p24_46_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_32"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_39"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_46"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_10",
+            "block_36"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_31"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_37"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_17",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_30"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_22",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_23",
+            "block_33"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_26",
+            "block_43"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_27",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_30",
+            "block_38"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_31",
+            "block_48"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_32",
+            "block_27"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_33",
+            "block_22"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_36",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_37",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_38",
+            "block_26"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_39",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_41",
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_43",
+            "block_23"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_46",
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_48",
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_7",
+            "block_41"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_21"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_24"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_25"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_28"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_29"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_34"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_35"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_40"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_42"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_44"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_45"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_47"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_49"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_50"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p24_46_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p07_8_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p07_8_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_182_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "handempty",
+          "args": []
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_15",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_19",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_3",
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_8",
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_9"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_182_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_9"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_9"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_48_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "block_20"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "block_9"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_19"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_1",
+            "block_11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_11",
+            "block_18"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_12",
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_13",
+            "block_1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_14",
+            "block_2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_16",
+            "block_8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_18",
+            "block_16"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_2",
+            "block_12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_20",
+            "block_6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_4",
+            "block_13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_5",
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_6",
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "block_9",
+            "block_14"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_10"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_15"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_3"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_7"
+          ]
+        },
+        {
+          "predicate": "ontable",
+          "args": [
+            "block_8"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_20"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_48_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_20"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "holding",
+          "args": [
+            "block_17"
+          ]
+        },
+        {
+          "predicate": "holding",
+          "args": [
+            "block_20"
+          ]
+        }
+      ],
+      "expected": true
+    }
+  ]
+}

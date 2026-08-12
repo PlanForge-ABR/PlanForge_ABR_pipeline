@@ -1,0 +1,2174 @@
+{
+  "summary": {
+    "overall_accuracy": 0.9288888888888889,
+    "overall_accuracy_with_plan": 0.9111111111111111,
+    "overall_plan_accuracy": 0.88,
+    "total_examples": 225,
+    "total_correct": 209,
+    "total_correct_with_plan": 205,
+    "total_plan_verified": 132,
+    "total_plan_possible": 150
+  },
+  "domains": {
+    "alfworld": {
+      "total_examples": 15,
+      "correct_answer": 6,
+      "correct_with_plan": 5,
+      "plan_verified": 0,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "alfworld_plan_trial_t20190908_141942_810052_p28_109_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_113523_123938_p18_49_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_141942_810052_p28_165_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_020029_636862_p14_70_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_141942_810052_p28_133_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_222951_616606_p29_167_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190907_083429_887065_p27_156_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190907_083429_887065_p27_167_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190907_133919_856963_p26_58_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_141942_810052_p28_99_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190907_171933_349922_p10_188_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_020029_636862_p14_152_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190907_133919_856963_p26_88_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Validation failed. Output: Type-checking clean_object\n...action passes type checking.\nType-checking close_receptacle\n...action ",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190906_191445_723170_p06_76_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "alfworld_plan_trial_t20190908_020029_636862_p14_197_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        }
+      ]
+    },
+    "blocksworld": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "blocksworld_BW-rand-20_p18_11_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-20_p18_96_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-20_p18_66_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-5_p10_164_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-20_p18_34_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-20_p18_164_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-20_p18_105_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-100_p28_33_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-100_p29_25_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-5_p10_146_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-5_p06_56_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-100_p27_193_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-100_p28_176_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-100_p28_135_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "blocksworld_BW-rand-100_p26_127_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "depot": {
+      "total_examples": 15,
+      "correct_answer": 14,
+      "correct_with_plan": 14,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "depot_depot-4-2-2-6-6-10_p26_16_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-3_p18_66_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-3_p18_19_n",
+          "gt_answer": "no",
+          "pred_answer": "yes",
+          "correct": false,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-15_p29_192_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-10-2-2-12-12-2_p14_27_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-3_p18_178_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-3_p18_104_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-10_p26_162_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-15_p30_27_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-3-2-2-5-5-2_p06_71_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-10_p27_67_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-15_p29_190_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-2-2-2-4-4-2_p02_47_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-2-2-2-4-4-2_p02_193_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "depot_depot-4-2-2-6-6-15_p29_165_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "ferry": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "ferry_ferry-l20-c5_p27_118_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l5-c3_p14_75_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c5_p27_153_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c3_p26_9_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l5-c3_p14_111_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l3-c10_p10_103_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c20_p29_191_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c3_p26_180_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c50_p30_46_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c10_p28_88_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c3_p26_6_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c20_p29_97_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l20-c5_p27_79_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l2-c3_p02_21_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "ferry_ferry-l5-c3_p14_5_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "floortile": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "floortile_floortile-2-3-2_p02_151_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-2-3-2_p02_50_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-3_p18_47_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-2_p10_101_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-2_p10_57_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-2_p10_90_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-2-3-2_p02_159_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-5_p29_185_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-5_p26_141_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-6-2_p14_135_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-6-2_p14_138_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-5_p28_42_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-3_p18_124_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-5_p28_36_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "floortile_floortile-3-5-5_p26_187_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "frogs_jumping": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "frogs_jumping_frogs-9v9_p03_9_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-57v57_p19_9_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-9v9_p03_114_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-60v60_p20_91_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-33v33_p11_146_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-9v9_p03_98_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-21v21_p07_55_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-9v9_p03_28_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-21v21_p07_47_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-9v9_p03_95_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-33v33_p11_16_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-63v63_p21_58_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-69v69_p23_65_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-57v57_p19_5_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "frogs_jumping_frogs-48v48_p16_29_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "goldminer": {
+      "total_examples": 15,
+      "correct_answer": 12,
+      "correct_with_plan": 12,
+      "plan_verified": 7,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "goldminer_typed-bomberman-rows5-cols5_p30_28_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows5-cols5_p26_50_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols4_p06_130_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols4_p06_12_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows4-cols4_p18_12_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows5-cols5_p30_136_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols4_p06_83_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols5_p14_186_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows5-cols5_p29_115_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows5-cols5_p27_142_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows4-cols4_p18_179_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols5_p14_179_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows5-cols5_p29_23_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols4_p06_167_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "goldminer_typed-bomberman-rows3-cols5_p14_70_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "grid": {
+      "total_examples": 15,
+      "correct_answer": 14,
+      "correct_with_plan": 13,
+      "plan_verified": 9,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p28_52_n",
+          "gt_answer": "no",
+          "pred_answer": "yes",
+          "correct": false,
+          "plan_valid": false,
+          "plan_reason": "Action 3 '(pickup f2-1f key1-0)' failed: unsatisfied precondition",
+          "correct_with_plan": false
+        },
+        {
+          "id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_88_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p30_15_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p26_122_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p29_146_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t1-k2-l2-p100_p02_91_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k2-l2-p100_p18_42_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p30_51_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t1-k2-l2-p100_p02_186_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_70_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_88_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p29_141_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t1-k3-l3-p100_p10_158_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Action 1 '(pickup f0-1f key0-0)' failed: unsatisfied precondition",
+          "correct_with_plan": false
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p27_184_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grid_grid-x5-y5-t2-k4-l4-p100_p28_109_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "grippers": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "grippers_gripper-1-25-50_p30_156_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-2-4_p02_90_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-15-25_p27_143_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-3-7_p14_111_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-10-4_p10_134_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-3-15_p18_120_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-10-4_p10_115_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-15-25_p27_180_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-3-15_p18_9_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-10-4_p10_126_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-15-25_p27_35_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-15-25_p28_31_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-3-15_p18_189_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-10-4_p10_183_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "grippers_gripper-1-15-25_p28_24_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "hanoi": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "hanoi_hanoi-48_p16_16_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-51_p17_40_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-3_p01_4_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-15_p05_35_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-9_p03_180_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-72_p24_17_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-51_p17_12_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-33_p11_31_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-69_p23_19_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-12_p04_30_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-9_p03_185_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-15_p05_27_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-9_p03_103_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-51_p17_7_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "hanoi_hanoi-9_p03_151_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "logistics": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 14,
+      "plan_verified": 9,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "logistics_logistics-c3-s3-p15-a1_p27_158_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p20-a1_p30_23_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p15-a1_p27_88_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p5-a1_p18_162_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p20-a1_p30_101_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p5-a1_p18_19_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c2-s3-p4-a1_p06_159_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p15-a1_p27_161_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p20-a1_p30_183_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p15-a1_p26_63_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p5-a1_p18_62_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p20-a1_p29_123_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p20-a1_p28_10_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c3-s3-p5-a1_p18_90_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "logistics_logistics-c5-s3-p4-a1_p10_184_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Validation failed. Output: Type-checking drive-truck\n...action passes type checking.\nType-checking fly-airplane\n...action passe",
+          "correct_with_plan": false
+        }
+      ]
+    },
+    "rovers": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "rovers_prob-2-15-2-2-15-2021_p29_123_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-15-2-2-15-2020_p28_198_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-3-2-3-2021_p02_32_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-3-2-3-2021_p02_133_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-7-2-7-2021_p14_49_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-15-2-2-15-2021_p29_37_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-3-2-3-2021_p02_4_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-15-2-2-15-2021_p29_12_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-15-2-15-2021_p26_179_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-15-2-15-2022_p27_43_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-7-2-7-2021_p14_171_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-15-2-15-2022_p27_109_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-15-2-2-15-2021_p29_160_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-3-3-2-3-2021_p02_121_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "rovers_prob-2-15-2-2-15-2020_p28_161_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "satellite": {
+      "total_examples": 15,
+      "correct_answer": 13,
+      "correct_with_plan": 13,
+      "plan_verified": 8,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "satellite_prob-3-3-3-5-2_p06_15_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-7-3-3-5-2_p10_147_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-12-9_p27_76_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-7-3-3-5-2_p10_146_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-15-12_p28_7_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-10-3-3-5-2_p14_25_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-7-4_p18_133_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "satellite_prob-6-3-3-12-9_p26_89_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-12-9_p26_189_p",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "satellite_prob-10-3-3-5-2_p14_162_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-12-9_p26_130_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-15-12_p29_70_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-7-3-3-5-2_p10_114_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-15-12_p30_27_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "satellite_prob-6-3-3-12-9_p26_14_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "swap": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 15,
+      "plan_verified": 10,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "swap_swap-15-56_p28_119_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-56_p28_185_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-7-28_p14_82_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-13-52_p26_12_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-60_p30_142_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-60_p30_136_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-60_p30_35_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-13-52_p26_162_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-8-36_p18_194_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-6-20_p10_153_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-8-36_p18_193_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-58_p29_92_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-60_p30_34_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-15-56_p28_3_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "swap_swap-6-20_p10_12_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "visitall": {
+      "total_examples": 15,
+      "correct_answer": 15,
+      "correct_with_plan": 14,
+      "plan_verified": 9,
+      "total_yes_examples": 10,
+      "examples": [
+        {
+          "id": "visitall_grid-4-5-1-2021_p14_82_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-4-4-2-2021_p06_1_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-4-4-4-2021_p10_111_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-3-2023_p28_110_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-3-2023_p28_107_n",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-4-4-2-2021_p06_102_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-3-2023_p28_3_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-4-2023_p30_26_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-4-4-0-2021_p02_139_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-3-2020_p27_141_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-4-5-1-2021_p14_130_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Error: Error in type-checking!",
+          "correct_with_plan": false
+        },
+        {
+          "id": "visitall_grid-5-5-4-2023_p30_172_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-4-2023_p30_65_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-4-4-0-2021_p02_102_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "visitall_grid-5-5-4-2023_p30_72_p",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    }
+  }
+}

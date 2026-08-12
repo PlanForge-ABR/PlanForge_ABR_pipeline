@@ -1,0 +1,888 @@
+[
+  {
+    "example_id": "goldminer_typed-bomberman-rows5-cols5_p30_28_n",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 5x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f3-0f location.  \nCurrently, the robot is at position f3-2f and is holding a laser. The following locations have hard rock: f4-4f, f4-1f, f1-3f, and f3-3f. The following locations have soft rock: f0-2f, f0-4f, f0-3f, f4-3f, f2-3f, f1-2f, f2-4f, f2-2f, f1-4f, f0-1f, f3-4f, f2-1f, and f1-1f. The gold is at f3-4f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe gold is at f0-4f location?",
+    "predicted_initial_state": {
+      "goal_gold_location": "f0-4f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "5x5",
+      "robot_initial_position": "f3-2f",
+      "robot_initial_holding": "laser",
+      "gold_location": "f3-4f",
+      "laser_location": null,
+      "bomb_supply_location": "f3-0f",
+      "hard_rock_locations": [
+        "f4-4f",
+        "f4-1f",
+        "f1-3f",
+        "f3-3f"
+      ],
+      "soft_rock_locations": [
+        "f0-2f",
+        "f0-4f",
+        "f0-3f",
+        "f4-3f",
+        "f2-3f",
+        "f1-2f",
+        "f2-4f",
+        "f2-2f",
+        "f1-4f",
+        "f0-1f",
+        "f3-4f",
+        "f2-1f",
+        "f1-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 4.3981382846832275,
+    "correct": true,
+    "prompt_tokens": 1281,
+    "completion_tokens": 412,
+    "cost": 0.0093825,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows5-cols5_p26_50_n",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 5x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f3-1f and is holding a laser. The following locations have hard rock: f4-3f, f2-3f, f1-3f, f1-1f, and f0-3f. The following locations have soft rock: f0-2f, f0-4f, f4-2f, f4-4f, f1-2f, f2-4f, f2-2f, f1-4f, f0-1f, f3-3f, f3-4f, f4-1f, and f2-1f. The gold is at f3-4f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nSoft rock at f0-2f and Soft rock at f4-3f?",
+    "predicted_initial_state": {
+      "soft_rock_locations": [
+        "f0-2f",
+        "f4-3f"
+      ]
+    },
+    "predicted_goal_state": {
+      "grid_size": "5x5",
+      "robot_initial_position": "f3-1f",
+      "robot_initial_holding": "laser",
+      "gold_location": "f3-4f",
+      "laser_location": null,
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f4-3f",
+        "f2-3f",
+        "f1-3f",
+        "f1-1f",
+        "f0-3f"
+      ],
+      "soft_rock_locations": [
+        "f0-2f",
+        "f0-4f",
+        "f4-2f",
+        "f4-4f",
+        "f1-2f",
+        "f2-4f",
+        "f2-2f",
+        "f1-4f",
+        "f0-1f",
+        "f3-3f",
+        "f3-4f",
+        "f4-1f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 3.9682512283325195,
+    "correct": true,
+    "prompt_tokens": 1294,
+    "completion_tokens": 433,
+    "cost": 0.00973,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols4_p06_130_n",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x4 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f0-0f and is holding gold. The following locations have hard rock: f1-1f. The following locations have soft rock: f2-2f, f2-3f, f1-3f, f1-2f, and f2-1f. The gold is at f0-3f location. The laser is at f0-1f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe gold is at f1-0f location?",
+    "predicted_initial_state": {
+      "goal_gold_location": "f1-0f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x4",
+      "robot_initial_position": "f0-0f",
+      "robot_initial_holding": "gold",
+      "gold_location": "f0-3f",
+      "laser_location": "f0-1f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-1f"
+      ],
+      "soft_rock_locations": [
+        "f2-2f",
+        "f2-3f",
+        "f1-3f",
+        "f1-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.973602056503296,
+    "correct": true,
+    "prompt_tokens": 1224,
+    "completion_tokens": 329,
+    "cost": 0.007995,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols4_p06_12_n",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x4 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f2-0f and its arm is empty. The following locations have hard rock: f1-1f. The following locations have soft rock: f0-3f, f2-2f, f2-3f, f1-3f, and f1-2f. The gold is at f0-3f location. The laser is at f0-0f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe laser is at f1-1f location and The robot is holding a laser?",
+    "predicted_initial_state": {
+      "goal_laser_location": "f1-1f",
+      "goal_holding": "laser"
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x4",
+      "robot_initial_position": "f2-0f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f0-3f",
+      "laser_location": "f0-0f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-1f"
+      ],
+      "soft_rock_locations": [
+        "f0-3f",
+        "f2-2f",
+        "f2-3f",
+        "f1-3f",
+        "f1-2f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 7.906842947006226,
+    "correct": true,
+    "prompt_tokens": 1232,
+    "completion_tokens": 339,
+    "cost": 0.008165,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows4-cols4_p18_12_n",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 4x4 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f0-1f and is holding gold. The following locations have hard rock: f1-3f, f3-3f, f1-2f, f1-1f, and f3-1f. The following locations have soft rock: f2-3f, f3-2f, f2-2f, and f2-1f. The gold is at f0-3f location. The laser is at f0-0f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nHard rock at f2-3f?",
+    "predicted_initial_state": {
+      "goal_hard_rock_location": "f2-3f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "4x4",
+      "robot_initial_position": "f0-1f",
+      "robot_initial_holding": "gold",
+      "gold_location": "f0-3f",
+      "laser_location": "f0-0f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-3f",
+        "f3-3f",
+        "f1-2f",
+        "f1-1f",
+        "f3-1f"
+      ],
+      "soft_rock_locations": [
+        "f2-3f",
+        "f3-2f",
+        "f2-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.8353140354156494,
+    "correct": true,
+    "prompt_tokens": 1241,
+    "completion_tokens": 356,
+    "cost": 0.0084425,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows5-cols5_p30_136_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 5x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f3-0f location.  \nCurrently, the robot is at position f3-4f and its arm is empty. The following locations have hard rock: f4-4f, f4-1f, and f1-3f. The following locations have soft rock: f0-2f, f0-4f, f0-3f, f4-3f, f2-3f, f1-2f, f2-4f, f2-2f, f1-4f, f0-1f, f2-1f, and f1-1f. The gold is at f3-4f location. The laser is at f3-0f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is holding gold and The robot is at position f3-3f?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f3-3f",
+      "goal_holding": "gold"
+    },
+    "predicted_goal_state": {
+      "grid_size": "5x5",
+      "robot_initial_position": "f3-4f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f3-4f",
+      "laser_location": "f3-0f",
+      "bomb_supply_location": "f3-0f",
+      "hard_rock_locations": [
+        "f4-4f",
+        "f4-1f",
+        "f1-3f"
+      ],
+      "soft_rock_locations": [
+        "f0-2f",
+        "f0-4f",
+        "f0-3f",
+        "f4-3f",
+        "f2-3f",
+        "f1-2f",
+        "f2-4f",
+        "f2-2f",
+        "f1-4f",
+        "f0-1f",
+        "f2-1f",
+        "f1-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": [
+      "pick-gold f3-4f",
+      "move f3-4f f3-3f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.638315916061401,
+    "correct": true,
+    "prompt_tokens": 1286,
+    "completion_tokens": 410,
+    "cost": 0.009365,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols4_p06_83_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x4 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f1-1f and is holding a bomb. The following locations have soft rock: f2-1f, f0-3f, f2-2f, f2-3f, f1-3f, and f1-2f. The gold is at f0-3f location. The laser is at f0-1f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f2-1f and Location(s) f2-1f is clear?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f2-1f",
+      "goal_clear_locations": [
+        "f2-1f"
+      ]
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x4",
+      "robot_initial_position": "f1-1f",
+      "robot_initial_holding": "bomb",
+      "gold_location": "f0-3f",
+      "laser_location": "f0-1f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [],
+      "soft_rock_locations": [
+        "f2-1f",
+        "f0-3f",
+        "f2-2f",
+        "f2-3f",
+        "f1-3f",
+        "f1-2f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.884597063064575,
+    "correct": false,
+    "prompt_tokens": 1229,
+    "completion_tokens": 344,
+    "cost": 0.0082325,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols5_p14_186_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f0-2f and its arm is empty. The following locations have hard rock: f1-4f, f1-3f, and f1-1f. The following locations have soft rock: f2-3f, f1-2f, f2-4f, f2-2f, and f2-1f. The gold is at f0-4f location. The laser is at f0-1f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f0-1f and The robot is holding a laser?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f0-1f",
+      "goal_holding": "laser"
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x5",
+      "robot_initial_position": "f0-2f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f0-4f",
+      "laser_location": "f0-1f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-4f",
+        "f1-3f",
+        "f1-1f"
+      ],
+      "soft_rock_locations": [
+        "f2-3f",
+        "f1-2f",
+        "f2-4f",
+        "f2-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": [
+      "move f0-2f f0-1f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.056046962738037,
+    "correct": true,
+    "prompt_tokens": 1245,
+    "completion_tokens": 354,
+    "cost": 0.0084225,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows5-cols5_p29_115_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 5x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f3-0f location.  \nCurrently, the robot is at position f0-2f and is holding a bomb. The following locations have hard rock: f4-2f, f3-2f, f4-3f, f2-4f, f4-4f, f4-1f, f1-3f, f1-2f, and f3-1f. The following locations have soft rock: f0-4f, f2-3f, f2-2f, f1-4f, f3-3f, f3-4f, f2-1f, and f1-1f. The gold is at f0-4f location. The laser is at f0-1f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f0-1f and The robot's arm is empty?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f0-1f",
+      "goal_holding": "empty"
+    },
+    "predicted_goal_state": {
+      "grid_size": "5x5",
+      "robot_initial_position": "f0-2f",
+      "robot_initial_holding": "bomb",
+      "gold_location": "f0-4f",
+      "laser_location": "f0-1f",
+      "bomb_supply_location": "f3-0f",
+      "hard_rock_locations": [
+        "f4-2f",
+        "f3-2f",
+        "f4-3f",
+        "f2-4f",
+        "f4-4f",
+        "f4-1f",
+        "f1-3f",
+        "f1-2f",
+        "f3-1f"
+      ],
+      "soft_rock_locations": [
+        "f0-4f",
+        "f2-3f",
+        "f2-2f",
+        "f1-4f",
+        "f3-3f",
+        "f3-4f",
+        "f2-1f",
+        "f1-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": [
+      "move f0-2f f0-1f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.2011399269104004,
+    "correct": true,
+    "prompt_tokens": 1299,
+    "completion_tokens": 426,
+    "cost": 0.0096375,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows5-cols5_p27_142_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 5x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f1-0f location.  \nCurrently, the robot is at position f3-2f and its arm is empty. The following locations have hard rock: f4-2f, f4-3f, f2-3f, f2-4f, f0-2f, and f0-3f. The following locations have soft rock: f0-4f, f4-4f, f1-3f, f1-2f, f2-2f, f1-4f, f0-1f, f3-4f, f4-1f, and f1-1f. The gold is at f3-4f location. The laser is at f3-2f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is holding a laser?",
+    "predicted_initial_state": {
+      "goal_holding": "laser"
+    },
+    "predicted_goal_state": {
+      "grid_size": "5x5",
+      "robot_initial_position": "f3-2f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f3-4f",
+      "laser_location": "f3-2f",
+      "bomb_supply_location": "f1-0f",
+      "hard_rock_locations": [
+        "f4-2f",
+        "f4-3f",
+        "f2-3f",
+        "f2-4f",
+        "f0-2f",
+        "f0-3f"
+      ],
+      "soft_rock_locations": [
+        "f0-4f",
+        "f4-4f",
+        "f1-3f",
+        "f1-2f",
+        "f2-2f",
+        "f1-4f",
+        "f0-1f",
+        "f3-4f",
+        "f4-1f",
+        "f1-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.7390341758728027,
+    "correct": false,
+    "prompt_tokens": 1282,
+    "completion_tokens": 405,
+    "cost": 0.00928,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows4-cols4_p18_179_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 4x4 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f2-0f and its arm is empty. The following locations have hard rock: f1-3f, f3-3f, f1-2f, f1-1f, and f3-1f. The following locations have soft rock: f0-2f, f0-3f, f2-3f, f3-2f, f2-2f, and f2-1f. The gold is at f0-3f location. The laser is at f0-0f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f1-0f?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f1-0f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "4x4",
+      "robot_initial_position": "f2-0f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f0-3f",
+      "laser_location": "f0-0f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-3f",
+        "f3-3f",
+        "f1-2f",
+        "f1-1f",
+        "f3-1f"
+      ],
+      "soft_rock_locations": [
+        "f0-2f",
+        "f0-3f",
+        "f2-3f",
+        "f3-2f",
+        "f2-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.7844841480255127,
+    "correct": false,
+    "prompt_tokens": 1256,
+    "completion_tokens": 369,
+    "cost": 0.008675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols5_p14_179_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f1-1f and is holding a bomb. The following locations have hard rock: f1-4f and f1-3f. The following locations have soft rock: f0-4f, f2-3f, f1-2f, f2-4f, f2-2f, and f2-1f. The gold is at f0-4f location. The laser is at f0-2f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f0-1f?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f0-1f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x5",
+      "robot_initial_position": "f1-1f",
+      "robot_initial_holding": "bomb",
+      "gold_location": "f0-4f",
+      "laser_location": "f0-2f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-4f",
+        "f1-3f"
+      ],
+      "soft_rock_locations": [
+        "f0-4f",
+        "f2-3f",
+        "f1-2f",
+        "f2-4f",
+        "f2-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.566927909851074,
+    "correct": false,
+    "prompt_tokens": 1237,
+    "completion_tokens": 345,
+    "cost": 0.0082675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows5-cols5_p29_23_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 5x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f3-0f location.  \nCurrently, the robot is at position f0-0f and its arm is empty. The following locations have hard rock: f4-2f, f3-2f, f4-3f, f2-4f, f4-4f, f4-1f, f1-3f, f1-2f, and f3-1f. The following locations have soft rock: f0-4f, f2-3f, f2-2f, f1-4f, f3-3f, f3-4f, f2-1f, and f1-1f. The gold is at f0-4f location. The laser is at f0-2f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f3-0f?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f3-0f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "5x5",
+      "robot_initial_position": "f0-0f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f0-4f",
+      "laser_location": "f0-2f",
+      "bomb_supply_location": "f3-0f",
+      "hard_rock_locations": [
+        "f4-2f",
+        "f3-2f",
+        "f4-3f",
+        "f2-4f",
+        "f4-4f",
+        "f4-1f",
+        "f1-3f",
+        "f1-2f",
+        "f3-1f"
+      ],
+      "soft_rock_locations": [
+        "f0-4f",
+        "f2-3f",
+        "f2-2f",
+        "f1-4f",
+        "f3-3f",
+        "f3-4f",
+        "f2-1f",
+        "f1-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.9608678817749023,
+    "correct": false,
+    "prompt_tokens": 1292,
+    "completion_tokens": 417,
+    "cost": 0.009485,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols4_p06_167_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x4 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f1-0f and its arm is empty. The following locations have hard rock: f1-1f. The following locations have soft rock: f0-3f, f2-2f, f2-3f, f1-3f, f1-2f, and f2-1f. The gold is at f0-3f location. The laser is at f0-0f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f0-0f?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f0-0f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x4",
+      "robot_initial_position": "f1-0f",
+      "robot_initial_holding": "empty",
+      "gold_location": "f0-3f",
+      "laser_location": "f0-0f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-1f"
+      ],
+      "soft_rock_locations": [
+        "f0-3f",
+        "f2-2f",
+        "f2-3f",
+        "f1-3f",
+        "f1-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.1113178730010986,
+    "correct": false,
+    "prompt_tokens": 1231,
+    "completion_tokens": 337,
+    "cost": 0.0081325,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "goldminer_typed-bomberman-rows3-cols5_p14_70_p",
+    "context": "A robotic arm is in a grid and can only move to locations that are connected to its current location. \nThe 3x5 grid locations may have gold, hard rocks, or soft rocks. Rocks cannot be moved. The robotic arm can pick up laser or bomb. Only one item can be picked at a time.  There is one laser is the grid that can be used to clear rocks. Robotic arm can fire laser at a location from a connected location. The locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f).  \nIf a bomb is picked, it cannot be placed back. It can only be detonated at connected location that have soft rock. Bomb supply is available at f0-0f location.  \nCurrently, the robot is at position f0-1f and is holding a bomb. The following locations have hard rock: f1-4f, f1-3f, and f1-1f. The following locations have soft rock: f0-4f, f2-3f, f1-2f, f2-4f, f2-2f, and f2-1f. The gold is at f0-4f location. The laser is at f0-0f location.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robot is at position f0-0f?",
+    "predicted_initial_state": {
+      "goal_robot_position": "f0-0f"
+    },
+    "predicted_goal_state": {
+      "grid_size": "3x5",
+      "robot_initial_position": "f0-1f",
+      "robot_initial_holding": "bomb",
+      "gold_location": "f0-4f",
+      "laser_location": "f0-0f",
+      "bomb_supply_location": "f0-0f",
+      "hard_rock_locations": [
+        "f1-4f",
+        "f1-3f",
+        "f1-1f"
+      ],
+      "soft_rock_locations": [
+        "f0-4f",
+        "f2-3f",
+        "f1-2f",
+        "f2-4f",
+        "f2-2f",
+        "f2-1f"
+      ],
+      "movement_rule": "robot can only move to connected neighboring locations",
+      "connectivity_rule": "each grid cell is connected to its four neighbors within grid bounds",
+      "pickup_rule": "robot can pick up laser or bomb",
+      "holding_capacity": "only one item can be picked at a time",
+      "laser_quantity": 1,
+      "laser_usage_rule": "robot can fire laser at a location from a connected location to clear rocks",
+      "rocks_movable": false,
+      "bomb_return_rule": "if a bomb is picked, it cannot be placed back",
+      "bomb_usage_rule": "bomb can only be detonated at a connected location that has soft rock"
+    },
+    "plan": [
+      "move f0-1f f0-0f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.8332901000976562,
+    "correct": true,
+    "prompt_tokens": 1244,
+    "completion_tokens": 353,
+    "cost": 0.008405,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  }
+]

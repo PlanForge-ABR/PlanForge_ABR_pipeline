@@ -1,0 +1,4868 @@
+{
+  "blocksworld": [
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_108_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 10 blocks. \nCurrently, the robotic arm is holding block_6. The following block(s) are on the table: block_9, block_7, block_8, and block_5. The following block(s) are stacked on top of another block: block_2 is on block_7, block_4 is on block_3, block_3 is on block_2, block_1 is on block_4, and block_10 is on block_8.\nIs it possible to transition to a state where the following holds: \nThe block block_9 is currently being held by the robotic arm and Block block_6 is on the table?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "holding",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_6"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p23_89_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 50 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_38, block_34, block_41, block_26, block_9, block_13, block_17, block_33, block_18, and block_43. The following block(s) are stacked on top of another block: block_36 is on block_45, block_8 is on block_42, block_40 is on block_19, block_50 is on block_29, block_21 is on block_30, block_12 is on block_3, block_1 is on block_48, block_30 is on block_18, block_39 is on block_24, block_20 is on block_9, block_35 is on block_7, block_47 is on block_28, block_25 is on block_10, block_29 is on block_27, block_24 is on block_35, block_15 is on block_37, block_28 is on block_11, block_44 is on block_5, block_45 is on block_39, block_32 is on block_46, block_14 is on block_22, block_42 is on block_4, block_27 is on block_23, block_5 is on block_13, block_46 is on block_49, block_23 is on block_20, block_6 is on block_8, block_10 is on block_50, block_49 is on block_43, block_16 is on block_2, block_22 is on block_44, block_37 is on block_36, block_7 is on block_34, block_31 is on block_15, block_11 is on block_6, block_4 is on block_38, block_2 is on block_47, block_3 is on block_32, block_48 is on block_14, and block_19 is on block_21.\nIs it possible to transition to a state where the following holds: \nThe block block_17 is on top of block block_12?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_31"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_21",
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_22",
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_23",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_24",
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_25",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_27",
+                "block_23"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_28",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_29",
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_32"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_30",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_31",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_32",
+                "block_46"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_35",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_36",
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_37",
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_39",
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_40",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_42",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_44",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_45",
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_46",
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_47",
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_48",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_49",
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_50",
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_7",
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_12"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_16_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 10 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_7, block_3, and block_5. The following block(s) are stacked on top of another block: block_10 is on block_6, block_2 is on block_5, block_6 is on block_1, block_8 is on block_9, block_9 is on block_2, block_1 is on block_3, and block_4 is on block_10.\nIs it possible to transition to a state where the following holds: \nThe block block_7 is currently situated above the block block_8?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_7",
+                "block_8"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_2_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_2, block_17, block_15, block_7, block_8, and block_1. The following block(s) are stacked on top of another block: block_3 is on block_11, block_12 is on block_3, block_14 is on block_15, block_20 is on block_6, block_18 is on block_10, block_11 is on block_18, block_19 is on block_5, block_9 is on block_19, block_4 is on block_14, block_5 is on block_17, block_10 is on block_20, block_13 is on block_2, block_16 is on block_8, and block_6 is on block_7.\nIs it possible to transition to a state where the following holds: \nThe block block_6 is currently situated under the block block_5 and The robotic arm is holding block_5?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_5"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_40_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 10 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_9, block_7, block_3, block_8, and block_5. The following block(s) are stacked on top of another block: block_2 is on block_7, block_6 is on block_5, block_1 is on block_10, block_10 is on block_9, and block_4 is on block_6.\nIs it possible to transition to a state where the following holds: \nThe block block_9 is on top of block block_8 and The robotic arm is holding block_8?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_8"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_187_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 50 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_36, block_34, block_21, block_41, block_24, block_20, block_4, block_3, block_10, block_16, block_40, block_9, block_37, block_49, block_33, block_39, block_19, block_7, and block_11. The following block(s) are stacked on top of another block: block_8 is on block_1, block_30 is on block_17, block_26 is on block_46, block_50 is on block_28, block_14 is on block_13, block_2 is on block_33, block_31 is on block_42, block_23 is on block_31, block_46 is on block_35, block_47 is on block_29, block_13 is on block_26, block_28 is on block_43, block_38 is on block_25, block_43 is on block_45, block_12 is on block_50, block_48 is on block_19, block_15 is on block_23, block_25 is on block_3, block_22 is on block_6, block_44 is on block_12, block_17 is on block_47, block_6 is on block_30, block_1 is on block_15, block_35 is on block_8, block_42 is on block_22, block_18 is on block_14, block_5 is on block_38, block_32 is on block_48, block_29 is on block_44, block_45 is on block_32, and block_27 is on block_18.\nIs it possible to transition to a state where the following holds: \nThe block block_37 is currently situated under the block block_20?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_23"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_22",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_23",
+                "block_31"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_25",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_26",
+                "block_46"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_27",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_28",
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_29",
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_30",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_31",
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_32",
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_35",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_38",
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_42",
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_43",
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_44",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_45",
+                "block_32"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_46",
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_47",
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_48",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_50",
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_37"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_199_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_6, block_2, block_10, block_9, block_15, block_7, and block_11. The following block(s) are stacked on top of another block: block_20 is on block_14, block_16 is on block_6, block_12 is on block_19, block_3 is on block_4, block_14 is on block_2, block_13 is on block_5, block_18 is on block_12, block_19 is on block_11, block_1 is on block_18, block_5 is on block_8, block_17 is on block_16, block_8 is on block_3, and block_4 is on block_7.\nIs it possible to transition to a state where the following holds: \nThe block block_13 is currently situated under the block block_9?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_13"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_92_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 50 blocks. \nCurrently, the robotic arm is holding block_1. The following block(s) are on the table: block_34, block_21, block_12, block_10, block_16, block_29, block_40, block_22, block_47, block_25, and block_30. The following block(s) are stacked on top of another block: block_2 is on block_24, block_37 is on block_9, block_48 is on block_10, block_26 is on block_20, block_19 is on block_25, block_36 is on block_11, block_49 is on block_42, block_35 is on block_21, block_39 is on block_45, block_45 is on block_4, block_32 is on block_36, block_43 is on block_49, block_28 is on block_50, block_9 is on block_44, block_5 is on block_2, block_17 is on block_39, block_18 is on block_19, block_20 is on block_7, block_14 is on block_22, block_31 is on block_37, block_7 is on block_3, block_8 is on block_47, block_38 is on block_6, block_46 is on block_8, block_11 is on block_16, block_13 is on block_29, block_33 is on block_43, block_6 is on block_41, block_24 is on block_34, block_41 is on block_12, block_3 is on block_38, block_50 is on block_27, block_23 is on block_5, block_4 is on block_28, block_15 is on block_13, block_42 is on block_35, block_44 is on block_23, and block_27 is on block_18.\nIs it possible to transition to a state where the following holds: \nThe block block_1 is currently situated above the block block_46 and The robotic arm is holding block_30?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_31"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_32"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_46"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_23",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_24",
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_26",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_27",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_28",
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_31",
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_32",
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_33",
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_35",
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_36",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_37",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_38",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_39",
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_41",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_42",
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_43",
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_44",
+                "block_23"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_45",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_46",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_48",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_49",
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_50",
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_7",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_47"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "holding",
+              "args": [
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_46"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p25_26_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 50 blocks. \nCurrently, the robotic arm is holding block_18. The following block(s) are on the table: block_6, block_4, block_27, block_43, block_16, block_14, block_40, block_9, block_28, block_15, block_42, block_25, block_48, and block_1. The following block(s) are stacked on top of another block: block_31 is on block_16, block_24 is on block_8, block_30 is on block_2, block_36 is on block_19, block_7 is on block_32, block_38 is on block_17, block_47 is on block_33, block_22 is on block_42, block_33 is on block_24, block_44 is on block_15, block_2 is on block_31, block_37 is on block_28, block_49 is on block_47, block_29 is on block_7, block_23 is on block_45, block_12 is on block_44, block_32 is on block_46, block_13 is on block_10, block_20 is on block_11, block_46 is on block_36, block_11 is on block_13, block_34 is on block_20, block_45 is on block_34, block_3 is on block_26, block_35 is on block_39, block_26 is on block_30, block_8 is on block_35, block_19 is on block_3, block_10 is on block_29, block_5 is on block_14, block_50 is on block_49, block_39 is on block_23, block_21 is on block_41, block_41 is on block_48, and block_17 is on block_27.\nIs it possible to transition to a state where the following holds: \nThe block block_11 is currently situated above the block block_50 and The block block_11 is currently being held by the robotic arm?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_31"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_21",
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_22",
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_23",
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_24",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_26",
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_29",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_30",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_31",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_32",
+                "block_46"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_33",
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_34",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_35",
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_36",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_37",
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_38",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_39",
+                "block_23"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_41",
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_44",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_45",
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_46",
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_47",
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_49",
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_50",
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_7",
+                "block_32"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_11"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_112_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_20. The following block(s) are on the table: block_12, block_5, block_4, block_16, block_14, block_7, and block_18. The following block(s) are stacked on top of another block: block_2 is on block_9, block_15 is on block_4, block_6 is on block_16, block_19 is on block_8, block_8 is on block_11, block_1 is on block_5, block_13 is on block_10, block_11 is on block_2, block_17 is on block_1, block_10 is on block_12, block_9 is on block_17, and block_3 is on block_6.\nIs it possible to transition to a state where the following holds: \nThe block block_3 is currently situated above the block block_12 and Block block_3 is placed on the table?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_12"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p15_17_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 10 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_9, block_7, block_8, block_1, and block_5. The following block(s) are stacked on top of another block: block_2 is on block_7, block_4 is on block_3, block_6 is on block_4, block_3 is on block_10, and block_10 is on block_8.\nIs it possible to transition to a state where the following holds: \nThe block block_4 is currently situated under the block block_3 and block_4 is not obstructed by any other blocks?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_142_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 10 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_4, block_7, block_8, and block_3. The following block(s) are stacked on top of another block: block_9 is on block_10, block_10 is on block_7, block_2 is on block_1, block_6 is on block_8, block_1 is on block_9, and block_5 is on block_4.\nIs it possible to transition to a state where the following holds: \nThe block block_2 is on top of block block_3 and No blocks are placed on top of block_1?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_3"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_156_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 50 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_34, block_41, block_24, block_2, block_4, block_3, block_16, block_40, block_9, block_37, block_33, block_39, block_19, and block_7. The following block(s) are stacked on top of another block: block_8 is on block_1, block_30 is on block_17, block_26 is on block_46, block_36 is on block_11, block_50 is on block_28, block_14 is on block_13, block_11 is on block_5, block_31 is on block_42, block_23 is on block_31, block_46 is on block_35, block_47 is on block_29, block_13 is on block_26, block_21 is on block_10, block_28 is on block_43, block_38 is on block_25, block_43 is on block_45, block_12 is on block_50, block_48 is on block_19, block_15 is on block_23, block_25 is on block_3, block_22 is on block_6, block_49 is on block_37, block_20 is on block_49, block_44 is on block_12, block_17 is on block_47, block_6 is on block_30, block_1 is on block_15, block_35 is on block_8, block_42 is on block_22, block_10 is on block_20, block_18 is on block_14, block_5 is on block_38, block_32 is on block_48, block_29 is on block_44, block_45 is on block_32, and block_27 is on block_18.\nIs it possible to transition to a state where the following holds: \nThe block block_34 is on top of block block_27?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_23"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_21",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_22",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_23",
+                "block_31"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_25",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_26",
+                "block_46"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_27",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_28",
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_29",
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_30",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_31",
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_32",
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_35",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_36",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_38",
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_42",
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_43",
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_44",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_45",
+                "block_32"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_46",
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_47",
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_48",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_49",
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_50",
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_34",
+                "block_27"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p08_33_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 5 blocks. \nCurrently, the robotic arm is holding block_3. The following block(s) are on the table: block_2 and block_4. The following block(s) are stacked on top of another block: block_1 is on block_4 and block_5 is on block_1.\nIs it possible to transition to a state where the following holds: \nBlock block_3 is on the table and No blocks are placed on top of block_1?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_154_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_11. The following block(s) are on the table: block_5, block_20, block_4, block_15, block_19, and block_18. The following block(s) are stacked on top of another block: block_2 is on block_9, block_12 is on block_14, block_7 is on block_20, block_1 is on block_5, block_13 is on block_10, block_16 is on block_4, block_17 is on block_1, block_8 is on block_7, block_10 is on block_12, block_9 is on block_17, block_14 is on block_16, block_3 is on block_6, and block_6 is on block_13.\nIs it possible to transition to a state where the following holds: \nThe robotic arm is holding block_2 and The robotic arm is empty?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_7",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_2"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_130_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_3. The following block(s) are on the table: block_6, block_10, block_9, block_17, block_7, block_11, and block_1. The following block(s) are stacked on top of another block: block_2 is on block_9, block_20 is on block_14, block_14 is on block_15, block_16 is on block_6, block_12 is on block_19, block_8 is on block_13, block_18 is on block_12, block_15 is on block_17, block_19 is on block_11, block_5 is on block_18, block_13 is on block_2, and block_4 is on block_7.\nIs it possible to transition to a state where the following holds: \nThe block block_10 is currently situated under the block block_5 and Block block_5 is placed on the table?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p24_46_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 50 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_34, block_21, block_24, block_2, block_5, block_35, block_16, block_14, block_29, block_40, block_9, block_49, block_28, block_42, block_44, block_47, block_50, block_19, block_25, block_8, and block_45. The following block(s) are stacked on top of another block: block_31 is on block_48, block_36 is on block_14, block_41 is on block_21, block_26 is on block_43, block_4 is on block_18, block_10 is on block_36, block_37 is on block_13, block_1 is on block_16, block_33 is on block_22, block_13 is on block_4, block_17 is on block_12, block_38 is on block_26, block_48 is on block_42, block_18 is on block_30, block_12 is on block_31, block_15 is on block_37, block_3 is on block_50, block_43 is on block_23, block_11 is on block_49, block_32 is on block_27, block_22 is on block_6, block_7 is on block_41, block_46 is on block_20, block_30 is on block_38, block_39 is on block_11, block_27 is on block_5, block_23 is on block_33, block_20 is on block_8, and block_6 is on block_7.\nIs it possible to transition to a state where the following holds: \nBlock block_12 is clear and Block block_17 is placed on the table?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_32"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_39"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_46"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_10",
+                "block_36"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_31"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_37"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_17",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_30"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_22",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_23",
+                "block_33"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_26",
+                "block_43"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_27",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_30",
+                "block_38"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_31",
+                "block_48"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_32",
+                "block_27"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_33",
+                "block_22"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_36",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_37",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_38",
+                "block_26"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_39",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_41",
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_43",
+                "block_23"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_46",
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_48",
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_7",
+                "block_41"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_21"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_24"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_25"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_28"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_29"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_34"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_35"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_40"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_42"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_44"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_45"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_47"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_49"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_50"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_17"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p07_8_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 5 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_2 and block_4. The following block(s) are stacked on top of another block: block_1 is on block_5, block_3 is on block_4, and block_5 is on block_2.\nIs it possible to transition to a state where the following holds: \nThe block block_5 is currently situated under the block block_2 and The block block_5 is currently situated under the block block_3?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_4"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_5"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p20_182_p",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_6, block_12, block_10, block_9, block_17, block_7, and block_11. The following block(s) are stacked on top of another block: block_20 is on block_14, block_4 is on block_7, block_14 is on block_15, block_16 is on block_6, block_18 is on block_10, block_3 is on block_4, block_13 is on block_5, block_19 is on block_11, block_1 is on block_18, block_5 is on block_8, block_2 is on block_1, block_8 is on block_3, and block_15 is on block_17.\nIs it possible to transition to a state where the following holds: \nBlock block_5 is clear and The block block_13 is currently situated above the block block_9?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "handempty",
+              "args": []
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_15",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_19",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_3",
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_8",
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_9"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_48_n",
+      "domain_description": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. \n        There is one robotic arm that can manipulate blocks. The arm can pick up a block (if it's clear and \n        the arm is empty), put down a block (if the arm is holding it), stack a block on another block \n        (if the target block is clear and the arm is holding a block), and unstack a block from another \n        block (if the block is clear and the arm is empty). Key constraints: only one block can be on top \n        of another, the arm can hold at most one block, and only clear blocks (with nothing on top) can be moved.\n        The 'clear' predicate indicates a block has nothing on top of it, 'on' indicates one block is directly \n        on another, 'ontable' means a block is directly on the table, 'holding' means the arm is holding a block, \n        and 'handempty' means the arm is not holding anything.",
+      "context_and_question": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_19. The following block(s) are on the table: block_3, block_10, block_17, block_15, block_7, and block_8. The following block(s) are stacked on top of another block: block_4 is on block_13, block_1 is on block_11, block_6 is on block_10, block_20 is on block_6, block_11 is on block_18, block_9 is on block_14, block_12 is on block_15, block_14 is on block_2, block_13 is on block_1, block_5 is on block_17, block_18 is on block_16, block_2 is on block_12, and block_16 is on block_8.\nIs it possible to transition to a state where the following holds: \nThe robotic arm is holding block_20 and The robotic arm is holding block_17?",
+      "output": {
+        "initial_state": {
+          "state": [
+            {
+              "predicate": "clear",
+              "args": [
+                "block_20"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_4"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_5"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "clear",
+              "args": [
+                "block_9"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_19"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_1",
+                "block_11"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_11",
+                "block_18"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_12",
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_13",
+                "block_1"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_14",
+                "block_2"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_16",
+                "block_8"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_18",
+                "block_16"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_2",
+                "block_12"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_20",
+                "block_6"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_4",
+                "block_13"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_5",
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_6",
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "on",
+              "args": [
+                "block_9",
+                "block_14"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_10"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_15"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_3"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_7"
+              ]
+            },
+            {
+              "predicate": "ontable",
+              "args": [
+                "block_8"
+              ]
+            }
+          ]
+        },
+        "goal_state": {
+          "state": [
+            {
+              "predicate": "holding",
+              "args": [
+                "block_17"
+              ]
+            },
+            {
+              "predicate": "holding",
+              "args": [
+                "block_20"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

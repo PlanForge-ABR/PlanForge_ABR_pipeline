@@ -1,0 +1,148 @@
+{
+  "domain": "hanoi",
+  "num_examples": 15,
+  "num_solved_by_final_answer": 10,
+  "num_with_plan": 10,
+  "final_answer_ratio": 0.6666666666666666,
+  "plan_ratio": 0.6666666666666666,
+  "num_with_ground_truth": 15,
+  "num_correct_final_answer": 15,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "hanoi_hanoi-48_p16_16_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-51_p17_40_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-3_p01_4_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-15_p05_35_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-9_p03_180_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-72_p24_17_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-51_p17_12_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-33_p11_31_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-69_p23_19_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-12_p04_30_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-9_p03_185_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-15_p05_27_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-9_p03_103_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-51_p17_7_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "hanoi_hanoi-9_p03_151_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

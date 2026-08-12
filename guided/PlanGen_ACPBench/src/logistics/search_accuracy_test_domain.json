@@ -1,0 +1,148 @@
+{
+  "domain": "logistics",
+  "num_examples": 15,
+  "num_solved_by_final_answer": 10,
+  "num_with_plan": 10,
+  "final_answer_ratio": 0.6666666666666666,
+  "plan_ratio": 0.6666666666666666,
+  "num_with_ground_truth": 15,
+  "num_correct_final_answer": 15,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "logistics_logistics-c3-s3-p15-a1_p27_158_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p20-a1_p30_23_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p15-a1_p27_88_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p5-a1_p18_162_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p20-a1_p30_101_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p5-a1_p18_19_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c2-s3-p4-a1_p06_159_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p15-a1_p27_161_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p20-a1_p30_183_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p15-a1_p26_63_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p5-a1_p18_62_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p20-a1_p29_123_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p20-a1_p28_10_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c3-s3-p5-a1_p18_90_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "logistics_logistics-c5-s3-p4-a1_p10_184_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "domain": "grippers",
+  "num_examples": 15,
+  "num_solved_by_final_answer": 10,
+  "num_with_plan": 10,
+  "final_answer_ratio": 0.6666666666666666,
+  "plan_ratio": 0.6666666666666666,
+  "num_with_ground_truth": 15,
+  "num_correct_final_answer": 15,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "grippers_gripper-1-25-50_p30_156_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-2-4_p02_90_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-15-25_p27_143_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-3-7_p14_111_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-10-4_p10_134_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-3-15_p18_120_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-10-4_p10_115_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-15-25_p27_180_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-3-15_p18_9_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-10-4_p10_126_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-15-25_p27_35_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-15-25_p28_31_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-3-15_p18_189_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-10-4_p10_183_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grippers_gripper-1-15-25_p28_24_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

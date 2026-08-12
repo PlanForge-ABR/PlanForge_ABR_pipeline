@@ -1,0 +1,193 @@
+{
+  "domain": "goldminer",
+  "num_examples": 20,
+  "num_solved_by_final_answer": 7,
+  "num_with_plan": 0,
+  "final_answer_ratio": 0.35,
+  "plan_ratio": 0.0,
+  "num_with_ground_truth": 20,
+  "num_correct_final_answer": 15,
+  "final_answer_accuracy_against_ground_truth": 0.75,
+  "per_example": [
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols3_p02_79_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p28_110_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p26_104_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols5_p14_158_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p27_8_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p30_31_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols4_p10_170_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p29_18_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols4_p10_138_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p28_8_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols4_p10_44_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols5_p14_60_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p26_109_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p27_74_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p30_163_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols4_p10_181_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows4-cols4_p18_15_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p29_119_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows5-cols5_p26_49_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "goldminer_typed-bomberman-rows3-cols4_p06_49_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    }
+  ]
+}

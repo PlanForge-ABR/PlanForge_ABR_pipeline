@@ -1,0 +1,2928 @@
+{
+  "frogs-jumping": [
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_0_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_0_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_1_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_1_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_1_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_1_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_2_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_2_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_2_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_2_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_3_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_3_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_3_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p7"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_3_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p7"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_4_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_4_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_4_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_4_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_5_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_5_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_6_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_6_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_6_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p7"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_6_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p7"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_7_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_7_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_7_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_7_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_8_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_8_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_8_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_8_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_9_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_9_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_9_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_9_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_10_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_10_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_10_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p6"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_10_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p6"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p6"
+          ]
+        }
+      ],
+      "expected": true
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+================================================================================
+OPTIMIZED DSPY PROMPT FOR NL2STATE CONVERSION
+================================================================================
+
+Domain: grid
+Model: openai/gpt-5.1
+Thinking Mode: Enabled
+
+================================================================================
+MODULE CONFIGURATION
+================================================================================
+
+Predictor Type: ChainOfThought
+
+================================================================================
+ACTUAL PROMPTS SENT TO LLM
+================================================================================
+
+Captured 1 LM call(s)
+
+
+================================================================================
+LM CALL #1
+================================================================================
+
+[
+  "Predict(StringSignature(domain_description, context_and_question -> reasoning, initial_state, goal_state\n    instructions='Convert natural language description to formal state representation'\n    domain_description = Field(annotation=str required=True json_schema_extra={'desc': 'Description of the domain and its rules', '__dspy_field_type': 'input', 'prefix': 'Domain Description:'})\n    context_and_question = Field(annotation=str required=True json_schema_extra={'desc': 'Current state context and question about goal state', '__dspy_field_type': 'input', 'prefix': 'Context And Question:'})\n    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': \"Reasoning: Let's think step by step in order to\", 'desc': '${reasoning}', '__dspy_field_type': 'output'})\n    initial_state = Field(annotation=str required=True json_schema_extra={'desc': 'Initial state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Initial State:'})\n    goal_state = Field(annotation=str required=True json_schema_extra={'desc': 'Goal state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Goal State:'})\n))",
+  {
+    "domain_description": "This is a grid navigation domain where an agent moves on a rectangular grid to reach \n        target positions or collect objects. The agent can move up, down, left, or right to adjacent \n        grid cells. Key constraints: the agent cannot move outside the grid boundaries, some cells may \n        be blocked or contain obstacles, and movement is typically to adjacent cells only. The 'at' \n        predicate indicates the agent's position, 'adjacent' defines valid moves between grid cells.",
+    "context_and_question": "Sample: Ferry is at location A with car C1 on board. Can we get car C1 to location B?"
+  },
+  "Prediction(\n    reasoning='We model:\\n- Objects: `ferry`, `c1`, and locations `A`, `B`.\\n- Positions with `at(object, location)` as per the domain description.\\n- Being on the ferry with a predicate `onboard(car, ferry)`.\\n- Possible movement between locations with `adjacent(A, B)` and `adjacent(B, A)` (minimal connectivity for the sample).\\nThe initial state encodes that the ferry is at `A` with car `c1` on board.  \\nThe goal state encodes that car `c1` is at location `B`.',\n    initial_state='[\\n  { \"predicate\": \"at\", \"args\": [\"ferry\", \"A\"] },\\n  { \"predicate\": \"onboard\", \"args\": [\"c1\", \"ferry\"] },\\n  { \"predicate\": \"adjacent\", \"args\": [\"A\", \"B\"] },\\n  { \"predicate\": \"adjacent\", \"args\": [\"B\", \"A\"] }\\n]',\n    goal_state='[\\n  { \"predicate\": \"at\", \"args\": [\"c1\", \"B\"] }\\n]'\n)"
+]
+
+
+================================================================================
+FULL PREDICTOR STATE
+================================================================================
+
+predict = Predict(StringSignature(domain_description, context_and_question -> reasoning, initial_state, goal_state
+    instructions='Convert natural language description to formal state representation'
+    domain_description = Field(annotation=str required=True json_schema_extra={'desc': 'Description of the domain and its rules', '__dspy_field_type': 'input', 'prefix': 'Domain Description:'})
+    context_and_question = Field(annotation=str required=True json_schema_extra={'desc': 'Current state context and question about goal state', '__dspy_field_type': 'input', 'prefix': 'Context And Question:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    initial_state = Field(annotation=str required=True json_schema_extra={'desc': 'Initial state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Initial State:'})
+    goal_state = Field(annotation=str required=True json_schema_extra={'desc': 'Goal state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Goal State:'})
+))

@@ -1,0 +1,193 @@
+{
+  "domain": "blocksworld",
+  "num_examples": 20,
+  "num_solved_by_final_answer": 11,
+  "num_with_plan": 0,
+  "final_answer_ratio": 0.55,
+  "plan_ratio": 0.0,
+  "num_with_ground_truth": 20,
+  "num_correct_final_answer": 20,
+  "final_answer_accuracy_against_ground_truth": 1.0,
+  "per_example": [
+    {
+      "example_id": "blocksworld_BW-rand-50_p25_192_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_115_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_42_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p24_113_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_41_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_49_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_11_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_117_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p13_13_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p24_48_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p21_104_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p15_113_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p17_52_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p16_134_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-20_p19_100_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-5_p08_44_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p25_21_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p11_123_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-10_p12_98_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "blocksworld_BW-rand-50_p22_145_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    }
+  ]
+}

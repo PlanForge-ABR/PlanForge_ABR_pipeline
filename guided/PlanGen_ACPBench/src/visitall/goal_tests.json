@@ -1,0 +1,9718 @@
+{
+  "grid-visit-all": [
+    {
+      "example_id": "visitall_grid-4-4-2-2020_p05_14_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-2-2020_p05_14_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-3-2020_p17_104_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-3-2020_p17_104_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-5-5-1-2021_p24_91_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-5-5-1-2021_p24_91_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-5-5-1-2020_p23_104_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-5-5-1-2020_p23_104_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-5-5-0-2021_p22_146_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-5-5-0-2021_p22_146_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-4-1-2020_p03_99_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-1-2020_p03_99_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-4-3-2021_p08_113_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-3-2021_p08_113_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-4-1-2021_p04_133_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-1-2021_p04_133_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-2-2020_p15_168_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-2-2020_p15_168_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-5-5-0-2021_p22_134_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-5-5-0-2021_p22_134_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-1-2020_p13_179_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-1-2020_p13_179_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-2-2020_p15_73_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-2-2020_p15_73_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-4-2021_p20_56_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-4-2021_p20_56_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-0-2021_p12_92_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-0-2021_p12_92_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-5-5-1-2020_p23_48_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-5-5-1-2020_p23_48_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x3-y0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-4-3-2020_p07_125_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-3-2020_p07_125_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-4-1-2021_p04_35_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-1-2021_p04_35_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x0-y0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-5-2-2020_p15_137_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-5-2-2020_p15_137_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-4-4-0-2020_p01_116_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y1",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x2-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y1",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-4-4-0-2020_p01_116_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "visitall_grid-5-5-2-2020_p25_79_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at-robot",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y1",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x0-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x0-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x0-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y1",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x1-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x1-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x1-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x2-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x2-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y0",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x2-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y2",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y3",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x3-y4",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x3-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y0",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y0"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y1",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x3-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y1"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y2",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y2"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y3",
+            "loc-x4-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "connected",
+          "args": [
+            "loc-x4-y4",
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x0-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x3-y4"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y3"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x4-y4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "visitall_grid-5-5-2-2020_p25_79_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x1-y2"
+          ]
+        },
+        {
+          "predicate": "visited",
+          "args": [
+            "loc-x2-y2"
+          ]
+        }
+      ],
+      "expected": true
+    }
+  ]
+}

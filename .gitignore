@@ -1,0 +1,36 @@
+# Datasets & Data files
+data/
+*.tar.gz
+*.gz
+
+# Byte-compiled / Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Environment & Key files
+.env
+*.key
+
+# Output & Result logs
+outputs/
+logs/
+*.log
+screenlog.*
+outfiles/
+*.json.tmp
+
+# macOS & System files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temp files
+temp_extracted/
+scratch/

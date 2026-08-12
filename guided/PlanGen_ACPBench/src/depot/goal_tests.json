@@ -1,0 +1,5966 @@
+{
+  "depots": [
+    {
+      "example_id": "depot_depot-3-2-2-5-5-2_p06_75_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate1",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-3-2-2-5-5-2_p06_75_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_165_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate5",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate6",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate3",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate8",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate9",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate4",
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate5",
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate6",
+            "pallet2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_165_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_135_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate13",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate5",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate6",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate7",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate8",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate9",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate13"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate10",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate12",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate14",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate3",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate4",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist3",
+            "crate11"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "crate7"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate13",
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate5",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate6",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate7",
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate8",
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate9",
+            "crate0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate12",
+            "truck1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_135_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate12",
+            "truck1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate12",
+            "truck1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_43_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate10",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate11",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate4",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate7",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate8",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate9",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate11"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate13",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate5",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist3",
+            "crate14"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist4",
+            "crate12"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist5",
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate10",
+            "crate4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate11",
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate3",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate4",
+            "crate3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate7",
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate8",
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate9",
+            "crate2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_43_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p28_164_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate14",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate5",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate6",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate8",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate14"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate1",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate10",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate11",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate12",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate13",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate3",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate7",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist2",
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist4",
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate14",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate4",
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate5",
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate6",
+            "crate4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate8",
+            "pallet3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate14"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p28_164_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate14"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate14"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_129_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate0",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_129_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-7-2-2-9-9-2_p10_122_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "depot4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "depot5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist6",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist7",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "depot4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "depot5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet6",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet7",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist6"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist7"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist8"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet8"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-7-2-2-9-9-2_p10_122_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-3-2-2-5-5-2_p06_41_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate1",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-3-2-2-5-5-2_p06_41_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_14_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate4",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate5",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate6",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate7",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate7"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate3",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate8",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate4",
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate5",
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate6",
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate7",
+            "pallet0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "distributor1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p26_14_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "distributor1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "distributor1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p28_158_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate12",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate6",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate9",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate12"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate13",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate14",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate4",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate7",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist2",
+            "crate11"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist3",
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist4",
+            "crate10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate12",
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate3",
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate6",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate9",
+            "pallet4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "crate10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate10",
+            "crate12"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p28_158_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "crate10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate10",
+            "crate12"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "clear",
+          "args": [
+            "crate10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate10",
+            "crate12"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_120_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist1",
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist5",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "distributor1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_120_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "distributor1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "distributor1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_167_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist4",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_167_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p27_134_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate3",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate1",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate2",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate5",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate6",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate7",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist2",
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist4",
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate3",
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate4",
+            "crate3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist3",
+            "crate5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-10_p27_134_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist3",
+            "crate5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist3",
+            "crate5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-10-2-2-12-12-2_p14_177_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist10",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist11",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "depot4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "depot5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist6",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist7",
+            "depot7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist8",
+            "depot8"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist9",
+            "depot9"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet10",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet11",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "depot4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "depot5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet6",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet7",
+            "depot7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet8",
+            "depot8"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet9",
+            "depot9"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot8"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist10"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist11"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist6"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist7"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist9"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet10"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet11"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet8"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet9"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist8",
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot5"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-10-2-2-12-12-2_p14_177_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot5"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot5"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_15_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate10",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate11",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate14",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate4",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate5",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate7",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate8",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate9",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate11"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate14"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate0",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate12",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate6",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist5",
+            "crate13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate10",
+            "crate4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate11",
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate14",
+            "crate10"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate3",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate4",
+            "crate3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate5",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate7",
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate8",
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate9",
+            "crate2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate6"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p29_15_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate6"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate6"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-7-2-2-9-9-2_p10_29_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "depot4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "depot5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist6",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist7",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "depot4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "depot5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet6",
+            "depot6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet7",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist6"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist7"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist8"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet7"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet8"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate0",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet3"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot0"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-7-2-2-9-9-2_p10_29_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist8",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot0"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_192_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate0",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate1",
+            "truck1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_192_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_199_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "crate2"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet4"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-3_p18_199_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot2"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_58_p:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist0"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate0"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate0",
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet0"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-2-2-2-4-4-2_p02_58_p:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        }
+      ],
+      "expected": true
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p30_29_n:init-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "crate1",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate11",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate12",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate13",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate2",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate5",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate6",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "crate9",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "hoist5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet0",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet2",
+            "depot2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet3",
+            "depot3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet4",
+            "distributor0"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "pallet5",
+            "distributor1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck0",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "truck1",
+            "depot1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist1"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist2"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist3"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist4"
+          ]
+        },
+        {
+          "predicate": "available",
+          "args": [
+            "hoist5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate1"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate11"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate5"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "crate6"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet2"
+          ]
+        },
+        {
+          "predicate": "clear",
+          "args": [
+            "pallet4"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate0",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate10",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate14",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate3",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate4",
+            "truck0"
+          ]
+        },
+        {
+          "predicate": "in",
+          "args": [
+            "crate7",
+            "truck1"
+          ]
+        },
+        {
+          "predicate": "lifting",
+          "args": [
+            "hoist0",
+            "crate8"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate1",
+            "pallet5"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate11",
+            "pallet3"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate12",
+            "crate9"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate13",
+            "crate12"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate2",
+            "pallet1"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate5",
+            "crate13"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate6",
+            "pallet0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate9",
+            "crate2"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate13",
+            "crate12"
+          ]
+        }
+      ],
+      "expected": false
+    },
+    {
+      "example_id": "depot_depot-4-2-2-6-6-15_p30_29_n:goal-vs-goal",
+      "current_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate13",
+            "crate12"
+          ]
+        }
+      ],
+      "goal_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "pallet1",
+            "depot0"
+          ]
+        },
+        {
+          "predicate": "on",
+          "args": [
+            "crate13",
+            "crate12"
+          ]
+        }
+      ],
+      "expected": true
+    }
+  ]
+}

@@ -1,0 +1,1045 @@
+[
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p28_52_n",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f2-0f and is holding key1-1. All the positions are open except the following: f1-2f has shape1 shaped lock, f2-1f has shape1 shaped lock. Key key1-3 is at position f4-4f. Key key1-2 is at position f0-0f. Key key1-0 is at position f2-1f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is holding key1-1 and Robot is holding key1-0?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f2-0f",
+      "robot_goal": "Robot is holding key1-1 and Robot is holding key1-0",
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": "f0-0f"
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f4-4f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f2-1f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f1-2f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f2-1f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "holding key1-1",
+      "open_positions": "all positions are open except locked positions f1-2f and f2-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 7, in parse_pos\nValueError: Invalid position format: Robot is holding key1-1 and Robot is holding key1-0\n",
+    "time_taken": 3.066398859024048,
+    "correct": true,
+    "prompt_tokens": 1043,
+    "completion_tokens": 390,
+    "cost": 0.0084575,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_88_n",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 3 keys in 0 different shapes: Key key0-2 is of shape shape0, Key key0-0 is of shape shape0, Key key0-1 is of shape shape0.  \nCurrently, the robot is at position f2-2f and its arm is empty. All the positions are open except the following: f4-2f has shape0 shaped lock, f2-0f has shape0 shaped lock. Key key0-2 is at position f3-3f. Key key0-0 is at position f2-2f. Key key0-1 is at position f1-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f4-3f location and Robot is at f4-2f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f2-2f",
+      "robot_goal": "f4-3f location and Robot is at f4-2f",
+      "keys": [
+        {
+          "id": "key0-2",
+          "shape": "shape0",
+          "position": "f3-3f"
+        },
+        {
+          "id": "key0-0",
+          "shape": "shape0",
+          "position": "f2-2f"
+        },
+        {
+          "id": "key0-1",
+          "shape": "shape0",
+          "position": "f1-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-2f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f2-0f",
+          "shape": "shape0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f4-2f and f2-0f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 9, in parse_pos\nValueError: too many values to unpack (expected 2)\n",
+    "time_taken": 3.587445020675659,
+    "correct": true,
+    "prompt_tokens": 1034,
+    "completion_tokens": 364,
+    "cost": 0.008045,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p30_15_n",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f1-2f and is holding key1-2. All the positions are open except the following: f4-0f has shape1 shaped lock, f0-3f has shape1 shaped lock, f4-4f has shape1 shaped lock, f0-1f has shape1 shaped lock. Key key1-3 is at position f2-1f. Key key1-1 is at position f4-2f. Key key1-0 is at position f2-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f4-1f location and Robot is at f3-1f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f1-2f",
+      "robot_goal": "f4-1f and f3-1f",
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": null
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f4-2f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f2-1f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f2-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-0f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-3f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f4-4f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-1f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "holding key1-2",
+      "open_positions": "all positions are open except locked positions f4-0f, f0-3f, f4-4f and f0-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 9, in parse_pos\nValueError: too many values to unpack (expected 2)\n",
+    "time_taken": 3.5877039432525635,
+    "correct": true,
+    "prompt_tokens": 1069,
+    "completion_tokens": 450,
+    "cost": 0.0094225,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p26_122_n",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f3-2f and its arm is empty. All the positions are open except the following: f4-2f has shape1 shaped lock, f2-0f has shape1 shaped lock. Key key1-3 is at position f3-3f. Key key1-2 is at position f1-3f. Key key1-1 is at position f2-2f. Key key1-0 is at position f3-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nLocation f0-4f is locked?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f3-2f",
+      "robot_goal": "Location f0-4f is locked",
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": "f1-3f"
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f2-2f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f3-3f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f3-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-2f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f2-0f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f4-2f and f2-0f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 7, in parse_pos\nValueError: Invalid position format: Location f0-4f is locked\n",
+    "time_taken": 3.116145372390747,
+    "correct": true,
+    "prompt_tokens": 1048,
+    "completion_tokens": 390,
+    "cost": 0.00847,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p29_146_n",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f3-2f and its arm is empty. All the positions are open except the following: f0-2f has shape1 shaped lock, f4-0f has shape1 shaped lock, f0-3f has shape1 shaped lock. Key key1-0 is at position f0-1f. Key key1-2 is at position f3-0f. Key key1-1 is at position f4-2f. Key key1-3 is at position f0-1f.",
+    "question": "Is it possible to transition to a state where the following holds: \nLocation f4-1f is open and Location f0-1f is locked?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f3-2f",
+      "robot_goal": null,
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": "f3-0f"
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f4-2f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f0-1f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f0-1f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f0-2f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f4-0f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-3f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f0-2f, f4-0f, and f0-3f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 5, in parse_pos\nAttributeError: 'NoneType' object has no attribute 'strip'\n",
+    "time_taken": 3.211303949356079,
+    "correct": true,
+    "prompt_tokens": 1068,
+    "completion_tokens": 412,
+    "cost": 0.00885,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t1-k2-l2-p100_p02_91_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 2 keys in 0 different shapes: Key key0-1 is of shape shape0, Key key0-0 is of shape shape0.  \nCurrently, the robot is at position f3-1f and its arm is empty. All the positions are open except the following: f2-1f has shape0 shaped lock, f0-1f has shape0 shaped lock. Key key0-1 is at position f4-1f. Key key0-0 is at position f2-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f3-3f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f3-1f",
+      "robot_goal": "f3-3f",
+      "keys": [
+        {
+          "id": "key0-1",
+          "shape": "shape0",
+          "position": "f4-1f"
+        },
+        {
+          "id": "key0-0",
+          "shape": "shape0",
+          "position": "f2-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f2-1f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f0-1f",
+          "shape": "shape0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f2-1f and f0-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": [
+      "move f3-1f f3-2f",
+      "move f3-2f f3-3f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.355041027069092,
+    "correct": true,
+    "prompt_tokens": 999,
+    "completion_tokens": 321,
+    "cost": 0.0073125,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k2-l2-p100_p18_42_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 2 keys in 0 different shapes: Key key1-1 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f3-0f and is holding key1-1. All the positions are open except the following: f3-4f has shape1 shaped lock, f2-1f has shape1 shaped lock. Key key1-0 is at position f1-0f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f4-0f location and Robot is not holding anything?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f3-0f",
+      "robot_goal": "f4-0f",
+      "keys": [
+        {
+          "id": "key1-1",
+          "shape": "shape1"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f1-0f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f3-4f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f2-1f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "holding key1-1",
+      "open_positions": "all positions are open except locked positions f3-4f and f2-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 25, in combinations_func\nKeyError: 'position'\n",
+    "time_taken": 2.26867413520813,
+    "correct": false,
+    "prompt_tokens": 993,
+    "completion_tokens": 314,
+    "cost": 0.0071925,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p30_51_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f1-2f and is holding key1-2. All the positions are open except the following: f4-0f has shape1 shaped lock, f0-3f has shape1 shaped lock, f4-4f has shape1 shaped lock, f0-1f has shape1 shaped lock. Key key1-3 is at position f2-1f. Key key1-0 is at position f1-2f. Key key1-1 is at position f4-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nKey key1-2 is at f2-2f location and Robot is not holding anything?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f1-2f",
+      "robot_goal": null,
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": null
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f4-2f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f2-1f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f1-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-0f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-3f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f4-4f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-1f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "holding key1-2",
+      "open_positions": "all positions are open except locked positions f4-0f, f0-3f, f4-4f, and f0-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 5, in parse_pos\nAttributeError: 'NoneType' object has no attribute 'strip'\n",
+    "time_taken": 3.3787009716033936,
+    "correct": false,
+    "prompt_tokens": 1069,
+    "completion_tokens": 440,
+    "cost": 0.0092725,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t1-k2-l2-p100_p02_186_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 2 keys in 0 different shapes: Key key0-1 is of shape shape0, Key key0-0 is of shape shape0.  \nCurrently, the robot is at position f4-0f and is holding key0-0. All the positions are open except the following: f0-1f has shape0 shaped lock. Key key0-1 is at position f4-1f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f3-1f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f4-0f",
+      "robot_goal": "f3-1f",
+      "keys": [
+        {
+          "id": "key0-1",
+          "shape": "shape0",
+          "position": "f4-1f"
+        },
+        {
+          "id": "key0-0",
+          "shape": "shape0",
+          "position": null
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f0-1f",
+          "shape": "shape0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "holding key0-0",
+      "open_positions": "all positions are open except locked positions f0-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 25, in combinations_func\n  File \"<string>\", line 5, in parse_pos\nAttributeError: 'NoneType' object has no attribute 'strip'\n",
+    "time_taken": 2.8647947311401367,
+    "correct": false,
+    "prompt_tokens": 976,
+    "completion_tokens": 291,
+    "cost": 0.006805,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_70_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 3 keys in 0 different shapes: Key key0-2 is of shape shape0, Key key0-0 is of shape shape0, Key key0-1 is of shape shape0.  \nCurrently, the robot is at position f1-4f and its arm is empty. All the positions are open except the following: f4-2f has shape0 shaped lock, f2-2f has shape0 shaped lock, f2-0f has shape0 shaped lock. Key key0-1 is at position f2-2f. Key key0-2 is at position f2-4f. Key key0-0 is at position f1-3f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f1-2f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f1-4f",
+      "robot_goal": "f1-2f",
+      "keys": [
+        {
+          "id": "key0-2",
+          "shape": "shape0",
+          "position": "f2-4f"
+        },
+        {
+          "id": "key0-0",
+          "shape": "shape0",
+          "position": "f1-3f"
+        },
+        {
+          "id": "key0-1",
+          "shape": "shape0",
+          "position": "f2-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-2f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f2-2f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f2-0f",
+          "shape": "shape0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f4-2f, f2-2f and f2-0f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": [
+      "move f1-4f f1-3f",
+      "move f1-3f f1-2f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.698014259338379,
+    "correct": true,
+    "prompt_tokens": 1035,
+    "completion_tokens": 383,
+    "cost": 0.0083325,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_88_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 3 keys in 0 different shapes: Key key0-2 is of shape shape0, Key key0-0 is of shape shape0, Key key0-1 is of shape shape0.  \nCurrently, the robot is at position f2-2f and its arm is empty. All the positions are open except the following: f4-2f has shape0 shaped lock, f2-0f has shape0 shaped lock. Key key0-2 is at position f3-3f. Key key0-0 is at position f2-2f. Key key0-1 is at position f1-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f2-3f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f2-2f",
+      "robot_goal": "f2-3f",
+      "keys": [
+        {
+          "id": "key0-2",
+          "shape": "shape0",
+          "position": "f3-3f"
+        },
+        {
+          "id": "key0-0",
+          "shape": "shape0",
+          "position": "f2-2f"
+        },
+        {
+          "id": "key0-1",
+          "shape": "shape0",
+          "position": "f1-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-2f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f2-0f",
+          "shape": "shape0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f4-2f and f2-0f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": [
+      "move f2-2f f2-3f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.055509090423584,
+    "correct": true,
+    "prompt_tokens": 1024,
+    "completion_tokens": 354,
+    "cost": 0.00787,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p29_141_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f1-0f and its arm is empty. All the positions are open except the following: f0-0f has shape1 shaped lock, f0-2f has shape1 shaped lock, f4-0f has shape1 shaped lock, f0-3f has shape1 shaped lock. Key key1-3 is at position f1-1f. Key key1-2 is at position f3-0f. Key key1-1 is at position f4-2f. Key key1-0 is at position f0-0f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f1-1f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f1-0f",
+      "robot_goal": "f1-1f",
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": "f3-0f"
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f4-2f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f1-1f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f0-0f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f0-0f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-2f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f4-0f",
+          "shape": "shape1"
+        },
+        {
+          "position": "f0-3f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f0-0f, f0-2f, f4-0f, and f0-3f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": [
+      "move f1-0f f1-1f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 3.5870869159698486,
+    "correct": true,
+    "prompt_tokens": 1071,
+    "completion_tokens": 446,
+    "cost": 0.0093675,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p10_158_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 3 keys in 0 different shapes: Key key0-2 is of shape shape0, Key key0-0 is of shape shape0, Key key0-1 is of shape shape0.  \nCurrently, the robot is at position f0-1f and its arm is empty. All the positions are open except the following: f4-0f has shape0 shaped lock, f0-3f has shape0 shaped lock, f4-4f has shape0 shaped lock. Key key0-1 is at position f1-2f. Key key0-0 is at position f0-1f. Key key0-2 is at position f4-3f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is holding key0-0?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f0-1f",
+      "robot_goal": "holding key0-0",
+      "keys": [
+        {
+          "id": "key0-2",
+          "shape": "shape0",
+          "position": "f4-3f"
+        },
+        {
+          "id": "key0-0",
+          "shape": "shape0",
+          "position": "f0-1f"
+        },
+        {
+          "id": "key0-1",
+          "shape": "shape0",
+          "position": "f1-2f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f4-0f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f0-3f",
+          "shape": "shape0"
+        },
+        {
+          "position": "f4-4f",
+          "shape": "shape0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f4-0f, f0-3f and f4-4f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 17, in combinations_func\n  File \"<string>\", line 7, in parse_pos\nValueError: Invalid position format: holding key0-0\n",
+    "time_taken": 3.439800262451172,
+    "correct": false,
+    "prompt_tokens": 1033,
+    "completion_tokens": 383,
+    "cost": 0.0083275,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p27_184_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f1-1f and its arm is empty. All the positions are open except the following: f2-1f has shape1 shaped lock. Key key1-3 is at position f2-2f. Key key1-1 is at position f1-0f. Key key1-0 is at position f4-3f. Key key1-2 is at position f2-0f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f1-0f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f1-1f",
+      "robot_goal": "f1-0f",
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1",
+          "position": "f2-0f"
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f1-0f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f2-2f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f4-3f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f2-1f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "empty",
+      "open_positions": "all positions are open except locked positions f2-1f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": [
+      "move f1-1f f1-0f"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.800060987472534,
+    "correct": true,
+    "prompt_tokens": 1038,
+    "completion_tokens": 358,
+    "cost": 0.007965,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p28_109_p",
+    "context": "A robot is in a grid and can only move to places that are connected to its current position. \nThe grid size is 5x5, and the locations are of the form fi-jf (e.g., f3-2f or f0-1f). The grid cells are connected to their neighbors (e.g., f1-2f is connected to the four neighbors f0-2f, f2-2f, f1-1f, and f1-3f). Some positions on the grid are locked and can be opened with a key of a matching shape. The robot has an arm that can pick up a key when the key is in same location as the robot and the arm is empty.  \nThere are 4 keys in 0 different shapes: Key key1-2 is of shape shape1, Key key1-1 is of shape shape1, Key key1-3 is of shape shape1, Key key1-0 is of shape shape1.  \nCurrently, the robot is at position f2-2f and is holding key1-2. All the positions are open except the following: f1-2f has shape1 shaped lock. Key key1-3 is at position f4-4f. Key key1-0 is at position f2-1f. Key key1-1 is at position f0-2f.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot is at f2-3f location?",
+    "predicted_initial_state": {
+      "grid_size": [
+        5,
+        5
+      ],
+      "robot_start": "f2-2f",
+      "robot_goal": "f2-3f",
+      "keys": [
+        {
+          "id": "key1-2",
+          "shape": "shape1"
+        },
+        {
+          "id": "key1-1",
+          "shape": "shape1",
+          "position": "f0-2f"
+        },
+        {
+          "id": "key1-3",
+          "shape": "shape1",
+          "position": "f4-4f"
+        },
+        {
+          "id": "key1-0",
+          "shape": "shape1",
+          "position": "f2-1f"
+        }
+      ],
+      "locked_positions": [
+        {
+          "position": "f1-2f",
+          "shape": "shape1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "movement": "robot can only move to connected neighboring grid cells",
+      "connectivity": "each grid cell is connected to its orthogonal neighbors within the 5x5 grid",
+      "pickup_condition": "robot can pick up a key only if the key is at the same location and the robot arm is empty",
+      "arm_initial_state": "holding key1-2",
+      "open_positions": "all positions are open except locked positions f1-2f",
+      "key_lock_rule": "locked positions can be opened with a key of matching shape"
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 25, in combinations_func\nKeyError: 'position'\n",
+    "time_taken": 3.3931729793548584,
+    "correct": false,
+    "prompt_tokens": 1026,
+    "completion_tokens": 351,
+    "cost": 0.00783,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

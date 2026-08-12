@@ -1,0 +1,148 @@
+{
+  "domain": "grid",
+  "num_examples": 15,
+  "num_solved_by_final_answer": 11,
+  "num_with_plan": 11,
+  "final_answer_ratio": 0.7333333333333333,
+  "plan_ratio": 0.7333333333333333,
+  "num_with_ground_truth": 15,
+  "num_correct_final_answer": 14,
+  "final_answer_accuracy_against_ground_truth": 0.9333333333333333,
+  "per_example": [
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p28_52_n",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 3,
+      "ground_truth": "no",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_88_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p30_15_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p26_122_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p29_146_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t1-k2-l2-p100_p02_91_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k2-l2-p100_p18_42_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p30_51_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t1-k2-l2-p100_p02_186_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_70_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 2,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p06_88_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p29_141_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t1-k3-l3-p100_p10_158_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p27_184_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "grid_grid-x5-y5-t2-k4-l4-p100_p28_109_p",
+      "final_answer": "yes",
+      "is_yes": true,
+      "has_plan": true,
+      "plan_length": 1,
+      "ground_truth": "yes",
+      "is_correct_final_answer": true
+    }
+  ]
+}

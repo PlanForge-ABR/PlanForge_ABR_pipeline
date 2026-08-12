@@ -1,0 +1,1382 @@
+[
+  {
+    "example_id": "rovers_prob-2-15-2-2-15-2021_p29_123_n",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 15 waypoints, 2 stores, 2 cameras, 2 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover1 is equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover1 has camera0 on board. Rover rover0 has camera1 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective0. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover0 can traverse from waypoint3 to waypoint0, waypoint2 to waypoint0, waypoint5 to waypoint7, waypoint7 to waypoint5, waypoint14 to waypoint0, waypoint7 to waypoint4, waypoint0 to waypoint2, waypoint0 to waypoint3, waypoint5 to waypoint9, waypoint4 to waypoint7, waypoint13 to waypoint0, waypoint5 to waypoint11, waypoint5 to waypoint8, waypoint5 to waypoint6, waypoint1 to waypoint0, waypoint9 to waypoint5, waypoint8 to waypoint5, waypoint5 to waypoint10, waypoint0 to waypoint1, waypoint0 to waypoint5, waypoint0 to waypoint14, waypoint12 to waypoint6, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint6 to waypoint5, waypoint0 to waypoint13, waypoint11 to waypoint5, waypoint5 to waypoint0. Rover rover1 can traverse from waypoint0 to waypoint11, waypoint8 to waypoint6, waypoint12 to waypoint6, waypoint7 to waypoint0, waypoint1 to waypoint9, waypoint11 to waypoint4, waypoint6 to waypoint8, waypoint2 to waypoint7, waypoint5 to waypoint14, waypoint9 to waypoint3, waypoint12 to waypoint0, waypoint13 to waypoint0, waypoint5 to waypoint0, waypoint5 to waypoint10, waypoint0 to waypoint7, waypoint14 to waypoint5, waypoint3 to waypoint9, waypoint9 to waypoint12, waypoint9 to waypoint1, waypoint0 to waypoint12, waypoint0 to waypoint5, waypoint11 to waypoint0, waypoint12 to waypoint9, waypoint7 to waypoint2, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint4 to waypoint11, waypoint0 to waypoint13. Waypoint(s) are visible from waypoint13: waypoint1, waypoint4, waypoint0, waypoint7, waypoint3, waypoint2, and waypoint14. Waypoint(s) are visible from waypoint9: waypoint5, waypoint12, waypoint1, waypoint0, waypoint7, waypoint3, and waypoint11. Waypoint(s) are visible from waypoint1: waypoint7, waypoint2, waypoint13, waypoint8, waypoint10, waypoint9, waypoint12, and waypoint0. Waypoint(s) are visible from waypoint2: waypoint13, waypoint11, waypoint10, waypoint1, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint3: waypoint13, waypoint8, waypoint9, waypoint4, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint0: waypoint9, waypoint12, waypoint3, waypoint6, waypoint7, waypoint2, waypoint14, waypoint13, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint7: waypoint9, waypoint4, waypoint0, waypoint3, waypoint13, waypoint2, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint4: waypoint3, waypoint8, waypoint6, waypoint7, waypoint13, waypoint11, and waypoint14. Waypoint(s) are visible from waypoint5: waypoint9, waypoint0, waypoint7, waypoint8, waypoint6, waypoint14, waypoint10, and waypoint11. Waypoint(s) are visible from waypoint14: waypoint8, waypoint13, waypoint11, waypoint5, waypoint4, and waypoint0. Waypoint(s) are visible from waypoint10: waypoint2, waypoint11, waypoint5, waypoint1, and waypoint8. Waypoint(s) are visible from waypoint11: waypoint14, waypoint10, waypoint5, waypoint9, waypoint4, waypoint0, waypoint7, and waypoint2. Waypoint(s) are visible from waypoint8: waypoint14, waypoint10, waypoint5, waypoint1, waypoint3, waypoint4, and waypoint6. Waypoint(s) are visible from waypoint6: waypoint8, waypoint4, waypoint0, waypoint5, and waypoint12. Waypoint(s) are visible from waypoint12: waypoint9, waypoint0, waypoint1, and waypoint6. Objective objective1 is visible from waypoint5, waypoint1, waypoint6, waypoint10, waypoint3, and waypoint4. Objective objective0 is visible from waypoint7, waypoint8, and waypoint3. Lander general is at waypoint waypoint9.  \nCurrently, Rover rover1 is at waypoint12. Rover rover0 is at waypoint7. Rocks can be sampled at the following location(s): waypoint14, waypoint9, waypoint7, waypoint5, waypoint4, waypoint2, waypoint12, waypoint0, waypoint13, and waypoint6. Soil can be sampled at the following location(s): waypoint8, waypoint13, waypoint0, waypoint7, waypoint14, waypoint1, and waypoint10. Rovers rover0 and rover1 are available. Rock data was communicated from waypoint waypoint3; Soil data was communicated from waypoint waypoint12; Image objective0 was communicated in mode colour. Image objective0 was communicated in mode low_res. Image objective1 was communicated in mode colour. Rover rover1 has soil analyzed in waypoint waypoint12. Rover rover1 has rock analyzed in waypoint waypoint3. Rover rover0 has image objective0 in mode low_res. Rover rover1 has image objective0 in mode colour. Rover rover1 has image objective1 in mode colour. Store(s) store1 and store0 are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover0 has rock analyzed in waypoint waypoint11 and Rocks can be sampled at the following location(s): waypoint4?",
+    "predicted_initial_state": {
+      "target_rover_rock_analyzed": [
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint11"
+        }
+      ],
+      "target_rock_sample_locations": [
+        "waypoint4"
+      ]
+    },
+    "predicted_goal_state": {
+      "current_rock_analyzed": [
+        {
+          "rover": "rover1",
+          "waypoint": "waypoint3"
+        }
+      ],
+      "rock_sample_locations": [
+        "waypoint14",
+        "waypoint9",
+        "waypoint7",
+        "waypoint5",
+        "waypoint4",
+        "waypoint2",
+        "waypoint12",
+        "waypoint0",
+        "waypoint13",
+        "waypoint6"
+      ],
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.3475821018218994,
+    "correct": true,
+    "prompt_tokens": 3079,
+    "completion_tokens": 212,
+    "cost": 0.0108775,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "rovers_prob-2-15-2-2-15-2020_p28_198_n",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 15 waypoints, 2 stores, 3 cameras, 2 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective0. Camera camera2 can be calibrated on objective0. Camera camera0 can be calibrated on objective0. Camera camera0 supports high_res. Camera camera2 supports low_res. Camera camera1 supports colour. Rover rover1 can traverse from waypoint10 to waypoint14, waypoint1 to waypoint5, waypoint12 to waypoint11, waypoint4 to waypoint6, waypoint8 to waypoint6, waypoint11 to waypoint12, waypoint6 to waypoint4, waypoint6 to waypoint8, waypoint2 to waypoint0, waypoint5 to waypoint1, waypoint5 to waypoint14, waypoint0 to waypoint2, waypoint3 to waypoint1, waypoint9 to waypoint0, waypoint5 to waypoint13, waypoint12 to waypoint0, waypoint5 to waypoint6, waypoint0 to waypoint7, waypoint14 to waypoint5, waypoint1 to waypoint3, waypoint13 to waypoint5, waypoint0 to waypoint12, waypoint0 to waypoint5, waypoint0 to waypoint9, waypoint14 to waypoint10, waypoint7 to waypoint0, waypoint6 to waypoint5, waypoint5 to waypoint0. Rover rover0 can traverse from waypoint1 to waypoint4, waypoint14 to waypoint2, waypoint14 to waypoint3, waypoint12 to waypoint0, waypoint7 to waypoint4, waypoint9 to waypoint0, waypoint3 to waypoint14, waypoint4 to waypoint7, waypoint2 to waypoint14, waypoint5 to waypoint13, waypoint10 to waypoint0, waypoint6 to waypoint0, waypoint5 to waypoint6, waypoint4 to waypoint1, waypoint0 to waypoint12, waypoint14 to waypoint10, waypoint12 to waypoint11, waypoint0 to waypoint9, waypoint13 to waypoint5, waypoint8 to waypoint4, waypoint6 to waypoint5, waypoint10 to waypoint14, waypoint4 to waypoint8, waypoint4 to waypoint10, waypoint11 to waypoint12, waypoint0 to waypoint6, waypoint0 to waypoint10, waypoint10 to waypoint4. Waypoint(s) are visible from waypoint10: waypoint4, waypoint0, waypoint2, waypoint11, and waypoint14. Waypoint(s) are visible from waypoint3: waypoint2, waypoint13, waypoint6, waypoint14, waypoint5, waypoint1, waypoint4, and waypoint7. Waypoint(s) are visible from waypoint8: waypoint11, waypoint5, waypoint9, waypoint12, waypoint4, waypoint6, waypoint7, and waypoint2. Waypoint(s) are visible from waypoint4: waypoint1, waypoint3, waypoint8, waypoint6, waypoint7, waypoint10, and waypoint9. Waypoint(s) are visible from waypoint0: waypoint9, waypoint12, waypoint6, waypoint7, waypoint2, waypoint14, waypoint10, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint13: waypoint5, waypoint12, waypoint7, and waypoint3. Waypoint(s) are visible from waypoint6: waypoint1, waypoint3, waypoint8, waypoint4, waypoint0, waypoint7, waypoint2, waypoint5, and waypoint9. Waypoint(s) are visible from waypoint7: waypoint9, waypoint4, waypoint0, waypoint3, waypoint13, waypoint8, waypoint6, and waypoint2. Waypoint(s) are visible from waypoint14: waypoint3, waypoint2, waypoint10, waypoint5, waypoint9, and waypoint0. Waypoint(s) are visible from waypoint1: waypoint2, waypoint5, waypoint3, waypoint4, waypoint0, and waypoint6. Waypoint(s) are visible from waypoint5: waypoint0, waypoint3, waypoint13, waypoint8, waypoint6, waypoint14, and waypoint1. Waypoint(s) are visible from waypoint11: waypoint10, waypoint12, and waypoint8. Waypoint(s) are visible from waypoint2: waypoint14, waypoint10, waypoint9, waypoint1, waypoint3, waypoint8, waypoint0, waypoint6, and waypoint7. Waypoint(s) are visible from waypoint12: waypoint0, waypoint8, waypoint13, and waypoint11. Waypoint(s) are visible from waypoint9: waypoint4, waypoint0, waypoint7, waypoint2, waypoint8, waypoint6, and waypoint14. Objective objective0 is visible from waypoint4, waypoint12, waypoint7, waypoint8, and waypoint10. Objective objective1 is visible from waypoint5, waypoint11, waypoint1, waypoint10, and waypoint3. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint2. Rover rover1 is at waypoint0. Rocks can be sampled at the following location(s): waypoint9, waypoint7, waypoint11, waypoint12, and waypoint0. Soil can be sampled at the following location(s): waypoint12, waypoint11, waypoint1, and waypoint10. Rovers rover0 and rover1 are available. Rock data were communicated from the following waypoints: waypoint8, waypoint1, waypoint3. Soil data were communicated from the following waypoints: waypoint14, waypoint13, waypoint2, waypoint5. Image objective0 was communicated in mode high_res. Image objective1 was communicated in mode low_res. Image objective0 was communicated in mode colour. Image objective0 was communicated in mode low_res. Rover rover1 has soil analyzed in waypoint waypoint5. Rover rover0 has soil analyzed in waypoint waypoint14. Rover rover0 has soil analyzed in waypoint waypoint2. Rover rover1 has soil analyzed in waypoint waypoint13. Rover rover1 has rock analyzed in waypoint waypoint1. Rover rover1 has rock analyzed in waypoint waypoint8. Rover rover1 has rock analyzed in waypoint waypoint3. Rover rover0 has image objective0 in mode high_res. Rover rover1 has image objective0 in mode low_res. Rover rover0 has image objective0 in mode colour. Rover rover1 has image objective1 in mode low_res. Store(s) store1 is empty. Store(s) store0 is full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover0 is at waypoint13 and Rover rover0 is at waypoint6?",
+    "predicted_initial_state": {
+      "target_rover_at": [
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint13"
+        },
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint6"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "current_rover_locations": {
+        "rover0": "waypoint2",
+        "rover1": "waypoint0"
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.8440771102905273,
+    "correct": true,
+    "prompt_tokens": 3168,
+    "completion_tokens": 144,
+    "cost": 0.01008,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "rovers_prob-2-3-3-2-3-2021_p02_32_n",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 3 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective1. Camera camera2 can be calibrated on objective0. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective1 is visible from waypoint2. Objective objective0 is visible from waypoint1 and waypoint0. Objective objective2 is visible from waypoint1. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover1 is at waypoint0. Rover rover0 is at waypoint0. Rovers rover1 and rover0 are available. Rock data was communicated from waypoint waypoint0; Rover rover0 has soil analyzed in waypoint waypoint0. Rover rover1 has rock analyzed in waypoint waypoint0. Rover rover0 has its camera camera1 calibrated. Store(s) store1 and store0 are full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover0 is available and Rocks can be sampled at the following location(s): waypoint2?",
+    "predicted_initial_state": {
+      "target_rover_available": [
+        "rover0"
+      ],
+      "target_rock_sample_locations": [
+        "waypoint2"
+      ]
+    },
+    "predicted_goal_state": {
+      "current_rover_availability": {
+        "rover1": "available",
+        "rover0": "available"
+      },
+      "current_rock_sample_locations": [],
+      "rovers_equipped_for_rock_analysis": [
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.251692056655884,
+    "correct": true,
+    "prompt_tokens": 2237,
+    "completion_tokens": 124,
+    "cost": 0.0074525,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "rovers_prob-2-3-3-2-3-2021_p02_133_n",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 3 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective1. Camera camera2 can be calibrated on objective0. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective1 is visible from waypoint2. Objective objective0 is visible from waypoint1 and waypoint0. Objective objective2 is visible from waypoint1. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint1. Rover rover1 is at waypoint0. Rovers rover1 and rover0 are available. Rock data was communicated from waypoint waypoint0; Image objective1 was communicated in mode colour. Rover rover0 has soil analyzed in waypoint waypoint0. Rover rover1 has rock analyzed in waypoint waypoint0. Rover rover1 has image objective1 in mode colour. Store(s) store0 is empty. Store(s) store1 is full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover1 has soil analyzed in waypoint waypoint0 and Rover rover0 has soil analyzed in waypoint waypoint0?",
+    "predicted_initial_state": {
+      "target_soil_analyzed": [
+        {
+          "rover": "rover1",
+          "waypoint": "waypoint0"
+        },
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint0"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "current_soil_analyzed": [
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint0"
+        }
+      ],
+      "soil_equipped_rovers": [
+        "rover0",
+        "rover1"
+      ],
+      "soil_sample_locations": [],
+      "rovers_available": [
+        "rover1",
+        "rover0"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 2.048111915588379,
+    "correct": true,
+    "prompt_tokens": 2255,
+    "completion_tokens": 178,
+    "cost": 0.0083075,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "rovers_prob-2-3-7-2-7-2021_p14_49_n",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 7 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera2 can be calibrated on objective1. Camera camera0 can be calibrated on objective4. Camera camera1 can be calibrated on objective1. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective2 is visible from waypoint1. Objective objective4 is visible from waypoint1. Objective objective0 is visible from waypoint0 and waypoint1. Objective objective3 is visible from waypoint2. Objective objective6 is visible from waypoint0 and waypoint1. Objective objective5 is visible from waypoint1. Objective objective1 is visible from waypoint2. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint0. Rover rover1 is at waypoint2. Rocks can be sampled at the following location(s): waypoint1, waypoint2, and waypoint0. Soil can be sampled at the following location(s): waypoint2 and waypoint1. Rovers rover1 and rover0 are available. Store(s) store1 and store0 are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover0 has image objective4 in mode high_res?",
+    "predicted_initial_state": {
+      "target_rover_image": [
+        {
+          "rover": "rover0",
+          "objective": "objective4",
+          "mode": "high_res"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "rover_imaging_equipped": [
+        "rover0",
+        "rover1"
+      ],
+      "camera_onboard": {
+        "rover0": [
+          "camera1",
+          "camera0"
+        ],
+        "rover1": [
+          "camera2"
+        ]
+      },
+      "camera_supports": {
+        "camera2": [
+          "high_res",
+          "colour"
+        ],
+        "camera0": [
+          "colour"
+        ],
+        "camera1": [
+          "low_res"
+        ]
+      },
+      "objective_visible_from": {
+        "objective2": [
+          "waypoint1"
+        ],
+        "objective4": [
+          "waypoint1"
+        ],
+        "objective0": [
+          "waypoint0",
+          "waypoint1"
+        ],
+        "objective3": [
+          "waypoint2"
+        ],
+        "objective6": [
+          "waypoint0",
+          "waypoint1"
+        ],
+        "objective5": [
+          "waypoint1"
+        ],
+        "objective1": [
+          "waypoint2"
+        ]
+      },
+      "camera_calibration_target": {
+        "camera2": "objective1",
+        "camera0": "objective4",
+        "camera1": "objective1"
+      },
+      "rover_locations": {
+        "rover0": "waypoint0",
+        "rover1": "waypoint2"
+      },
+      "rover_traversable": {
+        "rover1": [
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint1"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint2"
+          }
+        ],
+        "rover0": [
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint1"
+          }
+        ]
+      },
+      "rovers_available": [
+        "rover1",
+        "rover0"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 4.836065769195557,
+    "correct": true,
+    "prompt_tokens": 2264,
+    "completion_tokens": 603,
+    "cost": 0.014705,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "rovers_prob-2-15-2-2-15-2021_p29_37_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 15 waypoints, 2 stores, 2 cameras, 2 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover1 is equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover1 has camera0 on board. Rover rover0 has camera1 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective0. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover0 can traverse from waypoint3 to waypoint0, waypoint2 to waypoint0, waypoint5 to waypoint7, waypoint7 to waypoint5, waypoint14 to waypoint0, waypoint7 to waypoint4, waypoint0 to waypoint2, waypoint0 to waypoint3, waypoint5 to waypoint9, waypoint4 to waypoint7, waypoint13 to waypoint0, waypoint5 to waypoint11, waypoint5 to waypoint8, waypoint5 to waypoint6, waypoint1 to waypoint0, waypoint9 to waypoint5, waypoint8 to waypoint5, waypoint5 to waypoint10, waypoint0 to waypoint1, waypoint0 to waypoint5, waypoint0 to waypoint14, waypoint12 to waypoint6, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint6 to waypoint5, waypoint0 to waypoint13, waypoint11 to waypoint5, waypoint5 to waypoint0. Rover rover1 can traverse from waypoint0 to waypoint11, waypoint8 to waypoint6, waypoint12 to waypoint6, waypoint7 to waypoint0, waypoint1 to waypoint9, waypoint11 to waypoint4, waypoint6 to waypoint8, waypoint2 to waypoint7, waypoint5 to waypoint14, waypoint9 to waypoint3, waypoint12 to waypoint0, waypoint13 to waypoint0, waypoint5 to waypoint0, waypoint5 to waypoint10, waypoint0 to waypoint7, waypoint14 to waypoint5, waypoint3 to waypoint9, waypoint9 to waypoint12, waypoint9 to waypoint1, waypoint0 to waypoint12, waypoint0 to waypoint5, waypoint11 to waypoint0, waypoint12 to waypoint9, waypoint7 to waypoint2, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint4 to waypoint11, waypoint0 to waypoint13. Waypoint(s) are visible from waypoint13: waypoint1, waypoint4, waypoint0, waypoint7, waypoint3, waypoint2, and waypoint14. Waypoint(s) are visible from waypoint9: waypoint5, waypoint12, waypoint1, waypoint0, waypoint7, waypoint3, and waypoint11. Waypoint(s) are visible from waypoint1: waypoint7, waypoint2, waypoint13, waypoint8, waypoint10, waypoint9, waypoint12, and waypoint0. Waypoint(s) are visible from waypoint2: waypoint13, waypoint11, waypoint10, waypoint1, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint3: waypoint13, waypoint8, waypoint9, waypoint4, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint0: waypoint9, waypoint12, waypoint3, waypoint6, waypoint7, waypoint2, waypoint14, waypoint13, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint7: waypoint9, waypoint4, waypoint0, waypoint3, waypoint13, waypoint2, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint4: waypoint3, waypoint8, waypoint6, waypoint7, waypoint13, waypoint11, and waypoint14. Waypoint(s) are visible from waypoint5: waypoint9, waypoint0, waypoint7, waypoint8, waypoint6, waypoint14, waypoint10, and waypoint11. Waypoint(s) are visible from waypoint14: waypoint8, waypoint13, waypoint11, waypoint5, waypoint4, and waypoint0. Waypoint(s) are visible from waypoint10: waypoint2, waypoint11, waypoint5, waypoint1, and waypoint8. Waypoint(s) are visible from waypoint11: waypoint14, waypoint10, waypoint5, waypoint9, waypoint4, waypoint0, waypoint7, and waypoint2. Waypoint(s) are visible from waypoint8: waypoint14, waypoint10, waypoint5, waypoint1, waypoint3, waypoint4, and waypoint6. Waypoint(s) are visible from waypoint6: waypoint8, waypoint4, waypoint0, waypoint5, and waypoint12. Waypoint(s) are visible from waypoint12: waypoint9, waypoint0, waypoint1, and waypoint6. Objective objective1 is visible from waypoint5, waypoint1, waypoint6, waypoint10, waypoint3, and waypoint4. Objective objective0 is visible from waypoint7, waypoint8, and waypoint3. Lander general is at waypoint waypoint9.  \nCurrently, Rover rover0 is at waypoint7. Rover rover1 is at waypoint0. Rocks can be sampled at the following location(s): waypoint14, waypoint5, waypoint4, waypoint12, and waypoint0. Soil can be sampled at the following location(s): waypoint13. Rovers rover0 and rover1 are available. Rock data were communicated from the following waypoints: waypoint9, waypoint6, waypoint13, waypoint7, waypoint2, waypoint3. Soil data were communicated from the following waypoints: waypoint0, waypoint14, waypoint1, waypoint10, waypoint8, waypoint7, waypoint12. Image objective1 was communicated in mode low_res. Image objective0 was communicated in mode colour. Image objective0 was communicated in mode low_res. Image objective1 was communicated in mode colour. Rover rover1 has soil analyzed in waypoint waypoint14. Rover rover1 has soil analyzed in waypoint waypoint1. Rover rover1 has soil analyzed in waypoint waypoint12. Rover rover1 has soil analyzed in waypoint waypoint8. Rover rover1 has soil analyzed in waypoint waypoint10. Rover rover1 has soil analyzed in waypoint waypoint7. Rover rover1 has soil analyzed in waypoint waypoint0. Rover rover1 has rock analyzed in waypoint waypoint7. Rover rover1 has rock analyzed in waypoint waypoint13. Rover rover1 has rock analyzed in waypoint waypoint9. Rover rover1 has rock analyzed in waypoint waypoint6. Rover rover1 has rock analyzed in waypoint waypoint2. Rover rover1 has rock analyzed in waypoint waypoint3. Rover rover0 has image objective1 in mode low_res. Rover rover0 has image objective0 in mode low_res. Rover rover1 has image objective0 in mode colour. Rover rover1 has image objective1 in mode colour. Rover rover1 has its camera camera0 calibrated. Store(s) store0 is empty. Store(s) store1 is full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nStore(s) store1 is empty?",
+    "predicted_initial_state": {
+      "target_store_empty": [
+        "store1"
+      ]
+    },
+    "predicted_goal_state": {
+      "current_store_states": {
+        "store0": "empty",
+        "store1": "full"
+      },
+      "store_owner": {
+        "store0": "rover0",
+        "store1": "rover1"
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": [
+      "drop rover1 store1",
+      "communicate_image_data rover1 general objective0 colour waypoint0 waypoint9"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.832547664642334,
+    "correct": true,
+    "prompt_tokens": 3227,
+    "completion_tokens": 121,
+    "cost": 0.0098825,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "rovers_prob-2-3-3-2-3-2021_p02_4_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 3 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective1. Camera camera2 can be calibrated on objective0. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective1 is visible from waypoint2. Objective objective0 is visible from waypoint1 and waypoint0. Objective objective2 is visible from waypoint1. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint2. Rover rover1 is at waypoint2. Rovers rover1 and rover0 are available. Rock data was communicated from waypoint waypoint0; Soil data was communicated from waypoint waypoint0; Image objective1 was communicated in mode colour. Rover rover0 has soil analyzed in waypoint waypoint0. Rover rover1 has rock analyzed in waypoint waypoint0. Rover rover1 has image objective1 in mode colour. Rover rover0 has its camera camera0 calibrated. Store(s) store1 and store0 are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover0 has image objective1 in mode colour?",
+    "predicted_initial_state": {
+      "target_rover_image": [
+        {
+          "rover": "rover0",
+          "objective": "objective1",
+          "mode": "colour"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "current_rover_images": [
+        {
+          "rover": "rover1",
+          "objective": "objective1",
+          "mode": "colour"
+        }
+      ],
+      "rovers_available": [
+        "rover1",
+        "rover0"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.8889658451080322,
+    "correct": false,
+    "prompt_tokens": 2258,
+    "completion_tokens": 132,
+    "cost": 0.007625,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-15-2-2-15-2021_p29_12_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 15 waypoints, 2 stores, 2 cameras, 2 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover1 is equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover1 has camera0 on board. Rover rover0 has camera1 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective0. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover0 can traverse from waypoint3 to waypoint0, waypoint2 to waypoint0, waypoint5 to waypoint7, waypoint7 to waypoint5, waypoint14 to waypoint0, waypoint7 to waypoint4, waypoint0 to waypoint2, waypoint0 to waypoint3, waypoint5 to waypoint9, waypoint4 to waypoint7, waypoint13 to waypoint0, waypoint5 to waypoint11, waypoint5 to waypoint8, waypoint5 to waypoint6, waypoint1 to waypoint0, waypoint9 to waypoint5, waypoint8 to waypoint5, waypoint5 to waypoint10, waypoint0 to waypoint1, waypoint0 to waypoint5, waypoint0 to waypoint14, waypoint12 to waypoint6, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint6 to waypoint5, waypoint0 to waypoint13, waypoint11 to waypoint5, waypoint5 to waypoint0. Rover rover1 can traverse from waypoint0 to waypoint11, waypoint8 to waypoint6, waypoint12 to waypoint6, waypoint7 to waypoint0, waypoint1 to waypoint9, waypoint11 to waypoint4, waypoint6 to waypoint8, waypoint2 to waypoint7, waypoint5 to waypoint14, waypoint9 to waypoint3, waypoint12 to waypoint0, waypoint13 to waypoint0, waypoint5 to waypoint0, waypoint5 to waypoint10, waypoint0 to waypoint7, waypoint14 to waypoint5, waypoint3 to waypoint9, waypoint9 to waypoint12, waypoint9 to waypoint1, waypoint0 to waypoint12, waypoint0 to waypoint5, waypoint11 to waypoint0, waypoint12 to waypoint9, waypoint7 to waypoint2, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint4 to waypoint11, waypoint0 to waypoint13. Waypoint(s) are visible from waypoint13: waypoint1, waypoint4, waypoint0, waypoint7, waypoint3, waypoint2, and waypoint14. Waypoint(s) are visible from waypoint9: waypoint5, waypoint12, waypoint1, waypoint0, waypoint7, waypoint3, and waypoint11. Waypoint(s) are visible from waypoint1: waypoint7, waypoint2, waypoint13, waypoint8, waypoint10, waypoint9, waypoint12, and waypoint0. Waypoint(s) are visible from waypoint2: waypoint13, waypoint11, waypoint10, waypoint1, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint3: waypoint13, waypoint8, waypoint9, waypoint4, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint0: waypoint9, waypoint12, waypoint3, waypoint6, waypoint7, waypoint2, waypoint14, waypoint13, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint7: waypoint9, waypoint4, waypoint0, waypoint3, waypoint13, waypoint2, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint4: waypoint3, waypoint8, waypoint6, waypoint7, waypoint13, waypoint11, and waypoint14. Waypoint(s) are visible from waypoint5: waypoint9, waypoint0, waypoint7, waypoint8, waypoint6, waypoint14, waypoint10, and waypoint11. Waypoint(s) are visible from waypoint14: waypoint8, waypoint13, waypoint11, waypoint5, waypoint4, and waypoint0. Waypoint(s) are visible from waypoint10: waypoint2, waypoint11, waypoint5, waypoint1, and waypoint8. Waypoint(s) are visible from waypoint11: waypoint14, waypoint10, waypoint5, waypoint9, waypoint4, waypoint0, waypoint7, and waypoint2. Waypoint(s) are visible from waypoint8: waypoint14, waypoint10, waypoint5, waypoint1, waypoint3, waypoint4, and waypoint6. Waypoint(s) are visible from waypoint6: waypoint8, waypoint4, waypoint0, waypoint5, and waypoint12. Waypoint(s) are visible from waypoint12: waypoint9, waypoint0, waypoint1, and waypoint6. Objective objective1 is visible from waypoint5, waypoint1, waypoint6, waypoint10, waypoint3, and waypoint4. Objective objective0 is visible from waypoint7, waypoint8, and waypoint3. Lander general is at waypoint waypoint9.  \nCurrently, Rover rover1 is at waypoint1. Rover rover0 is at waypoint5. Rocks can be sampled at the following location(s): waypoint14, waypoint7, waypoint5, waypoint4, waypoint2, waypoint12, waypoint0, waypoint13, and waypoint6. Soil can be sampled at the following location(s): waypoint12, waypoint8, waypoint13, waypoint0, waypoint7, waypoint14, and waypoint10. Rovers rover0 and rover1 are available. Rock data were communicated from the following waypoints: waypoint9, waypoint3. Soil data was communicated from waypoint waypoint1; Image objective0 was communicated in mode colour. Image objective0 was communicated in mode low_res. Image objective1 was communicated in mode colour. Rover rover1 has soil analyzed in waypoint waypoint1. Rover rover1 has rock analyzed in waypoint waypoint9. Rover rover1 has rock analyzed in waypoint waypoint3. Rover rover0 has image objective1 in mode low_res. Rover rover0 has image objective0 in mode low_res. Rover rover1 has image objective0 in mode colour. Rover rover1 has image objective1 in mode colour. Store(s) store1 and store0 are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nImage objective1 was communicated in mode low_res and Rover rover0 is at waypoint9?",
+    "predicted_initial_state": {
+      "target_image_communicated": [
+        {
+          "objective": "objective1",
+          "mode": "low_res"
+        }
+      ],
+      "target_rover_at": [
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint9"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "current_image_communicated": [
+        {
+          "objective": "objective0",
+          "mode": "colour"
+        },
+        {
+          "objective": "objective0",
+          "mode": "low_res"
+        },
+        {
+          "objective": "objective1",
+          "mode": "colour"
+        }
+      ],
+      "current_rover_locations": {
+        "rover1": "waypoint1",
+        "rover0": "waypoint5"
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.4985742568969727,
+    "correct": false,
+    "prompt_tokens": 3099,
+    "completion_tokens": 220,
+    "cost": 0.0110475,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-3-15-2-15-2021_p26_179_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 15 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective2. Camera camera0 can be calibrated on objective9. Camera camera2 can be calibrated on objective3. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective0 is visible from waypoint0 and waypoint1. Objective objective9 is visible from waypoint0 and waypoint1. Objective objective3 is visible from waypoint2. Objective objective7 is visible from waypoint1 and waypoint0. Objective objective10 is visible from waypoint2 and waypoint0. Objective objective2 is visible from waypoint1. Objective objective4 is visible from waypoint1. Objective objective8 is visible from waypoint2 and waypoint0. Objective objective11 is visible from waypoint2. Objective objective6 is visible from waypoint0 and waypoint1. Objective objective12 is visible from waypoint1. Objective objective13 is visible from waypoint1. Objective objective5 is visible from waypoint1. Objective objective1 is visible from waypoint2. Objective objective14 is visible from waypoint2. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint2. Rover rover1 is at waypoint2. Soil can be sampled at the following location(s): waypoint0 and waypoint1. Rovers rover1 and rover0 are available. Rock data was communicated from waypoint waypoint1; Soil data was communicated from waypoint waypoint2; Image objective10 was communicated in mode high_res. Rover rover0 has soil analyzed in waypoint waypoint2. Rover rover1 has rock analyzed in waypoint waypoint1. Rover rover1 has image objective10 in mode high_res. Store(s) store0 and store1 are full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nStore(s) store0 is empty and Rover rover0 is at waypoint0?",
+    "predicted_initial_state": {
+      "target_store_empty": [
+        "store0"
+      ]
+    },
+    "predicted_goal_state": {
+      "current_store_states": {
+        "store0": "full",
+        "store1": "full"
+      },
+      "store_owner": {
+        "store0": "rover0",
+        "store1": "rover1"
+      },
+      "rovers_available": [
+        "rover1",
+        "rover0"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.542382001876831,
+    "correct": false,
+    "prompt_tokens": 2393,
+    "completion_tokens": 121,
+    "cost": 0.0077975,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-3-15-2-15-2022_p27_43_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 2 cameras, 15 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 is equipped for soil analysis. Rover(s) rover0 and rover1 are equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover1 has camera0 on board. Rover rover0 has camera1 on board. Camera camera1 can be calibrated on objective5. Camera camera0 can be calibrated on objective10. Camera camera0 supports low_res. Camera camera1 supports high_res and low_res. Rover rover0 can traverse from waypoint1 to waypoint2, waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint2 to waypoint1. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective14 is visible from waypoint0 and waypoint1. Objective objective0 is visible from waypoint0 and waypoint1. Objective objective12 is visible from waypoint2 and waypoint0. Objective objective10 is visible from waypoint2. Objective objective3 is visible from waypoint0. Objective objective13 is visible from waypoint2 and waypoint0. Objective objective2 is visible from waypoint1. Objective objective4 is visible from waypoint1. Objective objective1 is visible from waypoint1. Objective objective8 is visible from waypoint2 and waypoint0. Objective objective6 is visible from waypoint2. Objective objective9 is visible from waypoint1. Objective objective11 is visible from waypoint2, waypoint0, and waypoint1. Objective objective5 is visible from waypoint2. Objective objective7 is visible from waypoint2. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover1 is at waypoint1. Rover rover0 is at waypoint2. Rovers rover0 and rover1 are available. Rock data was communicated from waypoint waypoint0; Soil data were communicated from the following waypoints: waypoint0, waypoint2. Image objective5 was communicated in mode low_res. Image objective13 was communicated in mode high_res. Image objective7 was communicated in mode low_res. Image objective13 was communicated in mode low_res. Image objective10 was communicated in mode low_res. Rover rover0 has soil analyzed in waypoint waypoint0. Rover rover0 has soil analyzed in waypoint waypoint2. Rover rover0 has rock analyzed in waypoint waypoint0. Rover rover0 has rock analyzed in waypoint waypoint1. Rover rover0 has image objective7 in mode low_res. Rover rover0 has image objective10 in mode low_res. Rover rover0 has image objective13 in mode high_res. Rover rover0 has image objective5 in mode low_res. Rover rover0 has image objective13 in mode low_res. Rover rover0 has image objective4 in mode high_res. Store(s) store1 and store0 are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRock data was communicated from waypoint waypoint1;?",
+    "predicted_initial_state": {
+      "target_rock_data_communicated": [
+        "waypoint1"
+      ]
+    },
+    "predicted_goal_state": {
+      "already_communicated_rock_data": [
+        "waypoint0"
+      ],
+      "rock_sample_locations": [],
+      "rovers_with_rock_analysis": [
+        "rover0",
+        "rover1"
+      ],
+      "rover_locations": {
+        "rover0": "waypoint2",
+        "rover1": "waypoint1"
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.9088490009307861,
+    "correct": false,
+    "prompt_tokens": 2486,
+    "completion_tokens": 153,
+    "cost": 0.00851,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-3-7-2-7-2021_p14_171_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 7 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera2 can be calibrated on objective1. Camera camera0 can be calibrated on objective4. Camera camera1 can be calibrated on objective1. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective2 is visible from waypoint1. Objective objective4 is visible from waypoint1. Objective objective0 is visible from waypoint0 and waypoint1. Objective objective3 is visible from waypoint2. Objective objective6 is visible from waypoint0 and waypoint1. Objective objective5 is visible from waypoint1. Objective objective1 is visible from waypoint2. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint1. Rover rover1 is at waypoint0. Rocks can be sampled at the following location(s): waypoint1. Soil can be sampled at the following location(s): waypoint1. Rovers rover1 and rover0 are available. Rock data was communicated from waypoint waypoint2; Soil data was communicated from waypoint waypoint2; Image objective3 was communicated in mode high_res. Rover rover0 has soil analyzed in waypoint waypoint2. Rover rover1 has rock analyzed in waypoint waypoint2. Rover rover1 has rock analyzed in waypoint waypoint0. Rover rover1 has image objective3 in mode high_res. Rover rover0 has its camera camera1 calibrated. Store(s) store1 and store0 are full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover0 has image objective2 in mode colour?",
+    "predicted_initial_state": {
+      "target_rover_image": [
+        {
+          "rover": "rover0",
+          "objective": "objective2",
+          "mode": "colour"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "rover_imaging_capability": {
+        "rover0": true,
+        "rover1": true
+      },
+      "camera_on_board": {
+        "rover0": [
+          "camera1",
+          "camera0"
+        ],
+        "rover1": [
+          "camera2"
+        ]
+      },
+      "camera_supports": {
+        "camera0": [
+          "colour"
+        ],
+        "camera1": [
+          "low_res"
+        ],
+        "camera2": [
+          "high_res",
+          "colour"
+        ]
+      },
+      "camera_calibration_target": {
+        "camera0": "objective4",
+        "camera1": "objective1",
+        "camera2": "objective1"
+      },
+      "objective_visibility": {
+        "objective0": [
+          "waypoint0",
+          "waypoint1"
+        ],
+        "objective1": [
+          "waypoint2"
+        ],
+        "objective2": [
+          "waypoint1"
+        ],
+        "objective3": [
+          "waypoint2"
+        ],
+        "objective4": [
+          "waypoint1"
+        ],
+        "objective5": [
+          "waypoint1"
+        ],
+        "objective6": [
+          "waypoint0",
+          "waypoint1"
+        ]
+      },
+      "rover_locations": {
+        "rover0": "waypoint1",
+        "rover1": "waypoint0"
+      },
+      "rover_traversable": {
+        "rover0": [
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint1"
+          }
+        ],
+        "rover1": [
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint1"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint2"
+          }
+        ]
+      },
+      "current_calibrated_cameras": {
+        "rover0": [
+          "camera1"
+        ],
+        "rover1": []
+      },
+      "existing_images": [
+        {
+          "rover": "rover1",
+          "objective": "objective3",
+          "mode": "high_res"
+        }
+      ],
+      "rovers_available": [
+        "rover1",
+        "rover0"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.601738929748535,
+    "correct": false,
+    "prompt_tokens": 2336,
+    "completion_tokens": 676,
+    "cost": 0.01598,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-3-15-2-15-2022_p27_109_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 2 cameras, 15 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 is equipped for soil analysis. Rover(s) rover0 and rover1 are equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover1 has camera0 on board. Rover rover0 has camera1 on board. Camera camera1 can be calibrated on objective5. Camera camera0 can be calibrated on objective10. Camera camera0 supports low_res. Camera camera1 supports high_res and low_res. Rover rover0 can traverse from waypoint1 to waypoint2, waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint2 to waypoint1. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective14 is visible from waypoint0 and waypoint1. Objective objective0 is visible from waypoint0 and waypoint1. Objective objective12 is visible from waypoint2 and waypoint0. Objective objective10 is visible from waypoint2. Objective objective3 is visible from waypoint0. Objective objective13 is visible from waypoint2 and waypoint0. Objective objective2 is visible from waypoint1. Objective objective4 is visible from waypoint1. Objective objective1 is visible from waypoint1. Objective objective8 is visible from waypoint2 and waypoint0. Objective objective6 is visible from waypoint2. Objective objective9 is visible from waypoint1. Objective objective11 is visible from waypoint2, waypoint0, and waypoint1. Objective objective5 is visible from waypoint2. Objective objective7 is visible from waypoint2. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover1 is at waypoint2. Rover rover0 is at waypoint2. Rovers rover0 and rover1 are available. Rock data were communicated from the following waypoints: waypoint1, waypoint0. Soil data were communicated from the following waypoints: waypoint0, waypoint2. Image objective2 was communicated in mode low_res. Image objective4 was communicated in mode high_res. Image objective5 was communicated in mode low_res. Image objective13 was communicated in mode high_res. Image objective7 was communicated in mode low_res. Image objective13 was communicated in mode low_res. Image objective10 was communicated in mode low_res. Rover rover0 has soil analyzed in waypoint waypoint0. Rover rover0 has soil analyzed in waypoint waypoint2. Rover rover0 has rock analyzed in waypoint waypoint0. Rover rover0 has rock analyzed in waypoint waypoint1. Rover rover1 has image objective10 in mode low_res. Rover rover1 has image objective5 in mode low_res. Rover rover1 has image objective7 in mode low_res. Rover rover0 has image objective13 in mode high_res. Rover rover1 has image objective2 in mode low_res. Rover rover0 has image objective13 in mode low_res. Rover rover0 has image objective4 in mode high_res. Store(s) store1 is empty. Store(s) store0 is full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover1 has image objective6 in mode low_res and Rover rover0 is at waypoint1?",
+    "predicted_initial_state": {
+      "target_rover_image": [
+        {
+          "rover": "rover1",
+          "objective": "objective6",
+          "mode": "low_res"
+        }
+      ],
+      "target_rover_at": [
+        {
+          "rover": "rover0",
+          "waypoint": "waypoint1"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "rover_capabilities": {
+        "soil_analysis": [
+          "rover0"
+        ],
+        "rock_analysis": [
+          "rover0",
+          "rover1"
+        ],
+        "imaging": [
+          "rover0",
+          "rover1"
+        ]
+      },
+      "rover_camera": {
+        "rover1": "camera0",
+        "rover0": "camera1"
+      },
+      "camera_supports": {
+        "camera0": [
+          "low_res"
+        ],
+        "camera1": [
+          "high_res",
+          "low_res"
+        ]
+      },
+      "objective_visibility": {
+        "objective14": [
+          "waypoint0",
+          "waypoint1"
+        ],
+        "objective0": [
+          "waypoint0",
+          "waypoint1"
+        ],
+        "objective12": [
+          "waypoint2",
+          "waypoint0"
+        ],
+        "objective10": [
+          "waypoint2"
+        ],
+        "objective3": [
+          "waypoint0"
+        ],
+        "objective13": [
+          "waypoint2",
+          "waypoint0"
+        ],
+        "objective2": [
+          "waypoint1"
+        ],
+        "objective4": [
+          "waypoint1"
+        ],
+        "objective1": [
+          "waypoint1"
+        ],
+        "objective8": [
+          "waypoint2",
+          "waypoint0"
+        ],
+        "objective6": [
+          "waypoint2"
+        ],
+        "objective9": [
+          "waypoint1"
+        ],
+        "objective11": [
+          "waypoint2",
+          "waypoint0",
+          "waypoint1"
+        ],
+        "objective5": [
+          "waypoint2"
+        ],
+        "objective7": [
+          "waypoint2"
+        ]
+      },
+      "current_rover_locations": {
+        "rover1": "waypoint2",
+        "rover0": "waypoint2"
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ],
+      "current_images": [
+        {
+          "rover": "rover1",
+          "objective": "objective10",
+          "mode": "low_res"
+        },
+        {
+          "rover": "rover1",
+          "objective": "objective5",
+          "mode": "low_res"
+        },
+        {
+          "rover": "rover1",
+          "objective": "objective7",
+          "mode": "low_res"
+        },
+        {
+          "rover": "rover0",
+          "objective": "objective13",
+          "mode": "high_res"
+        },
+        {
+          "rover": "rover1",
+          "objective": "objective2",
+          "mode": "low_res"
+        },
+        {
+          "rover": "rover0",
+          "objective": "objective13",
+          "mode": "low_res"
+        },
+        {
+          "rover": "rover0",
+          "objective": "objective4",
+          "mode": "high_res"
+        }
+      ],
+      "traversable": {
+        "rover0": [
+          {
+            "from": "waypoint1",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint1"
+          }
+        ],
+        "rover1": [
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint1"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint2"
+          }
+        ]
+      }
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 6.5124900341033936,
+    "correct": false,
+    "prompt_tokens": 2541,
+    "completion_tokens": 974,
+    "cost": 0.0209625,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-15-2-2-15-2021_p29_160_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 15 waypoints, 2 stores, 2 cameras, 2 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover1 is equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover1 has camera0 on board. Rover rover0 has camera1 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective0. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover0 can traverse from waypoint3 to waypoint0, waypoint2 to waypoint0, waypoint5 to waypoint7, waypoint7 to waypoint5, waypoint14 to waypoint0, waypoint7 to waypoint4, waypoint0 to waypoint2, waypoint0 to waypoint3, waypoint5 to waypoint9, waypoint4 to waypoint7, waypoint13 to waypoint0, waypoint5 to waypoint11, waypoint5 to waypoint8, waypoint5 to waypoint6, waypoint1 to waypoint0, waypoint9 to waypoint5, waypoint8 to waypoint5, waypoint5 to waypoint10, waypoint0 to waypoint1, waypoint0 to waypoint5, waypoint0 to waypoint14, waypoint12 to waypoint6, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint6 to waypoint5, waypoint0 to waypoint13, waypoint11 to waypoint5, waypoint5 to waypoint0. Rover rover1 can traverse from waypoint0 to waypoint11, waypoint8 to waypoint6, waypoint12 to waypoint6, waypoint7 to waypoint0, waypoint1 to waypoint9, waypoint11 to waypoint4, waypoint6 to waypoint8, waypoint2 to waypoint7, waypoint5 to waypoint14, waypoint9 to waypoint3, waypoint12 to waypoint0, waypoint13 to waypoint0, waypoint5 to waypoint0, waypoint5 to waypoint10, waypoint0 to waypoint7, waypoint14 to waypoint5, waypoint3 to waypoint9, waypoint9 to waypoint12, waypoint9 to waypoint1, waypoint0 to waypoint12, waypoint0 to waypoint5, waypoint11 to waypoint0, waypoint12 to waypoint9, waypoint7 to waypoint2, waypoint6 to waypoint12, waypoint10 to waypoint5, waypoint4 to waypoint11, waypoint0 to waypoint13. Waypoint(s) are visible from waypoint13: waypoint1, waypoint4, waypoint0, waypoint7, waypoint3, waypoint2, and waypoint14. Waypoint(s) are visible from waypoint9: waypoint5, waypoint12, waypoint1, waypoint0, waypoint7, waypoint3, and waypoint11. Waypoint(s) are visible from waypoint1: waypoint7, waypoint2, waypoint13, waypoint8, waypoint10, waypoint9, waypoint12, and waypoint0. Waypoint(s) are visible from waypoint2: waypoint13, waypoint11, waypoint10, waypoint1, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint3: waypoint13, waypoint8, waypoint9, waypoint4, waypoint0, and waypoint7. Waypoint(s) are visible from waypoint0: waypoint9, waypoint12, waypoint3, waypoint6, waypoint7, waypoint2, waypoint14, waypoint13, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint7: waypoint9, waypoint4, waypoint0, waypoint3, waypoint13, waypoint2, waypoint11, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint4: waypoint3, waypoint8, waypoint6, waypoint7, waypoint13, waypoint11, and waypoint14. Waypoint(s) are visible from waypoint5: waypoint9, waypoint0, waypoint7, waypoint8, waypoint6, waypoint14, waypoint10, and waypoint11. Waypoint(s) are visible from waypoint14: waypoint8, waypoint13, waypoint11, waypoint5, waypoint4, and waypoint0. Waypoint(s) are visible from waypoint10: waypoint2, waypoint11, waypoint5, waypoint1, and waypoint8. Waypoint(s) are visible from waypoint11: waypoint14, waypoint10, waypoint5, waypoint9, waypoint4, waypoint0, waypoint7, and waypoint2. Waypoint(s) are visible from waypoint8: waypoint14, waypoint10, waypoint5, waypoint1, waypoint3, waypoint4, and waypoint6. Waypoint(s) are visible from waypoint6: waypoint8, waypoint4, waypoint0, waypoint5, and waypoint12. Waypoint(s) are visible from waypoint12: waypoint9, waypoint0, waypoint1, and waypoint6. Objective objective1 is visible from waypoint5, waypoint1, waypoint6, waypoint10, waypoint3, and waypoint4. Objective objective0 is visible from waypoint7, waypoint8, and waypoint3. Lander general is at waypoint waypoint9.  \nCurrently, Rover rover1 is at waypoint2. Rover rover0 is at waypoint4. Rocks can be sampled at the following location(s): waypoint14, waypoint9, waypoint5, waypoint4, waypoint2, waypoint12, waypoint0, waypoint13, and waypoint6. Soil can be sampled at the following location(s): waypoint8, waypoint13, waypoint0, waypoint14, waypoint1, and waypoint10. Rovers rover0 and rover1 are available. Rock data were communicated from the following waypoints: waypoint7, waypoint3. Soil data were communicated from the following waypoints: waypoint7, waypoint12. Image objective0 was communicated in mode colour. Image objective0 was communicated in mode low_res. Image objective1 was communicated in mode colour. Rover rover1 has soil analyzed in waypoint waypoint12. Rover rover1 has soil analyzed in waypoint waypoint7. Rover rover1 has rock analyzed in waypoint waypoint7. Rover rover1 has rock analyzed in waypoint waypoint3. Rover rover0 has image objective0 in mode low_res. Rover rover1 has image objective0 in mode colour. Rover rover1 has image objective1 in mode colour. Rover rover0 has its camera camera1 calibrated. Store(s) store1 and store0 are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover1 is at waypoint7?",
+    "predicted_initial_state": {
+      "target_rover_at": {
+        "rover1": "waypoint7"
+      }
+    },
+    "predicted_goal_state": {
+      "current_rover_locations": {
+        "rover1": "waypoint2",
+        "rover0": "waypoint4"
+      },
+      "traversable_paths": {
+        "rover1": [
+          [
+            "waypoint0",
+            "waypoint11"
+          ],
+          [
+            "waypoint8",
+            "waypoint6"
+          ],
+          [
+            "waypoint12",
+            "waypoint6"
+          ],
+          [
+            "waypoint7",
+            "waypoint0"
+          ],
+          [
+            "waypoint1",
+            "waypoint9"
+          ],
+          [
+            "waypoint11",
+            "waypoint4"
+          ],
+          [
+            "waypoint6",
+            "waypoint8"
+          ],
+          [
+            "waypoint2",
+            "waypoint7"
+          ],
+          [
+            "waypoint5",
+            "waypoint14"
+          ],
+          [
+            "waypoint9",
+            "waypoint3"
+          ],
+          [
+            "waypoint12",
+            "waypoint0"
+          ],
+          [
+            "waypoint13",
+            "waypoint0"
+          ],
+          [
+            "waypoint5",
+            "waypoint0"
+          ],
+          [
+            "waypoint5",
+            "waypoint10"
+          ],
+          [
+            "waypoint0",
+            "waypoint7"
+          ],
+          [
+            "waypoint14",
+            "waypoint5"
+          ],
+          [
+            "waypoint3",
+            "waypoint9"
+          ],
+          [
+            "waypoint9",
+            "waypoint12"
+          ],
+          [
+            "waypoint9",
+            "waypoint1"
+          ],
+          [
+            "waypoint0",
+            "waypoint12"
+          ],
+          [
+            "waypoint0",
+            "waypoint5"
+          ],
+          [
+            "waypoint11",
+            "waypoint0"
+          ],
+          [
+            "waypoint12",
+            "waypoint9"
+          ],
+          [
+            "waypoint7",
+            "waypoint2"
+          ],
+          [
+            "waypoint6",
+            "waypoint12"
+          ],
+          [
+            "waypoint10",
+            "waypoint5"
+          ],
+          [
+            "waypoint4",
+            "waypoint11"
+          ],
+          [
+            "waypoint0",
+            "waypoint13"
+          ]
+        ]
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 4.21088981628418,
+    "correct": false,
+    "prompt_tokens": 3103,
+    "completion_tokens": 574,
+    "cost": 0.0163675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-3-3-2-3-2021_p02_121_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 3 waypoints, 2 stores, 3 cameras, 3 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective0. Camera camera0 can be calibrated on objective1. Camera camera2 can be calibrated on objective0. Camera camera2 supports high_res and colour. Camera camera0 supports colour. Camera camera1 supports low_res. Rover rover1 can traverse from waypoint2 to waypoint0, waypoint2 to waypoint1, waypoint0 to waypoint2, waypoint1 to waypoint2. Rover rover0 can traverse from waypoint0 to waypoint2, waypoint2 to waypoint0, waypoint1 to waypoint0, waypoint0 to waypoint1. Waypoint(s) are visible from waypoint2: waypoint1 and waypoint0. Waypoint(s) are visible from waypoint0: waypoint1 and waypoint2. Waypoint(s) are visible from waypoint1: waypoint2 and waypoint0. Objective objective1 is visible from waypoint2. Objective objective0 is visible from waypoint1 and waypoint0. Objective objective2 is visible from waypoint1. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover1 is at waypoint0. Rover rover0 is at waypoint0. Soil can be sampled at the following location(s): waypoint0. Rovers rover1 and rover0 are available. Rock data was communicated from waypoint waypoint0; Rover rover1 has rock analyzed in waypoint waypoint0. Rover rover1 has its camera camera2 calibrated. Store(s) store0 is empty. Store(s) store1 is full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nStore(s) store1 is empty?",
+    "predicted_initial_state": {
+      "target_store_empty": [
+        "store1"
+      ]
+    },
+    "predicted_goal_state": {
+      "current_store_states": {
+        "store0": "empty",
+        "store1": "full"
+      },
+      "store_owner": {
+        "store0": "rover0",
+        "store1": "rover1"
+      },
+      "rovers_available": [
+        "rover1",
+        "rover0"
+      ]
+    },
+    "plan": [
+      "drop rover1 store1",
+      "communicate_image_data rover1 general objective0 colour waypoint0 waypoint9"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.3923900127410889,
+    "correct": true,
+    "prompt_tokens": 2232,
+    "completion_tokens": 121,
+    "cost": 0.007395,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Error: Error in type-checking!",
+      "actions_applied": 0,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Error: Error in type-checking!",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "rovers_prob-2-15-2-2-15-2020_p28_161_p",
+    "context": "This is a Rovers domain where rovers must navigate between waypoints gathering data and transmitting it back to a lander. Rovers cannot navigate to all waypoints and this makes particular routes impassable to some of the rovers. Data transmission is also constrained by the visibility of the lander from the waypoints. \nThere are 2 rovers, 15 waypoints, 2 stores, 3 cameras, 2 objectives numbered consecutively. Further, there is 1 lander and 3 modes for the camera namely colour, high resolution, and low resolution.  \nRover(s) rover0 and rover1 are equipped for soil analysis. Rover(s) rover1 is equipped for rock analysis. Rover(s) rover0 and rover1 are equipped for imaging. Rover rover1 has store store1. Rover rover0 has store store0. Rover rover0 has camera1 and camera0 on board. Rover rover1 has camera2 on board. Camera camera1 can be calibrated on objective0. Camera camera2 can be calibrated on objective0. Camera camera0 can be calibrated on objective0. Camera camera0 supports high_res. Camera camera2 supports low_res. Camera camera1 supports colour. Rover rover1 can traverse from waypoint10 to waypoint14, waypoint1 to waypoint5, waypoint12 to waypoint11, waypoint4 to waypoint6, waypoint8 to waypoint6, waypoint11 to waypoint12, waypoint6 to waypoint4, waypoint6 to waypoint8, waypoint2 to waypoint0, waypoint5 to waypoint1, waypoint5 to waypoint14, waypoint0 to waypoint2, waypoint3 to waypoint1, waypoint9 to waypoint0, waypoint5 to waypoint13, waypoint12 to waypoint0, waypoint5 to waypoint6, waypoint0 to waypoint7, waypoint14 to waypoint5, waypoint1 to waypoint3, waypoint13 to waypoint5, waypoint0 to waypoint12, waypoint0 to waypoint5, waypoint0 to waypoint9, waypoint14 to waypoint10, waypoint7 to waypoint0, waypoint6 to waypoint5, waypoint5 to waypoint0. Rover rover0 can traverse from waypoint1 to waypoint4, waypoint14 to waypoint2, waypoint14 to waypoint3, waypoint12 to waypoint0, waypoint7 to waypoint4, waypoint9 to waypoint0, waypoint3 to waypoint14, waypoint4 to waypoint7, waypoint2 to waypoint14, waypoint5 to waypoint13, waypoint10 to waypoint0, waypoint6 to waypoint0, waypoint5 to waypoint6, waypoint4 to waypoint1, waypoint0 to waypoint12, waypoint14 to waypoint10, waypoint12 to waypoint11, waypoint0 to waypoint9, waypoint13 to waypoint5, waypoint8 to waypoint4, waypoint6 to waypoint5, waypoint10 to waypoint14, waypoint4 to waypoint8, waypoint4 to waypoint10, waypoint11 to waypoint12, waypoint0 to waypoint6, waypoint0 to waypoint10, waypoint10 to waypoint4. Waypoint(s) are visible from waypoint10: waypoint4, waypoint0, waypoint2, waypoint11, and waypoint14. Waypoint(s) are visible from waypoint3: waypoint2, waypoint13, waypoint6, waypoint14, waypoint5, waypoint1, waypoint4, and waypoint7. Waypoint(s) are visible from waypoint8: waypoint11, waypoint5, waypoint9, waypoint12, waypoint4, waypoint6, waypoint7, and waypoint2. Waypoint(s) are visible from waypoint4: waypoint1, waypoint3, waypoint8, waypoint6, waypoint7, waypoint10, and waypoint9. Waypoint(s) are visible from waypoint0: waypoint9, waypoint12, waypoint6, waypoint7, waypoint2, waypoint14, waypoint10, waypoint1, and waypoint5. Waypoint(s) are visible from waypoint13: waypoint5, waypoint12, waypoint7, and waypoint3. Waypoint(s) are visible from waypoint6: waypoint1, waypoint3, waypoint8, waypoint4, waypoint0, waypoint7, waypoint2, waypoint5, and waypoint9. Waypoint(s) are visible from waypoint7: waypoint9, waypoint4, waypoint0, waypoint3, waypoint13, waypoint8, waypoint6, and waypoint2. Waypoint(s) are visible from waypoint14: waypoint3, waypoint2, waypoint10, waypoint5, waypoint9, and waypoint0. Waypoint(s) are visible from waypoint1: waypoint2, waypoint5, waypoint3, waypoint4, waypoint0, and waypoint6. Waypoint(s) are visible from waypoint5: waypoint0, waypoint3, waypoint13, waypoint8, waypoint6, waypoint14, and waypoint1. Waypoint(s) are visible from waypoint11: waypoint10, waypoint12, and waypoint8. Waypoint(s) are visible from waypoint2: waypoint14, waypoint10, waypoint9, waypoint1, waypoint3, waypoint8, waypoint0, waypoint6, and waypoint7. Waypoint(s) are visible from waypoint12: waypoint0, waypoint8, waypoint13, and waypoint11. Waypoint(s) are visible from waypoint9: waypoint4, waypoint0, waypoint7, waypoint2, waypoint8, waypoint6, and waypoint14. Objective objective0 is visible from waypoint4, waypoint12, waypoint7, waypoint8, and waypoint10. Objective objective1 is visible from waypoint5, waypoint11, waypoint1, waypoint10, and waypoint3. Lander general is at waypoint waypoint1.  \nCurrently, Rover rover0 is at waypoint2. Rover rover1 is at waypoint0. Rocks can be sampled at the following location(s): waypoint9 and waypoint7. Soil can be sampled at the following location(s): waypoint12, waypoint13, waypoint1, and waypoint10. Rovers rover0 and rover1 are available. Rock data were communicated from the following waypoints: waypoint8, waypoint1, waypoint11, waypoint0, waypoint3. Soil data were communicated from the following waypoints: waypoint14, waypoint2, waypoint5. Image objective0 was communicated in mode high_res. Image objective1 was communicated in mode low_res. Image objective0 was communicated in mode colour. Image objective0 was communicated in mode low_res. Rover rover1 has soil analyzed in waypoint waypoint5. Rover rover0 has soil analyzed in waypoint waypoint14. Rover rover1 has soil analyzed in waypoint waypoint11. Rover rover0 has soil analyzed in waypoint waypoint2. Rover rover1 has rock analyzed in waypoint waypoint11. Rover rover1 has rock analyzed in waypoint waypoint12. Rover rover1 has rock analyzed in waypoint waypoint1. Rover rover1 has rock analyzed in waypoint waypoint8. Rover rover1 has rock analyzed in waypoint waypoint0. Rover rover1 has rock analyzed in waypoint waypoint3. Rover rover0 has image objective0 in mode high_res. Rover rover1 has image objective0 in mode low_res. Rover rover0 has image objective0 in mode colour. Rover rover1 has image objective1 in mode low_res. Store(s) store1 is empty. Store(s) store0 is full. ",
+    "question": "Is it possible to transition to a state where the following holds: \nRover rover1 is at waypoint5?",
+    "predicted_initial_state": {
+      "target_rover_at": [
+        {
+          "rover": "rover1",
+          "waypoint": "waypoint5"
+        }
+      ]
+    },
+    "predicted_goal_state": {
+      "current_rover_locations": {
+        "rover0": "waypoint2",
+        "rover1": "waypoint0"
+      },
+      "traversable": {
+        "rover0": [
+          {
+            "from": "waypoint1",
+            "to": "waypoint4"
+          },
+          {
+            "from": "waypoint14",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint14",
+            "to": "waypoint3"
+          },
+          {
+            "from": "waypoint12",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint7",
+            "to": "waypoint4"
+          },
+          {
+            "from": "waypoint9",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint3",
+            "to": "waypoint14"
+          },
+          {
+            "from": "waypoint4",
+            "to": "waypoint7"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint14"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint13"
+          },
+          {
+            "from": "waypoint10",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint6",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint6"
+          },
+          {
+            "from": "waypoint4",
+            "to": "waypoint1"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint12"
+          },
+          {
+            "from": "waypoint14",
+            "to": "waypoint10"
+          },
+          {
+            "from": "waypoint12",
+            "to": "waypoint11"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint9"
+          },
+          {
+            "from": "waypoint13",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint8",
+            "to": "waypoint4"
+          },
+          {
+            "from": "waypoint6",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint10",
+            "to": "waypoint14"
+          },
+          {
+            "from": "waypoint4",
+            "to": "waypoint8"
+          },
+          {
+            "from": "waypoint4",
+            "to": "waypoint10"
+          },
+          {
+            "from": "waypoint11",
+            "to": "waypoint12"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint6"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint10"
+          },
+          {
+            "from": "waypoint10",
+            "to": "waypoint4"
+          }
+        ],
+        "rover1": [
+          {
+            "from": "waypoint10",
+            "to": "waypoint14"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint12",
+            "to": "waypoint11"
+          },
+          {
+            "from": "waypoint4",
+            "to": "waypoint6"
+          },
+          {
+            "from": "waypoint8",
+            "to": "waypoint6"
+          },
+          {
+            "from": "waypoint11",
+            "to": "waypoint12"
+          },
+          {
+            "from": "waypoint6",
+            "to": "waypoint4"
+          },
+          {
+            "from": "waypoint6",
+            "to": "waypoint8"
+          },
+          {
+            "from": "waypoint2",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint1"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint14"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint2"
+          },
+          {
+            "from": "waypoint3",
+            "to": "waypoint1"
+          },
+          {
+            "from": "waypoint9",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint13"
+          },
+          {
+            "from": "waypoint12",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint6"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint7"
+          },
+          {
+            "from": "waypoint14",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint1",
+            "to": "waypoint3"
+          },
+          {
+            "from": "waypoint13",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint12"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint0",
+            "to": "waypoint9"
+          },
+          {
+            "from": "waypoint14",
+            "to": "waypoint10"
+          },
+          {
+            "from": "waypoint7",
+            "to": "waypoint0"
+          },
+          {
+            "from": "waypoint6",
+            "to": "waypoint5"
+          },
+          {
+            "from": "waypoint5",
+            "to": "waypoint0"
+          }
+        ]
+      },
+      "rovers_available": [
+        "rover0",
+        "rover1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 8.026823043823242,
+    "correct": false,
+    "prompt_tokens": 3186,
+    "completion_tokens": 1379,
+    "cost": 0.02865,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

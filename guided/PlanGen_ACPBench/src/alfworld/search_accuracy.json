@@ -1,0 +1,193 @@
+{
+  "domain": "alfworld",
+  "num_examples": 20,
+  "num_solved_by_final_answer": 0,
+  "num_with_plan": 0,
+  "final_answer_ratio": 0.0,
+  "plan_ratio": 0.0,
+  "num_with_ground_truth": 20,
+  "num_correct_final_answer": 12,
+  "final_answer_accuracy_against_ground_truth": 0.6,
+  "per_example": [
+    {
+      "example_id": "alfworld_plan_trial_t20190908_113523_123938_p18_180_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190906_191445_723170_p06_148_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_113523_123938_p18_48_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_6_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_222951_616606_p29_92_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_010306_215435_p30_196_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_214946_567644_p02_82_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_020029_636862_p14_42_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_010306_215435_p30_20_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190907_171933_349922_p10_94_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190906_191445_723170_p06_81_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_163_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_010306_215435_p30_187_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_3_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190907_133919_856963_p26_38_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_4_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_113523_123938_p18_44_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_010306_215435_p30_180_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_020029_636862_p14_147_n",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "no",
+      "is_correct_final_answer": true
+    },
+    {
+      "example_id": "alfworld_plan_trial_t20190908_214946_567644_p02_140_p",
+      "final_answer": "no",
+      "is_yes": false,
+      "has_plan": false,
+      "plan_length": 0,
+      "ground_truth": "yes",
+      "is_correct_final_answer": false
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+\section{Architect-Identified Algorithmic Strategies Across Domains}
+\label{app:architect-strategies}
+
+This appendix summarizes the blueprints produced by the Architect for the three
+NaturalPlan domains.  In our Architect--Builder--Runner setup, the Architect is
+not asked only to describe the task.  It must specify an executable planning
+design: the representation of the problem, the functions that the Builder
+should implement, the algorithmic strategy for finding a plan, and the logic
+that connects parsing, solving, validation, and output generation.  The
+following sections make these domain-specific blueprints explicit.
+
+\subsection{Trip Planning}
+
+The Architect treats trip planning as a constrained path-finding problem over a
+flight graph.  Cities are graph nodes, direct flights are directed edges, and a
+complete itinerary is an ordered path that visits every required city exactly
+once.  The temporal structure is represented by inclusive visit intervals.  If
+the traveler flies from one city to the next on day \(d\), then day \(d\) is
+shared by the two consecutive city intervals.  Therefore, an itinerary with
+\(n\) cities must satisfy the total-day identity
+\(\sum_i \mathrm{duration}_i - (n-1)\).
+
+This blueprint specifies:
+\begin{itemize}
+    \item \textbf{State representation:} a problem instance contains the city
+    list, required stay duration for each city, total trip length, directed
+    flight edges, and fixed event windows.  A partial or complete plan is a
+    sequence of visit records \((city, start, end)\).  The state must preserve
+    city coverage, valid flight connectivity, inclusive day intervals, and the
+    requirement that every fixed event window lies inside the visit interval
+    for its city.
+
+    \item \textbf{Core functions:} the Builder is expected to implement
+    parsing routines for cities, durations, total days, flight edges, and event
+    constraints; candidate-generation logic for extending a partial route to
+    feasible next cities; consistency checks for total-duration arithmetic; a
+    route verifier that checks city coverage, flights, intervals, and events;
+    and a formatter that converts the verified route into a day-by-day trip
+    plan.
+
+    \item \textbf{Solving strategy:} the Architect specifies deterministic
+    constrained depth-first search over possible flight paths.  The search
+    prunes a branch when the current city interval violates an event window,
+    exceeds the trip horizon, or makes a remaining city impossible to schedule
+    later.  For small underconstrained cases, the blueprint permits a
+    deterministic permutation-based fallback over city orders.
+
+    \item \textbf{Integration logic:} the system first parses the natural
+    language prompt into a structured graph-and-interval problem.  It then
+    checks the total-day arithmetic induced by shared flight days, searches for
+    a feasible city ordering, verifies the resulting itinerary against all
+    parsed constraints, and returns the plan only after this verification
+    succeeds.
+\end{itemize}
+
+\subsection{Meeting Planning}
+
+The Architect treats meeting planning as a time-window routing problem.  The
+agent starts at a specified location and time, then chooses an ordered sequence
+of friends to meet.  Each transition must account for travel time, possible
+waiting, the friend's availability window, and the minimum required meeting
+duration.  Unlike trip planning, the goal is not necessarily to visit every
+friend; the objective is to maximize the number of feasible meetings.
+
+This blueprint specifies:
+\begin{itemize}
+    \item \textbf{State representation:} a planning state consists of the
+    current location, current clock time, and set of already-met friends.  Each
+    friend is represented by a name, location, availability interval, meeting
+    duration, and stable input index.  The travel-time matrix defines the cost
+    of moving between locations.  A candidate meeting is valid only if the
+    agent can arrive, wait if needed, and complete the meeting before the
+    friend's availability window closes.
+
+    \item \textbf{Core functions:} the Builder is expected to implement time
+    parsing and formatting, availability-window parsing, construction of the
+    structured meeting problem, travel-time lookup, candidate generation over
+    unmet friends, recursive schedule search, tie-breaking logic, schedule
+    verification, and natural-language plan formatting.  Each candidate action
+    records the departure location, travel time, arrival time, meeting start,
+    and meeting end.
+
+    \item \textbf{Solving strategy:} the Architect specifies exact dynamic
+    search with memoization over subset-style routing states.  From each state,
+    the solver evaluates all friends who have not yet been met and recursively
+    computes the best continuation.  The primary objective is to maximize the
+    number of meetings.  Ties are resolved deterministically, favoring earlier
+    completion, less waiting, and stable input order.
+
+    \item \textbf{Integration logic:} the system parses the start state,
+    friend constraints, and travel matrix; computes the best feasible meeting
+    sequence; replays the sequence to verify travel times, arrival times,
+    waiting, availability windows, meeting durations, and duplicate-meeting
+    violations; and finally emits the verified route as an ordered list of
+    plan steps.
+\end{itemize}
+
+\subsection{Calendar Scheduling}
+
+The Architect treats calendar scheduling as finite interval enumeration over an
+ordered work-calendar grid.  The problem is to choose one meeting slot that
+fits within the allowed days and work hours while avoiding all participant
+conflicts and respecting any stated preferences.  Because the candidate days,
+work hours, and meeting duration are bounded, the Architect chooses direct
+constraint enumeration rather than a more complex search procedure.
+
+This blueprint specifies:
+\begin{itemize}
+    \item \textbf{State representation:} a calendar instance contains the
+    participants, ordered candidate days, work-hour start and end times,
+    required meeting duration, per-participant busy intervals, blocked days,
+    lower time bounds, upper time bounds, and an earliest-availability
+    preference.  A candidate plan is a tuple \((day, start, end)\), where the
+    interval length must equal the requested duration.
+
+    \item \textbf{Core functions:} the Builder is expected to implement clock
+    parsing, duration parsing, day extraction, participant extraction,
+    busy-interval parsing, interval merging, preference parsing, candidate-slot
+    generation, slot-validity checking, result verification, and output
+    formatting.  The candidate generator scans possible starts on a
+    deterministic 30-minute grid.
+
+    \item \textbf{Solving strategy:} the Architect specifies chronological
+    constraint enumeration.  For each allowed day, the solver enumerates
+    candidate start times and rejects a slot if it falls outside work hours,
+    overlaps any participant's busy interval, occurs on a blocked day, starts
+    before a parsed lower bound, or ends after a parsed upper bound.  In the
+    default case, the first feasible slot is returned; when the parsed
+    preferences call for a later free block, the solver deterministically
+    selects the beginning of the last available block.
+
+    \item \textbf{Integration logic:} the system parses the prompt into a
+    structured calendar problem, normalizes busy intervals by merging overlaps,
+    enumerates valid slots in day and time order, constructs the proposed
+    meeting time, verifies its duration and participant-level constraints, and
+    returns the final slot only if all checks pass.
+\end{itemize}
+
+Overall, the Architect's blueprints identify three distinct algorithmic
+structures for NaturalPlan: constrained graph search for trip planning,
+memoized time-window routing for meeting planning, and interval-based slot
+enumeration for calendar scheduling.  These blueprints make clear what the
+Architect actually specifies: the planning state, the required parsing and
+validation functions, the candidate-generation mechanism, the solving
+algorithm, and the final integration path from natural-language prompt to
+verified plan.

@@ -1,0 +1,626 @@
+[
+  {
+    "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_109_n",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 2 books, 3 bowls, 1 cd, 1 cellphone, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 1 pencil, 1 pen, 3 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. mug1, creditcard1, cd1, laptop2, bowl2, bowl1, and alarmclock1 are at location3. bowl3, desklamp1, alarmclock3, and mug2 are at location23. laptop1, pillow3, pillow2, book1, and pillow1 are at location13. window2 is at location4. cellphone1 and book2 are at location1. keychain2 is at location12. chair2 is at location26. blinds1 is at location16. alarmclock2 is at location11. mirror1 is at location19. basketball1 is at location7. pen1 is at location24. window1 is at location5. blinds2 is at location15. pencil1 is at location22. laundryhamperlid1 is at location8. keychain1 is at location25. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location27. The objects are in/on receptacle as follows. pillow2, laptop1, pillow1, book1, and pillow3 are in bed1. keychain2 is in drawer5. mug2, alarmclock3, desklamp1, and bowl3 are on shelf4. alarmclock1, cd1, bowl2, laptop2, bowl1, mug1, and creditcard1 are on desk1. book2 and cellphone1 are in drawer6. keychain1 is on shelf2. pen1 is on shelf6. mug2, alarmclock3, desklamp1, and bowl3 are on desk2. alarmclock2 is on shelf3. pencil1 is on shelf5. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is off. It has been validated that an object of type penciltype is in a receptacle of type shelftype. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nagent agent1 is at location location27 and agent agent1 is at location location14?",
+    "predicted_initial_state": {
+      "agent": "agent1",
+      "location_1": "location27",
+      "location_2": "location14"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "agent_at_two_locations",
+      "agent_exists": true,
+      "location_1_exists": true,
+      "location_2_exists": true,
+      "matching_agents": [
+        "agent1"
+      ],
+      "matching_locations": [
+        "location27",
+        "location14"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in combinations_func\nKeyError: 'object_type'\n",
+    "time_taken": 1.5242056846618652,
+    "correct": true,
+    "prompt_tokens": 1826,
+    "completion_tokens": 130,
+    "cost": 0.006515,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_113523_123938_p18_49_n",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 34 object types: 2 apples, 1 bowl, 1 bread, 1 butterknife, 3 cellphones, 2 chairs, 2 creditcards, 2 cups, 1 dishsponge, 2 eggs, 1 faucet, 2 forks, 3 glassbottles, 1 houseplant, 1 knife, 3 lettuces, 1 lightswitch, 1 mug, 1 pan, 1 papertowelroll, 2 peppershakers, 1 plate, 2 potatoes, 1 pot, 3 saltshakers, 1 sink, 1 soapbottle, 2 spatulas, 3 spoons, 1 statue, 4 stoveknobs, 1 tomato, 2 vases, 2 windows, 11 receptacle types: 6 cabinets, 1 coffeemachine, 3 countertops, 3 drawers, 1 fridge, 1 garbagecan, 1 microwave, 3 shelves, 1 sinkbasin, 4 stoveburners, 1 toaster, and 31 locations all numbered consecutively.  \nThe receptacles are at locations as follows. stoveburner2 and stoveburner4 are at location21. drawer1 is at location20. shelf3 is at location26. stoveburner1 and stoveburner3 are at location5. cabinet6 is at location4. drawer3 is at location27. countertop1 is at location2. cabinet4 is at location14. cabinet2 is at location22. microwave1 is at location24. cabinet1 is at location19. fridge1 is at location10. coffeemachine1 and countertop2 are at location11. cabinet5 is at location13. countertop3 is at location3. cabinet3 is at location16. toaster1 is at location9. drawer2 is at location15. shelf2 is at location29. sinkbasin1 is at location6. garbagecan1 is at location8. shelf1 is at location17. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. tomato1, lettuce3, soapbottle1, houseplant1, glassbottle3, fork2, saltshaker2, spoon3, butterknife1, and knife1 are at location3. stoveknob1 is at location18. saltshaker1 is at location16. vase2 and papertowelroll1 are at location29. statue1, creditcard2, creditcard1, bread1, mug1, lettuce2, cellphone3, and spoon1 are at location2. spatula1 is at location27. glassbottle1 is at location19. potato2, cup1, apple1, lettuce1, potato1, and cup2 are at location10. chair1 is at location23. saltshaker3 is at location26. egg1 and apple2 are at location8. window1 is at location30. plate1 is at location4. peppershaker2 and cellphone2 are at location20. spoon2, sink1, spatula2, and fork1 are at location6. stoveknob3 and stoveknob2 are at location12. dishsponge1 is at location15. lightswitch1 is at location25. stoveknob4 is at location7. glassbottle2 and bowl1 are at location14. pot1 is at location5. cellphone1, peppershaker1, and pan1 are at location11. chair2 is at location1. window2 is at location28. vase1 is at location17. agent agent1 is at location location11. The objects are in/on receptacle as follows. spoon1, lettuce2, mug1, statue1, creditcard2, bread1, cellphone3, and creditcard1 are on countertop1. butterknife1, spoon3, saltshaker2, lettuce3, tomato1, houseplant1, fork2, glassbottle3, knife1, and soapbottle1 are on countertop3. apple1, cup1, potato1, cup2, potato2, and lettuce1 are in fridge1. bowl1 and glassbottle2 are in cabinet4. saltshaker3 is on shelf3. dishsponge1 is in drawer2. pot1 is on stoveburner1. pan1, cellphone1, and peppershaker1 are on countertop2. glassbottle1 is in cabinet1. pot1 is on stoveburner3. apple2 and egg1 are in garbagecan1. plate1 is in cabinet6. cellphone2 and peppershaker2 are in drawer1. spatula2, spoon2, and fork1 are in sinkbasin1. pan1 is on stoveburner2. papertowelroll1 and vase2 are on shelf2. saltshaker1 is in cabinet3. vase1 is on shelf1. spatula1 is in drawer3. pan1 is on stoveburner4. drawer1, cabinet2, microwave1, cabinet1, fridge1, drawer2, drawer3, and cabinet5 are closed. Nothing has been validated. agent1 is holding object egg2. ",
+    "question": "Is it possible to transition to a state where the following holds: \nvase2 is on shelf2 and location28 is toggled?",
+    "predicted_initial_state": {
+      "object": "vase2",
+      "receptacle": "shelf2",
+      "location": "location28"
+    },
+    "predicted_goal_state": {
+      "goal_predicates": [
+        "object_on_receptacle",
+        "location_toggled"
+      ],
+      "object_exists": true,
+      "receptacle_exists": true,
+      "location_exists": true,
+      "matching_objects": [
+        "vase2"
+      ],
+      "matching_receptacles": [
+        "shelf2"
+      ],
+      "matching_locations": [
+        "location28"
+      ],
+      "object_already_on_receptacle": true,
+      "location_already_toggled": false
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in combinations_func\nKeyError: 'object_type'\n",
+    "time_taken": 2.198493242263794,
+    "correct": true,
+    "prompt_tokens": 2199,
+    "completion_tokens": 173,
+    "cost": 0.0080925,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_165_n",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 2 books, 3 bowls, 1 cd, 1 cellphone, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 1 pencil, 1 pen, 3 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. mug1, creditcard1, cd1, laptop2, bowl2, bowl1, and alarmclock1 are at location3. bowl3, desklamp1, alarmclock3, and mug2 are at location23. laptop1, pillow3, pillow2, book1, and pillow1 are at location13. window2 is at location4. cellphone1 and book2 are at location1. keychain2 is at location12. chair2 is at location26. blinds1 is at location16. alarmclock2 is at location11. mirror1 is at location19. basketball1 is at location7. pen1 is at location24. window1 is at location5. blinds2 is at location15. pencil1 is at location22. laundryhamperlid1 is at location8. keychain1 is at location25. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location3. The objects are in/on receptacle as follows. pillow2, laptop1, pillow1, book1, and pillow3 are in bed1. keychain2 is in drawer5. mug2, alarmclock3, desklamp1, and bowl3 are on shelf4. alarmclock1, cd1, bowl2, laptop2, bowl1, mug1, and creditcard1 are on desk1. book2 and cellphone1 are in drawer6. keychain1 is on shelf2. pen1 is on shelf6. mug2, alarmclock3, desklamp1, and bowl3 are on desk2. alarmclock2 is on shelf3. pencil1 is on shelf5. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is off. It has been validated that an object of type alarmclocktype is in a receptacle of type shelftype. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nagent agent1 is at location location20 and agent agent1 is at location location3?",
+    "predicted_initial_state": {
+      "agent": "agent1",
+      "location_1": "location20",
+      "location_2": "location3"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "agent_at_two_locations",
+      "agent_exists": true,
+      "location_1_exists": true,
+      "location_2_exists": true,
+      "same_agent": true,
+      "distinct_locations": true,
+      "matching_agent": "agent1",
+      "matching_locations": [
+        "location20",
+        "location3"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in combinations_func\nKeyError: 'object_type'\n",
+    "time_taken": 1.7614030838012695,
+    "correct": true,
+    "prompt_tokens": 1827,
+    "completion_tokens": 140,
+    "cost": 0.0066675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_020029_636862_p14_70_n",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 1 book, 3 bowls, 3 cds, 3 cellphones, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 3 pencils, 1 pen, 2 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. cellphone2, mug2, pen1, cd3, and pencil3 are at location10. mug1, cd1, pencil1, bowl1, and alarmclock1 are at location3. laptop1, cellphone1, laptop2, pillow2, and pillow1 are at location13. keychain1 and keychain2 are at location6. bowl2, desklamp1, and alarmclock3 are at location23. pencil2 and creditcard1 are at location22. window2 is at location4. cd2 is at location2. chair2 is at location26. bowl3 is at location24. blinds1 is at location16. alarmclock2 is at location11. cellphone3 is at location12. mirror1 is at location19. basketball1 is at location7. window1 is at location5. blinds2 is at location15. laundryhamperlid1 is at location8. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location10. The objects are in/on receptacle as follows. pencil1, alarmclock1, cd1, mug1, and bowl1 are on desk1. pillow2, laptop1, pillow1, laptop2, and cellphone1 are in bed1. bowl2, alarmclock3, and desklamp1 are on shelf4. cellphone3 is in drawer5. mug2, alarmclock3, desklamp1, cellphone2, pencil3, cd3, pen1, and bowl2 are on desk2. cd2 is in garbagecan1. alarmclock2 is on shelf3. bowl3 is on shelf6. pencil2 and creditcard1 are on shelf5. keychain1 and keychain2 are in safe1. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is off. Nothing has been validated. agent1 is holding object book1. ",
+    "question": "Is it possible to transition to a state where the following holds: \nshelf2 is open?",
+    "predicted_initial_state": {
+      "receptacle": "shelf2"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "open",
+      "receptacle_exists": true,
+      "matching_receptacles": [
+        "shelf2"
+      ],
+      "openable": false
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in combinations_func\nKeyError: 'object_type'\n",
+    "time_taken": 1.517848253250122,
+    "correct": true,
+    "prompt_tokens": 1820,
+    "completion_tokens": 86,
+    "cost": 0.00584,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_133_n",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 2 books, 3 bowls, 1 cd, 1 cellphone, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 1 pencil, 1 pen, 3 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. mug1, creditcard1, laptop2, bowl2, bowl1, and alarmclock1 are at location3. bowl3, desklamp1, alarmclock3, and mug2 are at location23. laptop1, pillow3, pillow2, book1, and pillow1 are at location13. window2 is at location4. cellphone1 and book2 are at location1. keychain2 is at location12. chair2 is at location26. blinds1 is at location16. alarmclock2 is at location11. mirror1 is at location19. basketball1 is at location7. pen1 is at location24. window1 is at location5. blinds2 is at location15. pencil1 is at location22. laundryhamperlid1 is at location8. keychain1 is at location25. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location23. The objects are in/on receptacle as follows. pillow2, laptop1, pillow1, book1, and pillow3 are in bed1. keychain2 is in drawer5. mug2, alarmclock3, desklamp1, and bowl3 are on shelf4. alarmclock1, bowl2, laptop2, bowl1, mug1, and creditcard1 are on desk1. book2 and cellphone1 are in drawer6. keychain1 is on shelf2. pen1 is on shelf6. mug2, alarmclock3, desklamp1, and bowl3 are on desk2. alarmclock2 is on shelf3. pencil1 is on shelf5. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is toggled. desklamp1 is on. Nothing has been validated. agent1 is holding object cd1. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type laptoptype is examined under an object of type desklamptype and It has been validated that an object of type pentype is examined under an object of type desklamptype?",
+    "predicted_initial_state": [
+      {
+        "object_type": "laptop",
+        "under_object_type": "desklamp"
+      },
+      {
+        "object_type": "pen",
+        "under_object_type": "desklamp"
+      }
+    ],
+    "predicted_goal_state": {
+      "goal_predicate": "validated_examined_under",
+      "object_exists": true,
+      "under_object_exists": true,
+      "matching_objects": {
+        "laptop": [
+          "laptop1",
+          "laptop2"
+        ],
+        "pen": [
+          "pen1"
+        ]
+      },
+      "matching_under_objects": [
+        "desklamp1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in combinations_func\nTypeError: list indices must be integers or slices, not str\n",
+    "time_taken": 1.919896125793457,
+    "correct": true,
+    "prompt_tokens": 1840,
+    "completion_tokens": 164,
+    "cost": 0.00706,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_222951_616606_p29_167_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 1 alarmclock, 1 baseballbat, 1 basketball, 2 blind, 3 books, 1 bowl, 3 cds, 3 cellphones, 2 chairs, 2 creditcards, 1 desklamp, 1 keychain, 1 laptop, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 3 mugs, 2 pencils, 1 pen, 1 pillow, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. mug1, creditcard2, cellphone3, cellphone2, pencil1, bowl1, and pen1 are at location3. cd1 and laptop1 are at location10. pencil2 and desklamp1 are at location23. mug3 and cd2 are at location24. window2 is at location4. book3 is at location1. book2, cellphone1, book1, and pillow1 are at location13. keychain1 and cd3 are at location12. mug2 is at location11. chair2 is at location26. blinds1 is at location16. creditcard1 is at location17. mirror1 is at location19. basketball1 is at location7. window1 is at location5. blinds2 is at location15. laundryhamperlid1 is at location8. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location10. The objects are in/on receptacle as follows. pencil1, cellphone2, cellphone3, pen1, creditcard2, mug1, and bowl1 are on desk1. creditcard1 is in drawer3. pencil2, laptop1, desklamp1, and cd1 are on desk2. pillow1, book1, cellphone1, and book2 are in bed1. book3 is in drawer6. cd2 and mug3 are on shelf6. mug2 is on shelf3. desklamp1 and pencil2 are on shelf4. keychain1 is in drawer5. cd3 is in drawer4. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is toggled. desklamp1 is on. Nothing has been validated. agent1 is holding object alarmclock1. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type penciltype is in a receptacle of type desktype?",
+    "predicted_initial_state": {
+      "object_type": "pencil",
+      "receptacle_type": "desk"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "pencil1",
+        "pencil2"
+      ],
+      "matching_receptacles": [
+        "desk1",
+        "desk2"
+      ]
+    },
+    "plan": [
+      "validate_pick_and_place_in_receptacle pencil2 penciltype desk2 desktype"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.9208078384399414,
+    "correct": true,
+    "prompt_tokens": 1802,
+    "completion_tokens": 122,
+    "cost": 0.006335,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190907_083429_887065_p27_156_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 34 object types: 1 apple, 3 bowls, 1 bread, 2 butterknives, 3 cellphones, 2 chairs, 1 creditcard, 3 cups, 1 dishsponge, 1 egg, 1 faucet, 1 fork, 2 glassbottles, 1 houseplant, 1 knife, 3 lettuces, 1 lightswitch, 3 mugs, 1 pan, 1 papertowelroll, 2 peppershakers, 1 plate, 2 potatoes, 2 pots, 1 saltshaker, 1 sink, 3 soapbottles, 2 spatulas, 1 spoon, 1 statue, 4 stoveknobs, 1 tomato, 3 vases, 2 windows, 11 receptacle types: 6 cabinets, 1 coffeemachine, 3 countertops, 3 drawers, 1 fridge, 1 garbagecan, 1 microwave, 3 shelves, 1 sinkbasin, 4 stoveburners, 1 toaster, and 31 locations all numbered consecutively.  \nThe receptacles are at locations as follows. stoveburner2 and stoveburner4 are at location21. drawer1 is at location20. shelf3 is at location26. stoveburner1 and stoveburner3 are at location5. cabinet6 is at location4. drawer3 is at location27. countertop1 is at location2. cabinet4 is at location14. cabinet2 is at location22. microwave1 is at location24. cabinet1 is at location19. fridge1 is at location10. coffeemachine1 and countertop2 are at location11. cabinet5 is at location13. countertop3 is at location3. cabinet3 is at location16. toaster1 is at location9. drawer2 is at location15. shelf2 is at location29. sinkbasin1 is at location6. garbagecan1 is at location8. shelf1 is at location17. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. stoveknob1 is at location18. soapbottle2 is at location19. butterknife2, bread1, spoon1, statue1, vase2, houseplant1, and vase1 are at location3. peppershaker1 and cup1 are at location14. apple1, knife1, egg1, and mug1 are at location11. chair1 is at location23. creditcard1, saltshaker1, peppershaker2, and vase3 are at location29. cellphone1 is at location15. plate1, tomato1, bowl1, mug2, and potato1 are at location10. mug3 is at location24. window1 is at location30. cellphone2, lettuce1, butterknife1, pot1, lettuce2, cellphone3, and glassbottle2 are at location2. sink1, spatula1, lettuce3, spatula2, cup2, fork1, and potato2 are at location6. stoveknob3 and stoveknob2 are at location12. soapbottle3 and papertowelroll1 are at location8. glassbottle1 and soapbottle1 are at location22. dishsponge1 is at location26. lightswitch1 is at location25. stoveknob4 is at location7. pan1 and cup3 are at location4. chair2 is at location1. pot2 is at location21. window2 is at location28. bowl3 and bowl2 are at location16. agent agent1 is at location location4. The objects are in/on receptacle as follows. statue1, vase2, bread1, houseplant1, spoon1, butterknife2, and vase1 are on countertop3. saltshaker1, creditcard1, peppershaker2, and vase3 are on shelf2. soapbottle2 is in cabinet1. dishsponge1 is on shelf3. cellphone2, lettuce2, glassbottle2, butterknife1, lettuce1, pot1, and cellphone3 are on countertop1. cup3 and pan1 are in cabinet6. tomato1, plate1, potato1, mug2, and bowl1 are in fridge1. pot2 is on stoveburner2. papertowelroll1 and soapbottle3 are in garbagecan1. egg1, apple1, knife1, and mug1 are on countertop2. glassbottle1 and soapbottle1 are in cabinet2. lettuce3, spatula2, spatula1, potato2, cup2, and fork1 are in sinkbasin1. mug3 is in microwave1. cellphone1 is in drawer2. cup1 and peppershaker1 are in cabinet4. bowl3 and bowl2 are in cabinet3. pot2 is on stoveburner4. drawer1, cabinet2, microwave1, cabinet1, fridge1, drawer2, drawer3, and cabinet5 are closed. cup3 is hot. Nothing has been validated. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type potatotype is in a receptacle of type fridgetype?",
+    "predicted_initial_state": {
+      "object_type": "potato",
+      "receptacle_type": "fridge"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "potato1",
+        "potato2"
+      ],
+      "matching_receptacles": [
+        "fridge1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.0658702850341797,
+    "correct": false,
+    "prompt_tokens": 2196,
+    "completion_tokens": 119,
+    "cost": 0.007275,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190907_083429_887065_p27_167_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 34 object types: 1 apple, 3 bowls, 1 bread, 2 butterknives, 3 cellphones, 2 chairs, 1 creditcard, 3 cups, 1 dishsponge, 1 egg, 1 faucet, 1 fork, 2 glassbottles, 1 houseplant, 1 knife, 3 lettuces, 1 lightswitch, 3 mugs, 1 pan, 1 papertowelroll, 2 peppershakers, 1 plate, 2 potatoes, 2 pots, 1 saltshaker, 1 sink, 3 soapbottles, 2 spatulas, 1 spoon, 1 statue, 4 stoveknobs, 1 tomato, 3 vases, 2 windows, 11 receptacle types: 6 cabinets, 1 coffeemachine, 3 countertops, 3 drawers, 1 fridge, 1 garbagecan, 1 microwave, 3 shelves, 1 sinkbasin, 4 stoveburners, 1 toaster, and 31 locations all numbered consecutively.  \nThe receptacles are at locations as follows. stoveburner2 and stoveburner4 are at location21. drawer1 is at location20. shelf3 is at location26. stoveburner1 and stoveburner3 are at location5. cabinet6 is at location4. drawer3 is at location27. countertop1 is at location2. cabinet4 is at location14. cabinet2 is at location22. microwave1 is at location24. cabinet1 is at location19. fridge1 is at location10. coffeemachine1 and countertop2 are at location11. cabinet5 is at location13. countertop3 is at location3. cabinet3 is at location16. toaster1 is at location9. drawer2 is at location15. shelf2 is at location29. sinkbasin1 is at location6. garbagecan1 is at location8. shelf1 is at location17. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. stoveknob1 is at location18. soapbottle2 is at location19. butterknife2, bread1, spoon1, statue1, vase2, houseplant1, and vase1 are at location3. peppershaker1 and cup1 are at location14. apple1, knife1, egg1, and mug1 are at location11. chair1 is at location23. creditcard1, saltshaker1, peppershaker2, and vase3 are at location29. cellphone1 is at location15. plate1, tomato1, bowl1, mug2, and potato1 are at location10. mug3 is at location24. window1 is at location30. cellphone2, lettuce1, butterknife1, pot1, lettuce2, cellphone3, and glassbottle2 are at location2. sink1, spatula1, lettuce3, spatula2, cup2, fork1, and potato2 are at location6. stoveknob3 and stoveknob2 are at location12. soapbottle3 and papertowelroll1 are at location8. glassbottle1 and soapbottle1 are at location22. dishsponge1 is at location26. lightswitch1 is at location25. stoveknob4 is at location7. pan1 is at location4. chair2 is at location1. pot2 is at location21. window2 is at location28. bowl3 and bowl2 are at location16. agent agent1 is at location location8. The objects are in/on receptacle as follows. statue1, vase2, bread1, houseplant1, spoon1, butterknife2, and vase1 are on countertop3. saltshaker1, creditcard1, peppershaker2, and vase3 are on shelf2. soapbottle2 is in cabinet1. dishsponge1 is on shelf3. cellphone2, lettuce2, glassbottle2, butterknife1, lettuce1, pot1, and cellphone3 are on countertop1. tomato1, plate1, potato1, mug2, and bowl1 are in fridge1. pot2 is on stoveburner2. pan1 is in cabinet6. papertowelroll1 and soapbottle3 are in garbagecan1. egg1, apple1, knife1, and mug1 are on countertop2. glassbottle1 and soapbottle1 are in cabinet2. lettuce3, spatula2, spatula1, potato2, cup2, and fork1 are in sinkbasin1. mug3 is in microwave1. cellphone1 is in drawer2. cup1 and peppershaker1 are in cabinet4. bowl3 and bowl2 are in cabinet3. pot2 is on stoveburner4. drawer1, cabinet2, microwave1, cabinet1, fridge1, drawer2, drawer3, and cabinet5 are closed. Nothing has been validated. agent1 is holding object cup3. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type cellphonetype is in a receptacle of type countertoptype?",
+    "predicted_initial_state": {
+      "object_type": "cellphone",
+      "receptacle_type": "countertop"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "cellphone1",
+        "cellphone2",
+        "cellphone3"
+      ],
+      "matching_receptacles": [
+        "countertop1",
+        "countertop2",
+        "countertop3"
+      ]
+    },
+    "plan": [
+      "validate_pick_and_place_in_receptacle cellphone3 cellphonetype countertop3 countertoptype"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.6013150215148926,
+    "correct": true,
+    "prompt_tokens": 2185,
+    "completion_tokens": 137,
+    "cost": 0.0075175,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(validate_pick_and_place_in_receptacle cellphone3 cellphonetype countertop3 countertoptype)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Action 1 '(validate_pick_and_place_in_receptacle cellphone3 cellphonetype countertop3 countertoptype)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190907_133919_856963_p26_58_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 1 alarmclock, 1 baseballbat, 1 basketball, 2 blind, 2 books, 1 bowl, 3 cds, 3 cellphones, 2 chairs, 2 creditcards, 1 desklamp, 3 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 3 pencils, 3 pens, 2 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. cellphone2 and creditcard1 are at location24. pen3, desklamp1, and pencil2 are at location23. mug1, keychain1, and pen2 are at location10. creditcard2 is at location1. chair2 is at location26. pen1 and cd2 are at location17. pencil3 and cellphone3 are at location12. keychain3 and keychain2 are at location6. chair1 is at location21. cd3 is at location2. book1, laptop2, cellphone1, pillow2, laptop1, and pillow1 are at location13. cd1, bowl1, and alarmclock1 are at location3. pencil1 is at location11. mirror1 is at location19. mug2 is at location22. baseballbat1 is at location9. window2 is at location4. laundryhamperlid1 is at location8. book2 is at location18. lightswitch1 is at location14. blinds1 is at location16. basketball1 is at location7. window1 is at location5. blinds2 is at location15. agent agent1 is at location location12. The objects are in/on receptacle as follows. laptop1, pillow1, book1, cellphone1, pillow2, and laptop2 are in bed1. creditcard1 and cellphone2 are on shelf6. desklamp1, pencil2, pen2, mug1, keychain1, and pen3 are on desk2. mug2 is on shelf5. cd1, alarmclock1, and bowl1 are on desk1. desklamp1, pencil2, and pen3 are on shelf4. cd3 is in garbagecan1. keychain2 and keychain3 are in safe1. cellphone3 is in drawer4. creditcard2 is in drawer6. book2 is in drawer2. pencil1 is on shelf3. pencil3 is in drawer5. pen1 and cd2 are in drawer3. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is off. Nothing has been validated. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type mugtype is in a receptacle of type desktype?",
+    "predicted_initial_state": {
+      "object_type": "mug",
+      "receptacle_type": "desk"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "mug1",
+        "mug2"
+      ],
+      "matching_receptacles": [
+        "desk1",
+        "desk2"
+      ]
+    },
+    "plan": [
+      "validate_pick_and_place_in_receptacle mug2 mugtype desk2 desktype"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.0622458457946777,
+    "correct": true,
+    "prompt_tokens": 1873,
+    "completion_tokens": 122,
+    "cost": 0.0065125,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Action 1 '(validate_pick_and_place_in_receptacle mug2 mugtype desk2 desktype)' failed: unsatisfied precondition",
+      "actions_applied": 0,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Action 1 '(validate_pick_and_place_in_receptacle mug2 mugtype desk2 desktype)' failed: unsatisfied precondition",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_141942_810052_p28_99_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 2 books, 3 bowls, 1 cd, 1 cellphone, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 1 pencil, 1 pen, 3 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. mug1, creditcard1, laptop2, bowl2, bowl1, and alarmclock1 are at location3. bowl3, desklamp1, alarmclock3, and mug2 are at location23. laptop1, pillow3, pillow2, book1, and pillow1 are at location13. window2 is at location4. cellphone1 and book2 are at location1. keychain2 is at location12. chair2 is at location26. blinds1 is at location16. alarmclock2 is at location11. mirror1 is at location19. basketball1 is at location7. pen1 is at location24. window1 is at location5. blinds2 is at location15. pencil1 is at location22. laundryhamperlid1 is at location8. keychain1 is at location25. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location3. The objects are in/on receptacle as follows. pillow2, laptop1, pillow1, book1, and pillow3 are in bed1. keychain2 is in drawer5. mug2, alarmclock3, desklamp1, and bowl3 are on shelf4. alarmclock1, bowl2, laptop2, bowl1, mug1, and creditcard1 are on desk1. book2 and cellphone1 are in drawer6. keychain1 is on shelf2. pen1 is on shelf6. mug2, alarmclock3, desklamp1, and bowl3 are on desk2. alarmclock2 is on shelf3. pencil1 is on shelf5. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is toggled. desklamp1 is on. Nothing has been validated. agent1 is holding object cd1. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type bowltype is in a receptacle of type desktype?",
+    "predicted_initial_state": {
+      "object_type": "bowl",
+      "receptacle_type": "desk"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "bowl1",
+        "bowl2",
+        "bowl3"
+      ],
+      "matching_receptacles": [
+        "desk1",
+        "desk2"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.510127305984497,
+    "correct": false,
+    "prompt_tokens": 1816,
+    "completion_tokens": 128,
+    "cost": 0.00646,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190907_171933_349922_p10_188_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 34 object types: 2 apples, 2 bowls, 1 bread, 1 butterknife, 3 cellphones, 2 chairs, 1 creditcard, 1 cup, 2 dishsponges, 2 eggs, 1 faucet, 1 fork, 3 glassbottles, 1 houseplant, 2 knives, 2 lettuces, 1 lightswitch, 2 mugs, 1 pan, 1 papertowelroll, 3 peppershakers, 3 plates, 3 potatoes, 1 pot, 1 saltshaker, 1 sink, 2 soapbottles, 3 spatulas, 2 spoons, 1 statue, 4 stoveknobs, 1 tomato, 2 vases, 2 windows, 12 receptacle types: 1 plate, 6 cabinets, 1 coffeemachine, 3 countertops, 3 drawers, 1 fridge, 1 garbagecan, 1 microwave, 3 shelves, 1 sinkbasin, 4 stoveburners, 1 toaster, and 31 locations all numbered consecutively.  \nThe receptacles are at locations as follows. stoveburner2 and stoveburner4 are at location21. drawer1 is at location20. shelf3 is at location26. stoveburner1 and stoveburner3 are at location5. cabinet6 is at location4. drawer3 is at location27. countertop1 is at location2. cabinet4 is at location14. cabinet2 is at location22. microwave1 is at location24. cabinet1 is at location19. fridge1 is at location10. coffeemachine1 and countertop2 are at location11. cabinet5 is at location13. countertop3 is at location3. cabinet3 is at location16. toaster1 is at location9. drawer2 is at location15. shelf2 is at location29. sinkbasin1 is at location6. garbagecan1 is at location8. shelf1 is at location17. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. stoveknob1 is at location18. mug1, egg2, plate2, tomato1, bowl1, egg1, and potato1 are at location10. spoon1 and pan1 are at location11. cellphone3, bread1, knife2, papertowelroll1, creditcard1, spatula1, spoon2, mug2, houseplant1, plate3, glassbottle1, and butterknife1 are at location3. dishsponge1 and fork1 are at location27. knife1, apple1, peppershaker1, cellphone2, lettuce1, cellphone1, plate1, and lettuce2 are at location2. chair1 is at location23. glassbottle2, spatula3, sink1, spatula2, and potato2 are at location6. peppershaker3 is at location16. window1 is at location30. apple2, glassbottle3, and potato3 are at location8. peppershaker2 is at location20. vase2 is at location17. soapbottle2 and statue1 are at location26. stoveknob3 and stoveknob2 are at location12. soapbottle1 is at location4. lightswitch1 is at location25. stoveknob4 is at location7. dishsponge2 and vase1 are at location13. pot1 is at location5. saltshaker1 is at location15. chair2 is at location1. window2 is at location28. cup1 is at location24. bowl2 is at location29. agent agent1 is at location location26. The objects are in/on receptacle as follows. glassbottle2, spatula2, potato2, and spatula3 are in sinkbasin1. mug1, egg2, tomato1, potato1, bowl1, plate2, and egg1 are in fridge1. vase1 and dishsponge2 are in cabinet5. peppershaker1, cellphone2, lettuce2, cellphone1, knife1, lettuce1, apple1, and plate1 are on countertop1. butterknife1, spoon2, papertowelroll1, bread1, plate3, houseplant1, mug2, glassbottle1, cellphone3, creditcard1, spatula1, and knife2 are on countertop3. glassbottle3, apple2, and potato3 are in garbagecan1. cup1 is in microwave1. pot1 is on stoveburner1. pan1 and spoon1 are on countertop2. dishsponge1 and fork1 are in drawer3. vase2 is on shelf1. pot1 is on stoveburner3. bowl2 is on shelf2. cellphone2 is on plate1. statue1 and soapbottle2 are on shelf3. pan1 is on stoveburner2. peppershaker2 is in drawer1. peppershaker3 is in cabinet3. pan1 is on stoveburner4. soapbottle1 is in cabinet6. saltshaker1 is in drawer2. drawer1, cabinet2, microwave1, cabinet1, fridge1, drawer2, drawer3, and cabinet5 are closed. mug1 is cool. Nothing has been validated. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nIt has been validated that an object of type cellphonetype is in a receptacle of type countertoptype and agent agent1 is at location location20?",
+    "predicted_initial_state": {
+      "object_type": "cellphone",
+      "receptacle_type": "countertop"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "cellphone1",
+        "cellphone2",
+        "cellphone3"
+      ],
+      "matching_receptacles": [
+        "countertop1",
+        "countertop2",
+        "countertop3"
+      ],
+      "agent_location_required": "location20"
+    },
+    "plan": [
+      "validate_pick_and_place_in_receptacle cellphone3 cellphonetype countertop3 countertoptype"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.7131779193878174,
+    "correct": true,
+    "prompt_tokens": 2260,
+    "completion_tokens": 147,
+    "cost": 0.007855,
+    "api_calls": 1,
+    "plan_valid": false,
+    "verification": {
+      "valid": false,
+      "reason": "Goal not satisfied",
+      "actions_applied": 1,
+      "total_actions": 1
+    },
+    "plan_failure_reason": "Goal not satisfied",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_020029_636862_p14_152_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 1 book, 3 bowls, 3 cds, 3 cellphones, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 3 pencils, 1 pen, 2 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. cellphone2, mug2, pen1, cd3, and pencil3 are at location10. mug1, cd1, pencil1, bowl1, and alarmclock1 are at location3. laptop1, cellphone1, laptop2, pillow2, and pillow1 are at location13. keychain1 and keychain2 are at location6. bowl2, desklamp1, and alarmclock3 are at location23. pencil2 and creditcard1 are at location22. window2 is at location4. cd2 is at location2. chair2 is at location26. bowl3 is at location24. blinds1 is at location16. alarmclock2 is at location11. cellphone3 is at location12. mirror1 is at location19. basketball1 is at location7. window1 is at location5. blinds2 is at location15. laundryhamperlid1 is at location8. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location17. The objects are in/on receptacle as follows. pencil1, alarmclock1, cd1, mug1, and bowl1 are on desk1. pillow2, laptop1, pillow1, laptop2, and cellphone1 are in bed1. bowl2, alarmclock3, and desklamp1 are on shelf4. cellphone3 is in drawer5. mug2, alarmclock3, desklamp1, cellphone2, pencil3, cd3, pen1, and bowl2 are on desk2. cd2 is in garbagecan1. alarmclock2 is on shelf3. bowl3 is on shelf6. pencil2 and creditcard1 are on shelf5. keychain1 and keychain2 are in safe1. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is toggled. desklamp1 is off. Nothing has been validated. agent1 is holding object book1. ",
+    "question": "Is it possible to transition to a state where the following holds: \nagent agent1 is at location location10 and It has been validated that an object of type penciltype is in a receptacle of type desktype?",
+    "predicted_initial_state": {
+      "object_type": "pencil",
+      "receptacle_type": "desk"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "pencil1",
+        "pencil2",
+        "pencil3"
+      ],
+      "matching_receptacles": [
+        "desk1",
+        "desk2"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.6718430519104004,
+    "correct": false,
+    "prompt_tokens": 1853,
+    "completion_tokens": 128,
+    "cost": 0.0065525,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190907_133919_856963_p26_88_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 1 alarmclock, 1 baseballbat, 1 basketball, 2 blind, 2 books, 1 bowl, 3 cds, 3 cellphones, 2 chairs, 2 creditcards, 1 desklamp, 3 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 3 pencils, 3 pens, 2 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. cellphone2 and creditcard1 are at location24. pen3, desklamp1, and pencil2 are at location23. mug1, keychain1, and pen2 are at location10. creditcard2 is at location1. chair2 is at location26. pen1 and cd2 are at location17. pencil3 and cellphone3 are at location12. keychain3 and keychain2 are at location6. chair1 is at location21. cd3 is at location2. book1, laptop2, cellphone1, pillow2, laptop1, and pillow1 are at location13. cd1 and alarmclock1 are at location3. pencil1 is at location11. mirror1 is at location19. mug2 is at location22. baseballbat1 is at location9. window2 is at location4. laundryhamperlid1 is at location8. book2 is at location18. lightswitch1 is at location14. blinds1 is at location16. basketball1 is at location7. window1 is at location5. blinds2 is at location15. agent agent1 is at location location1. The objects are in/on receptacle as follows. laptop1, pillow1, book1, cellphone1, pillow2, and laptop2 are in bed1. creditcard1 and cellphone2 are on shelf6. desklamp1, pencil2, pen2, mug1, keychain1, and pen3 are on desk2. mug2 is on shelf5. cd1 and alarmclock1 are on desk1. desklamp1, pencil2, and pen3 are on shelf4. cd3 is in garbagecan1. keychain2 and keychain3 are in safe1. cellphone3 is in drawer4. creditcard2 is in drawer6. book2 is in drawer2. pencil1 is on shelf3. pencil3 is in drawer5. pen1 and cd2 are in drawer3. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is toggled. desklamp1 is off. Nothing has been validated. agent1 is holding object bowl1. ",
+    "question": "Is it possible to transition to a state where the following holds: \nagent agent1 is at location location2?",
+    "predicted_initial_state": {
+      "agent": "agent1",
+      "location": "location2"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "agent_at_location",
+      "agent_exists": true,
+      "location_exists": true,
+      "matching_agents": [
+        "agent1"
+      ],
+      "matching_locations": [
+        "location2"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": "Traceback (most recent call last):\n  File \"/Users/sarvesh/Desktop/IBM/IBM/scope/workflow_acp.py\", line 601, in solve\n    Xi = self.combinations_func(c_i)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 4, in combinations_func\nKeyError: 'object_type'\n",
+    "time_taken": 1.6093330383300781,
+    "correct": false,
+    "prompt_tokens": 1861,
+    "completion_tokens": 101,
+    "cost": 0.0061675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190906_191445_723170_p06_76_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 34 object types: 3 apples, 1 bowl, 1 bread, 2 butterknives, 3 cellphones, 2 chairs, 3 creditcards, 3 cups, 3 dishsponges, 2 eggs, 1 faucet, 2 forks, 2 glassbottles, 1 houseplant, 1 knife, 1 lettuce, 1 lightswitch, 2 mugs, 1 pan, 1 papertowelroll, 2 peppershakers, 2 plates, 3 potatoes, 1 pot, 1 saltshaker, 1 sink, 3 soapbottles, 3 spatulas, 2 spoons, 2 statues, 4 stoveknobs, 3 tomatoes, 2 vases, 2 windows, 12 receptacle types: 1 plate, 6 cabinets, 1 coffeemachine, 3 countertops, 3 drawers, 1 fridge, 1 garbagecan, 1 microwave, 3 shelves, 1 sinkbasin, 4 stoveburners, 1 toaster, and 32 locations all numbered consecutively.  \nThe receptacles are at locations as follows. microwave1 is at location25. stoveburner4 and stoveburner2 are at location22. shelf3 is at location27. cabinet1 is at location20. stoveburner3 and stoveburner1 are at location6. drawer2 is at location16. shelf2 is at location30. shelf1 is at location18. countertop3 is at location4. cabinet4 is at location15. cabinet3 is at location17. sinkbasin1 is at location7. coffeemachine1 and countertop2 are at location12. drawer3 is at location28. cabinet2 is at location23. fridge1 is at location11. drawer1 is at location21. cabinet6 is at location5. toaster1 is at location10. cabinet5 is at location14. countertop1 is at location3. garbagecan1 is at location9. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. chair1 is at location24. egg2, tomato3, sink1, potato3, cup3, and fork1 are at location7. dishsponge3, apple2, bread1, statue1, creditcard1, spatula2, cellphone1, apple1, and apple3 are at location3. dishsponge1 and spoon1 are at location16. butterknife1, statue2, spatula3, spoon2, knife1, peppershaker2, butterknife2, fork2, cellphone3, houseplant1, and soapbottle3 are at location4. stoveknob4 is at location8. cup2, lettuce1, potato2, tomato2, egg1, cup1, tomato1, and potato1 are at location11. bowl1, mug2, glassbottle2, and creditcard2 are at location30. stoveknob3 and stoveknob2 are at location13. window1 is at location31. pan1 is at location6. creditcard3 and saltshaker1 are at location27. lightswitch1 is at location26. spatula1 is at location28. plate1 and plate2 are at location14. cellphone2 is at location21. soapbottle1 and vase1 are at location5. glassbottle1, soapbottle2, and papertowelroll1 are at location9. chair2 is at location1. pot1 is at location22. dishsponge2 is at location2. stoveknob1 is at location19. window2 is at location29. peppershaker1 is at location20. mug1 is at location25. vase2 is at location18. agent agent1 is at location location27. The objects are in/on receptacle as follows. creditcard2, bowl1, glassbottle2, and mug2 are on shelf2. peppershaker2, butterknife1, spoon2, soapbottle3, statue2, houseplant1, fork2, butterknife2, spatula3, cellphone3, and knife1 are on countertop3. apple2, cellphone1, statue1, spatula2, apple1, bread1, creditcard1, apple3, and dishsponge3 are on countertop1. pot1 is on stoveburner4. pan1 is on stoveburner3. cup1, tomato1, potato1, cup2, tomato2, potato2, egg1, and lettuce1 are in fridge1. plate2, plate1, and dishsponge2 are in cabinet5. soapbottle2, papertowelroll1, and glassbottle1 are in garbagecan1. mug1 is in microwave1. dishsponge1 and spoon1 are in drawer2. pot1 is on stoveburner2. cup3, tomato3, egg2, fork1, and potato3 are in sinkbasin1. vase2 is on shelf1. vase1 and soapbottle1 are in cabinet6. creditcard3 and saltshaker1 are on shelf3. cellphone2 is in drawer1. spatula1 is in drawer3. peppershaker1 is in cabinet1. dishsponge2 is on plate1. pan1 is on stoveburner1. drawer1, cabinet2, microwave1, cabinet1, fridge1, drawer2, drawer3, and cabinet5 are closed. Nothing has been validated. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nagent agent1 is at location location17 and It has been validated that two objects of type platetype are in a receptacle of type cabinettype?",
+    "predicted_initial_state": {
+      "object_type": "plate",
+      "receptacle_type": "cabinet"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "plate1",
+        "plate2"
+      ],
+      "matching_receptacles": [
+        "cabinet1",
+        "cabinet2",
+        "cabinet3",
+        "cabinet4",
+        "cabinet5",
+        "cabinet6"
+      ],
+      "agent_location_required": "location17",
+      "object_count_required": 2
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.2152018547058105,
+    "correct": false,
+    "prompt_tokens": 2297,
+    "completion_tokens": 165,
+    "cost": 0.0082175,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "alfworld_plan_trial_t20190908_020029_636862_p14_197_p",
+    "context": "This is an alfworld domain where an agent is asked to carry different tasks such as: picking up objects, opening or closing receptacles, warming up an object in a microwave, cleaning an object in a sink, or toggling an object.  \nThere are 21 object types: 3 alarmclocks, 1 baseballbat, 1 basketball, 2 blind, 1 book, 3 bowls, 3 cds, 3 cellphones, 2 chairs, 1 creditcard, 1 desklamp, 2 keychains, 2 laptops, 1 laundryhamperlid, 1 lightswitch, 1 mirror, 2 mugs, 3 pencils, 1 pen, 2 pillows, 2 windows, 7 receptacle types: 1 bed, 2 desks, 6 drawers, 1 garbagecan, 1 laundryhamper, 1 safe, 6 shelves, and 27 locations all numbered consecutively.  \nThe receptacles are at locations as follows. laundryhamper1 is at location8. shelf2 is at location25. drawer5 and drawer4 are at location12. desk2 is at location10. safe1 is at location6. drawer6 is at location1. drawer2 is at location18. garbagecan1 is at location2. shelf6 is at location24. drawer3 is at location17. drawer1 is at location21. shelf3 is at location11. shelf1 is at location20. bed1 is at location13. shelf4 is at location23. shelf5 is at location22. desk1 is at location3. Receptacles that are neither open nor closed are not openable. Receptacles are not pickupable. Desklamps are not pickupable.  \nCurrently, the objects are at locations as follows. baseballbat1 is at location9. cellphone2, mug2, pen1, cd3, and pencil3 are at location10. mug1, cd1, pencil1, bowl1, and alarmclock1 are at location3. laptop1, cellphone1, laptop2, pillow2, book1, and pillow1 are at location13. keychain1 and keychain2 are at location6. bowl2, desklamp1, and alarmclock3 are at location23. pencil2 and creditcard1 are at location22. window2 is at location4. cd2 is at location2. chair2 is at location26. bowl3 is at location24. blinds1 is at location16. alarmclock2 is at location11. cellphone3 is at location12. mirror1 is at location19. basketball1 is at location7. window1 is at location5. blinds2 is at location15. laundryhamperlid1 is at location8. chair1 is at location21. lightswitch1 is at location14. agent agent1 is at location location17. The objects are in/on receptacle as follows. pencil1, alarmclock1, cd1, mug1, and bowl1 are on desk1. pillow2, laptop1, pillow1, laptop2, book1, and cellphone1 are in bed1. bowl2, alarmclock3, and desklamp1 are on shelf4. mug2, alarmclock3, desklamp1, cellphone2, pencil3, cd3, pen1, and bowl2 are on desk2. cd2 is in garbagecan1. alarmclock2 is on shelf3. bowl3 is on shelf6. pencil2 and creditcard1 are on shelf5. keychain1 and keychain2 are in safe1. cellphone3 is in drawer5. drawer1, safe1, drawer6, and drawer3 are closed. desklamp1 is off. Nothing has been validated. agent1's hands are empty. ",
+    "question": "Is it possible to transition to a state where the following holds: \nagent agent1 is at location location3 and It has been validated that an object of type laptoptype is in a receptacle of type bedtype?",
+    "predicted_initial_state": {
+      "object_type": "laptop",
+      "receptacle_type": "bed"
+    },
+    "predicted_goal_state": {
+      "goal_predicate": "validated_in_receptacle",
+      "object_exists": true,
+      "receptacle_exists": true,
+      "matching_objects": [
+        "laptop1",
+        "laptop2"
+      ],
+      "matching_receptacles": [
+        "bed1"
+      ]
+    },
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.89375901222229,
+    "correct": false,
+    "prompt_tokens": 1849,
+    "completion_tokens": 117,
+    "cost": 0.0063775,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

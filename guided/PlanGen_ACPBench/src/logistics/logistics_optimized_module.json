@@ -1,0 +1,73 @@
+{
+  "generate.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "domain_description": "This is a logistics domain involving packages, trucks, airplanes, and locations. \n        Packages need to be transported between cities using trucks (for local transport within a city) \n        and airplanes (for transport between cities). Key constraints: trucks can only operate within \n        their home city, airplanes can fly between airports, packages must be loaded onto vehicles \n        before transport, and vehicles must be at the same location as packages to load them. \n        The 'at' predicate shows locations of objects, 'in' indicates a package is in a vehicle, \n        'in-city' establishes which city a location belongs to.",
+        "context_and_question": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 7 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-1, l0-2, and l0-0 are in c0; l1-0, l1-2, and l1-1 are in c1; l2-0, l2-2, and l2-1 are in c2. \nCurrently, a0, t1, p4, and p6 are at l1-0, t2 is at l2-0, t0 is at l0-1, p5 is at l1-2, p2 is in t0, p3, p0, and p1 are in a0.\nIs it possible to transition to a state where the following holds: \np4 is at l0-1 and p4 is in t0?",
+        "reasoning": "The natural language description is converted into predicates capturing object locations (`at`), package containment in vehicles (`in`), and the city membership of each location (`in-city`). The goal state requires both that package `p4` is at location `l0-1` and that `p4` is inside truck `t0`.",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"a0\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p4\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p6\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t2\", \"l2-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t0\", \"l0-1\"]},\n {\"predicate\": \"at\", \"args\": [\"p5\", \"l1-2\"]},\n {\"predicate\": \"in\", \"args\": [\"p2\", \"t0\"]},\n {\"predicate\": \"in\", \"args\": [\"p3\", \"a0\"]},\n {\"predicate\": \"in\", \"args\": [\"p0\", \"a0\"]},\n {\"predicate\": \"in\", \"args\": [\"p1\", \"a0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-0\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-1\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-2\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-0\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-1\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-2\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l2-0\", \"c2\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l2-1\", \"c2\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l2-2\", \"c2\"]}]",
+        "goal_state": "[{\"predicate\": \"at\", \"args\": [\"p4\", \"l0-1\"]},\n {\"predicate\": \"in\", \"args\": [\"p4\", \"t0\"]}]"
+      },
+      {
+        "augmented": true,
+        "domain_description": "This is a logistics domain involving packages, trucks, airplanes, and locations. \n        Packages need to be transported between cities using trucks (for local transport within a city) \n        and airplanes (for transport between cities). Key constraints: trucks can only operate within \n        their home city, airplanes can fly between airports, packages must be loaded onto vehicles \n        before transport, and vehicles must be at the same location as packages to load them. \n        The 'at' predicate shows locations of objects, 'in' indicates a package is in a vehicle, \n        'in-city' establishes which city a location belongs to.",
+        "context_and_question": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 2 trucks and 1 airplane, as well as 4 packages. There are 4 locations across 2 cities. \nThe locations are in cities as follows: l0-1 and l0-0 are in c0; l1-0 and l1-1 are in c1. \nCurrently, p0, p3, and a0 are at l0-0, p1, t1, and p2 are at l1-0, t0 is at l0-1.\nIs it possible to transition to a state where the following holds: \np1 is in t1 and t1 is at l1-1?",
+        "reasoning": "We have 2 trucks (t0, t1), 1 airplane (a0), 4 packages (p0–p3), and 4 locations (l0-0, l0-1, l1-0, l1-1) in 2 cities (c0, c1).  \nInitial positions are given as `at` facts, and city membership as `in-city` facts. No package is initially in a vehicle, so there are no initial `in` predicates.\n\nThe goal requires:\n1. p1 to be inside truck t1 → `in(p1, t1)`\n2. t1 to be at location l1-1 → `at(t1, l1-1)`\n\nThese are expressed as the goal state predicates.",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"p0\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p3\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"a0\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p1\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p2\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t0\", \"l0-1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-0\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-1\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-0\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-1\", \"c1\"]}]",
+        "goal_state": "[{\"predicate\": \"in\", \"args\": [\"p1\", \"t1\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-1\"]}]"
+      },
+      {
+        "augmented": true,
+        "domain_description": "This is a logistics domain involving packages, trucks, airplanes, and locations. \n        Packages need to be transported between cities using trucks (for local transport within a city) \n        and airplanes (for transport between cities). Key constraints: trucks can only operate within \n        their home city, airplanes can fly between airports, packages must be loaded onto vehicles \n        before transport, and vehicles must be at the same location as packages to load them. \n        The 'at' predicate shows locations of objects, 'in' indicates a package is in a vehicle, \n        'in-city' establishes which city a location belongs to.",
+        "context_and_question": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 2 trucks and 1 airplane, as well as 4 packages. There are 4 locations across 2 cities. \nThe locations are in cities as follows: l0-1 and l0-0 are in c0; l1-0 and l1-1 are in c1. \nCurrently, p3, a0, and t0 are at l0-0, p1 is at l0-1, t1 is at l1-1, p2 is in a0, p0 is in t0.\nIs it possible to transition to a state where the following holds: \na0 is at l1-0 and t1 is at l1-0?",
+        "reasoning": "We formalize the described current situation and desired situation using the predicates `at`, `in`, and `in-city`. From the domain rules, an airplane can move between airports in different cities, and a truck can move within its city. Thus it is possible to reach a state where both `a0` and `t1` are at `l1-0`.",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"a0\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t0\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p3\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p1\", \"l0-1\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-1\"]},\n {\"predicate\": \"in\", \"args\": [\"p2\", \"a0\"]},\n {\"predicate\": \"in\", \"args\": [\"p0\", \"t0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-0\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-1\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-0\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-1\", \"c1\"]}]",
+        "goal_state": "[{\"predicate\": \"at\", \"args\": [\"a0\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-0\"]}]"
+      },
+      {
+        "augmented": true,
+        "domain_description": "This is a logistics domain involving packages, trucks, airplanes, and locations. \n        Packages need to be transported between cities using trucks (for local transport within a city) \n        and airplanes (for transport between cities). Key constraints: trucks can only operate within \n        their home city, airplanes can fly between airports, packages must be loaded onto vehicles \n        before transport, and vehicles must be at the same location as packages to load them. \n        The 'at' predicate shows locations of objects, 'in' indicates a package is in a vehicle, \n        'in-city' establishes which city a location belongs to.",
+        "context_and_question": "There are several cities, each containing several locations, some of which are airports. There are also trucks, which can drive within a single city, and airplanes, which can fly between airports. The goal is to get some packages from various locations to various new locations. \nThere are 3 trucks and 1 airplane, as well as 10 packages. There are 9 locations across 3 cities. \nThe locations are in cities as follows: l0-1, l0-2, and l0-0 are in c0; l1-0, l1-2, and l1-1 are in c1; l2-0, l2-2, and l2-1 are in c2. \nCurrently, p9, a0, and p5 are at l0-0, t1 is at l1-0, p2 and t0 are at l0-1, t2 is at l2-1, p7 is at l1-2, p6 is in t1, p4, p0, p3, and p1 are in t0, p8 is in a0.\nIs it possible to transition to a state where the following holds: \np8 is at l0-0 and t1 is at l1-1?",
+        "reasoning": "p8 is currently in a0, and a0 is at l0-0, so by unloading p8 from a0 at l0-0 we can achieve at(p8, l0-0).  \nt1 is currently at l1-0, and both l1-0 and l1-1 are in city c1, so t1 can drive within its city from l1-0 to l1-1, achieving at(t1, l1-1).  \nBoth actions are compatible, so a state with p8 at l0-0 and t1 at l1-1 is reachable.",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"p9\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"a0\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p5\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-0\"]},\n {\"predicate\": \"at\", \"args\": [\"p2\", \"l0-1\"]},\n {\"predicate\": \"at\", \"args\": [\"t0\", \"l0-1\"]},\n {\"predicate\": \"at\", \"args\": [\"t2\", \"l2-1\"]},\n {\"predicate\": \"at\", \"args\": [\"p7\", \"l1-2\"]},\n {\"predicate\": \"in\", \"args\": [\"p6\", \"t1\"]},\n {\"predicate\": \"in\", \"args\": [\"p4\", \"t0\"]},\n {\"predicate\": \"in\", \"args\": [\"p0\", \"t0\"]},\n {\"predicate\": \"in\", \"args\": [\"p3\", \"t0\"]},\n {\"predicate\": \"in\", \"args\": [\"p1\", \"t0\"]},\n {\"predicate\": \"in\", \"args\": [\"p8\", \"a0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-1\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-2\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l0-0\", \"c0\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-0\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-2\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l1-1\", \"c1\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l2-0\", \"c2\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l2-2\", \"c2\"]},\n {\"predicate\": \"in-city\", \"args\": [\"l2-1\", \"c2\"]}]",
+        "goal_state": "[{\"predicate\": \"at\", \"args\": [\"p8\", \"l0-0\"]},\n {\"predicate\": \"at\", \"args\": [\"t1\", \"l1-1\"]}]"
+      }
+    ],
+    "signature": {
+      "instructions": "Convert natural language description to formal state representation",
+      "fields": [
+        {
+          "prefix": "Domain Description:",
+          "description": "Description of the domain and its rules"
+        },
+        {
+          "prefix": "Context And Question:",
+          "description": "Current state context and question about goal state"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Initial State:",
+          "description": "Initial state as structured predicates"
+        },
+        {
+          "prefix": "Goal State:",
+          "description": "Goal state as structured predicates"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "example_id": "swap_swap-6-20_p10_52_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"nibbler\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"knead\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"ratchet\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"pliers\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"sander\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"wrench\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"nibbler\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"sander\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_102_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"yco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"cno\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cro\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"cgo\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_11_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"parsnip\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"leek\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"ulluco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"mushroom\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"parsnip\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-13-54_p27_147_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"yaogu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"ektara\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"ukulele\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"quena\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"saxophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"recorder\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"glockenspiel\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"lyre\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"banjo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"harmonica\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"accordion\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"ibanez\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"jazzophone\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"ibanez\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"ukulele\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_38_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"leek\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"ulluco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"parsnip\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"yam\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_41_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"yco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cno\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cgo\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"zco\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_155_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"leek\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"ulluco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"parsnip\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"yam\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-8-36_p18_142_p",
+    "initial_state": "[{\"predicate\": \"assigned\", \"args\": [\"heidi\", \"frisbee\"]},\n {\"predicate\": \"assigned\", \"args\": [\"dave\", \"slinky\"]},\n {\"predicate\": \"assigned\", \"args\": [\"vic\", \"zebra\"]},\n {\"predicate\": \"assigned\", \"args\": [\"carol\", \"guitar\"]},\n {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"quadcopter\"]},\n {\"predicate\": \"assigned\", \"args\": [\"xena\", \"iceskates\"]},\n {\"predicate\": \"assigned\", \"args\": [\"alice\", \"necklace\"]},\n {\"predicate\": \"assigned\", \"args\": [\"zoe\", \"whale\"]}]",
+    "goal_state": "[{\"predicate\": \"assigned\", \"args\": [\"michelle\", \"slinky\"]},\n {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"zebra\"]}]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_195_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cno\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"yco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cro\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cno\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-56_p28_32_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"apple\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"zill\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"xigua\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"imbu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"yuzu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"kiwi\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"plum\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"raspberry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"nectarine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"fig\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"vanilla\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cherry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"tangerine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"banana\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"yuzu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"quince\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-13-54_p27_102_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"ektara\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"ukulele\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"accordion\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"banjo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"ibanez\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"recorder\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"lyre\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"jazzophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"glockenspiel\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"saxophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"quena\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"harmonica\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"yaogu\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"accordion\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"accordion\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-58_p29_150_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cbo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"cso\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cio\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cao\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"yana\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"vco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"cto\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"wco\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"wco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cro\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_10_n",
+    "initial_state": "[{\"predicate\": \"assigned\", \"args\": [\"dave\", \"leek\"]},\n {\"predicate\": \"assigned\", \"args\": [\"alice\", \"quince\"]},\n {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"mushroom\"]},\n {\"predicate\": \"assigned\", \"args\": [\"xena\", \"valerian\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ted\", \"yam\"]},\n {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"ulluco\"]},\n {\"predicate\": \"assigned\", \"args\": [\"bob\", \"parsnip\"]}]",
+    "goal_state": "[{\"predicate\": \"assigned\", \"args\": [\"bob\", \"mushroom\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ted\", \"mushroom\"]}]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-56_p28_144_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"yuzu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"banana\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"apple\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zill\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"tangerine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"fig\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"raspberry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"imbu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"plum\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"kiwi\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"nectarine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cherry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"xigua\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"vanilla\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"kiwi\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cherry\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-6-20_p10_187_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"sander\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"wrench\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"pliers\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"knead\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"nibbler\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"ratchet\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"knead\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"pliers\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_177_p",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"leek\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"ulluco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"parsnip\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"quince\"]}\n]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-8-36_p18_118_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"slinky\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"whale\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"zebra\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"guitar\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"quadcopter\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"zoe\", \"necklace\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"frisbee\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"iceskates\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"iceskates\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"zebra\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-13-54_p27_80_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"saxophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"ektara\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"accordion\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"recorder\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"lyre\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"banjo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"jazzophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"quena\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"yaogu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"ukulele\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"harmonica\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"ibanez\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"glockenspiel\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"lyre\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"lyre\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_53_p",
+    "initial_state": "[{\"predicate\": \"assigned\", \"args\": [\"wade\", \"clo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"chro\"]},\n {\"predicate\": \"assigned\", \"args\": [\"erin\", \"yco\"]},\n {\"predicate\": \"assigned\", \"args\": [\"richard\", \"cuo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cdo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cro\"]},\n {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cno\"]},\n {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cco\"]},\n {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cpo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ted\", \"zco\"]},\n {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cmo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"steve\", \"coo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"alice\", \"ceo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"cfo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"una\", \"cgo\"]}]",
+    "goal_state": "[{\"predicate\": \"assigned\", \"args\": [\"grace\", \"cfo\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"cmo\"]}]",
+    "plan": [],
+    "final_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-13-54_p27_123_n",
+    "initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"yaogu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"ektara\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"ukulele\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"saxophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"recorder\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"banjo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"quena\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"lyre\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"accordion\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"harmonica\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"jazzophone\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"ibanez\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"glockenspiel\"]}\n]",
+    "goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"accordion\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"recorder\"]}\n]",
+    "plan": [],
+    "final_answer": "no"
+  }
+]

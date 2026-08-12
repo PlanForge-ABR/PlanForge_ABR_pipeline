@@ -1,0 +1,1301 @@
+{
+  "summary": {
+    "overall_accuracy": 0.9230769230769231,
+    "overall_accuracy_with_plan": 0.8538461538461538,
+    "overall_plan_accuracy": 0.7377049180327869,
+    "total_examples": 130,
+    "total_correct": 120,
+    "total_correct_with_plan": 111,
+    "total_plan_verified": 45,
+    "total_plan_possible": 61
+  },
+  "domains": {
+    "alfworld": {
+      "total_examples": 10,
+      "correct_answer": 8,
+      "correct_with_plan": 8,
+      "plan_verified": 1,
+      "total_yes_examples": 3,
+      "examples": [
+        {
+          "id": "-2019104209955033347",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3858097941701578166",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-2316437304382535862",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-5684355342343410798",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-2381222796914070965",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-6242863931191345145",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "4398743601995290573",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3664968030174976659",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "8455360622799739225",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-582553878352808518",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "blocksworld": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 10,
+      "plan_verified": 5,
+      "total_yes_examples": 5,
+      "examples": [
+        {
+          "id": "8256941752428165977",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1138079910160729630",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3782707831614811594",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2544905356212068046",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3253610256607851858",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1214666747726733564",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3240788156726209860",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "3037388191648938111",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2669741931983850416",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "3001871075049492593",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "depot": {
+      "total_examples": 10,
+      "correct_answer": 8,
+      "correct_with_plan": 8,
+      "plan_verified": 3,
+      "total_yes_examples": 3,
+      "examples": [
+        {
+          "id": "-2876959616016670438",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2209055194466017943",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-4265684394652917076",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3417521372616212671",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2783800139767511239",
+          "gt_answer": "no",
+          "pred_answer": "yes",
+          "correct": false,
+          "plan_valid": true,
+          "plan_reason": "Goal already satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-2467461375520176010",
+          "gt_answer": "no",
+          "pred_answer": "yes",
+          "correct": false,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-5628398575096707880",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "5187376524514580818",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-6986907514704113462",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1901112298191899187",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "ferry": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 10,
+      "plan_verified": 8,
+      "total_yes_examples": 8,
+      "examples": [
+        {
+          "id": "1268984985790259256",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3826593486022472982",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "3086831723562678790",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "254220531529050744",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "6273095533827635039",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1387152592430020428",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3167712919509616391",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3526496914030249199",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-8510261219970440273",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "1461482101892106760",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "floortile": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 5,
+      "plan_verified": 0,
+      "total_yes_examples": 5,
+      "examples": [
+        {
+          "id": "-1048307014425651264",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Goal not satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-7722126026049618985",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3491510099634833392",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "1229853569147381390",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Goal not satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-1777274271145667436",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Goal not satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "7976860471845273235",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Goal not satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "8144855404350642824",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "6820260920843194592",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Goal not satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-8291467984310084867",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "227479060233047288",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "goldminer": {
+      "total_examples": 10,
+      "correct_answer": 7,
+      "correct_with_plan": 7,
+      "plan_verified": 5,
+      "total_yes_examples": 8,
+      "examples": [
+        {
+          "id": "5011635154821118594",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2159023389531114356",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-4304504674581420587",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "5939611851157161387",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2256183000316335299",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-5876511576232440146",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "488906920822912350",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-4917035875754716528",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "2255197774336346575",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-2451579030057291609",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "grid": {
+      "total_examples": 10,
+      "correct_answer": 9,
+      "correct_with_plan": 9,
+      "plan_verified": 8,
+      "total_yes_examples": 8,
+      "examples": [
+        {
+          "id": "-6561961169987719768",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "7199958739360794837",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2055922311707026235",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "3589815530864347982",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-8389810127872957892",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3280748980533762447",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2290808842321697151",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-7745541852822579417",
+          "gt_answer": "no",
+          "pred_answer": "yes",
+          "correct": false,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-8845809395763048442",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3833354442525456454",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "grippers": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 10,
+      "plan_verified": 3,
+      "total_yes_examples": 3,
+      "examples": [
+        {
+          "id": "-5300480923743753954",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-8351840878139143160",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "2063787763986646885",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3822123605812103040",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-7417836131478415900",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "5297141015067430868",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "898910693672625741",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "9000560023870591173",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3752540588024094941",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1140742101112367148",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "logistics": {
+      "total_examples": 10,
+      "correct_answer": 8,
+      "correct_with_plan": 8,
+      "plan_verified": 1,
+      "total_yes_examples": 3,
+      "examples": [
+        {
+          "id": "7474610897774792912",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-2981570131346945014",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "8810249779840829756",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-4540434072416334212",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-7845509779827378671",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3007841307099444791",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-333617104970359206",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-6277981076939153131",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "5759802802624466637",
+          "gt_answer": "yes",
+          "pred_answer": "no",
+          "correct": false,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": false
+        },
+        {
+          "id": "2019778659293841791",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "rovers": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 10,
+      "plan_verified": 3,
+      "total_yes_examples": 3,
+      "examples": [
+        {
+          "id": "1132511168930332617",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1043496969056018846",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1902777571294228735",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "6532627485091435659",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-2130439532138217037",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-5920828701192469606",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-1016262709697167809",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-2233591958937444481",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-7828064559952906372",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "7840568113505898601",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "satellite": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 10,
+      "plan_verified": 5,
+      "total_yes_examples": 5,
+      "examples": [
+        {
+          "id": "3105364738225347439",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "7507623453296779685",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-58859649782086694",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-109716664035700185",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "4376933373471435824",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-8179275404747455390",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "7188686075881517182",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "38115520750114517",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-7853614269930853508",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-7241477041063095125",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "swap": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 6,
+      "plan_verified": 0,
+      "total_yes_examples": 4,
+      "examples": [
+        {
+          "id": "4724179342319617331",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "6591384788862151733",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-2981782850390496734",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Action 1 'swap' failed: Positions heidi and dave not adjacent",
+          "correct_with_plan": false
+        },
+        {
+          "id": "6637722070391320395",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-2656658457923006555",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "4312873891786312159",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Action 1 'swap' failed: Positions frank and liam not adjacent",
+          "correct_with_plan": false
+        },
+        {
+          "id": "-699973422265378932",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Action 1 'swap' failed: Positions kevin and dave not adjacent",
+          "correct_with_plan": false
+        },
+        {
+          "id": "1764250917309631630",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": false,
+          "plan_reason": "Action 1 'swap' failed: Positions bob and quentin not adjacent",
+          "correct_with_plan": false
+        },
+        {
+          "id": "1624672500270803855",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "7343057538436520425",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    },
+    "visitall": {
+      "total_examples": 10,
+      "correct_answer": 10,
+      "correct_with_plan": 10,
+      "plan_verified": 3,
+      "total_yes_examples": 3,
+      "examples": [
+        {
+          "id": "5848559229288385036",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-3707823257616714862",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "8667516452484671595",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-5824563948979246597",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "9209347401036085916",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-5210007184100988901",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "7010375140385281994",
+          "gt_answer": "yes",
+          "pred_answer": "yes",
+          "correct": true,
+          "plan_valid": true,
+          "plan_reason": "Goal satisfied",
+          "correct_with_plan": true
+        },
+        {
+          "id": "-511082433697583788",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "5705969304590475747",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        },
+        {
+          "id": "5625704496036238137",
+          "gt_answer": "no",
+          "pred_answer": "no",
+          "correct": true,
+          "plan_valid": null,
+          "plan_reason": "N/A",
+          "correct_with_plan": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,439 @@
+[
+  {
+    "example_id": "swap_swap-15-56_p28_119_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, michelle, quentin, dave, wade, xena, ivan, frank, richard, una, olivia, ted, alice, heidi, and kevin. There are 15 items/roles: tangerine, vanilla, kiwi, fig, xigua, yuzu, quince, zill, apple, imbu, cherry, nectarine, banana, plum, and raspberry. \nCurrently, heidi is assigned kiwi, liam is assigned xigua, michelle is assigned quince, ted is assigned imbu, una is assigned plum, xena is assigned yuzu, kevin is assigned fig, olivia is assigned nectarine, quentin is assigned zill, ivan is assigned apple, alice is assigned raspberry, richard is assigned vanilla, dave is assigned banana, wade is assigned cherry, and frank is assigned tangerine.",
+    "question": "Is it possible to transition to a state where the following holds: \nxena is assigned vanilla and xena is assigned quince?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "xena": "quince"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.4018497467041016,
+    "correct": true,
+    "prompt_tokens": 655,
+    "completion_tokens": 59,
+    "cost": 0.0025225,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "swap_swap-15-56_p28_185_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, michelle, quentin, dave, wade, xena, ivan, frank, richard, una, olivia, ted, alice, heidi, and kevin. There are 15 items/roles: tangerine, vanilla, kiwi, fig, xigua, yuzu, quince, zill, apple, imbu, cherry, nectarine, banana, plum, and raspberry. \nCurrently, michelle is assigned quince, liam is assigned xigua, una is assigned plum, wade is assigned cherry, kevin is assigned fig, olivia is assigned nectarine, xena is assigned apple, ted is assigned kiwi, quentin is assigned zill, alice is assigned raspberry, richard is assigned vanilla, dave is assigned banana, frank is assigned tangerine, ivan is assigned yuzu, and heidi is assigned imbu.",
+    "question": "Is it possible to transition to a state where the following holds: \nliam is assigned xigua and xena is assigned xigua?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "liam": "xigua",
+        "xena": "xigua"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.2357110977172852,
+    "correct": true,
+    "prompt_tokens": 657,
+    "completion_tokens": 59,
+    "cost": 0.0025275,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_82_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 7 agents: dave, xena, bob, alice, ted, heidi, and kevin. There are 7 items/roles: leek, ulluco, quince, valerian, mushroom, parsnip, and yam. \nCurrently, xena is assigned quince, kevin is assigned ulluco, dave is assigned mushroom, bob is assigned leek, heidi is assigned yam, alice is assigned valerian, and ted is assigned parsnip.",
+    "question": "Is it possible to transition to a state where the following holds: \nalice is assigned quince and alice is assigned parsnip?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "alice": "parsnip"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 5.013182878494263,
+    "correct": true,
+    "prompt_tokens": 563,
+    "completion_tokens": 50,
+    "cost": 0.0021575,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "swap_swap-13-52_p26_12_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 13 agents: liam, kevin, nicole, dave, xena, frank, olivia, una, ted, grace, vic, steve, and pat. There are 13 items/roles: horseradish, spinach, nopales, iceplant, xigua, quince, valerian, yam, mushroom, parsnip, radish, kale, and tomato. \nCurrently, grace is assigned nopales, dave is assigned valerian, una is assigned mushroom, frank is assigned horseradish, steve is assigned parsnip, vic is assigned quince, xena is assigned radish, nicole is assigned spinach, liam is assigned kale, kevin is assigned iceplant, olivia is assigned yam, pat is assigned tomato, and ted is assigned xigua.",
+    "question": "Is it possible to transition to a state where the following holds: \nnicole is assigned tomato and una is assigned tomato?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "nicole": "tomato",
+        "una": "tomato"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.2014150619506836,
+    "correct": true,
+    "prompt_tokens": 634,
+    "completion_tokens": 58,
+    "cost": 0.002455,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_142_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, kevin is assigned cpo, wade is assigned cro, ivan is assigned clo, richard is assigned coo, nicole is assigned chro, erin is assigned cfo, bob is assigned cgo, ted is assigned cmo, grace is assigned cdo, una is assigned cuo, steve is assigned cno, alice is assigned cco, quentin is assigned zco, liam is assigned ceo, and frank is assigned yco.",
+    "question": "Is it possible to transition to a state where the following holds: \nliam is assigned cdo and liam is assigned cco?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "liam": "cco"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.3829617500305176,
+    "correct": true,
+    "prompt_tokens": 663,
+    "completion_tokens": 58,
+    "cost": 0.0025275,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_136_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, alice is assigned ceo, erin is assigned yco, wade is assigned clo, kevin is assigned cro, frank is assigned cpo, nicole is assigned chro, bob is assigned cgo, richard is assigned cuo, una is assigned cdo, liam is assigned cco, ivan is assigned coo, steve is assigned zco, ted is assigned cfo, quentin is assigned cno, and grace is assigned cmo.",
+    "question": "Is it possible to transition to a state where the following holds: \nerin is assigned cco and kevin is assigned ceo?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "erin": "cco",
+        "kevin": "ceo"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      "swap kevin alice cro ceo",
+      "swap liam erin cco yco"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.1661310195922852,
+    "correct": true,
+    "prompt_tokens": 662,
+    "completion_tokens": 57,
+    "cost": 0.00251,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_35_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, bob is assigned cmo, alice is assigned ceo, erin is assigned yco, steve is assigned coo, richard is assigned zco, kevin is assigned cro, frank is assigned cpo, nicole is assigned chro, wade is assigned clo, grace is assigned cdo, una is assigned cuo, liam is assigned cco, ted is assigned cgo, ivan is assigned cfo, and quentin is assigned cno.",
+    "question": "Is it possible to transition to a state where the following holds: \nsteve is assigned cmo and una is assigned cgo?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "steve": "cmo",
+        "una": "cgo"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.5429060459136963,
+    "correct": false,
+    "prompt_tokens": 662,
+    "completion_tokens": 58,
+    "cost": 0.002525,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-13-52_p26_162_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 13 agents: liam, kevin, nicole, dave, xena, frank, olivia, una, ted, grace, vic, steve, and pat. There are 13 items/roles: horseradish, spinach, nopales, iceplant, xigua, quince, valerian, yam, mushroom, parsnip, radish, kale, and tomato. \nCurrently, grace is assigned nopales, vic is assigned tomato, pat is assigned mushroom, frank is assigned valerian, una is assigned horseradish, nicole is assigned quince, xena is assigned radish, steve is assigned spinach, dave is assigned parsnip, liam is assigned kale, kevin is assigned iceplant, olivia is assigned yam, and ted is assigned xigua.",
+    "question": "Is it possible to transition to a state where the following holds: \nolivia is assigned tomato and grace is assigned mushroom?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "olivia": "tomato",
+        "grace": "mushroom"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.3611977100372314,
+    "correct": false,
+    "prompt_tokens": 634,
+    "completion_tokens": 60,
+    "cost": 0.002485,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-8-36_p18_194_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 8 agents: dave, michelle, carol, xena, zoe, alice, heidi, and vic. There are 8 items/roles: slinky, necklace, frisbee, guitar, whale, quadcopter, zebra, and iceskates. \nCurrently, alice is assigned frisbee, xena is assigned zebra, dave is assigned iceskates, carol is assigned guitar, michelle is assigned slinky, vic is assigned whale, zoe is assigned quadcopter, and heidi is assigned necklace.",
+    "question": "Is it possible to transition to a state where the following holds: \ncarol is assigned slinky and michelle is assigned guitar?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "carol": "slinky",
+        "michelle": "guitar"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.3312530517578125,
+    "correct": false,
+    "prompt_tokens": 583,
+    "completion_tokens": 59,
+    "cost": 0.0023425,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-6-20_p10_153_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 6 agents: liam, quentin, xena, frank, bob, and vic. There are 6 items/roles: knead, sander, ratchet, nibbler, wrench, and pliers. \nCurrently, xena is assigned wrench, frank is assigned ratchet, bob is assigned sander, vic is assigned pliers, liam is assigned knead, and quentin is assigned nibbler.",
+    "question": "Is it possible to transition to a state where the following holds: \nvic is assigned sander and bob is assigned nibbler?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "vic": "sander",
+        "bob": "nibbler"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.150087833404541,
+    "correct": false,
+    "prompt_tokens": 557,
+    "completion_tokens": 58,
+    "cost": 0.0022625,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-8-36_p18_193_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 8 agents: dave, michelle, carol, xena, zoe, alice, heidi, and vic. There are 8 items/roles: slinky, necklace, frisbee, guitar, whale, quadcopter, zebra, and iceskates. \nCurrently, dave is assigned guitar, heidi is assigned iceskates, carol is assigned slinky, xena is assigned whale, zoe is assigned necklace, alice is assigned zebra, vic is assigned quadcopter, and michelle is assigned frisbee.",
+    "question": "Is it possible to transition to a state where the following holds: \ncarol is assigned whale and michelle is assigned iceskates?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "carol": "whale",
+        "michelle": "iceskates"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.2266571521759033,
+    "correct": false,
+    "prompt_tokens": 585,
+    "completion_tokens": 60,
+    "cost": 0.0023625,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-15-58_p29_92_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, michelle, quentin, dave, xena, wade, ivan, frank, yana, bob, heidi, judy, kevin, and steve. There are 15 items/roles: cbo, cco, cso, clo, cto, cio, cuo, chro, cro, cmo, cfo, cao, cgo, wco, and vco. \nCurrently, michelle is assigned cto, liam is assigned cro, erin is assigned cco, ivan is assigned wco, judy is assigned cgo, quentin is assigned cio, steve is assigned cbo, kevin is assigned cmo, bob is assigned clo, frank is assigned chro, heidi is assigned cso, yana is assigned vco, wade is assigned cfo, xena is assigned cuo, and dave is assigned cao.",
+    "question": "Is it possible to transition to a state where the following holds: \nxena is assigned cgo and judy is assigned cro?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "xena": "cgo",
+        "judy": "cro"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.66497802734375,
+    "correct": false,
+    "prompt_tokens": 662,
+    "completion_tokens": 58,
+    "cost": 0.002525,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_34_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, nicole is assigned cfo, bob is assigned cmo, alice is assigned ceo, erin is assigned yco, ivan is assigned clo, richard is assigned coo, wade is assigned cro, frank is assigned cpo, grace is assigned cdo, liam is assigned cco, steve is assigned cno, ted is assigned chro, quentin is assigned zco, una is assigned cgo, and kevin is assigned cuo.",
+    "question": "Is it possible to transition to a state where the following holds: \nquentin is assigned cdo and wade is assigned cno?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "quentin": "cdo",
+        "wade": "cno"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.0881531238555908,
+    "correct": false,
+    "prompt_tokens": 663,
+    "completion_tokens": 59,
+    "cost": 0.0025425,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-15-56_p28_3_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, michelle, quentin, dave, wade, xena, ivan, frank, richard, una, olivia, ted, alice, heidi, and kevin. There are 15 items/roles: tangerine, vanilla, kiwi, fig, xigua, yuzu, quince, zill, apple, imbu, cherry, nectarine, banana, plum, and raspberry. \nCurrently, michelle is assigned quince, liam is assigned xigua, una is assigned plum, kevin is assigned fig, olivia is assigned nectarine, xena is assigned apple, heidi is assigned tangerine, ivan is assigned kiwi, alice is assigned yuzu, frank is assigned imbu, quentin is assigned zill, richard is assigned vanilla, dave is assigned banana, ted is assigned raspberry, and wade is assigned cherry.",
+    "question": "Is it possible to transition to a state where the following holds: \nfrank is assigned plum and dave is assigned raspberry?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "frank": "plum",
+        "dave": "raspberry"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.5934638977050781,
+    "correct": false,
+    "prompt_tokens": 655,
+    "completion_tokens": 60,
+    "cost": 0.0025375,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "swap_swap-6-20_p10_12_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 6 agents: liam, quentin, xena, frank, bob, and vic. There are 6 items/roles: knead, sander, ratchet, nibbler, wrench, and pliers. \nCurrently, quentin is assigned knead, xena is assigned wrench, liam is assigned sander, vic is assigned nibbler, frank is assigned ratchet, and bob is assigned pliers.",
+    "question": "Is it possible to transition to a state where the following holds: \nliam is assigned nibbler and frank is assigned knead?",
+    "predicted_initial_state": {
+      "target_assignments": {
+        "liam": "nibbler",
+        "frank": "knead"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": null,
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4629766941070557,
+    "correct": false,
+    "prompt_tokens": 558,
+    "completion_tokens": 60,
+    "cost": 0.002295,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

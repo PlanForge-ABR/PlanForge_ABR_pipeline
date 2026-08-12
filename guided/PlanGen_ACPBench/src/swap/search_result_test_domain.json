@@ -1,0 +1,181 @@
+[
+  {
+    "example_id": "swap_swap-15-56_p28_119_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, michelle, quentin, dave, wade, xena, ivan, frank, richard, una, olivia, ted, alice, heidi, and kevin. There are 15 items/roles: tangerine, vanilla, kiwi, fig, xigua, yuzu, quince, zill, apple, imbu, cherry, nectarine, banana, plum, and raspberry. \nCurrently, heidi is assigned kiwi, liam is assigned xigua, michelle is assigned quince, ted is assigned imbu, una is assigned plum, xena is assigned yuzu, kevin is assigned fig, olivia is assigned nectarine, quentin is assigned zill, ivan is assigned apple, alice is assigned raspberry, richard is assigned vanilla, dave is assigned banana, wade is assigned cherry, and frank is assigned tangerine.",
+    "question": "Is it possible to transition to a state where the following holds: \nxena is assigned vanilla and xena is assigned quince?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"kiwi\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"xigua\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"imbu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"plum\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"yuzu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"fig\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"nectarine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zill\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"apple\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"raspberry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"vanilla\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"banana\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cherry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"tangerine\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"vanilla\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"quince\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-56_p28_185_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, michelle, quentin, dave, wade, xena, ivan, frank, richard, una, olivia, ted, alice, heidi, and kevin. There are 15 items/roles: tangerine, vanilla, kiwi, fig, xigua, yuzu, quince, zill, apple, imbu, cherry, nectarine, banana, plum, and raspberry. \nCurrently, michelle is assigned quince, liam is assigned xigua, una is assigned plum, wade is assigned cherry, kevin is assigned fig, olivia is assigned nectarine, xena is assigned apple, ted is assigned kiwi, quentin is assigned zill, alice is assigned raspberry, richard is assigned vanilla, dave is assigned banana, frank is assigned tangerine, ivan is assigned yuzu, and heidi is assigned imbu.",
+    "question": "Is it possible to transition to a state where the following holds: \nliam is assigned xigua and xena is assigned xigua?",
+    "predicted_initial_state": "[{\"predicate\": \"assigned\", \"args\": [\"michelle\", \"quince\"]},\n {\"predicate\": \"assigned\", \"args\": [\"liam\", \"xigua\"]},\n {\"predicate\": \"assigned\", \"args\": [\"una\", \"plum\"]},\n {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cherry\"]},\n {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"fig\"]},\n {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"nectarine\"]},\n {\"predicate\": \"assigned\", \"args\": [\"xena\", \"apple\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ted\", \"kiwi\"]},\n {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zill\"]},\n {\"predicate\": \"assigned\", \"args\": [\"alice\", \"raspberry\"]},\n {\"predicate\": \"assigned\", \"args\": [\"richard\", \"vanilla\"]},\n {\"predicate\": \"assigned\", \"args\": [\"dave\", \"banana\"]},\n {\"predicate\": \"assigned\", \"args\": [\"frank\", \"tangerine\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"yuzu\"]},\n {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"imbu\"]}]",
+    "predicted_goal_state": "[{\"predicate\": \"assigned\", \"args\": [\"liam\", \"xigua\"]},\n {\"predicate\": \"assigned\", \"args\": [\"xena\", \"xigua\"]}]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-7-28_p14_82_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 7 agents: dave, xena, bob, alice, ted, heidi, and kevin. There are 7 items/roles: leek, ulluco, quince, valerian, mushroom, parsnip, and yam. \nCurrently, xena is assigned quince, kevin is assigned ulluco, dave is assigned mushroom, bob is assigned leek, heidi is assigned yam, alice is assigned valerian, and ted is assigned parsnip.",
+    "question": "Is it possible to transition to a state where the following holds: \nalice is assigned quince and alice is assigned parsnip?",
+    "predicted_initial_state": "[{\"predicate\": \"assigned\", \"args\": [\"xena\", \"quince\"]},\n {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"ulluco\"]},\n {\"predicate\": \"assigned\", \"args\": [\"dave\", \"mushroom\"]},\n {\"predicate\": \"assigned\", \"args\": [\"bob\", \"leek\"]},\n {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"yam\"]},\n {\"predicate\": \"assigned\", \"args\": [\"alice\", \"valerian\"]},\n {\"predicate\": \"assigned\", \"args\": [\"ted\", \"parsnip\"]}]",
+    "predicted_goal_state": "[{\"predicate\": \"assigned\", \"args\": [\"alice\", \"quince\"]},\n {\"predicate\": \"assigned\", \"args\": [\"alice\", \"parsnip\"]}]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-13-52_p26_12_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 13 agents: liam, kevin, nicole, dave, xena, frank, olivia, una, ted, grace, vic, steve, and pat. There are 13 items/roles: horseradish, spinach, nopales, iceplant, xigua, quince, valerian, yam, mushroom, parsnip, radish, kale, and tomato. \nCurrently, grace is assigned nopales, dave is assigned valerian, una is assigned mushroom, frank is assigned horseradish, steve is assigned parsnip, vic is assigned quince, xena is assigned radish, nicole is assigned spinach, liam is assigned kale, kevin is assigned iceplant, olivia is assigned yam, pat is assigned tomato, and ted is assigned xigua.",
+    "question": "Is it possible to transition to a state where the following holds: \nnicole is assigned tomato and una is assigned tomato?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"nopales\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"horseradish\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"parsnip\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"radish\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"spinach\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"kale\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"iceplant\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"tomato\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"xigua\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"tomato\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"tomato\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_142_n",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, kevin is assigned cpo, wade is assigned cro, ivan is assigned clo, richard is assigned coo, nicole is assigned chro, erin is assigned cfo, bob is assigned cgo, ted is assigned cmo, grace is assigned cdo, una is assigned cuo, steve is assigned cno, alice is assigned cco, quentin is assigned zco, liam is assigned ceo, and frank is assigned yco.",
+    "question": "Is it possible to transition to a state where the following holds: \nliam is assigned cdo and liam is assigned cco?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cno\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"yco\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cco\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_136_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, alice is assigned ceo, erin is assigned yco, wade is assigned clo, kevin is assigned cro, frank is assigned cpo, nicole is assigned chro, bob is assigned cgo, richard is assigned cuo, una is assigned cdo, liam is assigned cco, ivan is assigned coo, steve is assigned zco, ted is assigned cfo, quentin is assigned cno, and grace is assigned cmo.",
+    "question": "Is it possible to transition to a state where the following holds: \nerin is assigned cco and kevin is assigned ceo?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"yco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cno\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cmo\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"ceo\"]}\n]",
+    "plan": [
+      "swap alice kevin ceo cro",
+      "swap erin liam yco cco"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_35_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, bob is assigned cmo, alice is assigned ceo, erin is assigned yco, steve is assigned coo, richard is assigned zco, kevin is assigned cro, frank is assigned cpo, nicole is assigned chro, wade is assigned clo, grace is assigned cdo, una is assigned cuo, liam is assigned cco, ted is assigned cgo, ivan is assigned cfo, and quentin is assigned cno.",
+    "question": "Is it possible to transition to a state where the following holds: \nsteve is assigned cmo and una is assigned cgo?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"yco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cno\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cgo\"]}\n]",
+    "plan": [
+      "swap bob steve cmo coo",
+      "swap una ted cuo cgo"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-13-52_p26_162_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 13 agents: liam, kevin, nicole, dave, xena, frank, olivia, una, ted, grace, vic, steve, and pat. There are 13 items/roles: horseradish, spinach, nopales, iceplant, xigua, quince, valerian, yam, mushroom, parsnip, radish, kale, and tomato. \nCurrently, grace is assigned nopales, vic is assigned tomato, pat is assigned mushroom, frank is assigned valerian, una is assigned horseradish, nicole is assigned quince, xena is assigned radish, steve is assigned spinach, dave is assigned parsnip, liam is assigned kale, kevin is assigned iceplant, olivia is assigned yam, and ted is assigned xigua.",
+    "question": "Is it possible to transition to a state where the following holds: \nolivia is assigned tomato and grace is assigned mushroom?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"nopales\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"tomato\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"pat\", \"mushroom\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"valerian\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"horseradish\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"radish\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"spinach\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"parsnip\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"kale\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"iceplant\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"yam\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"xigua\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"tomato\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"mushroom\"]}\n]",
+    "plan": [
+      "swap grace pat nopales mushroom",
+      "swap vic olivia tomato yam"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-8-36_p18_194_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 8 agents: dave, michelle, carol, xena, zoe, alice, heidi, and vic. There are 8 items/roles: slinky, necklace, frisbee, guitar, whale, quadcopter, zebra, and iceskates. \nCurrently, alice is assigned frisbee, xena is assigned zebra, dave is assigned iceskates, carol is assigned guitar, michelle is assigned slinky, vic is assigned whale, zoe is assigned quadcopter, and heidi is assigned necklace.",
+    "question": "Is it possible to transition to a state where the following holds: \ncarol is assigned slinky and michelle is assigned guitar?",
+    "predicted_initial_state": "[{\"predicate\": \"assigned\", \"args\": [\"alice\", \"frisbee\"]},\n {\"predicate\": \"assigned\", \"args\": [\"xena\", \"zebra\"]},\n {\"predicate\": \"assigned\", \"args\": [\"dave\", \"iceskates\"]},\n {\"predicate\": \"assigned\", \"args\": [\"carol\", \"guitar\"]},\n {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"slinky\"]},\n {\"predicate\": \"assigned\", \"args\": [\"vic\", \"whale\"]},\n {\"predicate\": \"assigned\", \"args\": [\"zoe\", \"quadcopter\"]},\n {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"necklace\"]}]",
+    "predicted_goal_state": "[{\"predicate\": \"assigned\", \"args\": [\"carol\", \"slinky\"]},\n {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"guitar\"]}]",
+    "plan": [
+      "swap carol michelle guitar slinky"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-6-20_p10_153_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 6 agents: liam, quentin, xena, frank, bob, and vic. There are 6 items/roles: knead, sander, ratchet, nibbler, wrench, and pliers. \nCurrently, xena is assigned wrench, frank is assigned ratchet, bob is assigned sander, vic is assigned pliers, liam is assigned knead, and quentin is assigned nibbler.",
+    "question": "Is it possible to transition to a state where the following holds: \nvic is assigned sander and bob is assigned nibbler?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"wrench\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"ratchet\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"sander\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"pliers\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"knead\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"nibbler\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"sander\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"nibbler\"]}\n]",
+    "plan": [
+      "swap bob quentin sander nibbler",
+      "swap vic quentin pliers sander"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-8-36_p18_193_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 8 agents: dave, michelle, carol, xena, zoe, alice, heidi, and vic. There are 8 items/roles: slinky, necklace, frisbee, guitar, whale, quadcopter, zebra, and iceskates. \nCurrently, dave is assigned guitar, heidi is assigned iceskates, carol is assigned slinky, xena is assigned whale, zoe is assigned necklace, alice is assigned zebra, vic is assigned quadcopter, and michelle is assigned frisbee.",
+    "question": "Is it possible to transition to a state where the following holds: \ncarol is assigned whale and michelle is assigned iceskates?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"guitar\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"iceskates\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"slinky\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"whale\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"zoe\", \"necklace\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"zebra\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"quadcopter\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"frisbee\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"carol\", \"whale\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"iceskates\"]}\n]",
+    "plan": [
+      "swap carol xena slinky whale",
+      "swap heidi michelle iceskates frisbee"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-15-58_p29_92_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, michelle, quentin, dave, xena, wade, ivan, frank, yana, bob, heidi, judy, kevin, and steve. There are 15 items/roles: cbo, cco, cso, clo, cto, cio, cuo, chro, cro, cmo, cfo, cao, cgo, wco, and vco. \nCurrently, michelle is assigned cto, liam is assigned cro, erin is assigned cco, ivan is assigned wco, judy is assigned cgo, quentin is assigned cio, steve is assigned cbo, kevin is assigned cmo, bob is assigned clo, frank is assigned chro, heidi is assigned cso, yana is assigned vco, wade is assigned cfo, xena is assigned cuo, and dave is assigned cao.",
+    "question": "Is it possible to transition to a state where the following holds: \nxena is assigned cgo and judy is assigned cro?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"cto\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"wco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cio\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cbo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"cso\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"yana\", \"vco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"cuo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"cao\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"judy\", \"cro\"]}\n]",
+    "plan": [
+      "swap judy xena cgo cuo",
+      "swap liam judy cro cuo"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-15-60_p30_34_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, erin, nicole, quentin, wade, ivan, richard, frank, una, bob, alice, grace, ted, kevin, and steve. There are 15 items/roles: coo, cco, clo, cpo, cdo, chro, cuo, yco, cro, cfo, cmo, ceo, zco, cgo, and cno. \nCurrently, nicole is assigned cfo, bob is assigned cmo, alice is assigned ceo, erin is assigned yco, ivan is assigned clo, richard is assigned coo, wade is assigned cro, frank is assigned cpo, grace is assigned cdo, liam is assigned cco, steve is assigned cno, ted is assigned chro, quentin is assigned zco, una is assigned cgo, and kevin is assigned cuo.",
+    "question": "Is it possible to transition to a state where the following holds: \nquentin is assigned cdo and wade is assigned cno?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"nicole\", \"cfo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"cmo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"ceo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"erin\", \"yco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"clo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"coo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"cpo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"grace\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"cco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"steve\", \"cno\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"chro\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zco\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"cgo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"cuo\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"cdo\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cno\"]}\n]",
+    "plan": [
+      "swap grace quentin cdo zco",
+      "swap wade steve cro cno"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-15-56_p28_3_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 15 agents: liam, michelle, quentin, dave, wade, xena, ivan, frank, richard, una, olivia, ted, alice, heidi, and kevin. There are 15 items/roles: tangerine, vanilla, kiwi, fig, xigua, yuzu, quince, zill, apple, imbu, cherry, nectarine, banana, plum, and raspberry. \nCurrently, michelle is assigned quince, liam is assigned xigua, una is assigned plum, kevin is assigned fig, olivia is assigned nectarine, xena is assigned apple, heidi is assigned tangerine, ivan is assigned kiwi, alice is assigned yuzu, frank is assigned imbu, quentin is assigned zill, richard is assigned vanilla, dave is assigned banana, ted is assigned raspberry, and wade is assigned cherry.",
+    "question": "Is it possible to transition to a state where the following holds: \nfrank is assigned plum and dave is assigned raspberry?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"michelle\", \"quince\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"xigua\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"una\", \"plum\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"kevin\", \"fig\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"olivia\", \"nectarine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"apple\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"heidi\", \"tangerine\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ivan\", \"kiwi\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"alice\", \"yuzu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"imbu\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"zill\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"richard\", \"vanilla\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"banana\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"ted\", \"raspberry\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"wade\", \"cherry\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"plum\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"dave\", \"raspberry\"]}\n]",
+    "plan": [
+      "swap dave ted banana raspberry",
+      "swap una frank plum imbu"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "swap_swap-6-20_p10_12_p",
+    "context": "This is a swap domain where agents are swapping items or roles. Each agent is always assigned a single item/role. \nThere are 6 agents: liam, quentin, xena, frank, bob, and vic. There are 6 items/roles: knead, sander, ratchet, nibbler, wrench, and pliers. \nCurrently, quentin is assigned knead, xena is assigned wrench, liam is assigned sander, vic is assigned nibbler, frank is assigned ratchet, and bob is assigned pliers.",
+    "question": "Is it possible to transition to a state where the following holds: \nliam is assigned nibbler and frank is assigned knead?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"quentin\", \"knead\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"xena\", \"wrench\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"sander\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"vic\", \"nibbler\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"ratchet\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"bob\", \"pliers\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"assigned\", \"args\": [\"liam\", \"nibbler\"]},\n  {\"predicate\": \"assigned\", \"args\": [\"frank\", \"knead\"]}\n]",
+    "plan": [
+      "swap liam vic sander nibbler",
+      "swap quentin frank knead ratchet"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  }
+]

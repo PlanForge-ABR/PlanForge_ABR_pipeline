@@ -1,0 +1,47 @@
+================================================================================
+OPTIMIZED DSPY PROMPT FOR NL2STATE CONVERSION
+================================================================================
+
+Domain: alfworld
+Model: openai/gpt-5.1
+Thinking Mode: Enabled
+
+================================================================================
+MODULE CONFIGURATION
+================================================================================
+
+Predictor Type: ChainOfThought
+
+================================================================================
+ACTUAL PROMPTS SENT TO LLM
+================================================================================
+
+Captured 1 LM call(s)
+
+
+================================================================================
+LM CALL #1
+================================================================================
+
+[
+  "Predict(StringSignature(domain_description, context_and_question -> reasoning, initial_state, goal_state\n    instructions='Convert natural language description to formal state representation'\n    domain_description = Field(annotation=str required=True json_schema_extra={'desc': 'Description of the domain and its rules', '__dspy_field_type': 'input', 'prefix': 'Domain Description:'})\n    context_and_question = Field(annotation=str required=True json_schema_extra={'desc': 'Current state context and question about goal state', '__dspy_field_type': 'input', 'prefix': 'Context And Question:'})\n    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': \"Reasoning: Let's think step by step in order to\", 'desc': '${reasoning}', '__dspy_field_type': 'output'})\n    initial_state = Field(annotation=str required=True json_schema_extra={'desc': 'Initial state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Initial State:'})\n    goal_state = Field(annotation=str required=True json_schema_extra={'desc': 'Goal state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Goal State:'})\n))",
+  {
+    "domain_description": "This is an embodied household-task domain adapted from ALFWorld/ALFRED, \n        where an agent interacts with everyday objects inside indoor environments such as kitchens, \n        bedrooms, and living rooms. The agent can navigate rooms, open and close containers (like drawers, \n        cabinets, fridges), pick up and put down objects, toggle appliances on or off, and place items in \n        target receptacles. Key constraints: the agent must be in the same room and within reach of an object \n        to manipulate it; only open containers can be accessed; and objects have unique types and allowed \n        receptacles. The 'at' predicate represents an agent\u2019s or object\u2019s location, 'in' indicates containment, \n        'open' shows whether a container is open, and 'holding' indicates the agent is carrying an object.",
+    "context_and_question": "Sample: Ferry is at location A with car C1 on board. Can we get car C1 to location B?"
+  },
+  "Prediction(\n    reasoning='We model the sample in the same predicate style as the domain description:\\n\\n- Use `at(X, L)` to denote that entity `X` (ferry or car) is at location `L`.\\n- Use `in(X, Y)` to denote containment/being on board (car C1 is on the ferry).\\n- The initial state encodes the ferry and the car being at location A, with the car on board the ferry.\\n- The goal state encodes that car C1 is at location B.\\n\\nWe do not model actions or check reachability here; we only represent the described initial and goal conditions.',\n    initial_state='[\\n  {\"predicate\": \"at\", \"args\": [\"ferry1\", \"locationA\"]},\\n  {\"predicate\": \"at\", \"args\": [\"carC1\", \"locationA\"]},\\n  {\"predicate\": \"in\", \"args\": [\"carC1\", \"ferry1\"]}\\n]',\n    goal_state='[\\n  {\"predicate\": \"at\", \"args\": [\"carC1\", \"locationB\"]}\\n]'\n)"
+]
+
+
+================================================================================
+FULL PREDICTOR STATE
+================================================================================
+
+predict = Predict(StringSignature(domain_description, context_and_question -> reasoning, initial_state, goal_state
+    instructions='Convert natural language description to formal state representation'
+    domain_description = Field(annotation=str required=True json_schema_extra={'desc': 'Description of the domain and its rules', '__dspy_field_type': 'input', 'prefix': 'Domain Description:'})
+    context_and_question = Field(annotation=str required=True json_schema_extra={'desc': 'Current state context and question about goal state', '__dspy_field_type': 'input', 'prefix': 'Context And Question:'})
+    reasoning = Field(annotation=str required=True json_schema_extra={'prefix': "Reasoning: Let's think step by step in order to", 'desc': '${reasoning}', '__dspy_field_type': 'output'})
+    initial_state = Field(annotation=str required=True json_schema_extra={'desc': 'Initial state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Initial State:'})
+    goal_state = Field(annotation=str required=True json_schema_extra={'desc': 'Goal state as structured predicates', '__dspy_field_type': 'output', 'prefix': 'Goal State:'})
+))

@@ -1,0 +1,461 @@
+[
+  {
+    "example_id": "blocksworld_BW-rand-20_p18_11_n",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_13, block_8, block_16, block_5, block_1, block_10, block_6, and block_20. The following block(s) are stacked on top of another block: block_15 is on block_9, block_18 is on block_5, block_7 is on block_10, block_12 is on block_7, block_2 is on block_14, block_19 is on block_16, block_17 is on block_12, block_3 is on block_13, block_11 is on block_8, block_14 is on block_20, block_9 is on block_2, and block_4 is on block_6.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robotic arm is holding block_19 and The robotic arm is not holding anything?",
+    "predicted_initial_state": {
+      "holding": "block_19"
+    },
+    "predicted_goal_state": {
+      "not_holding": true
+    },
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.1787350177764893,
+    "correct": true,
+    "prompt_tokens": 681,
+    "completion_tokens": 51,
+    "cost": 0.0024675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "blocksworld_BW-rand-20_p18_96_n",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_10. The following block(s) are on the table: block_12, block_19, block_14, block_18, block_1, block_6, and block_7. The following block(s) are stacked on top of another block: block_3 is on block_6, block_15 is on block_16, block_9 is on block_15, block_11 is on block_1, block_16 is on block_20, block_2 is on block_18, block_5 is on block_14, block_17 is on block_12, block_8 is on block_7, block_13 is on block_4, block_20 is on block_8, and block_4 is on block_11.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_1 is on top of block block_19 and The block block_1 is on top of block block_12?",
+    "predicted_initial_state": {
+      "on": {
+        "top_block": "block_1",
+        "bottom_block": "block_19"
+      }
+    },
+    "predicted_goal_state": {
+      "on": {
+        "top_block": "block_1",
+        "bottom_block": "block_12"
+      }
+    },
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.3398308753967285,
+    "correct": true,
+    "prompt_tokens": 691,
+    "completion_tokens": 88,
+    "cost": 0.0030475,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "blocksworld_BW-rand-20_p18_66_n",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_15. The following block(s) are on the table: block_9, block_13, block_5, block_1, block_10, block_6, and block_20. The following block(s) are stacked on top of another block: block_18 is on block_5, block_11 is on block_1, block_7 is on block_10, block_12 is on block_7, block_2 is on block_14, block_19 is on block_16, block_17 is on block_12, block_16 is on block_11, block_3 is on block_13, block_14 is on block_20, block_8 is on block_4, and block_4 is on block_6.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_13 is currently being held by the robotic arm and The block block_7 is currently being held by the robotic arm?",
+    "predicted_initial_state": {
+      "holding": "block_13"
+    },
+    "predicted_goal_state": {
+      "holding": "block_7"
+    },
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 0.9892301559448242,
+    "correct": true,
+    "prompt_tokens": 691,
+    "completion_tokens": 52,
+    "cost": 0.0025075,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "blocksworld_BW-rand-5_p10_164_n",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 5 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_5, block_1, and block_4. The following block(s) are stacked on top of another block: block_3 is on block_5 and block_2 is on block_3.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_5 is currently situated under the block block_2 and The block block_5 is currently situated under the block block_4?",
+    "predicted_initial_state": {
+      "under": [
+        {
+          "lower_block": "block_5",
+          "upper_block": "block_2"
+        },
+        {
+          "lower_block": "block_5",
+          "upper_block": "block_4"
+        }
+      ]
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.6605079174041748,
+    "correct": true,
+    "prompt_tokens": 583,
+    "completion_tokens": 87,
+    "cost": 0.0027625,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "blocksworld_BW-rand-20_p18_34_n",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_9. The following block(s) are on the table: block_19, block_14, block_18, block_1, block_10, block_6, and block_7. The following block(s) are stacked on top of another block: block_15 is on block_16, block_11 is on block_1, block_16 is on block_20, block_2 is on block_18, block_5 is on block_14, block_17 is on block_12, block_12 is on block_2, block_8 is on block_7, block_13 is on block_4, block_3 is on block_13, block_20 is on block_8, and block_4 is on block_11.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_7 is currently being held by the robotic arm and The block block_2 is currently being held by the robotic arm?",
+    "predicted_initial_state": {
+      "holding": "block_7"
+    },
+    "predicted_goal_state": {
+      "holding": "block_2"
+    },
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no",
+    "failure_reason": null,
+    "time_taken": 1.5388879776000977,
+    "correct": true,
+    "prompt_tokens": 691,
+    "completion_tokens": 52,
+    "cost": 0.0025075,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "blocksworld_BW-rand-20_p18_164_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_18. The following block(s) are on the table: block_19, block_14, block_1, block_6, and block_7. The following block(s) are stacked on top of another block: block_2 is on block_12, block_15 is on block_16, block_9 is on block_15, block_11 is on block_1, block_16 is on block_20, block_5 is on block_14, block_8 is on block_7, block_13 is on block_4, block_10 is on block_19, block_3 is on block_13, block_17 is on block_3, block_12 is on block_17, block_4 is on block_11, and block_20 is on block_8.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robotic arm is holding block_10 and The block block_18 is currently situated above the block block_6?",
+    "predicted_initial_state": {
+      "holding": "block_10",
+      "above": {
+        "upper_block": "block_18",
+        "lower_block": "block_6"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [
+      [
+        "stack block_18 block_6"
+      ],
+      [
+        "unstack block_10 block_19"
+      ]
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.582298755645752,
+    "correct": true,
+    "prompt_tokens": 697,
+    "completion_tokens": 68,
+    "cost": 0.0027625,
+    "api_calls": 1,
+    "plan_valid": true,
+    "verification": {
+      "valid": true,
+      "reason": "Goal satisfied",
+      "actions_applied": 2,
+      "total_actions": 2
+    },
+    "plan_failure_reason": "Goal satisfied",
+    "correct_with_plan": true
+  },
+  {
+    "example_id": "blocksworld_BW-rand-20_p18_105_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 20 blocks. \nCurrently, the robotic arm is holding block_18. The following block(s) are on the table: block_19, block_14, block_1, block_10, block_6, and block_7. The following block(s) are stacked on top of another block: block_15 is on block_16, block_9 is on block_15, block_11 is on block_1, block_16 is on block_20, block_5 is on block_14, block_2 is on block_9, block_8 is on block_7, block_13 is on block_4, block_3 is on block_13, block_17 is on block_3, block_12 is on block_17, block_4 is on block_11, and block_20 is on block_8.",
+    "question": "Is it possible to transition to a state where the following holds: \nBlock block_18 is clear and The block block_18 is on top of block block_2?",
+    "predicted_initial_state": {
+      "clear": "block_18",
+      "on": {
+        "top_block": "block_18",
+        "bottom_block": "block_2"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.577821969985962,
+    "correct": false,
+    "prompt_tokens": 689,
+    "completion_tokens": 68,
+    "cost": 0.0027425,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-100_p28_33_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 100 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_92, block_3, block_43, block_54, block_55, block_69, block_95, block_86, block_40, block_67, block_12, block_49, and block_7. The following block(s) are stacked on top of another block: block_2 is on block_99, block_27 is on block_45, block_26 is on block_71, block_65 is on block_78, block_61 is on block_85, block_98 is on block_77, block_78 is on block_53, block_9 is on block_70, block_11 is on block_5, block_37 is on block_90, block_72 is on block_12, block_52 is on block_58, block_66 is on block_10, block_30 is on block_33, block_82 is on block_88, block_74 is on block_95, block_96 is on block_48, block_57 is on block_80, block_71 is on block_14, block_100 is on block_96, block_63 is on block_92, block_68 is on block_25, block_5 is on block_28, block_48 is on block_62, block_38 is on block_72, block_99 is on block_98, block_53 is on block_31, block_21 is on block_75, block_51 is on block_91, block_88 is on block_22, block_25 is on block_49, block_23 is on block_81, block_90 is on block_56, block_39 is on block_20, block_73 is on block_15, block_46 is on block_84, block_1 is on block_51, block_8 is on block_41, block_89 is on block_87, block_16 is on block_46, block_81 is on block_89, block_10 is on block_42, block_62 is on block_52, block_45 is on block_93, block_75 is on block_24, block_4 is on block_57, block_14 is on block_79, block_47 is on block_100, block_60 is on block_37, block_80 is on block_17, block_97 is on block_61, block_77 is on block_94, block_36 is on block_32, block_35 is on block_6, block_50 is on block_38, block_24 is on block_26, block_33 is on block_63, block_22 is on block_27, block_64 is on block_66, block_87 is on block_65, block_59 is on block_2, block_19 is on block_30, block_58 is on block_59, block_56 is on block_74, block_6 is on block_11, block_13 is on block_76, block_44 is on block_35, block_18 is on block_3, block_42 is on block_50, block_91 is on block_29, block_76 is on block_82, block_32 is on block_4, block_28 is on block_36, block_70 is on block_23, block_83 is on block_8, block_34 is on block_73, block_85 is on block_83, block_41 is on block_9, block_15 is on block_1, block_31 is on block_18, block_93 is on block_60, block_17 is on block_97, block_20 is on block_34, block_84 is on block_44, block_94 is on block_68, block_79 is on block_64, and block_29 is on block_16.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_43 is currently situated under the block block_69?",
+    "predicted_initial_state": {
+      "above": {
+        "upper_block": "block_69",
+        "lower_block": "block_43"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.489961862564087,
+    "correct": false,
+    "prompt_tokens": 1374,
+    "completion_tokens": 59,
+    "cost": 0.00432,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-100_p29_25_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 100 blocks. \nCurrently, the robotic arm is holding block_1. The following block(s) are on the table: block_41, block_9, block_96, block_79, block_29, block_46, block_57, block_5, block_26, block_71, block_3, block_97, block_54, block_74, block_52, block_36, block_65, block_98, block_93, block_91, block_25, block_47, block_20, block_69, block_23, block_86, block_27, block_44, block_2, block_80, block_40, block_8, block_38, block_76, block_21, block_4, block_72, block_67, block_59, block_37, block_53, block_6, block_78, block_62, block_68, block_11, block_30, block_12, block_39, block_13, block_31, block_14, block_84, block_73, block_32, block_70, block_56, block_94, block_35, block_34, block_87, block_81, block_49, and block_17. The following block(s) are stacked on top of another block: block_63 is on block_16, block_82 is on block_24, block_19 is on block_56, block_10 is on block_55, block_48 is on block_90, block_92 is on block_85, block_33 is on block_43, block_99 is on block_8, block_64 is on block_83, block_22 is on block_33, block_55 is on block_77, block_58 is on block_38, block_43 is on block_18, block_61 is on block_60, block_15 is on block_88, block_100 is on block_22, block_42 is on block_63, block_88 is on block_51, block_83 is on block_92, block_16 is on block_28, block_45 is on block_89, block_50 is on block_10, block_90 is on block_66, block_95 is on block_29, block_77 is on block_100, block_18 is on block_61, block_51 is on block_50, block_60 is on block_95, block_75 is on block_87, block_66 is on block_44, block_85 is on block_58, block_28 is on block_7, block_7 is on block_2, block_24 is on block_45, and block_89 is on block_27.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_37 is currently situated under the block block_1 and The robotic arm is holding block_71?",
+    "predicted_initial_state": {
+      "holding": "block_71",
+      "above": {
+        "upper_block": "block_1",
+        "lower_block": "block_37"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.9501419067382812,
+    "correct": false,
+    "prompt_tokens": 1122,
+    "completion_tokens": 68,
+    "cost": 0.003825,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-5_p10_146_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 5 blocks. \nCurrently, the robotic arm is holding block_2. The following block(s) are on the table: block_1 and block_3. The following block(s) are stacked on top of another block: block_4 is on block_3 and block_5 is on block_1.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robotic arm is holding block_5 and block_1 is not obstructed by any other blocks?",
+    "predicted_initial_state": {
+      "holding": "block_5"
+    },
+    "predicted_goal_state": {
+      "clear": "block_1"
+    },
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 2.3612940311431885,
+    "correct": false,
+    "prompt_tokens": 572,
+    "completion_tokens": 52,
+    "cost": 0.00221,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-5_p06_56_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 5 blocks. \nCurrently, the robotic arm is holding block_3. The following block(s) are on the table: block_5 and block_2. The following block(s) are stacked on top of another block: block_4 is on block_2 and block_1 is on block_5.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robotic arm is empty and The block block_3 is currently situated above the block block_4?",
+    "predicted_initial_state": {
+      "arm_empty": true,
+      "above": {
+        "upper_block": "block_3",
+        "lower_block": "block_4"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.7873787879943848,
+    "correct": false,
+    "prompt_tokens": 572,
+    "completion_tokens": 66,
+    "cost": 0.00242,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-100_p27_193_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 100 blocks. \nCurrently, the robotic arm is holding block_100. The following block(s) are on the table: block_41, block_9, block_63, block_19, block_24, block_96, block_79, block_46, block_28, block_57, block_26, block_71, block_48, block_97, block_43, block_54, block_51, block_74, block_55, block_33, block_36, block_65, block_88, block_93, block_22, block_91, block_25, block_15, block_1, block_77, block_50, block_20, block_69, block_23, block_86, block_27, block_44, block_60, block_90, block_40, block_18, block_76, block_4, block_72, block_67, block_59, block_66, block_99, block_37, block_53, block_6, block_78, block_62, block_68, block_11, block_45, block_30, block_12, block_13, block_39, block_31, block_14, block_84, block_32, block_56, block_70, block_83, block_94, block_64, block_35, block_89, block_87, block_58, block_42, block_49, block_7, and block_17. The following block(s) are stacked on top of another block: block_3 is on block_8, block_29 is on block_10, block_34 is on block_82, block_85 is on block_34, block_21 is on block_80, block_8 is on block_81, block_38 is on block_92, block_47 is on block_52, block_52 is on block_98, block_82 is on block_3, block_73 is on block_21, block_5 is on block_47, block_2 is on block_5, block_98 is on block_83, block_61 is on block_75, block_95 is on block_16, block_81 is on block_2, block_92 is on block_73, block_10 is on block_61, block_80 is on block_95, block_16 is on block_29, and block_75 is on block_85.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_30 is currently situated above the block block_79 and No blocks are placed on top of block_100?",
+    "predicted_initial_state": {
+      "above": {
+        "upper_block": "block_30",
+        "lower_block": "block_79"
+      },
+      "clear": "block_100"
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.5406548976898193,
+    "correct": false,
+    "prompt_tokens": 1059,
+    "completion_tokens": 68,
+    "cost": 0.0036675,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-100_p28_176_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 100 blocks. \nCurrently, the robotic arm is holding block_41. The following block(s) are on the table: block_92, block_96, block_29, block_46, block_28, block_57, block_5, block_100, block_48, block_3, block_97, block_54, block_51, block_85, block_52, block_36, block_91, block_15, block_1, block_47, block_20, block_95, block_44, block_2, block_80, block_40, block_8, block_16, block_4, block_59, block_99, block_6, block_62, block_11, block_12, block_39, block_61, block_84, block_73, block_32, block_83, block_35, block_34, block_58, block_49, and block_17. The following block(s) are stacked on top of another block: block_27 is on block_45, block_26 is on block_71, block_65 is on block_78, block_98 is on block_77, block_78 is on block_53, block_9 is on block_70, block_37 is on block_90, block_72 is on block_12, block_66 is on block_10, block_30 is on block_33, block_82 is on block_88, block_74 is on block_95, block_71 is on block_14, block_63 is on block_92, block_68 is on block_25, block_38 is on block_72, block_53 is on block_31, block_21 is on block_75, block_88 is on block_22, block_25 is on block_49, block_23 is on block_81, block_90 is on block_56, block_89 is on block_87, block_81 is on block_89, block_10 is on block_42, block_67 is on block_69, block_45 is on block_93, block_75 is on block_24, block_14 is on block_79, block_60 is on block_37, block_7 is on block_55, block_77 is on block_94, block_50 is on block_38, block_24 is on block_26, block_33 is on block_63, block_22 is on block_27, block_64 is on block_66, block_87 is on block_65, block_19 is on block_30, block_56 is on block_74, block_13 is on block_76, block_69 is on block_21, block_86 is on block_43, block_18 is on block_3, block_42 is on block_50, block_76 is on block_82, block_70 is on block_23, block_43 is on block_7, block_31 is on block_18, block_93 is on block_60, block_55 is on block_67, block_94 is on block_68, and block_79 is on block_64.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe robotic arm is not holding anything and The block block_41 is currently situated above the block block_28?",
+    "predicted_initial_state": {
+      "holding": null,
+      "above": {
+        "upper_block": "block_41",
+        "lower_block": "block_28"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.4995160102844238,
+    "correct": false,
+    "prompt_tokens": 1211,
+    "completion_tokens": 65,
+    "cost": 0.0040025,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-100_p28_135_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 100 blocks. \nCurrently, the robotic arm is empty. The following block(s) are on the table: block_92, block_29, block_46, block_3, block_54, block_51, block_88, block_93, block_22, block_91, block_15, block_1, block_20, block_95, block_27, block_44, block_60, block_90, block_40, block_76, block_16, block_37, block_6, block_45, block_12, block_13, block_84, block_73, block_35, block_82, block_34, block_49, and block_39. The following block(s) are stacked on top of another block: block_2 is on block_99, block_26 is on block_71, block_65 is on block_78, block_61 is on block_85, block_98 is on block_77, block_78 is on block_53, block_9 is on block_70, block_11 is on block_5, block_72 is on block_12, block_52 is on block_58, block_66 is on block_10, block_30 is on block_33, block_74 is on block_95, block_96 is on block_48, block_57 is on block_80, block_71 is on block_14, block_100 is on block_96, block_63 is on block_92, block_68 is on block_25, block_5 is on block_28, block_48 is on block_62, block_38 is on block_72, block_99 is on block_98, block_53 is on block_31, block_21 is on block_75, block_25 is on block_49, block_23 is on block_81, block_8 is on block_41, block_89 is on block_87, block_81 is on block_89, block_10 is on block_42, block_62 is on block_52, block_67 is on block_69, block_75 is on block_24, block_4 is on block_57, block_14 is on block_79, block_47 is on block_100, block_80 is on block_17, block_7 is on block_55, block_97 is on block_61, block_77 is on block_94, block_36 is on block_32, block_50 is on block_38, block_24 is on block_26, block_33 is on block_63, block_87 is on block_65, block_64 is on block_66, block_59 is on block_2, block_19 is on block_30, block_58 is on block_59, block_56 is on block_74, block_69 is on block_21, block_86 is on block_43, block_18 is on block_3, block_42 is on block_50, block_32 is on block_4, block_28 is on block_36, block_70 is on block_23, block_83 is on block_8, block_43 is on block_7, block_85 is on block_83, block_41 is on block_9, block_31 is on block_18, block_17 is on block_97, block_55 is on block_67, block_94 is on block_68, and block_79 is on block_64.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe block block_86 is on top of block block_44 and The block block_47 is currently being held by the robotic arm?",
+    "predicted_initial_state": {
+      "on": {
+        "top_block": "block_86",
+        "bottom_block": "block_44"
+      },
+      "holding": "block_47"
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.1861910820007324,
+    "correct": false,
+    "prompt_tokens": 1287,
+    "completion_tokens": 68,
+    "cost": 0.0042375,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  },
+  {
+    "example_id": "blocksworld_BW-rand-100_p26_127_p",
+    "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 100 blocks. \nCurrently, the robotic arm is holding block_38. The following block(s) are on the table: block_63, block_29, block_48, block_97, block_74, block_47, block_23, block_2, block_8, block_72, block_59, block_53, block_78, block_30, block_39, block_13, block_61, block_32, block_64, block_35, block_87, and block_17. The following block(s) are stacked on top of another block: block_93 is on block_37, block_82 is on block_54, block_10 is on block_56, block_91 is on block_14, block_100 is on block_40, block_57 is on block_31, block_6 is on block_1, block_66 is on block_36, block_11 is on block_41, block_1 is on block_98, block_16 is on block_19, block_96 is on block_18, block_3 is on block_92, block_52 is on block_7, block_81 is on block_20, block_12 is on block_4, block_51 is on block_100, block_73 is on block_67, block_70 is on block_81, block_62 is on block_29, block_77 is on block_5, block_19 is on block_43, block_98 is on block_42, block_44 is on block_95, block_89 is on block_26, block_14 is on block_59, block_28 is on block_80, block_33 is on block_10, block_68 is on block_24, block_90 is on block_13, block_76 is on block_23, block_34 is on block_66, block_50 is on block_6, block_75 is on block_68, block_83 is on block_22, block_86 is on block_35, block_22 is on block_61, block_40 is on block_55, block_54 is on block_63, block_65 is on block_27, block_9 is on block_62, block_5 is on block_15, block_37 is on block_94, block_88 is on block_11, block_95 is on block_53, block_56 is on block_21, block_71 is on block_83, block_15 is on block_52, block_7 is on block_99, block_45 is on block_82, block_67 is on block_96, block_84 is on block_57, block_36 is on block_45, block_79 is on block_84, block_26 is on block_91, block_18 is on block_65, block_92 is on block_33, block_49 is on block_16, block_27 is on block_12, block_85 is on block_49, block_4 is on block_58, block_41 is on block_34, block_21 is on block_44, block_99 is on block_79, block_58 is on block_69, block_94 is on block_85, block_24 is on block_25, block_20 is on block_60, block_42 is on block_77, block_25 is on block_28, block_55 is on block_76, block_31 is on block_64, block_46 is on block_71, block_60 is on block_78, block_69 is on block_70, block_80 is on block_50, and block_43 is on block_89.",
+    "question": "Is it possible to transition to a state where the following holds: \nBlock block_38 is located on the table and The block block_74 is on top of block block_9?",
+    "predicted_initial_state": {
+      "on_table": "block_38",
+      "on": {
+        "top_block": "block_74",
+        "bottom_block": "block_9"
+      }
+    },
+    "predicted_goal_state": {},
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "yes",
+    "failure_reason": null,
+    "time_taken": 1.5679309368133545,
+    "correct": false,
+    "prompt_tokens": 1332,
+    "completion_tokens": 69,
+    "cost": 0.004365,
+    "api_calls": 1,
+    "plan_valid": "N/A",
+    "verification": {
+      "valid": null,
+      "reason": "N/A"
+    },
+    "plan_failure_reason": "N/A",
+    "correct_with_plan": false
+  }
+]

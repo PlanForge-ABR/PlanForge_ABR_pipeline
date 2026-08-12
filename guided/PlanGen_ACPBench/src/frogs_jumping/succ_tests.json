@@ -1,0 +1,4792 @@
+{
+  "frogs-jumping": [
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_0_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": []
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_1_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-right l2 p5 p6",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_1_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-right l2 p5 p6",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_2_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-left r3 p6 p5 p4 l2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_2_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-left r3 p6 p5 p4 l2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_3_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-left r2 p6 p5 p4 l3",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "jump-right l2 p2 p3 p4 r1",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_3_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-left r2 p6 p5 p4 l3",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "jump-right l2 p2 p3 p4 r1",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_4_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-left r1 p3 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-right l1 p1 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p1"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_4_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-left r1 p3 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-right l1 p1 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p1"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_5_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": []
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_6_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-left r3 p7 p6",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p7"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-right l3 p5 p6",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_6_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-left r3 p7 p6",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p7"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-right l3 p5 p6",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_7_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-left r3 p7 p6 p5 l3",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p7"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_7_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-left r3 p7 p6 p5 l3",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p7"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_8_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-right l3 p3 p4 p5 r1",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-left r2 p6 p5",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_8_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-right l3 p3 p4 p5 r1",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-left r2 p6 p5",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_9_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-right l2 p3 p4 p5 r2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-left r3 p6 p5",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_9_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "jump-right l2 p3 p4 p5 r2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-left r3 p6 p5",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_10_p",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-left r1 p3 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-right l1 p1 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p1"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "frogs_jumping_frogs-3v3_p01_10_n",
+      "initial_state": [
+        {
+          "predicate": "at",
+          "args": [
+            "l1",
+            "p1"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l2",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "l3",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r1",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r2",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "at",
+          "args": [
+            "r3",
+            "p7"
+          ]
+        },
+        {
+          "predicate": "empty",
+          "args": [
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p2",
+            "p3"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p3",
+            "p4"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p5",
+            "p6"
+          ]
+        },
+        {
+          "predicate": "next",
+          "args": [
+            "p6",
+            "p7"
+          ]
+        }
+      ],
+      "next_states": [
+        {
+          "action": "slide-left r1 p3 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p1"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        },
+        {
+          "action": "slide-right l1 p1 p2",
+          "state": [
+            {
+              "predicate": "at",
+              "args": [
+                "l1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l2",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "l3",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r1",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r2",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "at",
+              "args": [
+                "r3",
+                "p7"
+              ]
+            },
+            {
+              "predicate": "empty",
+              "args": [
+                "p1"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p1",
+                "p2"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p2",
+                "p3"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p3",
+                "p4"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p4",
+                "p5"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p5",
+                "p6"
+              ]
+            },
+            {
+              "predicate": "next",
+              "args": [
+                "p6",
+                "p7"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

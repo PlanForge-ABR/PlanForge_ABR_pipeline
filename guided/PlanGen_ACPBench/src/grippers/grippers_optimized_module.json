@@ -1,0 +1,73 @@
+{
+  "generate.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "domain_description": "This is a grippers domain where robots with grippers move balls between rooms. \n        Each robot has two grippers and can carry at most two balls simultaneously. Robots can move \n        between rooms, pick up balls (if they have a free gripper and are in the same room), and \n        drop balls in rooms. Key constraints: each gripper can hold at most one ball, robots must \n        be in the same room as a ball to pick it up, and balls can only be in one location at a time. \n        The 'at' predicate indicates locations, 'carry' shows which gripper is holding which ball, \n        and 'free' indicates an available gripper.",
+        "context_and_question": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 5 rooms, and 8 balls, numbered consecutively. \nCurrently, the robot robot1 is at room3, left gripper is carrying the ball ball5, and right gripper is carrying the ball ball6. Additionally, ball3 and ball7 are at room3, ball4 is at room4, ball8 is at room5, ball1 is at room1, ball2 is at room2.\nIs it possible to transition to a state where the following holds: \nBall ball5 is in room room3 and Robot robot1 is in room room5?",
+        "reasoning": "We represent each ball’s location with `at(ball, room)` unless it is being carried, in which case we use `carry(robot, ball, gripper)`. The robot’s location is given by `at-robby(robot, room)`.  \nFrom the description:  \n- Robot `robot1` is at `room3`.  \n- Left gripper holds `ball5`, right gripper holds `ball6`.  \n- Balls in rooms: `ball3` and `ball7` at `room3`, `ball4` at `room4`, `ball8` at `room5`, `ball1` at `room1`, `ball2` at `room2`.  \nThus the initial state has `carry` predicates for `ball5` and `ball6`, and `at` predicates for the remaining balls, plus the robot location.  \n\nThe goal state requires:  \n- `ball5` located in `room3` → `at(ball5, room3)`  \n- `robot1` located in `room5` → `at-robby(robot1, room5)`",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"ball1\", \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n {\"predicate\": \"at\", \"args\": [\"ball3\", \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball4\", \"room4\"]},\n {\"predicate\": \"at\", \"args\": [\"ball7\", \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball8\", \"room5\"]},\n {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room3\"]},\n {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball5\", \"left1\"]},\n {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball6\", \"right1\"]}]",
+        "goal_state": "[{\"predicate\": \"at\", \"args\": [\"ball5\", \"room3\"]},\n {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room5\"]}]"
+      },
+      {
+        "augmented": true,
+        "domain_description": "This is a grippers domain where robots with grippers move balls between rooms. \n        Each robot has two grippers and can carry at most two balls simultaneously. Robots can move \n        between rooms, pick up balls (if they have a free gripper and are in the same room), and \n        drop balls in rooms. Key constraints: each gripper can hold at most one ball, robots must \n        be in the same room as a ball to pick it up, and balls can only be in one location at a time. \n        The 'at' predicate indicates locations, 'carry' shows which gripper is holding which ball, \n        and 'free' indicates an available gripper.",
+        "context_and_question": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 5 rooms, and 8 balls, numbered consecutively. \nCurrently, the robot robot1 is at room2, right gripper is free, and left gripper is carrying the ball ball2. Additionally, ball3 and ball7 are at room3, ball6 and ball1 are at room2, ball8 and ball5 are at room1, ball4 is at room4.\nIs it possible to transition to a state where the following holds: \nRobot robot1 is in room room3 and Robot robot1 is at room1 location?",
+        "reasoning": "The domain enforces that a robot can only be in one room at a time: its location is represented by a single `at-robby(robot, room)` predicate. The goal requires `robot1` to be at `room3` and at `room1` simultaneously, i.e., to satisfy both `at-robby(robot1, room3)` and `at-robby(robot1, room1)` in the same state. These are mutually exclusive and cannot both be true in any reachable or valid state. Therefore, it is not possible to transition to a state where both goal conditions hold at once.",
+        "initial_state": "[  \n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room2\"]},  \n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball2\", \"left1\"]},  \n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"right1\"]},  \n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room2\"]},  \n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room3\"]},  \n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room4\"]},  \n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room1\"]},  \n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room2\"]},  \n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room3\"]},  \n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room1\"]}  \n]",
+        "goal_state": "[  \n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room3\"]},  \n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]}  \n]"
+      },
+      {
+        "augmented": true,
+        "domain_description": "This is a grippers domain where robots with grippers move balls between rooms. \n        Each robot has two grippers and can carry at most two balls simultaneously. Robots can move \n        between rooms, pick up balls (if they have a free gripper and are in the same room), and \n        drop balls in rooms. Key constraints: each gripper can hold at most one ball, robots must \n        be in the same room as a ball to pick it up, and balls can only be in one location at a time. \n        The 'at' predicate indicates locations, 'carry' shows which gripper is holding which ball, \n        and 'free' indicates an available gripper.",
+        "context_and_question": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room8 and both grippers are free. Additionally, ball4 and ball1 are at room1, ball2 is at room3, ball3 is at room5.\nIs it possible to transition to a state where the following holds: \nRobot robot1 is at room6 location and Robot robot1 is in room room1?",
+        "reasoning": "The natural language description specifies:\n- Locations of all balls and the robot.\n- That both grippers of `robot1` are free.\n- A goal where `robot1` is simultaneously at `room6` and at `room1`.  \nIn this domain encoding, ball locations use `at`, robot locations use `at-robby`, and gripper status uses `free`. The goal is represented directly as given, even though it is logically inconsistent (a robot cannot be in two rooms at once).",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"ball1\", \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball2\", \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball3\", \"room5\"]},\n {\"predicate\": \"at\", \"args\": [\"ball4\", \"room1\"]},\n {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room8\"]},\n {\"predicate\": \"free\", \"args\": [\"robot1\", \"left1\"]},\n {\"predicate\": \"free\", \"args\": [\"robot1\", \"right1\"]}]",
+        "goal_state": "[{\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room6\"]},\n {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]}]"
+      },
+      {
+        "augmented": true,
+        "domain_description": "This is a grippers domain where robots with grippers move balls between rooms. \n        Each robot has two grippers and can carry at most two balls simultaneously. Robots can move \n        between rooms, pick up balls (if they have a free gripper and are in the same room), and \n        drop balls in rooms. Key constraints: each gripper can hold at most one ball, robots must \n        be in the same room as a ball to pick it up, and balls can only be in one location at a time. \n        The 'at' predicate indicates locations, 'carry' shows which gripper is holding which ball, \n        and 'free' indicates an available gripper.",
+        "context_and_question": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1 and both grippers are free. Additionally, ball4 and ball2 are at room1, ball3 is at room2, ball1 is at room3.\nIs it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball4 in the right gripper and Robot robot1 is carrying the ball ball2 in the left gripper?",
+        "reasoning": "The domain allows the robot to pick up balls when:\n- The robot and the ball are in the same room, and\n- The robot has a free gripper.\n\nInitially, robot1 is in room1, both grippers are free, and both ball4 and ball2 are in room1. Therefore, a sequence of actions such as:\n1. Pick up ball4 with right gripper.\n2. Pick up ball2 with left gripper.\nis allowed by the domain rules and leads to a state where robot1 carries ball4 in the right gripper and ball2 in the left gripper.\n\nThe structured initial and goal states below capture this.",
+        "initial_state": "[{\"predicate\": \"at\", \"args\": [\"ball1\", \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball2\", \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball3\", \"room2\"]},\n {\"predicate\": \"at\", \"args\": [\"ball4\", \"room1\"]},\n {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]},\n {\"predicate\": \"free\", \"args\": [\"robot1\", \"left1\"]},\n {\"predicate\": \"free\", \"args\": [\"robot1\", \"right1\"]}]",
+        "goal_state": "[{\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball4\", \"right1\"]},\n {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball2\", \"left1\"]}]"
+      }
+    ],
+    "signature": {
+      "instructions": "Convert natural language description to formal state representation",
+      "fields": [
+        {
+          "prefix": "Domain Description:",
+          "description": "Description of the domain and its rules"
+        },
+        {
+          "prefix": "Context And Question:",
+          "description": "Current state context and question about goal state"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Initial State:",
+          "description": "Initial state as structured predicates"
+        },
+        {
+          "prefix": "Goal State:",
+          "description": "Goal state as structured predicates"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

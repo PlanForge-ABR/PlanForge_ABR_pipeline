@@ -1,0 +1,175 @@
+[
+  {
+    "example_id": "grippers_gripper-1-25-50_p30_156_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 25 rooms, and 50 balls, numbered consecutively. \nCurrently, the robot robot1 is at room13, left gripper is carrying the ball ball27, and right gripper is carrying the ball ball48. Additionally, ball2, ball4, and ball25 are at room4, ball38, ball20, ball45, and ball5 are at room7, ball15 is at room9, ball35 is at room6, ball1, ball34, and ball30 are at room8, ball29, ball33, and ball24 are at room19, ball14 and ball40 are at room10, ball28, ball13, and ball39 are at room16, ball31 and ball43 are at room11, ball3 and ball37 are at room23, ball42 and ball41 are at room14, ball7 is at room18, ball12, ball21, ball49, ball50, and ball23 are at room1, ball26, ball44, ball22, and ball46 are at room24, ball9, ball10, and ball19 are at room3, ball32 and ball17 are at room2, ball8 is at room22, ball11 and ball36 are at room5, ball47 and ball16 are at room13, ball6 and ball18 are at room15.",
+    "question": "Is it possible to transition to a state where the following holds: \nBall ball32 is at room6 location and Ball ball32 is at room22 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room13\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball27\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball48\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room23\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room15\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room18\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room22\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room16\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball16\", \"room13\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball17\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball18\", \"room15\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball19\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball20\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball21\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball22\", \"room24\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball23\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball24\", \"room19\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball25\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball26\", \"room24\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball28\", \"room16\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball29\", \"room19\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball30\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball31\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball32\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball33\", \"room19\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball34\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball35\", \"room6\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball36\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball37\", \"room23\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball38\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball39\", \"room16\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball40\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball41\", \"room14\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball42\", \"room14\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball43\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball44\", \"room24\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball45\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball46\", \"room24\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball47\", \"room13\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball49\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball50\", \"room1\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at\", \"args\": [\"ball32\", \"room6\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball32\", \"room22\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "grippers_gripper-1-2-4_p02_90_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is free, and right gripper is carrying the ball ball3. Additionally, ball1 and ball2 are at room2, ball4 is at room1.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room2 location and Robot robot1 is in room room1?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]},\n  {\"predicate\": \"free\", \"args\": [\"robot1\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball3\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room1\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room2\"]},\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p27_143_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room15, left gripper is carrying the ball ball4, and right gripper is carrying the ball ball18. Additionally, ball12 and ball15 are at room5, ball9, ball24, ball6, and ball3 are at room1, ball5 is at room4, ball14 is at room10, ball8, ball23, and ball11 are at room9, ball21 is at room7, ball7 and ball22 are at room6, ball16 and ball10 are at room2, ball1 is at room12, ball20 and ball2 are at room11, ball25 is at room15, ball13 is at room8, ball17 and ball19 are at room3.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball10 in the right gripper and Robot robot1 is carrying the ball ball6 in the right gripper?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room15\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball4\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball18\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room6\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball16\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball17\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball19\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball20\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball21\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball22\", \"room6\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball23\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball24\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball25\", \"room15\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball10\", \"right1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball6\", \"right1\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "grippers_gripper-1-3-7_p14_111_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 7 balls, numbered consecutively. \nCurrently, the robot robot1 is at room3, left gripper is free, and right gripper is carrying the ball ball1. Additionally, ball7, ball2, ball3, and ball4 are at room1, ball5 is at room3, ball6 is at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room2 and Robot robot1 is in room room1?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room3\"]},\n\n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball1\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room1\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room2\"]},\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]}\n]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_134_n",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room4, right gripper is free, and left gripper is carrying the ball ball1. Additionally, ball2 and ball4 are at room2, ball3 is at room4.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball1 in the left gripper and Ball ball1 is in room room10?",
+    "predicted_initial_state": "[{\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room4\"]},\n {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball1\", \"left1\"]},\n {\"predicate\": \"free\", \"args\": [\"robot1\", \"right1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n {\"predicate\": \"at\", \"args\": [\"ball4\", \"room2\"]},\n {\"predicate\": \"at\", \"args\": [\"ball3\", \"room4\"]}]",
+    "predicted_goal_state": "[{\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball1\", \"left1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball1\", \"room10\"]}]",
+    "plan": [],
+    "final_answer": "no",
+    "ground_truth_answer": "no"
+  },
+  {
+    "example_id": "grippers_gripper-1-3-15_p18_120_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 15 balls, numbered consecutively. \nCurrently, the robot robot1 is at room2, left gripper is carrying the ball ball15, and right gripper is carrying the ball ball6. Additionally, ball7, ball5, ball8, and ball3 are at room3, ball12 and ball13 are at room2, ball9, ball10, ball2, ball11, ball4, ball1, and ball14 are at room1.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room1?",
+    "predicted_initial_state": "[{\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room2\"]},\n\n {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball15\", \"left1\"]},\n {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball6\",  \"right1\"]},\n\n {\"predicate\": \"at\", \"args\": [\"ball7\",  \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball5\",  \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball8\",  \"room3\"]},\n {\"predicate\": \"at\", \"args\": [\"ball3\",  \"room3\"]},\n\n {\"predicate\": \"at\", \"args\": [\"ball12\", \"room2\"]},\n {\"predicate\": \"at\", \"args\": [\"ball13\", \"room2\"]},\n\n {\"predicate\": \"at\", \"args\": [\"ball9\",  \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball10\", \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball2\",  \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball11\", \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball4\",  \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball1\",  \"room1\"]},\n {\"predicate\": \"at\", \"args\": [\"ball14\", \"room1\"]}]",
+    "predicted_goal_state": "[{\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]}]",
+    "plan": [
+      "move robot1 room2 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_115_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room8, left gripper is free, and right gripper is carrying the ball ball3. Additionally, ball1 is at room8, ball2 and ball4 are at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room3?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room8\"]},\n  {\"predicate\": \"free\", \"args\": [\"robot1\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball3\", \"right1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room2\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room3\"]}\n]",
+    "plan": [
+      "move robot1 room8 room3"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p27_180_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room11, right gripper is free, and left gripper is carrying the ball ball4. Additionally, ball12 and ball15 are at room5, ball5 is at room4, ball14 is at room10, ball17 is at room13, ball22 and ball3 are at room1, ball8, ball23, and ball11 are at room9, ball21 is at room7, ball16, ball9, and ball10 are at room2, ball7 and ball1 are at room12, ball24 and ball13 are at room8, ball20, ball2, and ball6 are at room11, ball25 is at room15, ball18 is at room6, ball19 is at room3.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is carrying the ball ball12 in the right gripper and Robot robot1 is at room5 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room11\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball4\", \"left1\"]},\n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball16\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball17\", \"room13\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball18\", \"room6\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball19\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball20\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball21\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball22\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball23\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball24\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball25\", \"room15\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball12\", \"right1\"]},\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room5\"]}\n]",
+    "plan": [
+      "move robot1 room11 room5",
+      "pick robot1 ball12 room5 right1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-3-15_p18_9_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 15 balls, numbered consecutively. \nCurrently, the robot robot1 is at room3, right gripper is free, and left gripper is carrying the ball ball11. Additionally, ball7, ball9, ball14, and ball10 are at room3, ball6, ball15, ball2, ball4, ball8, and ball5 are at room1, ball1, ball12, ball13, and ball3 are at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room1 location and Robot robot1 is carrying the ball ball10 in the right gripper?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room3\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball11\", \"left1\"]},\n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball7\",  \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\",  \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room3\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball6\",  \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\",  \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\",  \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\",  \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\",  \"room1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\",  \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\",  \"room2\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]},\n  {\"predicate\": \"carry\",    \"args\": [\"robot1\", \"ball10\", \"right1\"]}\n]",
+    "plan": [
+      "pick robot1 ball10 room3 right1",
+      "move robot1 room3 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_126_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is free, and right gripper is carrying the ball ball4. Additionally, ball1 and ball3 are at room8, ball2 is at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room7 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]},\n\n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball4\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room8\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room7\"]}\n]",
+    "plan": [
+      "move robot1 room1 room7"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p27_35_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room6, left gripper is carrying the ball ball7, and right gripper is carrying the ball ball6. Additionally, ball12 and ball15 are at room5, ball5 is at room4, ball14 is at room10, ball22 and ball3 are at room1, ball8, ball23, and ball11 are at room9, ball21 is at room7, ball16, ball9, and ball10 are at room2, ball1 and ball24 are at room12, ball20 and ball2 are at room11, ball25, ball4, and ball18 are at room15, ball13 is at room8, ball17 and ball19 are at room3.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room9 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room6\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball7\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball6\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball22\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball23\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball21\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball16\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball24\", \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball20\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball25\", \"room15\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room15\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball18\", \"room15\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball17\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball19\", \"room3\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room9\"]}\n]",
+    "plan": [
+      "move robot1 room6 room9"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p28_31_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room10, right gripper is free, and left gripper is carrying the ball ball21. Additionally, ball2, ball19, ball9, ball10, and ball17 are at room2, ball16 and ball24 are at room8, ball11 and ball4 are at room3, ball22 is at room15, ball25 and ball5 are at room12, ball13 and ball3 are at room10, ball8 is at room7, ball20 is at room4, ball14, ball15, and ball23 are at room1, ball7 is at room11, ball12 is at room14, ball6 and ball18 are at room9, ball1 is at room5.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room14 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room10\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball21\", \"left1\"]},\n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room14\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball16\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball17\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball18\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball19\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball20\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball22\", \"room15\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball23\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball24\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball25\", \"room12\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room14\"]}\n]",
+    "plan": [
+      "move robot1 room10 room14"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-3-15_p18_189_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 3 rooms, and 15 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is carrying the ball ball9, and right gripper is carrying the ball ball14. Additionally, ball7, ball11, and ball10 are at room3, ball6, ball15, ball2, ball4, ball8, and ball5 are at room1, ball12, ball1, ball13, and ball3 are at room2.",
+    "question": "Is it possible to transition to a state where the following holds: \nThe right gripper of robot robot1 is free and Robot robot1 is at room2 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball9\", \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball14\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball5\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball7\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room3\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room2\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"free\", \"args\": [\"robot1\", \"right1\"]},\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room2\"]}\n]",
+    "plan": [
+      "drop robot1 ball14 room1 right1",
+      "move robot1 room1 room2"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-10-4_p10_183_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 10 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room6, right gripper is free, and left gripper is carrying the ball ball1. Additionally, ball2 and ball4 are at room2, ball3 is at room8.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is at room1 location?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room6\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball1\", \"left1\"]},\n  {\"predicate\": \"free\",  \"args\": [\"robot1\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball2\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\", \"room2\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room1\"]}\n]",
+    "plan": [
+      "move robot1 room6 room1"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  },
+  {
+    "example_id": "grippers_gripper-1-15-25_p28_24_p",
+    "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 15 rooms, and 25 balls, numbered consecutively. \nCurrently, the robot robot1 is at room12, left gripper is carrying the ball ball5, and right gripper is carrying the ball ball25. Additionally, ball23 is at room6, ball2, ball19, ball9, and ball17 are at room2, ball16 and ball24 are at room8, ball11 and ball22 are at room3, ball8 is at room7, ball20 and ball10 are at room4, ball14 and ball15 are at room1, ball7 is at room11, ball3 is at room10, ball12, ball21, and ball13 are at room14, ball6 and ball18 are at room9, ball1 is at room5, ball4 is at room12.",
+    "question": "Is it possible to transition to a state where the following holds: \nRobot robot1 is in room room3?",
+    "predicted_initial_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room12\"]},\n\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball5\",  \"left1\"]},\n  {\"predicate\": \"carry\", \"args\": [\"robot1\", \"ball25\", \"right1\"]},\n\n  {\"predicate\": \"at\", \"args\": [\"ball1\",  \"room5\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball2\",  \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball3\",  \"room10\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball4\",  \"room12\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball6\",  \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball7\",  \"room11\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball8\",  \"room7\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball9\",  \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball10\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball11\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball12\", \"room14\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball13\", \"room14\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball14\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball15\", \"room1\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball16\", \"room8\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball17\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball18\", \"room9\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball19\", \"room2\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball20\", \"room4\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball21\", \"room14\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball22\", \"room3\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball23\", \"room6\"]},\n  {\"predicate\": \"at\", \"args\": [\"ball24\", \"room8\"]}\n]",
+    "predicted_goal_state": "[\n  {\"predicate\": \"at-robby\", \"args\": [\"robot1\", \"room3\"]}\n]",
+    "plan": [
+      "move robot1 room12 room3"
+    ],
+    "final_answer": "yes",
+    "ground_truth_answer": "yes"
+  }
+]
