@@ -1,6 +1,50 @@
-# PlanForge: Synthesizing Planners from Natural Language with an LLM-Driven Architect–Builder–Runner Pipeline
+<h1 align="center">PlanForge: Synthesizing Planners from Natural Language with an LLM-Driven Architect–Builder–Runner Pipeline</h1>
 
-Official codebase for **PlanForge**, an LLM-driven **Architect–Builder–Runner (ABR)** framework that synthesizes reusable, standalone planner programs from natural-language task specifications.
+<p align="center"><b>Official Implementation of PlanForge</b></p>
+
+<p align="center">
+  <a href="#">Sarvesh Baskar</a><sup>1*</sup>,
+  <a href="#">Raviteja Bommireddy</a><sup>2*</sup>,
+  <a href="#">Saksham Kumar Sharma</a><sup>1</sup>,
+  <a href="#">Harsha Kokel</a><sup>3</sup>,
+  <a href="#">Manas Gaur</a><sup>1</sup>,
+  <a href="#">Michael Katz</a><sup>3</sup>,
+  <a href="#">Shirin Sohrabi</a><sup>3</sup>,
+  <a href="#">Kavitha Srinivas</a><sup>3</sup>
+  <br>
+  <sup>1</sup><i>University of Maryland, Baltimore County, USA</i> &nbsp;|&nbsp;
+  <sup>2</sup><i>IIITDM, India</i> &nbsp;|&nbsp;
+  <sup>3</sup><i>IBM Research, USA</i>
+  <br>
+  <sup>*</sup><i>Equal contribution</i>
+</p>
+
+<p align="center">
+  <a href="https://PlanForge-ABR.github.io/"><img src="https://img.shields.io/badge/PROJECT-PAGE-2196F3?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page"></a>
+  <a href="https://arxiv.org"><img src="https://img.shields.io/badge/ARXIV-PAPER-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper"></a>
+  <a href="https://github.com/PlanForge-ABR/PlanForge_ABR_pipeline"><img src="https://img.shields.io/badge/CODE-GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code GitHub"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-4CAF50?style=for-the-badge" alt="License MIT"></a>
+</p>
+
+<p align="center">
+  <a href="#1-overview--paper-terminology"><b>Overview</b></a> &nbsp;•&nbsp;
+  <a href="#2-directory--repository-layout"><b>Repository Layout</b></a> &nbsp;•&nbsp;
+  <a href="#3-benchmark-families--metrics"><b>Evaluation Metrics</b></a> &nbsp;•&nbsp;
+  <a href="#5-experiment-execution-guide"><b>Experiments Guide</b></a>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/fig-planforge-full-pipeline.png" alt="PlanForge ABR Framework Pipeline" width="100%">
+</p>
+
+<p align="center">
+  <i><b>PlanForge Framework Overview.</b> Given a natural-language domain description and development instances, the <b>Architect</b> formulates the state schema and solver blueprint, the <b>Builder</b> synthesizes executable Python code with repair feedback, and the deterministic <b>Runner</b> executes the compiled program deterministically across unseen instances with zero test-time API query cost.</i>
+</p>
+
+<br>
+<hr>
 
 > [!IMPORTANT]
 > **Reference Codebase Notice**: This repository contains the reference implementation and experiment scripts used for the **PlanForge** paper. Benchmark datasets (`data/`) and heavy generation artifacts are intentionally omitted from version control due to file size limits. Consequently, this repository is provided primarily for **code auditing, architectural reference, and methodology inspection**. The scripts will not execute out-of-the-box without manually downloading and placing the dataset files into the expected directory paths.
@@ -28,6 +72,7 @@ PlanForge_ABR_pipeline/
 ├── requirements.txt                   # Project dependencies (DSPy, OpenAI, Gemini, PDDL)
 ├── .env.example                       # API key environment configuration template
 ├── .gitignore                         # Exclusions for Python caches, outputs, and OS files
+├── assets/                            # Teaser & framework architecture images
 ├── data/                              # Benchmark Datasets & Domain Task Files
 │   ├── natural-plan/                  # NaturalPlan benchmark instances (calendar, meeting, trip)
 │   ├── train/                         # PlanGen / ACPBench training & dev instances
